@@ -1,0 +1,23 @@
+name: EmbodiedMemory-Bench
+domain: Generalist
+subtype: embodied-memory
+first_release_date: '2026-09-23'
+description: Evaluates how agents build and update memory from observation and interaction history, then use it for later embodied actions. The benchmark contains 2,554 AI2-THOR episodes across visual recall, dynamic tracking, interaction outcomes, and experience generalization.
+task_count: 2554 (episodes across 4 task families)
+metric_count: 5 (SR, RAR, ERR, AES, MAE)
+robot_config_count: Not specified
+modality:
+- RGB
+- language
+- interaction history
+setting:
+- sim
+sim_backend: AI2-THOR (Unity); AI2-THOR and ProcTHOR scenes
+data_source:
+  size: 2,554 evaluation episodes
+  collection_method: synthetic (simulator-grounded construction)
+resources:
+  homepage: https://zju-omniai.github.io/Embodied-Omni/EmbodiedMemoryBench/
+  paper: https://arxiv.org/abs/2609.28236
+  code: https://github.com/ZJU-OmniAI/Embodied-Omni/tree/main/embodied_memory
+  data: https://huggingface.co/datasets/lzLiang/EmbodiedMemoryBench

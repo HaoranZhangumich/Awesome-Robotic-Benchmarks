@@ -219,12 +219,17 @@ _For the **Simulation** domain, the summary table compares capabilities: physics
   
   *Resources*: [Paper](https://arxiv.org/abs/2502.09560 ) | [Website](https://embodiedbench.github.io ) | [Code](https://github.com/embodiedbench/EmbodiedBench ) | [Data](https://huggingface.co/embodiedbench (evaluation data))
 
+- **EmbodiedMemory-Bench** (2026): Evaluates how agents build and update memory from observation and interaction history, then use it for later embodied actions. The benchmark contains 2,554 AI2-THOR episodes across visual recall, dynamic tracking, interaction outcomes, and experience generalization.
+  
+  *Resources*: [Paper](https://arxiv.org/abs/2609.28236) | [Website](https://zju-omniai.github.io/Embodied-Omni/EmbodiedMemoryBench/) | [Code](https://github.com/ZJU-OmniAI/Embodied-Omni/tree/main/embodied_memory) | [Data](https://huggingface.co/datasets/lzLiang/EmbodiedMemoryBench)
+
 ### Summary Comparison
 
 | Benchmark | Subtype | Task Count | Metric Count | Robot Configs | Modality | SIM | Data Source | Data Size |
 |---|---|---:|---:|---:|---|---|---|---|
 | ManiSkill | - | 50 | 1 | 39 | RGB, depth, pointcloud, proprioceptive | SAPIEN (PhysX) | motion_planner | ~36,000 successful trajectories (~1.5M frames) |
 | EmbodiedBench | - | 1128 (testing tasks across 4 envs) | 2 (e.g., success rate and subgoal success) | 4 | RGB, language | Multiple – AI2-THOR (Unity) for EB-ALFRED, Habitat-Sim for EB-Habitat/Navigation, and a robotics simulator for EB-Manipulation | both (uses existing human-collected and synthetic tasks) | 1,128 evaluation scenarios (drawn from ALFRED, Habitat, etc.) |
+| EmbodiedMemory-Bench | embodied-memory | 2554 (episodes across 4 task families) | 5 (SR, RAR, ERR, AES, MAE) | Not specified | RGB, language, interaction history | AI2-THOR (Unity); AI2-THOR and ProcTHOR scenes | synthetic (simulator-grounded construction) | 2,554 evaluation episodes |
 
 
 ## Other
