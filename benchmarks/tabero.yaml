@@ -1,0 +1,22 @@
+name: Tabero
+domain: Manipulation
+area: tactile
+subtype: "tactile LIBERO, force-aware VLA evaluation"
+first_release_date: 2026-05-27
+venue: "ICML 2026"
+description: "Benchmark for gentle, language-conditioned manipulation with touch: the LIBERO suites are rebuilt in Isaac Lab with a tactile-equipped Franka gripper (Taxim / FOTS simulation) by replaying open-source demonstrations, and policies are scored on task success together with grip and applied forces under gentle versus firm instructions."
+task_count: "4 LIBERO suites (Spatial, Object, Goal, 10) with force-level instructions"
+metric_count: "5 (success rate; average and maximum grip force and applied force)"
+robot_config_count: "1 (Franka arm with tactile-sensing gripper)"
+modality: [RGB, tactile, proprioceptive, language]
+setting: [sim]
+sim_backend: "Isaac Lab with Taxim / FOTS tactile simulation"
+data_source:
+  size: "LIBERO demonstrations replayed with tactile sensing (count not stated)"
+  collection_method: human_demonstration
+resources:
+  homepage: "https://nathanwu7.github.io/Tabero/"
+  paper: "https://arxiv.org/abs/2605.27886"
+  code: "https://github.com/NathanWu7/Tabero"
+  data: "https://huggingface.co/datasets/NathanWu7/Isaaclab_Libero"
+  leaderboard: ""

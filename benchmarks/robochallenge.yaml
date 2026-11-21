@@ -1,0 +1,22 @@
+name: RoboChallenge (Table30)
+domain: Generalist
+area: real-eval
+subtype: "online real-robot testing, VLA leaderboard"
+first_release_date: 2025-10-20
+venue: "arXiv 2025"
+description: "Online real-robot testing service from Dexmal and Hugging Face. Users fine-tune on released demonstrations and control a hosted fleet of robots remotely; the first benchmark, Table30, has 30 tabletop tasks, and Table30 v2 followed in 2026."
+task_count: "30 (Table30); 30 more in Table30 v2"
+metric_count: "2 (success rate, progress score)"
+robot_config_count: "4 (UR5, Franka Panda, Cobot Magic ALOHA, ARX-5)"
+modality: [RGB, proprioceptive, language]
+setting: [real]
+sim_backend: ""
+data_source:
+  size: "up to 1,000 demonstration episodes per task"
+  collection_method: human_demonstration
+resources:
+  homepage: "https://robochallenge.ai"
+  paper: "https://arxiv.org/abs/2510.17950"
+  code: "https://github.com/RoboChallenge/RoboChallengeInference"
+  data: "https://huggingface.co/datasets/RoboChallenge/Table30"
+  leaderboard: "https://robochallenge.ai"

@@ -1,0 +1,22 @@
+name: WoW-World-Eval
+domain: World Models
+area: wm-embodied
+subtype: "embodied Turing test, video generation, inverse-dynamics execution"
+first_release_date: 2026-01-07
+venue: "arXiv 2026"
+description: "Embodied Turing test for video world models: 609 robot manipulation samples scored with 22 metrics on perception, planning, prediction, generalisation and execution, plus an inverse-dynamics test that executes generated videos on a real robot. Builds on WoWBench from the WoW world model."
+task_count: "5 abilities (perception, planning, prediction, generalisation, execution)"
+metric_count: "22 metrics in 5 groups + human and inverse-dynamics Turing tests"
+robot_config_count: "4 (Franka, UR5e, AgileX, humanoid)"
+modality: [video, RGB, language]
+setting: [real]
+sim_backend: ""
+data_source:
+  size: "609 samples (instruction, first frame, ground-truth video)"
+  collection_method: mixed
+resources:
+  homepage: ""
+  paper: "https://arxiv.org/abs/2601.04137"
+  code: ""
+  data: "https://huggingface.co/datasets/WoW-world-model/WoW-1-Benchmark-Samples"
+  leaderboard: ""

@@ -1,0 +1,22 @@
+name: BEHAVIOR Challenge
+domain: Manipulation
+area: mobile
+subtype: "household activities, long-horizon, annual challenge"
+first_release_date: 2025-09-02
+venue: "NeurIPS 2025 and CoRL 2026 challenge"
+description: "Annual challenge on BEHAVIOR-1K: a policy must complete full-length household activities with a bimanual mobile manipulator in OmniGibson, from onboard RGB-D and proprioception. 50 tasks at NeurIPS 2025; 100 tasks in 7 scenes at CoRL 2026, scored on hidden test instances."
+task_count: "100 household tasks (2026); 50 in 2025"
+metric_count: "1 (task success score with partial credit for BDDL goals)"
+robot_config_count: "1 by default (R1Pro bimanual mobile manipulator)"
+modality: [RGB, depth, proprioceptive]
+setting: [sim]
+sim_backend: "OmniGibson (NVIDIA Omniverse / PhysX 5)"
+data_source:
+  size: "20,000 teleoperated demos, 1,950 h (2026); 10,000 demos, 1,200+ h (2025)"
+  collection_method: human_demonstration
+resources:
+  homepage: "https://behavior.stanford.edu/challenge/"
+  paper: ""
+  code: "https://github.com/StanfordVL/BEHAVIOR-1K"
+  data: "https://huggingface.co/datasets/behavior-1k/2026-challenge-demos"
+  leaderboard: "https://huggingface.co/spaces/behavior-1k/2026-challenge-leaderboard"

@@ -1,0 +1,22 @@
+name: SMPLOlympics
+domain: Locomotion
+area: humanoid
+subtype: "simulated humanoid sports"
+first_release_date: 2024-06-28
+venue: "arXiv 2024"
+description: "Sports environments for physically simulated humanoids compatible with SMPL and SMPL-X: individual events (golf, javelin, high jump, long jump, hurdling) and competitive 1v1 or 2v2 games (table tennis, tennis, fencing, boxing, soccer, basketball), with baselines that combine motion priors and simple rewards."
+task_count: "11 sports named in the paper (5 individual, 6 competitive)"
+metric_count: "N/A (sport-specific measures)"
+robot_config_count: "1 (simulated SMPL / SMPL-X humanoid)"
+modality: [state, mocap]
+setting: [sim]
+sim_backend: "Isaac Gym"
+data_source:
+  size: "Human motion from mocap and videos, used as motion priors (size not stated)"
+  collection_method: human_demonstration
+resources:
+  homepage: "https://smplolympics.github.io/SMPLOlympics"
+  paper: "https://arxiv.org/abs/2407.00187"
+  code: "https://github.com/SMPLOlympics/SMPLOlympics"
+  data: ""
+  leaderboard: ""

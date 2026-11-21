@@ -1,0 +1,22 @@
+name: DexArt
+domain: Dexterous Manipulation
+area: dex-manipulation
+subtype: "articulated objects, point-cloud RL"
+first_release_date: 2023-05-09
+venue: "CVPR 2023"
+description: "Benchmark of four articulated-object tasks (faucet, bucket, laptop, toilet) for an Allegro Hand on an XArm6 in SAPIEN, with point-cloud observations. Policies are trained on a set of object instances and scored on instances not seen in training."
+task_count: "4 (faucet, bucket, laptop, toilet)"
+metric_count: "1 (success rate on seen / unseen objects)"
+robot_config_count: "1 (XArm6 + Allegro Hand)"
+modality: [pointcloud, proprioceptive]
+setting: [sim]
+sim_backend: "SAPIEN"
+data_source:
+  size: "N/A"
+  collection_method: none
+resources:
+  homepage: "https://www.chenbao.tech/dexart/"
+  paper: "https://arxiv.org/abs/2305.05706"
+  code: "https://github.com/Kami-code/dexart-release"
+  data: ""
+  leaderboard: ""

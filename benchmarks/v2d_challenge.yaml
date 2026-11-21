@@ -1,0 +1,22 @@
+name: "V2D Challenge (Video to Data)"
+domain: Dexterous Manipulation
+area: dex-bimanual
+subtype: "human video to robot, challenge, humanoid"
+first_release_date: 2026-09-21
+venue: "CoRL 2026 tutorial challenge"
+description: "NVIDIA challenge on turning human video into robot skills, with three coupled tracks: monocular 4D human-object reconstruction, robotic grounding (tracking policies for a Unitree G1 with Dex3 hands from clean, corrupted or reconstructed references) and egocentric video-to-policy. Submissions are scored on Kaggle."
+task_count: "3 tracks; 30 episodes each in Tracks 1 and 2"
+metric_count: "Track 2: 4 (AUC, SP-SR, MP-SR, MPPE)"
+robot_config_count: "1 in Track 2 (Unitree G1 + Dex3 hands)"
+modality: [video, RGB, mocap, state]
+setting: [sim]
+sim_backend: "Isaac Lab (starter toolkit)"
+data_source:
+  size: "30 human-object interaction episodes each for Tracks 1 and 2"
+  collection_method: human_demonstration
+resources:
+  homepage: "https://nvidia-isaac.github.io/video_to_data/v2d_challenge/"
+  paper: ""
+  code: "https://github.com/nvidia-isaac/video_to_data"
+  data: "https://huggingface.co/datasets/nvidia/video_to_data_challenge"
+  leaderboard: "https://nvidia-isaac.github.io/video_to_data/v2d_challenge/#leaderboard"

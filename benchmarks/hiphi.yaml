@@ -1,0 +1,22 @@
+name: HiPHI
+domain: Locomotion
+area: motion-data
+subtype: "human motion and object-interaction mocap"
+first_release_date: 2026-08-17
+venue: "CoRL 2026"
+description: "Optical-mocap dataset of whole-body human motion and object interaction, organised by FrameNet action frames: 617.5 hours (308.7 captured) from 132 performers with 40 tracked objects, in BVH with object meshes and trajectories. Its benchmark suite covers motion diversity, interaction quality and humanoid tracking on a Unitree G1."
+task_count: "4 benchmark groups (diversity, interaction, object consistency, physical AI)"
+metric_count: "Several per group (e.g. coverage, jerk, penetration, tracking MPJPE)"
+robot_config_count: "1 (Unitree G1, for the tracking experiments)"
+modality: [mocap, language]
+setting: [real]
+sim_backend: ""
+data_source:
+  size: "617.5 h released (308.7 h captured), 200.1M frames, 132 performers"
+  collection_method: human_demonstration
+resources:
+  homepage: "https://noitom-robotics.github.io/hiphi/"
+  paper: "https://arxiv.org/abs/2608.16222"
+  code: "https://github.com/noitom-robotics/hiphi"
+  data: "https://huggingface.co/datasets/noitomrobotics/HiPHI"
+  leaderboard: ""

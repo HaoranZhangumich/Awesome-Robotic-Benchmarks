@@ -1,0 +1,27 @@
+name: Multi-Agent MuJoCo (MaMuJoCo)
+domain: Other
+area: multi-robot
+subtype: "cooperative continuous control"
+first_release_date: 2020-03-14
+venue: "arXiv 2020"
+
+description: "Cooperative continuous-control benchmark that splits single MuJoCo robots (Ant, HalfCheetah, Humanoid, Walker2d and others) into several agents, each controlling a subset of the joints from local observations. Introduced with FACMAC and now maintained in Gymnasium-Robotics with the PettingZoo API."
+
+task_count: "11 robot environments with configurable agent factorizations"
+metric_count: "1 (team episode return)"
+robot_config_count: "11 MuJoCo robots, each partitioned into agents by joints"
+
+modality: [state, proprioceptive]
+setting: [sim]
+sim_backend: "MuJoCo (Gymnasium-Robotics)"
+
+data_source:
+  size: "N/A"
+  collection_method: none
+
+resources:
+  homepage: "https://robotics.farama.org/envs/MaMuJoCo/"
+  paper: "https://arxiv.org/abs/2003.06709"
+  code: "https://github.com/Farama-Foundation/Gymnasium-Robotics"
+  data: ""
+  leaderboard: ""

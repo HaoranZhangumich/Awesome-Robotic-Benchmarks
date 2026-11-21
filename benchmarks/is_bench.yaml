@@ -1,0 +1,22 @@
+name: IS-Bench
+domain: Safety
+area: embodied-safety
+subtype: "interactive safety, household tasks"
+first_release_date: 2025-06-19
+venue: "AAAI 2026"
+description: "Multimodal benchmark for the interactive safety of VLM-driven household agents in OmniGibson: 161 scenarios with 388 safety risks built on BEHAVIOR-1K scenes. A process-oriented evaluation checks that risk-mitigation steps happen before or after the risky action, not only the final state."
+task_count: "161 scenarios with 388 safety risks"
+metric_count: "4 (success rate, safe success rate, safety recall, safety awareness)"
+robot_config_count: "N/A (agent with 18 primitive skills)"
+modality: [RGB, language]
+setting: [sim]
+sim_backend: "OmniGibson (BEHAVIOR-1K)"
+data_source:
+  size: "161 scenarios with human-verified reference plans"
+  collection_method: mixed
+resources:
+  homepage: "https://ursulalujun.github.io/isbench.github.io/"
+  paper: "https://arxiv.org/abs/2506.16402"
+  code: "https://github.com/AI45Lab/IS-Bench"
+  data: "https://huggingface.co/datasets/Ursulalala/IS_Bench_dataset"
+  leaderboard: ""

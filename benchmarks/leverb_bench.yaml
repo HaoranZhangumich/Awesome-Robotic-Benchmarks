@@ -1,0 +1,22 @@
+name: LeVERB-Bench
+domain: Locomotion
+area: humanoid
+subtype: "vision-language whole-body control"
+first_release_date: 2025-06-16
+venue: "arXiv 2025"
+description: "Vision-language, closed-loop benchmark for humanoid whole-body control: over 150 tasks in 10 categories (navigation, locomotion, sitting, reaching), rendered photorealistically in Isaac Sim from retargeted motion capture and built to be sim-to-real ready. Released with LeVERB, a hierarchical vision-language-action model shown on a Unitree G1."
+task_count: "154 vision-language + 460 language-only tasks (10 categories)"
+metric_count: "1 (success rate)"
+robot_config_count: "1 (Unitree G1)"
+modality: [RGB, language, proprioceptive]
+setting: [sim]
+sim_backend: "Isaac Sim"
+data_source:
+  size: "17.1 h rendered rollouts + 2.7 h language-only data (5,996 demos)"
+  collection_method: human_demonstration
+resources:
+  homepage: "https://ember-center-berkeley.github.io/LeVERB-Website/"
+  paper: "https://arxiv.org/abs/2506.13751"
+  code: ""
+  data: "https://huggingface.co/datasets/ember-lab-berkeley/LeVERB-Bench-Dataset"
+  leaderboard: ""

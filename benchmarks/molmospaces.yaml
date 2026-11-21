@@ -1,0 +1,22 @@
+name: MolmoSpaces
+domain: Manipulation
+area: mobile
+subtype: "large-scale scenes, zero-shot policy evaluation, navigation + manipulation"
+first_release_date: 2026-02-11
+venue: "RSS 2026"
+description: "Open ecosystem of 230k indoor scenes and 130k annotated objects (48k manipulable, 42M grasps), usable in MuJoCo, Isaac and ManiSkill. Its MolmoSpaces-Bench evaluates policies zero-shot on 8 navigation and manipulation tasks in unseen scenes and reports strong sim-to-real correlation; public leaderboard."
+task_count: "8 base tasks (navigate-to, pick, pick-and-place variants, open, close)"
+metric_count: "1 (success rate)"
+robot_config_count: "2 (Franka FR3, Rainbow RB-Y1) plus floating grippers"
+modality: [RGB, proprioceptive, language]
+setting: [sim]
+sim_backend: "MuJoCo for the benchmark (assets also for Isaac and ManiSkill)"
+data_source:
+  size: "230k scenes, 130k objects, 42M grasps (assets; no trajectories)"
+  collection_method: synthetic
+resources:
+  homepage: "https://molmospaces.allen.ai/"
+  paper: "https://arxiv.org/abs/2602.11337"
+  code: "https://github.com/allenai/molmospaces"
+  data: "https://huggingface.co/datasets/allenai/molmospaces"
+  leaderboard: "https://molmospaces.allen.ai/leaderboard"

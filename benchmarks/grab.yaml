@@ -1,0 +1,23 @@
+name: GRAB
+domain: Dexterous Manipulation
+area: hand-object-data
+subtype: "whole-body grasping, contact"
+first_release_date: 2020-08-25
+venue: "ECCV 2020"
+widely_used: true
+description: "Motion-capture dataset of whole-body grasps: 10 subjects interacting with 51 everyday objects under four motion intents, with full 3D body, hand and face meshes, object pose and contact maps. A main data source for grasp synthesis and for retargeting human grasps to robot hands."
+task_count: "N/A"
+metric_count: "N/A"
+robot_config_count: "N/A"
+modality: [mocap, hand pose]
+setting: [real]
+sim_backend: ""
+data_source:
+  size: "10 subjects, 51 objects, 4 motion intents"
+  collection_method: human_demonstration
+resources:
+  homepage: "https://grab.is.tue.mpg.de"
+  paper: "https://arxiv.org/abs/2008.11200"
+  code: "https://github.com/otaheri/GRAB"
+  data: ""
+  leaderboard: ""

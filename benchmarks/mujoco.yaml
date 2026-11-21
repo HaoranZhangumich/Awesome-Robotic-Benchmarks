@@ -1,18 +1,17 @@
 name: MuJoCo
 domain: Simulation
-description: A fast, accurate physics engine for rigid-body simulation in robotics and control.
+area: physics
 first_release_date: 2012
-
-
-physics_engine: MuJoCo
-renderer: OpenGL
+venue: "IROS 2012"
+widely_used: true
+description: "General-purpose physics engine for articulated bodies in contact, maintained by Google DeepMind; the backend of many manipulation and locomotion benchmarks. Batched GPU simulation comes through MJX (JAX) and MuJoCo Warp (with NVIDIA); version 4.0 was released in November 2026."
+physics_engine: "MuJoCo (CPU); MJX (JAX) and MuJoCo Warp for GPU"
+renderer: "OpenGL, Filament; MuJoCo Warp batch ray tracer"
 gpu_support: true
 os: [Linux, Windows, macOS]
-realtime: true
-multi_agent: true
-license: Apache-2.0
-
+license: "Apache-2.0"
 resources:
-  homepage: https://mujoco.org/
-  code: https://github.com/google-deepmind/mujoco
-  paper: https://arxiv.org/abs/2106.02653
+  homepage: "https://mujoco.org/"
+  paper: "https://ieeexplore.ieee.org/document/6386109"
+  code: "https://github.com/google-deepmind/mujoco"
+  docs: "https://mujoco.readthedocs.io/"

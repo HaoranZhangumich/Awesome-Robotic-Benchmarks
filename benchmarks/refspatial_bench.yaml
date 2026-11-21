@@ -1,0 +1,22 @@
+name: RefSpatial-Bench
+domain: Embodied Reasoning
+area: spatial
+subtype: "spatial referring, pointing"
+first_release_date: 2025-06-04
+venue: "NeurIPS 2025"
+description: "Spatial-referring benchmark from RoboRefer. In real cluttered scenes the model must point to the object (Location) or the free space (Placement) picked out by an expression that can need up to five reasoning steps; 77 samples use relation combinations unseen in training."
+task_count: "2 tasks (Location, Placement), 100 samples each; 77-sample Unseen subset"
+metric_count: "1 (success rate: predicted point inside the mask)"
+robot_config_count: "N/A"
+modality: [RGB, language]
+setting: [real]
+sim_backend: ""
+data_source:
+  size: "200 annotated samples; companion RefSpatial training set has 20M QA pairs"
+  collection_method: human_annotation
+resources:
+  homepage: "https://zhoues.github.io/RoboRefer/"
+  paper: "https://arxiv.org/abs/2506.04308"
+  code: "https://github.com/Zhoues/RoboRefer"
+  data: "https://huggingface.co/datasets/BAAI/RefSpatial-Bench"
+  leaderboard: ""

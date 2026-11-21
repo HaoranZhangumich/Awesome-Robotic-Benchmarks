@@ -1,0 +1,22 @@
+name: PARTNR
+domain: Embodied Reasoning
+area: planning
+subtype: "human-robot collaboration, household planning"
+first_release_date: 2024-10-31
+venue: "ICLR 2025"
+description: "Planning And Reasoning Tasks in humaN-Robot collaboration: 100,000 natural-language household tasks, generated with LLMs and grounded in simulation, in which an LLM-planned robot works with a human partner under spatial, temporal and agent-capability constraints."
+task_count: "4 task types (constraint-free, spatial, temporal, heterogeneous)"
+metric_count: "4 (success rate, percent complete, sim steps, planning cycles)"
+robot_config_count: "1 (Spot) with a simulated human partner"
+modality: [RGB, depth, language, state]
+setting: [sim]
+sim_backend: "Habitat 3.0"
+data_source:
+  size: "100,000 train, 1,000 validation and 1,000 test episodes in 60 HSSD houses"
+  collection_method: synthetic
+resources:
+  homepage: "https://aihabitat.org/partnr/"
+  paper: "https://arxiv.org/abs/2411.00081"
+  code: "https://github.com/facebookresearch/partnr-planner"
+  data: ""
+  leaderboard: ""

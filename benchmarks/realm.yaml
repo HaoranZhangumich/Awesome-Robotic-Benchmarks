@@ -1,0 +1,22 @@
+name: REALM
+domain: Generalist
+area: real2sim
+subtype: "real-to-sim validated, perturbation suite, DROID"
+first_release_date: 2025-12-22
+venue: "RA-L 2026"
+description: "Simulation benchmark for VLA generalisation with high-fidelity rendering and robot control aligned to the DROID setup: 10 tasks tested under 15 visual, semantic and behavioural perturbations. Simulated task progress was validated against paired real-world rollouts."
+task_count: "10 (REALM-base 8, REALM-articulated 2) x 15 perturbations"
+metric_count: "2 (tiered task progression, success rate)"
+robot_config_count: "1 (DROID Franka setup)"
+modality: [RGB, proprioceptive, language]
+setting: [sim]
+sim_backend: "Isaac Sim (OmniGibson)"
+data_source:
+  size: "N/A (policies train on DROID)"
+  collection_method: none
+resources:
+  homepage: "https://martin-sedlacek.com/realm"
+  paper: "https://arxiv.org/abs/2512.19562"
+  code: "https://github.com/martin-sedlacek/REALM"
+  data: ""
+  leaderboard: ""

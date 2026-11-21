@@ -1,0 +1,27 @@
+name: D5RL
+domain: Other
+area: offline-rl
+subtype: "offline RL, offline-to-online fine-tuning"
+first_release_date: 2024-08-15
+venue: "RLC 2024"
+
+description: "Offline RL benchmark built on realistic simulations of real robot systems: Unitree A1 legged locomotion, image-based Franka Kitchen (standard and randomized) and WidowX bin sorting. Data mix scripted policies and human-teleoperated play, and tasks are evaluated both offline and after online fine-tuning."
+
+task_count: "4 (A1 locomotion, Franka Kitchen, Randomized Kitchen, WidowX sorting)"
+metric_count: "Task return or success, offline and after online fine-tuning"
+robot_config_count: "3 (Unitree A1, Franka arm, WidowX)"
+
+modality: [RGB, proprioceptive]
+setting: [sim]
+sim_backend: "MuJoCo and PyBullet"
+
+data_source:
+  size: "Per-domain datasets, including over 20 h of teleoperated play for Randomized Kitchen"
+  collection_method: mixed
+
+resources:
+  homepage: "https://sites.google.com/view/d5rl/"
+  paper: "https://arxiv.org/abs/2408.08441"
+  code: "https://github.com/d5rlbenchmark/d5rl"
+  data: ""
+  leaderboard: ""

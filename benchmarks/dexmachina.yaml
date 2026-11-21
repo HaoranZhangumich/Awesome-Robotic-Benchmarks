@@ -1,0 +1,22 @@
+name: DexMachina
+domain: Dexterous Manipulation
+area: dex-bimanual
+subtype: "functional retargeting, articulated objects"
+first_release_date: 2025-05-30
+venue: "ICML 2026"
+description: "Benchmark and curriculum-RL method for functional retargeting: two dexterous hands must reproduce the object motion of ARCTIC human demonstrations on long-horizon tasks with articulated objects. Six robot hands share the same clips in Genesis, which allows hardware designs to be compared."
+task_count: "7 ARCTIC demonstration clips (5 articulated objects)"
+metric_count: "1 (ADD-AUC of object tracking)"
+robot_config_count: "6 hands (Inspire, Allegro, XHand, Schunk, Ability, DexRobot)"
+modality: [state, hand pose]
+setting: [sim]
+sim_backend: "Genesis"
+data_source:
+  size: "7 curated ARCTIC clips plus processed hand assets"
+  collection_method: human_demonstration
+resources:
+  homepage: "https://project-dexmachina.github.io"
+  paper: "https://arxiv.org/abs/2505.24853"
+  code: "https://github.com/MandiZhao/dexmachina"
+  data: ""
+  leaderboard: ""

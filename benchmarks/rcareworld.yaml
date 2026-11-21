@@ -1,0 +1,22 @@
+name: RCareWorld
+domain: HRI
+area: assistive
+subtype: "caregiving simulation"
+first_release_date: 2022-10-19
+venue: "IROS 2022"
+description: "Unity-based simulation world for physical and social caregiving robots, with SMPL-X care-recipient avatars that model mobility limitations, accessible home scenes and assistive devices. Proposes six caregiving benchmark tasks and was the platform of the 2024-25 PhyRC caregiving challenge."
+task_count: "6 (feeding, bathing, dressing, limb repositioning, ambulating, toileting)"
+metric_count: "1 (task success rate)"
+robot_config_count: "10 (Kinova Gen3, Stretch RE1, Franka Panda, PR2 and others)"
+modality: [RGB, depth, force-torque, proprioceptive]
+setting: [sim]
+sim_backend: "Unity (interfaces with several physics engines)"
+data_source:
+  size: "N/A"
+  collection_method: none
+resources:
+  homepage: "https://emprise.cs.cornell.edu/rcareworld/"
+  paper: "https://arxiv.org/abs/2210.10821"
+  code: "https://github.com/empriselab/RCareWorld"
+  data: ""
+  leaderboard: ""

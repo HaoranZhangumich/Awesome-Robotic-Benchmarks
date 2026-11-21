@@ -1,0 +1,22 @@
+name: OakInk2
+domain: Dexterous Manipulation
+area: hand-object-data
+subtype: "bimanual, long-horizon tasks"
+first_release_date: 2024-03-28
+venue: "CVPR 2024"
+description: "Bimanual hand-object manipulation dataset organised in three levels (object affordance, primitive task, complex task), with multi-view image streams and pose annotations for body, hands and objects. Used as a human-motion source for bimanual dexterous transfer, for example in ManipTrans."
+task_count: "N/A"
+metric_count: "N/A"
+robot_config_count: "N/A"
+modality: [RGB, hand pose, mocap, language]
+setting: [real]
+sim_backend: ""
+data_source:
+  size: "Multi-view sequences, 1M-10M frames (dataset card)"
+  collection_method: human_demonstration
+resources:
+  homepage: "https://oakink.net/v2"
+  paper: "https://arxiv.org/abs/2403.19417"
+  code: "https://github.com/oakink/OakInk2"
+  data: "https://huggingface.co/datasets/kelvin34501/OakInk-v2"
+  leaderboard: ""

@@ -1,0 +1,22 @@
+name: "Ego-Exo4D"
+domain: Datasets
+area: human-data
+subtype: "ego and exo video, skilled activities, multimodal"
+first_release_date: 2023-11-30
+venue: "CVPR 2024"
+description: "Time-synchronized first- and third-person video of skilled activities such as cooking, bike repair, sports and music: 1,286 hours from 740 participants in 13 cities, with audio, gaze, IMU, point clouds and expert commentary. Benchmarks cover activity understanding, proficiency, cross-view translation and 3D hand/body pose."
+task_count: "4 benchmark families"
+metric_count: "N/A (per-benchmark challenge metrics)"
+robot_config_count: "N/A (human)"
+modality: [video, audio, GPS_IMU, pointcloud, hand pose, language]
+setting: [real]
+sim_backend: ""
+data_source:
+  size: "1,286 hours of video, 740 participants, 123 scenes"
+  collection_method: human_demonstration
+resources:
+  homepage: "https://ego-exo4d-data.org/"
+  paper: "https://arxiv.org/abs/2311.18259"
+  code: "https://github.com/facebookresearch/Ego4d"
+  data: "https://docs.ego-exo4d-data.org/"
+  leaderboard: ""

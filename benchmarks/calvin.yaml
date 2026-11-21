@@ -1,19 +1,23 @@
 name: CALVIN
 domain: Manipulation
-subtype: table-top
+area: tabletop
+subtype: "table-top, language-conditioned, long-horizon"
 first_release_date: 2021-12-06
-description: "An open-source simulated benchmark for learning long-horizon language-conditioned robot manipulation tasks. It features a Franka Emika Panda arm in four tabletop environments and 34 distinct manipulation tasks with unconstrained language instructions"
-task_count: "34"
-metric_count: "1 (primary metric: success rate)"
-robot_config_count: 1
-modality: [RGB, depth, proprioceptive, language, tactile]
+venue: "RA-L 2022"
+widely_used: true
+description: "Long-horizon language-conditioned manipulation with a Franka Panda in four tabletop environments (A-D). Policies trained on teleoperated play data must complete chains of five instructions; the ABC-to-D split tests zero-shot transfer to an unseen environment."
+task_count: 34
+metric_count: "2 (success rate for 1-5 chained tasks, average sequence length)"
+robot_config_count: "1 (Franka Panda)"
+modality: [RGB, depth, tactile, proprioceptive, language]
 setting: [sim]
 sim_backend: "PyBullet"
 data_source:
-  size: "Hours of teleoperated play data (20K language instructions); 4 environments (A–D) with ~23K trajectories for training"
+  size: "~24 h of teleoperated play data (6 h per environment), 20K language directives"
   collection_method: human_demonstration
 resources:
-  homepage: "https://calvin.cs.uni-freiburg.de (offline, see GitHub)"
-  paper: "https://arxiv.org/abs/2112.03227 "
-  code: "https://github.com/mees/calvin "
-  data: "https://github.com/mees/calvin/tree/main/dataset (download scripts)"
+  homepage: "http://calvin.cs.uni-freiburg.de/"
+  paper: "https://arxiv.org/abs/2112.03227"
+  code: "https://github.com/mees/calvin"
+  data: "https://github.com/mees/calvin/tree/main/dataset"
+  leaderboard: "http://calvin.cs.uni-freiburg.de/"

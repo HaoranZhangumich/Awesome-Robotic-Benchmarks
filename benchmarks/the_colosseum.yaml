@@ -1,0 +1,22 @@
+name: THE COLOSSEUM
+domain: Generalist
+area: probes
+subtype: "generalisation under perturbations, RLBench"
+first_release_date: 2024-02-13
+venue: "RSS 2024"
+description: "RLBench-based generalisation benchmark: 20 manipulation tasks evaluated under 14 perturbation factors covering object, table and background colour, texture and size, lighting, distractors, physical properties and camera pose. A matching real-world setup with 3D-printable objects is provided."
+task_count: "20 tasks x 14 perturbation factors"
+metric_count: "1 (success rate and its drop under perturbation)"
+robot_config_count: "1 (Franka Panda, RLBench default)"
+modality: [RGB, depth, proprioceptive, language]
+setting: [sim]
+sim_backend: "CoppeliaSim (PyRep / RLBench)"
+data_source:
+  size: "100 training demos per task; 25 test episodes per task and factor"
+  collection_method: motion_planner
+resources:
+  homepage: "https://robot-colosseum.github.io/"
+  paper: "https://arxiv.org/abs/2402.08191"
+  code: "https://github.com/robot-colosseum/robot-colosseum"
+  data: "https://huggingface.co/datasets/colosseum/colosseum-challenge"
+  leaderboard: ""

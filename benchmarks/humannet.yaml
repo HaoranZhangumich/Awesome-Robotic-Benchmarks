@@ -1,0 +1,22 @@
+name: "HumanNet"
+domain: Datasets
+area: human-data
+subtype: "human video, million-hour scale, egocentric subset"
+first_release_date: 2026-05-07
+venue: "arXiv 2026"
+description: "Curated human-centric video corpus of about one million hours, first- and third-person, with captions, motion descriptions and hand/body signals for embodied pretraining. Public so far: HumanNet Ego (about 200,000 egocentric hours) and Open-HumanWAM-50K, a 50,000-hour multi-source mix with hand-motion and language labels."
+task_count: "N/A"
+metric_count: "N/A"
+robot_config_count: "N/A (human)"
+modality: [video, hand pose, language]
+setting: [real]
+sim_backend: ""
+data_source:
+  size: "1M hours described; 200K-hour egocentric subset and 50K-hour mix released"
+  collection_method: human_demonstration
+resources:
+  homepage: "https://dagroup-pku.github.io/HumanNet/"
+  paper: "https://arxiv.org/abs/2605.06747"
+  code: "https://github.com/DAGroup-PKU/HumanNet"
+  data: "https://huggingface.co/datasets/DAGroup-PKU/HumanNet"
+  leaderboard: ""

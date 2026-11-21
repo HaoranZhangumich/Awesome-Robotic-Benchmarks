@@ -1,0 +1,22 @@
+name: OmniRetarget Dataset
+domain: Locomotion
+area: motion-data
+subtype: "retargeted humanoid loco-manipulation references"
+first_release_date: 2025-09-30
+venue: "ICRA 2026"
+description: "Unitree G1 reference trajectories produced by OmniRetarget, an interaction-mesh retargeting engine that preserves contacts between robot, objects and terrain: object carrying retargeted from OMOMO, plus terrain climbing and object-terrain motions from in-house mocap. Built for training whole-body tracking policies for loco-manipulation and scene interaction."
+task_count: "N/A (dataset)"
+metric_count: "N/A"
+robot_config_count: "1 (Unitree G1)"
+modality: [state, mocap]
+setting: [real]
+sim_backend: ""
+data_source:
+  size: "4.0 hours (3.0 h object carrying, 1.0 h terrain and object-terrain)"
+  collection_method: mixed
+resources:
+  homepage: "https://omniretarget.github.io"
+  paper: "https://arxiv.org/abs/2509.26633"
+  code: "https://github.com/amazon-far/holosoma"
+  data: "https://huggingface.co/datasets/omniretarget/OmniRetarget_Dataset"
+  leaderboard: ""

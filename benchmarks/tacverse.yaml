@@ -1,0 +1,21 @@
+name: "TacVerse"
+domain: Datasets
+area: robot-data
+subtype: "visuo-tactile, UMI-style, bimanual"
+first_release_date: 2026-09
+description: "Bimanual visuo-tactile dataset from Xense Robotics, recorded with handheld UMI grippers that carry a visuotactile sensor on each finger, so every frame has four tactile streams next to the camera views. Released so far: 1,400+ hours and 75,000+ episodes over 150+ contact-rich tasks."
+task_count: "150+ released (350+ planned)"
+metric_count: "N/A"
+robot_config_count: "N/A (handheld XTac-UMI-G1 gripper pair)"
+modality: [RGB, tactile, proprioceptive, language]
+setting: [real]
+sim_backend: ""
+data_source:
+  size: "75,000+ episodes, 1,400+ hours released (10,000+ hours planned)"
+  collection_method: human_demonstration
+resources:
+  homepage: "https://huggingface.co/datasets/TacVerse/TacVerse"
+  paper: ""
+  code: ""
+  data: "https://huggingface.co/datasets/TacVerse/TacVerse"
+  leaderboard: ""

@@ -1,0 +1,22 @@
+name: RoboEval
+domain: Manipulation
+area: bimanual
+subtype: "bimanual, behavioural metrics"
+first_release_date: 2025-07-01
+venue: "arXiv 2025"
+description: "Bimanual benchmark that scores how a task is done, not only whether it succeeds: 8 tasks with 30 controlled variations and 3,000+ VR-teleoperated demonstrations, instrumented with stage-wise progress, efficiency, coordination and safety metrics. Has a leaderboard and hosted a CoRL 2026 challenge track."
+task_count: "8 task families (30 variations)"
+metric_count: "4 groups (outcome, efficiency, coordination, safety / stability)"
+robot_config_count: "1 (bimanual Franka Panda)"
+modality: [RGB, proprioceptive]
+setting: [sim]
+sim_backend: "MuJoCo"
+data_source:
+  size: "3,000+ human demonstrations (VR teleoperation)"
+  collection_method: human_demonstration
+resources:
+  homepage: "https://robo-eval.github.io/"
+  paper: "https://arxiv.org/abs/2507.00435"
+  code: "https://github.com/Robo-Eval/RoboEval"
+  data: ""
+  leaderboard: "https://robo-eval.github.io/#leaderboard"

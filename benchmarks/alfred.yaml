@@ -1,25 +1,23 @@
 name: ALFRED
 domain: Navigation
-subtype: "navigation+manipulation"
-first_release_date: 2020-06-01
-
-description: "Household instruction-following benchmark that maps egocentric vision + language to action sequences in AI2-THOR."
-
-task_count: 7
-metric_count: 2
-robot_config_count: 1
-
-modality: [RGB, depth, semantic, language]
+area: interactive
+subtype: "household instruction following, navigation + manipulation"
+first_release_date: 2019-12-03
+venue: "CVPR 2020"
+widely_used: true
+description: "Household instruction-following benchmark that maps egocentric vision and language (a high-level goal plus step-by-step instructions) to long action sequences with irreversible state changes in AI2-THOR. The long-standing reference for interactive instruction following."
+task_count: "7 task types"
+metric_count: "4 (success rate, goal-condition success, and path-length-weighted versions)"
+robot_config_count: "1 (AI2-THOR agent)"
+modality: [RGB, language]
 setting: [sim]
-sim_backend: "AI2-THOR 2.0"
-
+sim_backend: "AI2-THOR 2.1.0"
 data_source:
-  size: "25,743 directives; 8,055 expert demos"
-  collection_method: "both"
-
+  size: "25k language directives over 8k+ expert demonstrations"
+  collection_method: mixed
 resources:
   homepage: "https://askforalfred.com/"
-  paper: "https://openaccess.thecvf.com/content_CVPR_2020/papers/Shridhar_ALFRED_A_Benchmark_for_Interpreting_Grounded_Instructions_for_Everyday_Tasks_CVPR_2020_paper.pdf"
+  paper: "https://arxiv.org/abs/1912.01734"
   code: "https://github.com/askforalfred/alfred"
-  data: "https://github.com/askforalfred/alfred-data"
-  leaderboard: "https://leaderboard.allenai.org/alfred"
+  data: "https://github.com/askforalfred/alfred/tree/master/data"
+  leaderboard: "https://askforalfred.com/leaderboard/leaderboard.html"

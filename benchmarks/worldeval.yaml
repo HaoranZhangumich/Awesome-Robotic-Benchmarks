@@ -1,0 +1,22 @@
+name: WorldEval
+domain: World Models
+area: wm-policy-eval
+subtype: "world model as real-robot policy evaluator, latent-action conditioning"
+first_release_date: 2025-05-25
+venue: "arXiv 2025"
+description: "Pipeline that evaluates real-world manipulation policies inside a video world model driven by the policy's own latent actions (Policy2Vec). Validated on a bimanual AgileX robot against 1,000+ real trials of Diffusion Policy, OpenVLA, DexVLA and pi0; dWorldEval is its 2026 follow-up."
+task_count: "5 (bussing table, collect toy, place cup, handover block, strike block)"
+metric_count: "2 (Pearson r, MMRV against real-world success)"
+robot_config_count: "1 (bimanual AgileX, ALOHA-style)"
+modality: [RGB, video, language]
+setting: [real]
+sim_backend: ""
+data_source:
+  size: "1,400 real trajectories to train the world model; 1,000+ real evaluation trials"
+  collection_method: human_demonstration
+resources:
+  homepage: "https://worldeval.github.io"
+  paper: "https://arxiv.org/abs/2505.19017"
+  code: "https://github.com/liyaxuanliyaxuan/Worldeval"
+  data: ""
+  leaderboard: ""

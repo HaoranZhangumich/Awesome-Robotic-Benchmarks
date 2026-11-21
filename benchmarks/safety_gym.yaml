@@ -1,23 +1,23 @@
 name: Safety Gym
 domain: Safety
-subtype: ""
-first_release_date: 2019-04-30
-
-description: "Constrained-RL benchmark with hazard/constraint costs across goal, push, and button tasks and multiple robots."
-
-task_count: 18
-metric_count: 3
-robot_config_count: 3
-
+area: safe-rl
+subtype: "constrained RL, safe exploration"
+first_release_date: 2019-11-21
+venue: "OpenAI preprint 2019"
+widely_used: true
+description: "Constrained-RL benchmark with hazard/constraint costs across goal, button and push tasks and three robots. The original safe-exploration suite from OpenAI; the repository is archived and Safety-Gymnasium is its maintained successor."
+task_count: "18 (3 robots x 3 tasks x 2 constrained levels), plus 9 unconstrained"
+metric_count: "3 (normalized return, constraint violation, cost rate)"
+robot_config_count: "3 (Point, Car, Doggo)"
 modality: [lidar, proprioceptive]
 setting: [sim]
-sim_backend: "MuJoCo"
-
+sim_backend: "MuJoCo (mujoco-py)"
 data_source:
-  size: "N/A (simulated training/eval)"
-  collection_method: "unknown"
-
+  size: "N/A"
+  collection_method: none
 resources:
-  homepage: "https://openai.com/research/safety-gym"
+  homepage: "https://openai.com/index/safety-gym/"
   paper: "https://cdn.openai.com/safexp-short.pdf"
   code: "https://github.com/openai/safety-gym"
+  data: ""
+  leaderboard: ""

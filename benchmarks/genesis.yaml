@@ -1,13 +1,15 @@
-name: Genesis
+name: Genesis (Genesis World)
 domain: Simulation
-description: "GPU-accelerated universal simulator with photorealistic rendering; targets high-throughput robot learning."
-first_release_date: "2024-12-24"
-physics_engine: "Genesis (rigid/soft fluids)"
-renderer: "Photorealistic rasterization + ray tracing"
+area: physics
+first_release_date: 2024-12-18
+description: "Multi-physics simulation platform with a Python interface: rigid, FEM, MPM, SPH, PBD and IPC solvers share one scene and run as batched GPU environments. Started as an academic project in December 2024; renamed Genesis World, with a 1.0 release in May 2026 backed by Genesis AI."
+physics_engine: "Genesis multi-physics (rigid, FEM, MPM, SPH, PBD, IPC)"
+renderer: "Nyx; LuisaRender ray tracer; PyRender rasteriser"
 gpu_support: true
-os: ["Linux", "Windows", "macOS"]
+os: [Linux, Windows, macOS]
 license: "Apache-2.0"
 resources:
-  homepage: "https://genesis-embodied-ai.github.io"
-  code: "https://github.com/Genesis-Embodied-AI/Genesis"
-  docs: "https://genesis-embodied-ai.readthedocs.io"
+  homepage: "https://genesis-world.readthedocs.io/"
+  paper: ""
+  code: "https://github.com/Genesis-Embodied-AI/genesis-world"
+  docs: "https://genesis-world.readthedocs.io/"

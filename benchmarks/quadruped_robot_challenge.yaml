@@ -1,0 +1,22 @@
+name: ICRA Quadruped Robot Challenge (QRC)
+domain: Locomotion
+area: legged
+subtype: "real-robot competition, autonomous terrain traversal"
+first_release_date: 2023
+venue: "ICRA / IROS competition (since ICRA 2023)"
+description: "Real-robot competition held at ICRA and IROS since 2023 that tests autonomous traversal of varied terrain; later stages added inspection missions and multi-robot collaboration. At ICRA 2026 it was extended to humanoids as the Legged Robot Challenges."
+task_count: "N/A (terrain course; stages change per edition)"
+metric_count: "N/A"
+robot_config_count: "Teams bring their own quadruped (humanoids from 2026)"
+modality: ["onboard sensors (team's choice)"]
+setting: [real]
+sim_backend: ""
+data_source:
+  size: "N/A"
+  collection_method: none
+resources:
+  homepage: "https://quadruped-robot-challenges.notion.site/"
+  paper: "https://doi.org/10.1109/MRA.2023.3293296"
+  code: ""
+  data: ""
+  leaderboard: "https://quadruped-robot-challenges.notion.site/ICRA-2026-Legged-Robot-Challenges-286ec5124feb805eb1c1cc14261a7fdf"

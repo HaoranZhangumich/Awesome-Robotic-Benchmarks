@@ -1,0 +1,22 @@
+name: ACRONYM
+domain: Manipulation
+area: grasping
+subtype: "6-DoF grasps, simulation-labelled"
+first_release_date: 2020-11-18
+venue: "ICRA 2021"
+description: "Simulation-labelled dataset of 17.7 million parallel-jaw grasps on 8,872 ShapeNetSem objects from 262 categories, each tested in the FleX physics simulator with a Franka Panda gripper model. Comes with tools to build cluttered scenes; a common training source for learned 6-DoF grasp generators."
+task_count: "N/A (grasp dataset)"
+metric_count: "N/A (one simulated success label per grasp)"
+robot_config_count: "1 (Franka Panda gripper)"
+modality: ["3D assets", "grasp poses"]
+setting: [sim]
+sim_backend: "NVIDIA FleX"
+data_source:
+  size: "17.7M grasps, 8,872 objects, 262 categories"
+  collection_method: synthetic
+resources:
+  homepage: ""
+  paper: "https://arxiv.org/abs/2011.09584"
+  code: "https://github.com/NVlabs/acronym"
+  data: ""
+  leaderboard: ""

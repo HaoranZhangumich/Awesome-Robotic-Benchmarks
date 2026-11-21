@@ -1,0 +1,23 @@
+name: "DROID"
+domain: Datasets
+area: robot-data
+subtype: "single embodiment, in-the-wild, multi-institution"
+first_release_date: 2024-03-19
+venue: "RSS 2024"
+widely_used: true
+description: "In-the-wild manipulation data collected by 13 institutions with one shared Franka Panda setup: 76k teleoperated trajectories (350 hours) over 564 scenes and 84 tasks, with three stereo cameras and language annotations."
+task_count: "84 tasks, 564 scenes"
+metric_count: "N/A"
+robot_config_count: "1 (Franka Panda)"
+modality: [RGB, depth, proprioceptive, language]
+setting: [real]
+sim_backend: ""
+data_source:
+  size: "76k trajectories, 350 hours"
+  collection_method: human_demonstration
+resources:
+  homepage: "https://droid-dataset.github.io/"
+  paper: "https://arxiv.org/abs/2403.12945"
+  code: "https://github.com/droid-dataset/droid"
+  data: "https://droid-dataset.github.io/droid/the-droid-dataset"
+  leaderboard: ""

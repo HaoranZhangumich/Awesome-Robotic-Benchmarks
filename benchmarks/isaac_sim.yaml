@@ -1,0 +1,16 @@
+name: Isaac Sim
+domain: Simulation
+area: physics
+first_release_date: 2021-06
+widely_used: true
+description: "NVIDIA's robotics simulator on Omniverse with RTX-rendered sensors, synthetic data generation and ROS 2 bridges; the base of Isaac Lab and of many embodied-AI platforms. Open-sourced under Apache-2.0 with version 5.0 (2025); version 6 (2026) adds Newton as a second physics backend next to PhysX."
+physics_engine: "PhysX 5 (GPU); Newton backend since 6.0"
+renderer: "Omniverse RTX (ray tracing / path tracing)"
+gpu_support: true
+os: [Linux, Windows]
+license: "Apache-2.0 (code); Omniverse Kit and assets under NVIDIA terms"
+resources:
+  homepage: "https://developer.nvidia.com/isaac/sim"
+  paper: ""
+  code: "https://github.com/isaac-sim/IsaacSim"
+  docs: "https://docs.isaacsim.omniverse.nvidia.com/latest/index.html"

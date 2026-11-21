@@ -1,0 +1,22 @@
+name: ARNOLD
+domain: Manipulation
+area: tabletop
+subtype: "language-grounded, continuous goal states"
+first_release_date: 2023-04-09
+venue: "ICCV 2023"
+description: "Language-grounded manipulation with continuous goal states (for example, how far a drawer is opened or how much water is poured) in photo-realistic Isaac Sim scenes: 8 tasks, 40 objects, 20 scenes and 10k demonstrations, with splits for novel objects, scenes and goal states."
+task_count: 8
+metric_count: "1 (success rate)"
+robot_config_count: "1 (Franka Panda)"
+modality: [RGB, depth, proprioceptive, language]
+setting: [sim]
+sim_backend: "NVIDIA Isaac Sim"
+data_source:
+  size: "10k expert demos from a keypoint-based motion planner, template language"
+  collection_method: motion_planner
+resources:
+  homepage: "https://arnold-benchmark.github.io/"
+  paper: "https://arxiv.org/abs/2304.04321"
+  code: "https://github.com/arnold-benchmark/arnold"
+  data: ""
+  leaderboard: "https://sites.google.com/view/arnoldchallenge/"

@@ -1,25 +1,23 @@
-name: Habitat Navigation (PointNav/ObjectNav/ImageNav)
+name: Habitat Navigation Challenge (PointNav / ObjectNav / ImageNav)
 domain: Navigation
-subtype: ""
-first_release_date: 2019-10-27
-
-description: "Photoreal embodied navigation benchmarks (PointNav, ObjectNav, ImageNav) run in Habitat-Sim with standard metrics like Success and SPL."
-
-task_count: 3          # PointNav, ObjectNav, ImageNav
-metric_count: 2        # Success, SPL (common in challenges)
-robot_config_count: 1  # single mobile agent in sim
-
-modality: [RGB, depth, semantic]
+area: goal-nav
+subtype: "PointNav, ObjectNav, ImageNav on real-building scans"
+first_release_date: 2019-04-02
+venue: "ICCV 2019"
+widely_used: true
+description: "Photorealistic embodied navigation benchmarks run in Habitat-Sim on real-building scans: PointNav, ObjectNav and instance ImageNav, scored by Success and SPL. The yearly challenge ran from 2019 to 2023; HM3D-Semantics ObjectNav remains the standard object-goal benchmark."
+task_count: "3 (PointNav, ObjectNav, ImageNav)"
+metric_count: "2 (Success, SPL)"
+robot_config_count: "1 (simulated mobile robot; Stretch-like in 2023)"
+modality: [RGB, depth, GPS_IMU]
 setting: [sim]
 sim_backend: "Habitat-Sim"
-
 data_source:
-  size: "large-scale episodes from HM3D/MP3D/Gibson splits (varies by year)"
-  collection_method: "synthetic"
-
+  size: "2023 edition: HM3D-Semantics v0.2, 216 scenes (145/36/35), 6 goal categories"
+  collection_method: synthetic
 resources:
-  homepage: "https://aihabitat.org/"
+  homepage: "https://aihabitat.org/challenge/2023/"
   paper: "https://arxiv.org/abs/1904.01201"
-  code: "https://github.com/facebookresearch/habitat-challenge"
-  data: "https://github.com/facebookresearch/habitat-challenge#dataset"
-  leaderboard: "https://aihabitat.org/challenge/"
+  code: "https://github.com/facebookresearch/habitat-lab"
+  data: "https://github.com/facebookresearch/habitat-lab/blob/main/DATASETS.md"
+  leaderboard: "https://eval.ai/web/challenges/challenge-page/1992/overview"

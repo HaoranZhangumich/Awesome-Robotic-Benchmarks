@@ -1,0 +1,21 @@
+name: "HIW-500"
+domain: Datasets
+area: robot-data
+subtype: "humanoid, in-the-wild homes, whole-body teleoperation"
+first_release_date: 2026-06
+description: "Humanoids In-the-Wild: whole-body teleoperation of a Unitree G1 with grippers in real homes in Southeast Asia, covering mobile and bimanual household chores. Version 1 offers 500+ hours with head and wrist stereo cameras, joint states, odometry and fine-grained subtask labels."
+task_count: "11 tasks, 161 subtask labels (LeRobot release)"
+metric_count: "N/A"
+robot_config_count: "1 (Unitree G1)"
+modality: [RGB, proprioceptive, GPS_IMU, language]
+setting: [real]
+sim_backend: ""
+data_source:
+  size: "500+ hours (V1); 23,743 episodes in the LeRobot-format release"
+  collection_method: human_demonstration
+resources:
+  homepage: "https://bitrobot-foundation.github.io/humanoids-in-the-wild-500-hours/"
+  paper: ""
+  code: ""
+  data: "https://huggingface.co/datasets/BitRobot/HIW-500-LeRobot"
+  leaderboard: ""

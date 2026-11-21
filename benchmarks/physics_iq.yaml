@@ -1,0 +1,23 @@
+name: Physics-IQ
+domain: World Models
+area: wm-physics
+subtype: "physical understanding, video continuation, real footage"
+first_release_date: 2025-01-14
+venue: "arXiv 2025"
+widely_used: true
+description: "Real-video benchmark from Google DeepMind: a model sees the start of a filmed physical event and must continue it; the output is compared with the true footage. 396 clips cover 66 scenarios in mechanics, fluids, optics, thermodynamics and magnetism. A Verified variant keeps a public leaderboard."
+task_count: "66 scenarios in 5 physics categories"
+metric_count: "4 (spatial IoU, spatiotemporal IoU, weighted spatial IoU, MSE) -> Physics-IQ score"
+robot_config_count: "N/A"
+modality: [video, RGB, language]
+setting: [real]
+sim_backend: ""
+data_source:
+  size: "396 videos of 8 s (66 scenarios x 3 camera views x 2 takes)"
+  collection_method: human_annotation
+resources:
+  homepage: "https://physics-iq.github.io"
+  paper: "https://arxiv.org/abs/2501.09038"
+  code: "https://github.com/google-deepmind/physics-IQ-benchmark"
+  data: ""
+  leaderboard: "https://physics-iq-verified.anates.ai"

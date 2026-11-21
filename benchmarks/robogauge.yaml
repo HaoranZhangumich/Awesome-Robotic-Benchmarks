@@ -1,0 +1,22 @@
+name: RoboGauge
+domain: Locomotion
+area: legged
+subtype: "quadruped, sim-to-real prediction"
+first_release_date: 2026-01-31
+venue: "RSS 2026"
+description: "Assessment suite that scores a quadruped locomotion policy in MuJoCo sim-to-sim tests before hardware deployment: terrains at ten difficulty levels, domain randomisation and proprioception-based metrics chosen to predict sim-to-real transfer. Released with a mixture-of-experts policy for the Unitree Go2."
+task_count: "5 terrain types (flat, wave, slope, stairs, obstacles) x 10 difficulty levels"
+metric_count: "6 (e.g. DoF limits, DoF power, velocity error, torque smoothness, orientation)"
+robot_config_count: "1 (Unitree Go2)"
+modality: [proprioceptive]
+setting: [sim]
+sim_backend: "MuJoCo (policies trained in Isaac Gym)"
+data_source:
+  size: "N/A"
+  collection_method: none
+resources:
+  homepage: "https://robogauge.github.io/complete/"
+  paper: "https://arxiv.org/abs/2602.00678"
+  code: "https://github.com/wty-yy/RoboGauge"
+  data: ""
+  leaderboard: ""

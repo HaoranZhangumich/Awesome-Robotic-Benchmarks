@@ -1,0 +1,22 @@
+name: TouchSafeBench
+domain: Safety
+area: embodied-safety
+subtype: "VLM safety monitors, human-robot collision"
+first_release_date: 2026-05-29
+venue: "CoRL 2026"
+description: "Physics-grounded benchmark of collision grounding for VLMs used as safety monitors in human-robot collaboration: 2,940 simulated indoor co-presence episodes from social navigation and social rearrangement in Habitat 3.0, with multi-view RGB-D and simulator contact labels. Models classify the current safety state and warn of imminent collisions."
+task_count: "2 (current safety state, imminent-collision warning); 2,940 episodes"
+metric_count: "2 (macro-F1, false-alarm rate)"
+robot_config_count: "1 (mobile manipulator in Habitat 3.0)"
+modality: [RGB, depth]
+setting: [sim]
+sim_backend: "Habitat 3.0"
+data_source:
+  size: "2,940 episodes with multi-view RGB-D and contact labels"
+  collection_method: mixed
+resources:
+  homepage: "https://jun25336-bit.github.io/TouchSafeBench/"
+  paper: "https://arxiv.org/abs/2605.31196"
+  code: "https://github.com/jun25336-bit/TouchSafeBench"
+  data: "https://huggingface.co/datasets/face12345/TouchSafeBench"
+  leaderboard: ""

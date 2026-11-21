@@ -1,0 +1,22 @@
+name: PlasticineLab
+domain: Manipulation
+area: deformable
+subtype: "soft-body, differentiable physics"
+first_release_date: 2021-04-07
+venue: "ICLR 2021 (Spotlight)"
+description: "Differentiable-physics benchmark of 10 soft-body manipulation tasks (50 configurations) in which kinematic manipulators pinch, roll, chop and mould plasticine into target shapes. Its Taichi-based simulator provides gradients, so the benchmark compares reinforcement learning with gradient-based planning."
+task_count: "10 tasks, 50 configurations"
+metric_count: "1 (normalized incremental IoU)"
+robot_config_count: "task-specific kinematic manipulators (no robot arm)"
+modality: [state]
+setting: [sim]
+sim_backend: "Taichi / DiffTaichi (differentiable MPM)"
+data_source:
+  size: "N/A"
+  collection_method: none
+resources:
+  homepage: "https://plasticinelab.csail.mit.edu/"
+  paper: "https://arxiv.org/abs/2104.03311"
+  code: "https://github.com/hzaskywalker/PlasticineLab"
+  data: ""
+  leaderboard: ""

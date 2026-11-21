@@ -1,0 +1,22 @@
+name: "EgoVerse"
+domain: Datasets
+area: human-data
+subtype: "egocentric video, human-to-robot transfer, living dataset"
+first_release_date: 2026-04-08
+venue: "RSS 2026"
+description: "Consortium-run, continuously growing egocentric dataset built for robot learning, with per-frame 3D hand poses, head poses and language annotation in a shared format. The paper release has 1,362 hours (80k episodes) over 1,965 tasks from 2,087 demonstrators and a multi-lab study of human-to-robot transfer."
+task_count: "1,965 tasks, 240 scenes"
+metric_count: "N/A"
+robot_config_count: "N/A (human; transfer tested on several robots)"
+modality: [video, hand pose, language]
+setting: [real]
+sim_backend: ""
+data_source:
+  size: "1,362 hours, 80k episodes (paper); 4,003 hours on the site (Nov 2026)"
+  collection_method: human_demonstration
+resources:
+  homepage: "https://egoverse.ai/"
+  paper: "https://arxiv.org/abs/2604.07607"
+  code: "https://github.com/GaTech-RL2/EgoVerse"
+  data: "https://egoverse-research-workbench.vercel.app/"
+  leaderboard: ""

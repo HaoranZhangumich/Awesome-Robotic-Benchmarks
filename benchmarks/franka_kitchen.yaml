@@ -1,0 +1,23 @@
+name: Franka Kitchen
+domain: Manipulation
+area: tabletop
+subtype: "kitchen, long-horizon, multi-task"
+first_release_date: 2019-10-25
+venue: "CoRL 2019"
+widely_used: true
+description: "Kitchen scene from Relay Policy Learning: a 9-DoF Franka arm must complete sequences of sub-tasks (microwave, kettle, burners, light switch, cabinets) learned from unstructured VR demonstrations. A staple of offline-RL (D4RL) and behaviour-cloning papers; maintained in Gymnasium-Robotics."
+task_count: "7 sub-tasks, combined into multi-task sequences"
+metric_count: "1 (number of sub-tasks completed)"
+robot_config_count: "1 (9-DoF Franka)"
+modality: [state, proprioceptive]
+setting: [sim]
+sim_backend: "MuJoCo"
+data_source:
+  size: "400 VR-teleoperated demo sequences; also in D4RL / Minari kitchen datasets"
+  collection_method: human_demonstration
+resources:
+  homepage: "https://relay-policy-learning.github.io/"
+  paper: "https://arxiv.org/abs/1910.11956"
+  code: "https://github.com/Farama-Foundation/Gymnasium-Robotics"
+  data: "https://minari.farama.org/datasets/D4RL/kitchen/"
+  leaderboard: ""

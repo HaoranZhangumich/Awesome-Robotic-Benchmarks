@@ -1,0 +1,22 @@
+name: MemoryBench (SAM2Act)
+domain: Generalist
+area: probes
+subtype: "spatial memory, RLBench"
+first_release_date: 2025-01-30
+venue: "ICML 2025"
+description: "Three RLBench tasks introduced with SAM2Act (reopen drawer, put block back, rearrange block). An intermediate step breaks the Markov property, so the policy must recall earlier object locations and its own past actions."
+task_count: 3
+metric_count: "1 (success rate)"
+robot_config_count: "1 (Franka Panda, RLBench default)"
+modality: [RGB, depth, proprioceptive, language]
+setting: [sim]
+sim_backend: "CoppeliaSim (RLBench)"
+data_source:
+  size: "100 training and 25 test scripted demos per task"
+  collection_method: motion_planner
+resources:
+  homepage: "https://sam2act.github.io/"
+  paper: "https://arxiv.org/abs/2501.18564"
+  code: "https://github.com/sam2act/sam2act"
+  data: "https://huggingface.co/datasets/hqfang/memorybench"
+  leaderboard: ""

@@ -1,0 +1,16 @@
+name: mjlab
+domain: Simulation
+area: learning-framework
+first_release_date: 2025-09-29
+venue: "arXiv 2026"
+description: "Lightweight robot-learning framework that pairs Isaac Lab's manager-based API with MuJoCo Warp, with few dependencies and direct access to native MuJoCo data structures. Ships velocity-tracking, motion-imitation and manipulation tasks; training needs an NVIDIA GPU."
+physics_engine: "MuJoCo Warp"
+renderer: "MuJoCo Warp ray-traced cameras; native MuJoCo and Viser viewers"
+gpu_support: true
+os: [Linux, macOS]
+license: "Apache-2.0"
+resources:
+  homepage: "https://mujocolab.github.io/mjlab/"
+  paper: "https://arxiv.org/abs/2601.22074"
+  code: "https://github.com/mujocolab/mjlab"
+  docs: "https://mujocolab.github.io/mjlab/"

@@ -1,0 +1,22 @@
+name: URBAN-SIM / URBAN-BENCH
+domain: Navigation
+area: outdoor
+subtype: "urban micromobility, locomotion + navigation, cross-embodiment"
+first_release_date: 2025-05-01
+venue: "CVPR 2025"
+description: "GPU-parallel robot-learning platform for city scenes on Isaac Sim, with URBAN-BENCH: eight tasks covering urban locomotion, urban navigation and a long urban traverse, evaluated on wheeled, quadruped, wheeled-legged and humanoid robots."
+task_count: "8 (4 urban locomotion, 3 urban navigation, 1 urban traverse)"
+metric_count: "task-specific (e.g. success rate, route completion, SPL, collisions)"
+robot_config_count: "4 (COCO delivery robot, Unitree Go2, Unitree B2-W, Unitree G1)"
+modality: [RGB, depth, proprioceptive]
+setting: [sim]
+sim_backend: "Isaac Sim (Omniverse, PhysX 5)"
+data_source:
+  size: "N/A (procedurally generated scenes)"
+  collection_method: none
+resources:
+  homepage: "https://metadriverse.github.io/urban-sim/"
+  paper: "https://arxiv.org/abs/2505.00690"
+  code: "https://github.com/metadriverse/urban-sim"
+  data: ""
+  leaderboard: ""

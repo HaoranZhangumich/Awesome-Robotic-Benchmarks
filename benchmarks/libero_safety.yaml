@@ -1,0 +1,22 @@
+name: LIBERO-Safety
+domain: Safety
+area: embodied-safety
+subtype: "VLA safety, physical and semantic"
+first_release_date: 2026-06-22
+venue: "ECCV 2026"
+description: "Safety benchmark for vision-language-action models built on LIBERO: five suites (affordance-aware grasping, human-robot interaction, tabletop avoidance, free-space hand-object avoidance, semantic safety reasoning) at three difficulty levels, with procedurally randomized scenes and collision-free planner demonstrations."
+task_count: "75 (5 suites x 5 tasks x 3 levels)"
+metric_count: "5 (success rate, collision rate, refusal rate, execution time, jerk)"
+robot_config_count: "1 (Franka Panda, as in LIBERO)"
+modality: [RGB, proprioceptive, language]
+setting: [sim]
+sim_backend: "LIBERO (robosuite / MuJoCo)"
+data_source:
+  size: "19,664 collision-free demonstrations over 40 tasks"
+  collection_method: motion_planner
+resources:
+  homepage: "https://libero-safety.github.io/"
+  paper: "https://arxiv.org/abs/2606.23686"
+  code: "https://github.com/LIBERO-SAFETY/LIBERO-Safety"
+  data: "https://huggingface.co/datasets/LIBERO-Safety/libero_safety"
+  leaderboard: ""

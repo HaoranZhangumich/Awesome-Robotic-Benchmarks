@@ -1,0 +1,23 @@
+name: "Open X-Embodiment"
+domain: Datasets
+area: robot-data
+subtype: "cross-embodiment, aggregated, real robot"
+first_release_date: 2023-10-13
+venue: "ICRA 2024"
+widely_used: true
+description: "Pool of existing real-robot datasets from 34 labs converted to one RLDS format: over 1M trajectories, 22 embodiments and 527 skills at release. The usual pretraining corpus for generalist manipulation policies, starting with RT-X."
+task_count: "527 skills (160,266 tasks)"
+metric_count: "N/A"
+robot_config_count: 22
+modality: [RGB, depth, proprioceptive, language]
+setting: [real]
+sim_backend: ""
+data_source:
+  size: "1M+ trajectories (60 datasets) at release; now 72 datasets, 2.4M episodes"
+  collection_method: mixed
+resources:
+  homepage: "https://robotics-transformer-x.github.io/"
+  paper: "https://arxiv.org/abs/2310.08864"
+  code: "https://github.com/google-deepmind/open_x_embodiment"
+  data: "https://docs.google.com/spreadsheets/d/1rPBD77tk60AEIGZrGSODwyyzs5FgCU9Uz3h-3_t2A9g"
+  leaderboard: ""

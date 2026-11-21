@@ -1,22 +1,23 @@
 name: Assistive Gym
 domain: HRI
-subtype: ""
+area: assistive
+subtype: "physical assistance, activities of daily living"
 first_release_date: 2019-10-10
-
-description: "Physics-based assistive robotics framework with human models and ADL tasks for safe robot assistance."
-
+venue: "ICRA 2020"
+widely_used: true
+description: "Physics-based assistive robotics framework with human models and six activities of daily living (itch scratching, bed bathing, feeding, drinking, dressing, arm manipulation). The human is static or actively cooperating, and policies are compared across four commercial robots."
 task_count: 6
-metric_count: 1
-robot_config_count: 4
-
-modality: [proprioceptive, RGB]
+metric_count: "2 (average reward, task success)"
+robot_config_count: "4 (PR2, Jaco, Baxter, Sawyer)"
+modality: [proprioceptive, force-torque, state]
 setting: [sim]
 sim_backend: "PyBullet"
-
 data_source:
   size: "N/A"
-  collection_method: "N/A"
-
+  collection_method: none
 resources:
+  homepage: ""
   paper: "https://arxiv.org/abs/1910.04700"
   code: "https://github.com/Healthcare-Robotics/assistive-gym"
+  data: ""
+  leaderboard: ""

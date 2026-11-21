@@ -1,0 +1,15 @@
+name: Drake
+domain: Simulation
+area: physics
+first_release_date: 2014
+description: "C++ toolbox with Python bindings for analysing robot dynamics and building controllers: multibody simulation with contact plus optimisation-based planning and control design. Started at MIT's Robot Locomotion Group; development is now led by Toyota Research Institute."
+physics_engine: "Drake multibody dynamics (CPU)"
+renderer: "RenderEngineVtk, RenderEngineGl (OpenGL), glTF render client"
+gpu_support: false
+os: [Linux, macOS]
+license: "BSD-3-Clause"
+resources:
+  homepage: "https://drake.mit.edu/"
+  paper: ""
+  code: "https://github.com/RobotLocomotion/drake"
+  docs: "https://drake.mit.edu/installation.html"

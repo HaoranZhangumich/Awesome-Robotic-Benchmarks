@@ -1,0 +1,23 @@
+name: ALFWorld
+domain: Embodied Reasoning
+area: planning
+subtype: "text and embodied household tasks"
+first_release_date: 2020-10-08
+venue: "ICLR 2021"
+widely_used: true
+description: "TextWorld games aligned with ALFRED household tasks in AI2-THOR, so an agent can learn or plan in text and then act in the embodied scene. Its text tasks became a standard testbed for LLM agents."
+task_count: "6 task types; 3,553 train, 140 seen and 134 unseen evaluation games"
+metric_count: "2 (success rate, goal-condition success rate)"
+robot_config_count: "1 (AI2-THOR agent)"
+modality: [language, RGB]
+setting: [sim]
+sim_backend: "TextWorld + AI2-THOR"
+data_source:
+  size: "3,553 training games generated from ALFRED tasks"
+  collection_method: synthetic
+resources:
+  homepage: "https://alfworld.github.io"
+  paper: "https://arxiv.org/abs/2010.03768"
+  code: "https://github.com/alfworld/alfworld"
+  data: ""
+  leaderboard: ""

@@ -1,0 +1,22 @@
+name: IntPhys 2
+domain: World Models
+area: wm-physics
+subtype: "intuitive physics, violation of expectation"
+first_release_date: 2025-06-11
+venue: "arXiv 2025"
+description: "Meta's intuitive-physics video benchmark: a model must tell possible from impossible events in matched synthetic videos testing object permanence, immutability, spatio-temporal continuity and solidity. Used to probe predictive world models such as V-JEPA 2 and multimodal LLMs, which mostly score near chance."
+task_count: "4 physical principles"
+metric_count: "1 (accuracy at separating possible from impossible videos)"
+robot_config_count: "N/A"
+modality: [video]
+setting: [sim]
+sim_backend: "Unreal Engine 5.4"
+data_source:
+  size: "1,416 videos in 3 splits (main 1,012; held-out 344; rest debug)"
+  collection_method: synthetic
+resources:
+  homepage: ""
+  paper: "https://arxiv.org/abs/2506.09849"
+  code: "https://github.com/facebookresearch/IntPhys2"
+  data: "https://huggingface.co/datasets/facebook/IntPhys2"
+  leaderboard: "https://huggingface.co/spaces/facebook/physical_reasoning_leaderboard"

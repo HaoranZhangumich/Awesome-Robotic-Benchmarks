@@ -1,0 +1,21 @@
+name: OpenUAV (TravelUAV / UAV-Need-Help)
+domain: Navigation
+area: vln
+subtype: "aerial VLN, realistic flight control, assistant guidance"
+first_release_date: 2024-10-09
+description: "UAV navigation platform with realistic flight control rather than discrete steps, and the UAV-Need-Help benchmark: a drone searches for a described target object while an assistant gives guidance at different levels. Trajectories were flown by human experts."
+task_count: "1 (assistant-guided object search; seen, unseen-map, unseen-object tests)"
+metric_count: "4 (NE, SR, OSR, SPL)"
+robot_config_count: "1 (simulated quadrotor, 5-view RGB-D plus LiDAR)"
+modality: [RGB, depth, lidar, language]
+setting: [sim]
+sim_backend: "AirSim (Unreal Engine 4)"
+data_source:
+  size: "12,149 trajectories, 22 scenes, 89 object categories"
+  collection_method: human_demonstration
+resources:
+  homepage: "https://prince687028.github.io/OpenUAV/"
+  paper: "https://arxiv.org/abs/2410.07087"
+  code: "https://github.com/prince687028/TravelUAV"
+  data: "https://huggingface.co/datasets/wangxiangyu0814/TravelUAV"
+  leaderboard: ""

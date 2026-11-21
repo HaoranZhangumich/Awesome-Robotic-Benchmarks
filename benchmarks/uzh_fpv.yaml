@@ -1,0 +1,27 @@
+name: UZH-FPV Drone Racing Dataset
+domain: Other
+area: aerial
+subtype: "drone racing, visual-inertial odometry"
+first_release_date: 2019
+venue: "ICRA 2019"
+
+description: "Visual-inertial dataset of aggressive first-person-view quadrotor flights by an expert pilot, indoors and outdoors, with frame cameras, an event camera, IMU and laser-tracker ground truth. A leaderboard on sequences with withheld ground truth ranks state estimators; race-track sequences added in 2023 reach 100 km/h."
+
+task_count: "1 (visual-inertial state estimation)"
+metric_count: "2 (relative translation and rotation error over sub-trajectories)"
+robot_config_count: "1 (FPV racing quadrotor)"
+
+modality: [RGB, event, IMU]
+setting: [real]
+sim_backend: ""
+
+data_source:
+  size: "31 sequences (16 with public ground truth; 9 used for the leaderboard)"
+  collection_method: human_demonstration
+
+resources:
+  homepage: "https://fpv.ifi.uzh.ch/"
+  paper: "https://rpg.ifi.uzh.ch/docs/ICRA19_Delmerico.pdf"
+  code: ""
+  data: "https://fpv.ifi.uzh.ch/datasets/"
+  leaderboard: "https://fpv.ifi.uzh.ch/uzh/leader-board/"

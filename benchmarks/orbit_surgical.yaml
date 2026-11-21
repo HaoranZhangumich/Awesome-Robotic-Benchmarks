@@ -1,0 +1,16 @@
+name: ORBIT-Surgical
+domain: Simulation
+area: specialized
+first_release_date: 2024-04-24
+venue: "ICRA 2024"
+description: "Surgical-robot simulation framework on Isaac Lab and Isaac Sim with 14 benchmark tasks for the da Vinci Research Kit (dVRK) and the STAR robot, GPU-parallel reinforcement and imitation learning, synthetic data generation, and demonstrated sim-to-real transfer to a physical dVRK."
+physics_engine: "PhysX 5 (Isaac Lab)"
+renderer: "Omniverse RTX"
+gpu_support: true
+os: [Linux]
+license: "BSD-3-Clause"
+resources:
+  homepage: "https://orbit-surgical.github.io/"
+  paper: "https://arxiv.org/abs/2404.16027"
+  code: "https://github.com/orbit-surgical/orbit-surgical"
+  docs: ""

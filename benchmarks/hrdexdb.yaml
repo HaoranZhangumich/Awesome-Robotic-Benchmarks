@@ -1,0 +1,22 @@
+name: HRDexDB
+domain: Dexterous Manipulation
+area: dex-grasping
+subtype: "paired human-robot grasps, real world"
+first_release_date: 2026-04-16
+venue: "arXiv 2026"
+description: "Real-world 4D grasping dataset in which a human hand and four robot end-effectors (Allegro, two Inspire hands, Robotiq 2F-85) grasp the same 100 objects: 3.2K trials, with robot grasps teleoperated after a human reference, captured by a synchronised multi-camera rig with 3D trajectories and success labels."
+task_count: "N/A"
+metric_count: "N/A"
+robot_config_count: "5 embodiments (human, Allegro, 2 Inspire hands, Robotiq 2F-85)"
+modality: [RGB, hand pose, proprioceptive, tactile]
+setting: [real]
+sim_backend: ""
+data_source:
+  size: "3.2K trials, 43.5M frames, 100 objects (about 1.6 TB)"
+  collection_method: human_demonstration
+resources:
+  homepage: "https://snuvclab.github.io/HRDexDB/"
+  paper: "https://arxiv.org/abs/2604.14944"
+  code: "https://github.com/snuvclab/HRDexDB"
+  data: "https://huggingface.co/datasets/HRDexDB/HRDexDB"
+  leaderboard: ""

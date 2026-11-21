@@ -1,0 +1,22 @@
+name: RoboVQA
+domain: Embodied Reasoning
+area: eqa
+subtype: "robot video QA, long-horizon reasoning"
+first_release_date: 2023-11-01
+venue: "ICRA 2024"
+description: "Video question answering for long-horizon robot reasoning, recorded in three office buildings with a robot, a human arm and a human using a grasping tool. Questions are generated from crowd-sourced hindsight labels and cover planning, success detection, affordances, and past and future steps."
+task_count: "10 question-answer types (planning, success, affordance, past, future)"
+metric_count: "2 (VQA error rate by human raters, cognitive intervention rate)"
+robot_config_count: "3 embodiments (robot, human arm, human with grasping tool)"
+modality: [video, language]
+setting: [real]
+sim_backend: ""
+data_source:
+  size: "829,502 (video, text) pairs; 238 hours; 29,520 unique instructions"
+  collection_method: mixed
+resources:
+  homepage: "https://robovqa.github.io"
+  paper: "https://arxiv.org/abs/2311.00899"
+  code: "https://github.com/google-deepmind/robovqa"
+  data: "https://huggingface.co/datasets/Tianli/robovqa"
+  leaderboard: ""

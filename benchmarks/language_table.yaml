@@ -1,0 +1,21 @@
+name: "Language-Table"
+domain: Datasets
+area: robot-data
+subtype: "language-conditioned, tabletop pushing, real and sim"
+first_release_date: 2022-10-12
+description: "Language-annotated block rearrangement on a tabletop arm, released with the Interactive Language paper together with a matching simulated benchmark: 442,226 real and 181,020 simulated teleoperated episodes relabelled with natural-language instructions."
+task_count: "N/A (open-vocabulary block rearrangement)"
+metric_count: "1 (success rate, simulated benchmark)"
+robot_config_count: "1 (xArm)"
+modality: [RGB, proprioceptive, language]
+setting: [real, sim]
+sim_backend: "PyBullet"
+data_source:
+  size: "442,226 real and 181,020 sim teleoperated episodes; 1M scripted sim episodes"
+  collection_method: mixed
+resources:
+  homepage: "https://interactive-language.github.io/"
+  paper: "https://arxiv.org/abs/2210.06407"
+  code: "https://github.com/google-research/language-table"
+  data: "https://github.com/google-research/language-table#datasets"
+  leaderboard: ""

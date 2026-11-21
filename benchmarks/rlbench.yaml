@@ -1,19 +1,23 @@
 name: RLBench
 domain: Manipulation
-subtype: table-top
+area: tabletop
+subtype: "table-top, multi-task, few-shot"
 first_release_date: 2019-09-26
-description: "A large-scale learning environment featuring 100 unique vision-guided manipulation tasks of varying difficulty. RLBench provides multimodal observations (RGB, depth, segmentation, proprioception) from multiple camera angles and an *infinite* supply of demonstration trajectories generated via built-in motion planners."
-task_count: "100"
-metric_count: "1 (task success rate)"
-robot_config_count: 1
-modality: [RGB, depth, segmentation, proprioceptive]
+venue: "RA-L 2020"
+widely_used: true
+description: "100 hand-designed tabletop tasks for a Franka Panda, from reaching to multi-stage tasks such as putting a tray in an oven. Multi-view RGB-D, segmentation and proprioception, with unlimited motion-planned demonstrations; an 18-task subset is a common testbed for 3D manipulation policies."
+task_count: 100
+metric_count: "1 (success rate)"
+robot_config_count: "1 (Franka Panda)"
+modality: [RGB, depth, segmentation, proprioceptive, language]
 setting: [sim]
-sim_backend: "CoppeliaSim (V-REP)"
+sim_backend: "CoppeliaSim (PyRep)"
 data_source:
-  size: "100 tasks × infinite demos (motion planner can generate unlimited trajectories)"
+  size: "unlimited demos, generated on demand by waypoint motion planning"
   collection_method: motion_planner
 resources:
-  homepage: "https://sites.google.com/view/rlbench "
-  paper: "https://arxiv.org/abs/1909.12271 "
-  code: "https://github.com/stepjam/RLBench "
-
+  homepage: "https://sites.google.com/view/rlbench"
+  paper: "https://arxiv.org/abs/1909.12271"
+  code: "https://github.com/stepjam/RLBench"
+  data: ""
+  leaderboard: ""

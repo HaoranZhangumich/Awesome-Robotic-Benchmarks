@@ -1,0 +1,22 @@
+name: UniVTAC
+domain: Manipulation
+area: tactile
+subtype: "visuo-tactile simulation platform"
+first_release_date: 2026-02-10
+venue: "CoRL 2026"
+description: "Simulation platform and benchmark for visuo-tactile manipulation on Isaac Lab and TacEx, supporting GelSight Mini, ViTai GF225 and Xense WS sensors with automated data generation. The UniVTAC Benchmark has eight contact-rich tasks such as HDMI and tube insertion, key extraction and grasp-and-classify, each with 100 generated demonstrations."
+task_count: 8
+metric_count: "1 (success rate)"
+robot_config_count: "2 arm models (Franka Panda, UR5e); 3 tactile sensor types"
+modality: [RGB, tactile, proprioceptive]
+setting: [sim]
+sim_backend: "Isaac Lab + TacEx (UIPC tactile simulation)"
+data_source:
+  size: "100 generated demos per task (800), plus contact-pretraining data"
+  collection_method: motion_planner
+resources:
+  homepage: "https://univtac.github.io/"
+  paper: "https://arxiv.org/abs/2602.10093"
+  code: "https://github.com/univtac/UniVTAC"
+  data: "https://huggingface.co/datasets/byml/UniVTAC"
+  leaderboard: ""

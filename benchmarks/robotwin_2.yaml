@@ -1,0 +1,23 @@
+name: RoboTwin 2.0
+domain: Manipulation
+area: bimanual
+subtype: "dual-arm, domain randomization, data generator"
+first_release_date: 2025-06-22
+venue: "ICML 2026"
+widely_used: true
+description: "Bimanual benchmark and data generator with strong domain randomization: 50 dual-arm tasks, 5 robot embodiments and a 731-object library. Policies train on clean demonstrations and are tested in clean and randomized scenes (clutter, lighting, background, table height, language). Public leaderboard."
+task_count: 50
+metric_count: "1 (success rate, in clean and randomized settings)"
+robot_config_count: "5 dual-arm embodiments (leaderboard uses Aloha-AgileX)"
+modality: [RGB, depth, proprioceptive, language]
+setting: [sim]
+sim_backend: "SAPIEN"
+data_source:
+  size: "100,000+ scripted expert trajectories (50 tasks, 5 embodiments)"
+  collection_method: motion_planner
+resources:
+  homepage: "https://robotwin-platform.github.io/"
+  paper: "https://arxiv.org/abs/2506.18088"
+  code: "https://github.com/RoboTwin-Platform/RoboTwin"
+  data: "https://huggingface.co/datasets/TianxingChen/RoboTwin2.0"
+  leaderboard: "https://robotwin-platform.github.io/leaderboard"

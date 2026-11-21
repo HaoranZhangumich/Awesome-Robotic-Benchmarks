@@ -1,0 +1,22 @@
+name: AerialVLN
+domain: Navigation
+area: vln
+subtype: "aerial VLN, city-scale, continuous flight"
+first_release_date: 2023-08-13
+venue: "ICCV 2023"
+description: "First large UAV vision-and-language navigation benchmark: a drone follows long natural-language flight instructions through 25 near-realistic city-level scenes with continuous 3D motion. Paths were flown by licensed human pilots and described by crowd workers."
+task_count: "1 (aerial instruction following; 8,446 paths)"
+metric_count: "4 (NE, SR, OSR, SDTW)"
+robot_config_count: "1 (simulated multirotor UAV)"
+modality: [RGB, depth, language]
+setting: [sim]
+sim_backend: "AirSim (Unreal Engine 4)"
+data_source:
+  size: "8,446 flight paths, 25,338 instructions, 25 city scenes (plus AerialVLN-S)"
+  collection_method: human_demonstration
+resources:
+  homepage: ""
+  paper: "https://arxiv.org/abs/2308.06735"
+  code: "https://github.com/AirVLN/AirVLN"
+  data: "https://www.kaggle.com/datasets/shuboliu/aerialvln"
+  leaderboard: ""

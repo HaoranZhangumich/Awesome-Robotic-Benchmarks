@@ -1,0 +1,27 @@
+name: RoboRacer (formerly F1TENTH)
+domain: Other
+area: competition
+subtype: "1:10-scale autonomous racing"
+first_release_date: 2016
+venue: "NeurIPS 2019 Competition Track"
+
+description: "Open-source 1:10-scale autonomous racing platform and competition series, formerly F1TENTH and running since 2016. Teams build a standardized car and race in time trials and head-to-head knockouts at robotics conferences (27th edition at ICRA 2026, 31st at IROS 2026), alongside a remote Sim Racing League."
+
+task_count: "2 formats (on-site head-to-head racing, remote Sim Racing League)"
+metric_count: "Lap time and race results"
+robot_config_count: "1 (standardized 1:10-scale car with 2D lidar and NVIDIA Jetson)"
+
+modality: [lidar, proprioceptive]
+setting: [sim, real]
+sim_backend: "F1TENTH Gym; AutoDRIVE for the Sim Racing League"
+
+data_source:
+  size: "N/A"
+  collection_method: none
+
+resources:
+  homepage: "https://roboracer.ai/"
+  paper: "https://proceedings.mlr.press/v123/o-kelly20a.html"
+  code: "https://github.com/f1tenth/f1tenth_gym"
+  data: ""
+  leaderboard: ""

@@ -1,0 +1,23 @@
+name: VLN-CE (Vision-and-Language Navigation in Continuous Environments)
+domain: Navigation
+area: vln
+subtype: "continuous VLN, low-level actions"
+first_release_date: 2020-04-06
+venue: "ECCV 2020"
+widely_used: true
+description: "R2R and RxR instructions transferred from the panorama graph to continuous Habitat scenes, where the agent takes low-level actions (0.25 m forward, 15 degree turns) with no nav-graph or oracle localisation. R2R-CE and RxR-CE are the standard testbeds for learned and VLM-based instruction followers."
+task_count: "2 (R2R-CE, RxR-CE)"
+metric_count: "5 (TL, NE, OS, SR, SPL); nDTW added for RxR-CE"
+robot_config_count: "1 (egocentric RGB-D agent, discrete low-level actions)"
+modality: [RGB, depth, language]
+setting: [sim]
+sim_backend: "Habitat-Sim"
+data_source:
+  size: "R2R-CE: 10,819 train / 778 val-seen / 1,839 val-unseen / 3,408 test episodes"
+  collection_method: human_annotation
+resources:
+  homepage: "https://jacobkrantz.github.io/vlnce/"
+  paper: "https://arxiv.org/abs/2004.02857"
+  code: "https://github.com/jacobkrantz/VLN-CE"
+  data: "https://jacobkrantz.github.io/vlnce/data"
+  leaderboard: "https://eval.ai/web/challenges/challenge-page/719"

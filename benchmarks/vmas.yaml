@@ -1,0 +1,27 @@
+name: VMAS
+domain: Other
+area: multi-robot
+subtype: "multi-agent RL, vectorized 2D simulation"
+first_release_date: 2022-07-07
+venue: "DARS 2022"
+
+description: "Vectorized Multi-Agent Simulator: a 2D physics engine in PyTorch with multi-robot coordination scenarios for multi-agent RL, such as transport, flocking, passage and navigation. Thousands of environments step in parallel on accelerators, and the MPE scenarios are ported; BenchMARL is the companion training library."
+
+task_count: "12 scenarios in the paper; 21 in the repository, plus MPE ports"
+metric_count: "1 (episode return from scenario-specific rewards)"
+robot_config_count: "Holonomic 2D agents with configurable shapes and sensors"
+
+modality: [state, lidar]
+setting: [sim]
+sim_backend: "VMAS (vectorized 2D physics engine in PyTorch)"
+
+data_source:
+  size: "N/A"
+  collection_method: none
+
+resources:
+  homepage: "https://vmas.readthedocs.io"
+  paper: "https://arxiv.org/abs/2207.03530"
+  code: "https://github.com/proroklab/VectorizedMultiAgentSimulator"
+  data: ""
+  leaderboard: ""

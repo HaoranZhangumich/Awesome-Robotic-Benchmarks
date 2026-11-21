@@ -1,0 +1,22 @@
+name: HOT3D
+domain: Dexterous Manipulation
+area: hand-object-data
+subtype: "egocentric multi-view, hand and object tracking"
+first_release_date: 2024-06-13
+venue: "CVPR 2025"
+description: "Egocentric dataset for 3D hand and object tracking recorded with Project Aria glasses and Quest 3 headsets: 833 minutes (3.7M+ images) of 19 subjects handling 33 rigid objects, with motion-capture ground-truth poses. A curated subset was used in the BOP Challenge 2024."
+task_count: "3 (hand tracking, 6DoF object pose, 3D lifting of objects)"
+metric_count: "N/A"
+robot_config_count: "N/A"
+modality: [RGB, hand pose, mocap]
+setting: [real]
+sim_backend: ""
+data_source:
+  size: "833 min, 3.7M+ images, 19 subjects, 33 objects"
+  collection_method: human_demonstration
+resources:
+  homepage: "https://facebookresearch.github.io/hot3d/"
+  paper: "https://arxiv.org/abs/2411.19167"
+  code: "https://github.com/facebookresearch/hot3d"
+  data: "https://huggingface.co/datasets/bop-benchmark/hot3d"
+  leaderboard: ""

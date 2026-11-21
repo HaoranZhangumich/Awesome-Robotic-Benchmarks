@@ -1,0 +1,22 @@
+name: GigaHands
+domain: Dexterous Manipulation
+area: hand-object-data
+subtype: "bimanual activities, text annotations"
+first_release_date: 2024-12-05
+venue: "CVPR 2025"
+description: "Markerless multi-view capture of bimanual hand activities: 34 hours from 56 subjects and 417 objects, giving 14k motion clips (183M frames) with 3D hand and object poses and 84k text annotations. Supports text-driven motion synthesis and captioning, and serves as retargeting data."
+task_count: "N/A"
+metric_count: "N/A"
+robot_config_count: "N/A"
+modality: [RGB, hand pose, language]
+setting: [real]
+sim_backend: ""
+data_source:
+  size: "34 h, 14k clips, 183M frames, 417 objects, 84k captions"
+  collection_method: human_demonstration
+resources:
+  homepage: "https://ivl.cs.brown.edu/research/gigahands.html"
+  paper: "https://arxiv.org/abs/2412.04244"
+  code: "https://github.com/brown-ivl/GigaHands"
+  data: "https://huggingface.co/datasets/freddie007/GigaHands"
+  leaderboard: ""

@@ -1,0 +1,22 @@
+name: RoboMME
+domain: Generalist
+area: probes
+subtype: "memory, long-horizon, history-dependent"
+first_release_date: 2026-03-04
+venue: "ICML 2026"
+description: "Sixteen long-horizon, history-dependent manipulation tasks in four suites targeting temporal, spatial, object and procedural memory, used to compare memory designs for VLA policies. Maintains a public leaderboard and ran a CVPR 2026 challenge."
+task_count: "16 (4 suites x 4 tasks)"
+metric_count: "1 (success rate)"
+robot_config_count: "1 (Franka Panda)"
+modality: [RGB, proprioceptive, language, video]
+setting: [sim]
+sim_backend: "ManiSkill (SAPIEN)"
+data_source:
+  size: "1,600 demonstrations (100 per task, 770k timesteps)"
+  collection_method: motion_planner
+resources:
+  homepage: "https://robomme.github.io/"
+  paper: "https://arxiv.org/abs/2603.04639"
+  code: "https://github.com/RoboMME/robomme_benchmark"
+  data: "https://huggingface.co/datasets/Yinpei/robomme_data_h5"
+  leaderboard: "https://robomme.github.io/leaderboard.html"

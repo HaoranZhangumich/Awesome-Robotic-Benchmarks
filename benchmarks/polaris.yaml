@@ -1,0 +1,22 @@
+name: PolaRiS
+domain: Generalist
+area: real2sim
+subtype: "real-to-sim via Gaussian splatting, DROID"
+first_release_date: 2025-12-18
+venue: "RSS 2026"
+description: "Real-to-sim framework that reconstructs a real scene from a short video scan with Gaussian splatting and evaluates DROID policies in it after light simulation co-training. Reported scores correlate with real-world results and with RoboArena rankings."
+task_count: "6 ready-made evaluation environments; community hub for more"
+metric_count: "2 (success, normalised task progress)"
+robot_config_count: "1 (DROID Franka setup)"
+modality: [RGB, proprioceptive, language]
+setting: [sim]
+sim_backend: "Isaac Lab (Isaac Sim) with Gaussian-splat rendering"
+data_source:
+  size: "~350 teleoperated simulation demos for co-training"
+  collection_method: human_demonstration
+resources:
+  homepage: "https://polaris-evals.github.io/"
+  paper: "https://arxiv.org/abs/2512.16881"
+  code: "https://github.com/arhanjain/polaris"
+  data: "https://huggingface.co/datasets/owhan/PolaRiS-Hub"
+  leaderboard: ""

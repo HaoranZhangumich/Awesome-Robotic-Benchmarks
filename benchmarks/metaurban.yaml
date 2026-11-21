@@ -1,0 +1,22 @@
+name: MetaUrban
+domain: Navigation
+area: outdoor
+subtype: "urban micromobility, sidewalk PointNav and SocialNav"
+first_release_date: 2024-07-11
+venue: "ICLR 2025"
+description: "Compositional simulator that generates unlimited urban street scenes with pedestrians, vehicles and street furniture for sidewalk robots. Its PointNav and SocialNav benchmarks train on the MetaUrban-12K scene set and test RL and imitation baselines on held-out and unseen scenes."
+task_count: "2 (PointNav, SocialNav)"
+metric_count: "4 (SR, SPL, social navigation score SNS, cumulative cost CC)"
+robot_config_count: "3 (delivery robot, electric wheelchair, mobility scooter)"
+modality: [lidar, state]
+setting: [sim]
+sim_backend: "MetaUrban (MetaDrive-based)"
+data_source:
+  size: "MetaUrban-12K: 12,800 training scenes, 1,000 test scenes, 100 unseen scenes"
+  collection_method: synthetic
+resources:
+  homepage: "https://metadriverse.github.io/metaurban/"
+  paper: "https://arxiv.org/abs/2407.08725"
+  code: "https://github.com/metadriverse/metaurban"
+  data: ""
+  leaderboard: ""

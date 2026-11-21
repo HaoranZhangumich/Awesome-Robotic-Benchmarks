@@ -1,0 +1,22 @@
+name: TEACh
+domain: Navigation
+area: interactive
+subtype: "dialogue-guided household tasks, navigation + manipulation"
+first_release_date: 2021-10-01
+venue: "AAAI 2022"
+description: "Human-human dialogues for household tasks in AI2-THOR: a Commander with oracle task knowledge guides a Follower who navigates and manipulates objects, on tasks from Make Coffee to Prepare Breakfast. Defines three benchmarks: EDH, TfD and TATC."
+task_count: "12 task types; 3 benchmarks (EDH, TfD, TATC)"
+metric_count: "4 (success rate, goal-condition success, and trajectory-weighted versions)"
+robot_config_count: "1 (AI2-THOR agent)"
+modality: [RGB, language]
+setting: [sim]
+sim_backend: "AI2-THOR"
+data_source:
+  size: "3,047 human-human gameplay sessions, 45k+ utterances"
+  collection_method: human_demonstration
+resources:
+  homepage: "https://teachingalfred.github.io/"
+  paper: "https://arxiv.org/abs/2110.00534"
+  code: "https://github.com/alexa/teach"
+  data: ""
+  leaderboard: ""

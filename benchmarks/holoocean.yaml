@@ -1,0 +1,16 @@
+name: HoloOcean
+domain: Simulation
+area: specialized
+first_release_date: 2022-05
+venue: "ICRA 2022"
+description: "Underwater robotics simulator from BYU's Field Robotic Systems Lab on Unreal Engine, with imaging, profiling and sidescan sonar, DVL, IMU, camera and depth sensors, multi-agent support and ROS 2. HoloOcean 2.0 (2025) moved to Unreal Engine 5.3 with Fossen vehicle dynamics. The source repository needs an Epic-linked GitHub account."
+physics_engine: "Unreal Engine 5 with Fossen-model vehicle dynamics"
+renderer: "Unreal Engine 5.3"
+gpu_support: false
+os: [Linux, Windows]
+license: "MIT (client code); Unreal Engine EULA"
+resources:
+  homepage: "https://byu-holoocean.github.io/holoocean-docs/"
+  paper: "https://ieeexplore.ieee.org/document/9812353"
+  code: ""
+  docs: "https://byu-holoocean.github.io/holoocean-docs/v2.4.0/index.html"

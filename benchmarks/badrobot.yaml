@@ -1,0 +1,22 @@
+name: BadRobot
+domain: Safety
+area: embodied-safety
+subtype: "jailbreak, malicious instructions"
+first_release_date: 2024-07-16
+venue: "ICLR 2025"
+description: "Jailbreak study of embodied LLM agents that ships a benchmark of malicious physical-action requests in seven categories (physical harm, privacy, fraud, sabotage and others) and three attack types. Evaluated on Code as Policies, VoxPoser, ProgPrompt and VisProg and on real robot arms."
+task_count: "277 malicious queries in the paper (320+ in the repo); 7 categories"
+metric_count: "2 (manipulate success rate, harmfulness score)"
+robot_config_count: "2 real arms (UR3e, myCobot 280-Pi) plus simulated agents"
+modality: [language, RGB]
+setting: [sim, real]
+sim_backend: "PyBullet, RLBench, VirtualHome (through the attacked systems)"
+data_source:
+  size: "Malicious queries and ready-made jailbreak prompts"
+  collection_method: unknown
+resources:
+  homepage: "https://embodied-llms-safety.github.io"
+  paper: "https://arxiv.org/abs/2407.20242"
+  code: "https://github.com/Rookie143/BadRobot"
+  data: "https://huggingface.co/datasets/Hangtao/badrobot-malicious-queries"
+  leaderboard: ""

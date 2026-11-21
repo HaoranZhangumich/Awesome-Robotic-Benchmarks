@@ -1,0 +1,23 @@
+name: "Adroit Hand (DAPG)"
+domain: Dexterous Manipulation
+area: dex-manipulation
+subtype: "single hand, RL with demonstrations, offline RL"
+first_release_date: 2017-09-28
+venue: "RSS 2018"
+widely_used: true
+description: "Four MuJoCo tasks for a 24-DoF Shadow Hand on a free-moving arm (door, hammer, pen, relocate), introduced with the DAPG paper together with human demonstrations. Later packaged in D4RL and Gymnasium-Robotics; the standard testbed for demonstration-augmented and offline RL with a dexterous hand."
+task_count: "4 (door, hammer, pen, relocate)"
+metric_count: "1 (success rate)"
+robot_config_count: "1 (Adroit: Shadow Hand on a free arm)"
+modality: [state, proprioceptive]
+setting: [sim]
+sim_backend: "MuJoCo"
+data_source:
+  size: "25 human demos per task (DAPG); larger D4RL / Minari sets"
+  collection_method: human_demonstration
+resources:
+  homepage: "https://robotics.farama.org/envs/adroit_hand/"
+  paper: "https://arxiv.org/abs/1709.10087"
+  code: "https://github.com/aravindr93/hand_dapg"
+  data: "https://minari.farama.org/datasets/D4RL/"
+  leaderboard: ""

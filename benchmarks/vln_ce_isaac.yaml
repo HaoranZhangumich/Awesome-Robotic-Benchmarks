@@ -1,0 +1,22 @@
+name: VLN-CE-Isaac
+domain: Navigation
+area: vln
+subtype: "legged-robot VLN, low-level control"
+first_release_date: 2024-12-05
+venue: "RSS 2025"
+description: "Isaac Lab port of R2R-CE introduced with NaVILA: 1,077 val-unseen trajectories run with physically simulated Unitree Go2 and H1 robots, so a navigation model's commands must be executed by a learned locomotion policy over the real scene geometry."
+task_count: "1,077 episodes (from R2R-CE val-unseen)"
+metric_count: "4 (NE, OS, SR, SPL)"
+robot_config_count: "2 (Unitree Go2, Unitree H1)"
+modality: [RGB, lidar, proprioceptive, language]
+setting: [sim]
+sim_backend: "Isaac Lab (Isaac Sim)"
+data_source:
+  size: "1,077 trajectories selected from the 1,839 of R2R val-unseen"
+  collection_method: human_annotation
+resources:
+  homepage: "https://navila-bot.github.io/"
+  paper: "https://arxiv.org/abs/2412.04453"
+  code: "https://github.com/yang-zj1026/NaVILA-Bench"
+  data: "https://huggingface.co/datasets/Zhaojing/VLN-CE-Isaac"
+  leaderboard: ""

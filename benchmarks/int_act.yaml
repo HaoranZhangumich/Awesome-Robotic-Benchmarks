@@ -1,0 +1,22 @@
+name: INT-ACT
+domain: Generalist
+area: probes
+subtype: "generalisation probing, intention versus execution"
+first_release_date: 2025-06-11
+venue: "arXiv 2025"
+description: "Probing suite that extends SimplerEnv's Bridge setup from 4 to 50 tasks across object diversity, language complexity and vision-language reasoning. An added intention metric separates whether a policy goes for the right object from whether it completes the task."
+task_count: "50 (3 categories, 10 subcategories)"
+metric_count: "3 (intention correct rate, grasp success rate, task success rate)"
+robot_config_count: "1 (WidowX)"
+modality: [RGB, proprioceptive, language]
+setting: [sim]
+sim_backend: "SAPIEN (ManiSkill2, via SimplerEnv)"
+data_source:
+  size: "N/A (policies train on BridgeData V2)"
+  collection_method: none
+resources:
+  homepage: "https://ai4ce.github.io/INT-ACT/"
+  paper: "https://arxiv.org/abs/2506.09930"
+  code: "https://github.com/ai4ce/INT-ACT"
+  data: ""
+  leaderboard: ""

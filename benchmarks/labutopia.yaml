@@ -1,0 +1,22 @@
+name: LabUtopia
+domain: Manipulation
+area: tabletop
+subtype: "chemistry lab, hierarchical benchmark"
+first_release_date: 2025-05-28
+venue: "NeurIPS 2025"
+description: "Isaac Sim suite for laboratory robots: LabSim simulates liquids and chemical reactions, LabScene generates lab scenes, and LabBench defines 30 tasks at five levels, from atomic actions to long-horizon and mobile manipulation, with over 200 scene and instrument assets."
+task_count: "30 (five levels)"
+metric_count: "1 (success rate)"
+robot_config_count: "3 (Franka Panda, Fetch, Ridgeback with Franka arm)"
+modality: [RGB, proprioceptive]
+setting: [sim]
+sim_backend: "NVIDIA Isaac Sim"
+data_source:
+  size: "expert demos from a built-in planner-based collector (on Hugging Face)"
+  collection_method: motion_planner
+resources:
+  homepage: "https://rui-li023.github.io/labutopia-site/"
+  paper: "https://arxiv.org/abs/2505.22634"
+  code: "https://github.com/Rui-li023/LabUtopia"
+  data: "https://huggingface.co/datasets/Ruinwalker/Labutopia-Dataset"
+  leaderboard: ""

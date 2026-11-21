@@ -1,0 +1,22 @@
+name: "InternData-A1"
+domain: Datasets
+area: robot-data
+subtype: "synthetic, multi-embodiment, long-horizon"
+first_release_date: 2025-07-26
+venue: "arXiv 2025"
+description: "Synthetic data generated in Isaac Sim by composing skills and planning motions: 630k trajectories (7,433 hours) over 70 tasks, 18 skills and 227 scenes on four embodiments, with rigid, articulated, deformable and fluid objects. Built to test whether synthetic data alone can pretrain VLA policies."
+task_count: "70 tasks, 18 skills"
+metric_count: "N/A"
+robot_config_count: 4
+modality: [RGB, proprioceptive, language]
+setting: [sim]
+sim_backend: "NVIDIA Isaac Sim (InternDataEngine)"
+data_source:
+  size: "630k+ trajectories, 7,433 hours"
+  collection_method: motion_planner
+resources:
+  homepage: "https://internrobotics.github.io/interndata-a1.github.io/"
+  paper: "https://arxiv.org/abs/2511.16651"
+  code: "https://github.com/InternRobotics/InternDataEngine"
+  data: "https://huggingface.co/datasets/InternRobotics/InternData-A1"
+  leaderboard: ""

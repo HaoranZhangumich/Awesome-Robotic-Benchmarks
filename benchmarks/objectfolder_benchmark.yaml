@@ -1,0 +1,22 @@
+name: ObjectFolder Benchmark
+domain: Manipulation
+area: tactile
+subtype: "multisensory: vision, audio, touch"
+first_release_date: 2023-06-01
+venue: "CVPR 2023"
+description: "Suite of 10 multisensory object-centric tasks across recognition, reconstruction and manipulation with sight, sound and touch. Evaluated on 1,000 simulated neural objects from ObjectFolder and on ObjectFolder Real, which holds meshes, videos, impact sounds and GelSight readings of 100 household objects."
+task_count: "10 (3 recognition, 3 reconstruction, 4 manipulation)"
+metric_count: "task-specific (one or more per task)"
+robot_config_count: "1 (Franka Panda with GelSight finger)"
+modality: [RGB, audio, tactile]
+setting: [sim, real]
+sim_backend: "ObjectFolder neural objects (PyBullet for object dynamics)"
+data_source:
+  size: "1,000 neural objects; 100 real objects with multisensory recordings"
+  collection_method: mixed
+resources:
+  homepage: "https://objectfolder.stanford.edu/"
+  paper: "https://arxiv.org/abs/2306.00956"
+  code: "https://github.com/objectfolder"
+  data: ""
+  leaderboard: ""

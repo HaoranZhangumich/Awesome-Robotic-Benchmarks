@@ -1,0 +1,15 @@
+name: Webots
+domain: Simulation
+area: physics
+first_release_date: 1998
+description: "Open-source desktop robot simulator with a large library of robot, sensor and actuator models, used in research, teaching and robot contests. Designed at EPFL in 1996, commercialised by Cyberbotics from 1998 and open-sourced in December 2018."
+physics_engine: "ODE"
+renderer: "WREN (OpenGL 3.3)"
+gpu_support: false
+os: [Linux, Windows, macOS]
+license: "Apache-2.0"
+resources:
+  homepage: "https://cyberbotics.com/"
+  paper: "https://arxiv.org/abs/cs/0412052"
+  code: "https://github.com/cyberbotics/webots"
+  docs: "https://cyberbotics.com/doc/guide/index"

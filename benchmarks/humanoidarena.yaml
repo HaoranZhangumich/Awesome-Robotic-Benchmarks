@@ -1,0 +1,22 @@
+name: HumanoidArena
+domain: Locomotion
+area: humanoid
+subtype: "egocentric hierarchical whole-body learning"
+first_release_date: 2026-06-16
+venue: "NeurIPS 2026 Evaluations & Datasets"
+description: "Simulation benchmark for hierarchical humanoid control: a high-level policy maps egocentric vision, proprioception and instructions to whole-body actions that a general motion tracker (TWIST2 or SONIC) executes. Seven leg-critical object and scene interaction tasks, tested under visual, semantic and execution shifts and across trackers."
+task_count: "7 (3 object-interaction, 4 scene-interaction)"
+metric_count: "3 (success rate, fall rate, cross-tracker retention)"
+robot_config_count: "1 (Unitree G1)"
+modality: [RGB, proprioceptive, language]
+setting: [sim]
+sim_backend: "Isaac Lab (Isaac Sim)"
+data_source:
+  size: "1,400 VR-teleoperated demos (100 per task per tracker)"
+  collection_method: human_demonstration
+resources:
+  homepage: "https://humanoidarena.github.io"
+  paper: "https://arxiv.org/abs/2606.17833"
+  code: "https://github.com/William-wAng618/HumanoidArena"
+  data: "https://www.modelscope.cn/datasets/Twang2026/HumanoidArenaV3.1"
+  leaderboard: "https://humanoidarena.github.io/#leaderboard"

@@ -1,0 +1,22 @@
+name: "Where2Place (RoboPoint)"
+domain: Embodied Reasoning
+area: spatial
+subtype: "pointing, free-space reference"
+first_release_date: 2024-06-15
+venue: "CoRL 2024"
+description: "Free-space pointing benchmark introduced with RoboPoint: 100 real photos of cluttered homes and offices, each with an instruction describing a vacant region relative to other objects. A model succeeds when its predicted points fall inside the human-annotated mask."
+task_count: "100 image-instruction pairs (30 with relation types unseen in training)"
+metric_count: "1 (share of predicted points inside the target mask)"
+robot_config_count: "N/A"
+modality: [RGB, language]
+setting: [real]
+sim_backend: ""
+data_source:
+  size: "100 real-world images with instructions and masks"
+  collection_method: human_annotation
+resources:
+  homepage: "https://robo-point.github.io"
+  paper: "https://arxiv.org/abs/2406.10721"
+  code: "https://github.com/wentaoyuan/RoboPoint"
+  data: "https://huggingface.co/datasets/wentao-yuan/where2place"
+  leaderboard: ""

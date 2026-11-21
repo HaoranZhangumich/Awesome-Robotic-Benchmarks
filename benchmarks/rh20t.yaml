@@ -1,0 +1,22 @@
+name: "RH20T"
+domain: Datasets
+area: robot-data
+subtype: "contact-rich, force-torque, multi-view"
+first_release_date: 2023-07-02
+venue: "ICRA 2024"
+description: "Over 110,000 contact-rich manipulation sequences across 147 tasks and 7 robot configurations, recorded with multi-view RGB-D, force-torque, audio and action data. Each robot sequence comes with a human demonstration video and a language description."
+task_count: "147 (48 from RLBench, 29 from Meta-World, 70 new)"
+metric_count: "N/A"
+robot_config_count: 7
+modality: [RGB, depth, proprioceptive, force-torque, audio, tactile, language]
+setting: [real]
+sim_backend: ""
+data_source:
+  size: "110,000+ robot sequences with paired human demonstration videos"
+  collection_method: human_demonstration
+resources:
+  homepage: "https://rh20t.github.io/"
+  paper: "https://arxiv.org/abs/2307.00595"
+  code: "https://github.com/rh20t/rh20t_api"
+  data: "https://rh20t.github.io/"
+  leaderboard: ""

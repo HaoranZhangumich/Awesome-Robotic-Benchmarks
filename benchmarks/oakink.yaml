@@ -1,0 +1,22 @@
+name: OakInk
+domain: Dexterous Manipulation
+area: hand-object-data
+subtype: "affordance-aware hand-object interaction"
+first_release_date: 2022-03-29
+venue: "CVPR 2022"
+description: "Hand-object interaction repository in two parts: Oak, 1,800 household objects annotated with affordances, and Ink, 50,000 intent-oriented interactions recorded on 100 of the objects and transferred to the rest. Benchmarked on hand-object pose estimation and grasp generation."
+task_count: "2 (pose estimation, grasp generation)"
+metric_count: "N/A"
+robot_config_count: "N/A"
+modality: [RGB, hand pose, mocap]
+setting: [real]
+sim_backend: ""
+data_source:
+  size: "50,000 interactions, 1,800 objects; 792 clips (230K images)"
+  collection_method: mixed
+resources:
+  homepage: "https://oakink.net"
+  paper: "https://arxiv.org/abs/2203.15709"
+  code: "https://github.com/oakink/OakInk"
+  data: ""
+  leaderboard: ""

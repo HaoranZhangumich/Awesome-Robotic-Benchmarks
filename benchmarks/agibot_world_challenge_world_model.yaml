@@ -1,0 +1,22 @@
+name: "AgiBot World Challenge (World Model track)"
+domain: World Models
+area: wm-embodied
+subtype: "action-conditioned video prediction, challenge"
+first_release_date: 2025-06-25
+venue: "IROS 2025 and ICRA 2026 challenge"
+description: "Competition track in which models generate robot video from a first frame and an action sequence on AgiBot World scenes such as kitchens, workbenches and dining tables. Submissions are ranked on a Hugging Face server by PSNR, scene consistency and nDTW using EWMBench."
+task_count: "10 real-world task scenarios"
+metric_count: "3 (PSNR, scene consistency, nDTW)"
+robot_config_count: "1 (AgiBot World robot)"
+modality: [video, RGB, proprioceptive]
+setting: [real]
+sim_backend: ""
+data_source:
+  size: "30,000+ training trajectories over 10 tasks; 30 validation + 30 hidden test samples (2025)"
+  collection_method: human_demonstration
+resources:
+  homepage: "https://agibot-world.com/challenge2026"
+  paper: ""
+  code: "https://github.com/AgibotTech/AgiBotWorldChallengeICRA2026-WorldModelBaseline"
+  data: "https://huggingface.co/datasets/agibot-world/AgiBotWorldChallenge-2026"
+  leaderboard: "https://huggingface.co/spaces/agibot-world/ICRA26WM"

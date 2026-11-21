@@ -1,0 +1,23 @@
+name: AMASS
+domain: Locomotion
+area: motion-data
+subtype: "human mocap archive, SMPL"
+first_release_date: 2019-04-05
+venue: "ICCV 2019"
+widely_used: true
+description: "Archive that unifies optical marker-based motion-capture datasets (15 at release) in one SMPL body parameterisation using MoSh++. The usual source of human reference motion for physics-based character control and humanoid motion tracking, after retargeting to the robot; many trackers are also tested on AMASS subsets."
+task_count: "N/A (dataset)"
+metric_count: "N/A"
+robot_config_count: "N/A (human SMPL body)"
+modality: [mocap]
+setting: [real]
+sim_backend: ""
+data_source:
+  size: "40+ hours, 300+ subjects, 11,000+ motions at release"
+  collection_method: human_demonstration
+resources:
+  homepage: "https://amass.is.tue.mpg.de/"
+  paper: "https://arxiv.org/abs/1904.03278"
+  code: "https://github.com/nghorbani/amass"
+  data: "https://amass.is.tue.mpg.de/"
+  leaderboard: ""

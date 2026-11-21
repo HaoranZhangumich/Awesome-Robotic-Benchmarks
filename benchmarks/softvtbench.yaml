@@ -1,0 +1,22 @@
+name: SoftVTBench
+domain: Manipulation
+area: deformable
+subtype: "visuo-tactile, safety-aware"
+first_release_date: 2026-07-05
+venue: "arXiv 2026"
+description: "Visuo-tactile benchmark for deformable-object manipulation that scores physical safety as well as task completion: a successful rollout must also keep the object from dropping or deforming beyond a calibrated limit read from hidden FEM states. Four matched suites (deformable vs. rigid twins, object vs. spatial variation) in Isaac Sim."
+task_count: "4 task suites (10 tasks each in the Aug 2026 paper)"
+metric_count: "2 (task success, safety / deformation-aware success)"
+robot_config_count: "1 (Franka Panda with GelSight Mini fingers)"
+modality: [RGB, tactile, proprioceptive, language]
+setting: [sim]
+sim_backend: "Isaac Sim (FEM deformable objects)"
+data_source:
+  size: "4,000 scripted-expert demos (1,628 in the first public release)"
+  collection_method: motion_planner
+resources:
+  homepage: "https://softvtbench.github.io/"
+  paper: "https://arxiv.org/abs/2607.04234"
+  code: "https://github.com/TuojingAI/SoftVTBench"
+  data: "https://huggingface.co/datasets/Arthur12137/SoftVTBench"
+  leaderboard: ""

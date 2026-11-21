@@ -1,0 +1,22 @@
+name: DreamGen Bench
+domain: World Models
+area: wm-embodied
+subtype: "video world model as data generator, instruction following, physics"
+first_release_date: 2025-05-19
+venue: "arXiv 2025"
+description: "Video-generation benchmark from NVIDIA's DreamGen (GR00T-Dreams) work: video models adapted to a robot must generate unseen objects, behaviours and environments, and VLM judges score instruction following and physics alignment. Scores correlate with downstream policy success on RoboCasa."
+task_count: "4 evaluation sets (RoboCasa; GR1 object, behaviour, environment)"
+metric_count: "2 (instruction following, physics alignment)"
+robot_config_count: "2 (Franka in RoboCasa, Fourier GR1 humanoid)"
+modality: [video, RGB, language]
+setting: [sim, real]
+sim_backend: "RoboCasa"
+data_source:
+  size: "about 50 start frames per set (48 RoboCasa; 50 / 47 / 30 GR1)"
+  collection_method: human_annotation
+resources:
+  homepage: "https://research.nvidia.com/labs/gear/dreamgen/"
+  paper: "https://arxiv.org/abs/2505.12705"
+  code: "https://github.com/NVIDIA/GR00T-Dreams"
+  data: ""
+  leaderboard: ""

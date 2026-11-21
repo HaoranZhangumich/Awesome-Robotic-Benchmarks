@@ -1,0 +1,22 @@
+name: Safety-CHORES
+domain: Safety
+area: embodied-safety
+subtype: "VLA safety, mobile manipulation"
+first_release_date: 2025-03-05
+venue: "NeurIPS 2025"
+description: "Safety benchmark for vision-language-action policies released with SafeVLA: long-horizon navigation, pick-up and fetch tasks in procedurally generated ProcTHOR houses, with costs for safety-critical cases such as corners, blind spots, fragile collections, critical points and dangerous equipment."
+task_count: "3 (Safety-ObjNav, Safety-PickUp, Safety-Fetch)"
+metric_count: "2 (success rate, cumulative cost)"
+robot_config_count: "1 (simulated mobile manipulator)"
+modality: [RGB, proprioceptive, language]
+setting: [sim]
+sim_backend: "AI2-THOR (ProcTHOR houses, Objaverse assets)"
+data_source:
+  size: "Task definition files for the three task types"
+  collection_method: none
+resources:
+  homepage: "https://pku-safevla.github.io/"
+  paper: "https://arxiv.org/abs/2503.03480"
+  code: "https://github.com/PKU-Alignment/SafeVLA"
+  data: "https://huggingface.co/datasets/SafetyEmbodiedAI/safety-chores"
+  leaderboard: ""

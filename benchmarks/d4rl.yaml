@@ -1,24 +1,28 @@
 name: D4RL
 domain: Other
-subtype: "Offline-RL"
+area: offline-rl
+subtype: "offline RL datasets"
 first_release_date: 2020-04-15
+venue: "arXiv 2020"
+widely_used: true
 
-description: "Offline RL benchmark with standardized environments and fixed datasets across multiple domains."
+description: "Offline RL benchmark with fixed datasets and an evaluation protocol across seven simulated domains (Maze2D, AntMaze, Gym-MuJoCo locomotion, Adroit hand, Franka Kitchen, Flow, CARLA), scored by normalized return. Still the default offline RL testbed; development has moved to Minari, which now hosts its datasets."
 
-task_count: 50
-metric_count: 1
-robot_config_count: 6
+task_count: "7 domains (Maze2D, AntMaze, Gym-MuJoCo, Adroit, Franka Kitchen, Flow, CARLA)"
+metric_count: "1 (normalized score: 0 = random policy, 100 = expert)"
+robot_config_count: "Several (point mass, Ant, Hopper, HalfCheetah, Shadow Hand, Franka arm, car)"
 
-modality: [proprioceptive, RGB, lidar]
+modality: [state, RGB]
 setting: [sim]
-sim_backend: "Multiple (MuJoCo, PyBullet, MiniGrid)"
+sim_backend: "MuJoCo; also CARLA, Flow (SUMO), MiniGrid and PyBullet variants"
 
 data_source:
-  size: "Multiple task-specific datasets"
-  collection_method: "both"
+  size: "One fixed dataset per task, in variants such as random, medium, expert, human and play"
+  collection_method: mixed
 
 resources:
   homepage: "https://sites.google.com/view/d4rl/home"
   paper: "https://arxiv.org/abs/2004.07219"
   code: "https://github.com/Farama-Foundation/D4RL"
-  data: "https://github.com/Farama-Foundation/D4RL#datasets"
+  data: "https://github.com/Farama-Foundation/D4RL/wiki/Tasks"
+  leaderboard: ""

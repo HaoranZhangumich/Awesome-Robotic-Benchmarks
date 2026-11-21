@@ -1,0 +1,22 @@
+name: vla-eval
+domain: Generalist
+area: multi-domain
+subtype: "cross-benchmark harness, aggregated VLA leaderboard"
+first_release_date: 2026-03-14
+venue: "arXiv 2026"
+description: "Open evaluation harness hosted by AllenAI that runs any VLA on many simulation benchmarks through one model interface and Docker-isolated environments. It maintains a leaderboard aggregating published VLA results under fixed per-benchmark protocols."
+task_count: "18+ integrated simulation benchmarks"
+metric_count: "N/A (each benchmark's own metric)"
+robot_config_count: "N/A (per benchmark)"
+modality: [RGB, proprioceptive, language]
+setting: [sim]
+sim_backend: "per benchmark (LIBERO, SimplerEnv, CALVIN, RoboTwin, ...)"
+data_source:
+  size: "N/A (leaderboard of published results; no trajectories)"
+  collection_method: none
+resources:
+  homepage: "https://allenai.github.io/vla-evaluation-harness/"
+  paper: "https://arxiv.org/abs/2603.13966"
+  code: "https://github.com/allenai/vla-evaluation-harness"
+  data: ""
+  leaderboard: "https://allenai.github.io/vla-evaluation-harness/leaderboard/"

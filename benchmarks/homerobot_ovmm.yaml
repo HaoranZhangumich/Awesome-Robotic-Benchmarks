@@ -1,0 +1,22 @@
+name: HomeRobot OVMM
+domain: Manipulation
+area: mobile
+subtype: "open-vocabulary mobile manipulation, sim and real"
+first_release_date: 2023-06-20
+venue: "CoRL 2023"
+description: "Open-vocabulary mobile manipulation: a Hello Robot Stretch must find a named object in an unseen home, pick it up and place it on a target receptacle. Habitat simulation on HSSD scenes plus a real-world software stack; basis of the NeurIPS 2023 and CVPR 2024 challenges."
+task_count: "1 (move object from start receptacle to goal receptacle)"
+metric_count: "3 (overall success, partial success, number of steps)"
+robot_config_count: "1 (Hello Robot Stretch)"
+modality: [RGB, depth, proprioceptive, language]
+setting: [sim, real]
+sim_backend: "Habitat (HSSD scenes)"
+data_source:
+  size: "N/A (episodes in HSSD homes; no demonstrations)"
+  collection_method: none
+resources:
+  homepage: "https://ovmm.github.io/"
+  paper: "https://arxiv.org/abs/2306.11565"
+  code: "https://github.com/facebookresearch/home-robot"
+  data: ""
+  leaderboard: "https://aihabitat.org/challenge/2023_homerobot_ovmm/"

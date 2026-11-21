@@ -1,18 +1,23 @@
 name: RoboCasa
 domain: Manipulation
-subtype: mobile-manipulation (household)
+area: mobile
+subtype: "household kitchen, mobile manipulation"
 first_release_date: 2024-06-04
-description: "A large-scale simulation framework for generalist household robots, focusing on diverse kitchen environments."
+venue: "RSS 2024"
+widely_used: true
+description: "Kitchen simulation built on robosuite and MuJoCo, with 120 scenes and 2,500+ objects. 100 tasks (25 atomic, 75 LLM-guided composite) for a mobile manipulator, with human demonstrations and 100K+ MimicGen-generated trajectories. Extended by RoboCasa365 in 2026."
 task_count: "100 (25 atomic + 75 composite)"
-metric_count: "1 (success rate for task completion)"
-robot_config_count: "3 (supports single-arm mobiles, humanoids, quadruped-with-arm)"
+metric_count: "1 (success rate)"
+robot_config_count: "1 in datasets (Franka Panda on Omron mobile base)"
 modality: [RGB, proprioceptive]
 setting: [sim]
-sim_backend: "PhysX (NVIDIA Omniverse)"
+sim_backend: "robosuite (MuJoCo)"
 data_source:
-  size: "100+K demonstration trajectories (e.g. 50 human demos ×25 skills + 72K generated)"
-  collection_method: both
+  size: "50 human demos per task + 100K+ MimicGen-generated trajectories"
+  collection_method: mixed
 resources:
-  homepage: "https://robocasa.ai "
+  homepage: "https://robocasa.ai/"
   paper: "https://arxiv.org/abs/2406.02523"
-  code: "https://github.com/robocasa/robocasa (coming soon)"
+  code: "https://github.com/robocasa/robocasa"
+  data: ""
+  leaderboard: ""

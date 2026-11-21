@@ -1,0 +1,22 @@
+name: SocNavBench
+domain: Navigation
+area: social
+subtype: "social navigation, replayed real pedestrians"
+first_release_date: 2021-02-26
+venue: "ACM THRI"
+description: "Simulation test bed for social navigation: a robot crosses 33 curated scenarios in which pedestrians replay recorded real-world trajectories (ETH and UCY), with optional photorealistic rendering. A fixed metric suite covers path quality, motion quality and pedestrian disruption."
+task_count: "33 curated scenarios"
+metric_count: "4 groups (path quality, motion quality, pedestrian disruption, meta statistics)"
+robot_config_count: "1 (simulated robot modelled on the Pioneer 3-DX)"
+modality: [RGB, depth, state]
+setting: [sim]
+sim_backend: "SocNavBench simulator (Swiftshader rendering of S3DIS building meshes)"
+data_source:
+  size: "N/A (scenarios replay pedestrian recordings from ETH and UCY)"
+  collection_method: none
+resources:
+  homepage: ""
+  paper: "https://arxiv.org/abs/2103.00047"
+  code: "https://github.com/CMU-TBD/SocNavBench"
+  data: ""
+  leaderboard: ""

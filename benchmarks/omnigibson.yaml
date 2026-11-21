@@ -1,0 +1,16 @@
+name: OmniGibson
+domain: Simulation
+area: embodied-platform
+first_release_date: 2022
+venue: "CoRL 2022"
+description: "Simulator behind the BEHAVIOR-1K benchmark, built on NVIDIA Isaac Sim: realistic physics and rendering of rigid bodies, deformable bodies and liquids in household scenes for 1,000 everyday activities. From the Stanford lab behind iGibson; now developed inside the BEHAVIOR-1K repository."
+physics_engine: "PhysX 5 (Isaac Sim)"
+renderer: "Omniverse RTX"
+gpu_support: false
+os: [Linux, Windows]
+license: "MIT (Isaac Sim licensed separately)"
+resources:
+  homepage: "https://behavior.stanford.edu/"
+  paper: "https://arxiv.org/abs/2403.09227"
+  code: "https://github.com/StanfordVL/BEHAVIOR-1K"
+  docs: "https://behavior.stanford.edu/omnigibson/overview.html"

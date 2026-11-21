@@ -1,0 +1,16 @@
+name: AirSim
+domain: Simulation
+area: specialized
+first_release_date: 2017-05-15
+venue: "FSR 2017"
+description: "Microsoft's Unreal Engine simulator for drones and cars with PX4/ArduPilot software- and hardware-in-the-loop support, widely used for aerial autonomy and learning research. Microsoft stopped updating it; its successor Project AirSim is maintained by IAMAI, and community forks include Colosseum and Cosys-AirSim."
+physics_engine: "Custom high-frequency vehicle physics inside Unreal Engine"
+renderer: "Unreal Engine 4 (experimental Unity build)"
+gpu_support: false
+os: [Linux, Windows, macOS]
+license: "MIT"
+resources:
+  homepage: "https://microsoft.github.io/AirSim/"
+  paper: "https://arxiv.org/abs/1705.05065"
+  code: "https://github.com/microsoft/AirSim"
+  docs: "https://microsoft.github.io/AirSim/"

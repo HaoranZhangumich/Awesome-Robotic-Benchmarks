@@ -1,0 +1,22 @@
+name: HOH
+domain: HRI
+area: handover
+subtype: "human-human handover dataset"
+first_release_date: 2023-10-01
+venue: "NeurIPS 2023 D&B"
+description: "Markerless multimodal dataset of 2,720 human-to-human object handovers with 136 objects and 40 participants, captured with multi-view RGB-D and annotated with segmentations, grasp type, handedness and comfort ratings. Intended for learning grasp, orientation and trajectory prediction for robot handover."
+task_count: "3 demo tasks (grasp, orientation, trajectory prediction)"
+metric_count: "N/A"
+robot_config_count: "N/A (human-human data)"
+modality: [RGB, depth, pointcloud, segmentation]
+setting: [real]
+sim_backend: ""
+data_source:
+  size: "2,720 handovers, 136 objects, 40 participants (20 pairs)"
+  collection_method: human_demonstration
+resources:
+  homepage: "https://tars-home.github.io/hohdataset/"
+  paper: "https://arxiv.org/abs/2310.00723"
+  code: ""
+  data: ""
+  leaderboard: ""

@@ -1,0 +1,16 @@
+name: OceanSim
+domain: Simulation
+area: specialized
+first_release_date: 2025-03-03
+venue: "IROS 2025"
+description: "Underwater perception simulator built as an NVIDIA Isaac Sim extension: physics-based underwater camera rendering and GPU-accelerated imaging sonar with real-time output, plus ROS 2 support, for synthetic data generation and testing of underwater perception algorithms."
+physics_engine: "PhysX 5 (Isaac Sim)"
+renderer: "Omniverse RTX with custom underwater camera and sonar models"
+gpu_support: false
+os: [Linux]
+license: "BSD-3-Clause"
+resources:
+  homepage: "https://umfieldrobotics.github.io/OceanSim/"
+  paper: "https://arxiv.org/abs/2503.01074"
+  code: "https://github.com/umfieldrobotics/OceanSim"
+  docs: ""

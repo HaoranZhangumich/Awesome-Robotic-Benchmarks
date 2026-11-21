@@ -1,0 +1,22 @@
+name: Cornell Grasping Dataset
+domain: Manipulation
+area: grasping
+subtype: "planar grasp rectangles, real RGB-D"
+first_release_date: 2011
+venue: "ICRA 2011"
+description: "Early real RGB-D dataset for planar grasp detection: 885 images of 240 objects hand-labelled with 8,019 grasp rectangles (about 5.1k positive). Results are reported as accuracy under the rectangle metric (orientation and IoU thresholds); long the standard test for parallel-jaw grasp detectors."
+task_count: "1 (grasp-rectangle detection)"
+metric_count: "1 (rectangle-metric accuracy)"
+robot_config_count: "N/A (parallel-jaw gripper assumed)"
+modality: [RGB, depth]
+setting: [real]
+sim_backend: ""
+data_source:
+  size: "885 RGB-D images, 240 objects, 8,019 grasp rectangles"
+  collection_method: human_annotation
+resources:
+  homepage: ""
+  paper: "https://doi.org/10.1109/ICRA.2011.5980145"
+  code: ""
+  data: "https://www.kaggle.com/datasets/oneoneliu/cornell-grasp"
+  leaderboard: ""

@@ -1,23 +1,22 @@
 name: safe-control-gym
 domain: Safety
-subtype: ""
+area: safe-rl
+subtype: "safe learning-based control, robustness"
 first_release_date: 2021-09-13
-
-description: "Unified safe learning-based control suite with constraints/disturbances on cart-pole and quadrotor systems."
-
-task_count: 2
-metric_count: 3
-robot_config_count: 3
-
-modality: [proprioceptive]
+venue: "IEEE RA-L 2022"
+description: "Unified safe learning-based control suite with constraints and disturbances on cart-pole and quadrotor systems. Extends the Gym API with symbolic (CasADi) prior dynamics and constraint specification so that control-theoretic and RL methods can be compared on safety and robustness."
+task_count: "2 (stabilization, trajectory tracking) on 3 systems"
+metric_count: "3 (control performance, data efficiency, constraint violations)"
+robot_config_count: "3 (cart-pole, 1D quadrotor, 2D quadrotor)"
+modality: [state]
 setting: [sim]
 sim_backend: "PyBullet"
-
 data_source:
-  size: "N/A (simulated training/eval)"
-  collection_method: "unknown"
-
+  size: "N/A"
+  collection_method: none
 resources:
-  homepage: "https://utiasdsl.github.io/safe-control-gym/"
+  homepage: "https://www.dynsyslab.org/safe-robot-learning/"
   paper: "https://arxiv.org/abs/2109.06325"
-  code: "https://github.com/utiasDSL/safe-control-gym"
+  code: "https://github.com/learnsyslab/safe-control-gym"
+  data: ""
+  leaderboard: ""

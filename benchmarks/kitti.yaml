@@ -1,25 +1,28 @@
 name: KITTI
-domain: Navigation
-subtype: ""
-first_release_date: 2012-04-01
+domain: Autonomous Driving
+area: driving-data
+subtype: "perception, odometry"
+first_release_date: 2012
+venue: "CVPR 2012"
+widely_used: true
 
-description: "Large-scale real-world autonomous driving dataset and benchmark suite for perception and odometry."
+description: "Driving benchmark suite recorded around Karlsruhe from a station wagon with stereo cameras, a Velodyne lidar and GPS/IMU. Its online leaderboards for stereo, optical flow, depth, odometry, 3D object detection and tracking are a long-standing reference for perception and SLAM."
 
-task_count: 8
-metric_count: 8
-robot_config_count: 1
+task_count: "9 families, incl. stereo, flow, depth, odometry, object detection, tracking"
+metric_count: "Task-specific (AP for detection, translation/rotation error for odometry)"
+robot_config_count: "1 (station wagon with stereo cameras, Velodyne lidar, GPS/IMU)"
 
 modality: [RGB, lidar, GPS_IMU]
 setting: [real]
 sim_backend: ""
 
 data_source:
-  size: "Varies by task; multi-sensor vehicle platform"
-  collection_method: "human_demonstration"
+  size: "7,481 training and 7,518 test frames for object detection; 22 stereo sequences for odometry"
+  collection_method: human_annotation
 
 resources:
   homepage: "https://www.cvlibs.net/datasets/kitti/"
   paper: "https://www.cvlibs.net/publications/Geiger2012CVPR.pdf"
-  data: "https://www.cvlibs.net/datasets/kitti/"
-  leaderboard: "https://www.cvlibs.net/datasets/kitti/eval.php"
-
+  code: ""
+  data: "https://www.cvlibs.net/datasets/kitti/raw_data.php"
+  leaderboard: "https://www.cvlibs.net/datasets/kitti/eval_object.php?obj_benchmark=3d"

@@ -1,0 +1,22 @@
+name: "DexGraspBench (BODex)"
+domain: Dexterous Manipulation
+area: dex-grasping
+subtype: "grasp synthesis benchmark"
+first_release_date: 2024-12-21
+venue: "ICRA 2025"
+description: "MuJoCo benchmark that replays open-loop dexterous grasps so that synthesis methods and datasets can be compared on equal terms, reporting simulation success, force-closure, penetration, contact and diversity metrics. Released with the BODex bilevel-optimisation pipeline and its grasp dataset."
+task_count: "2 settings (tabletop lifting, force-closure test)"
+metric_count: "5+ (success, force closure, penetration, contact, diversity)"
+robot_config_count: "4 (Shadow, Allegro, LEAP, UR10e + Shadow)"
+modality: [state, pointcloud]
+setting: [sim]
+sim_backend: "MuJoCo"
+data_source:
+  size: "BODex: 4.09M floating + 3.08M tabletop grasps, 2,397 objects"
+  collection_method: synthetic
+resources:
+  homepage: "https://pku-epic.github.io/BODex/"
+  paper: "https://arxiv.org/abs/2412.16490"
+  code: "https://github.com/JYChen18/DexGraspBench"
+  data: "https://huggingface.co/datasets/JiayiChenPKU/BODex"
+  leaderboard: ""

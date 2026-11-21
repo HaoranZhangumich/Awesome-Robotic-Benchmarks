@@ -1,0 +1,22 @@
+name: 1X World Model Challenge
+domain: World Models
+area: wm-embodied
+subtype: "humanoid, future-frame prediction, challenge"
+first_release_date: 2024-06
+venue: "CVPR 2025 and ICCV 2025 workshop challenge"
+description: "Challenge by 1X on predicting future first-person observations of its EVE humanoid from about 100 hours of real robot video and states. Sampling (future frames) and compression (future tokens) tracks ran in the Autonomous Grand Challenge 2025; a policy-evaluation track is planned."
+task_count: "2 tracks (sampling, compression)"
+metric_count: "2 (PSNR for sampling; cross-entropy loss for compression)"
+robot_config_count: "1 (1X EVE humanoid)"
+modality: [video, RGB, proprioceptive]
+setting: [real]
+sim_backend: ""
+data_source:
+  size: "about 100 hours of tokenised robot video with states; 450-sample test set"
+  collection_method: unknown
+resources:
+  homepage: "https://huggingface.co/spaces/1x-technologies/1X_World_Model_Challenge_Home"
+  paper: ""
+  code: "https://github.com/1x-technologies/1xgpt"
+  data: "https://huggingface.co/datasets/1x-technologies/worldmodel"
+  leaderboard: "https://huggingface.co/spaces/1x-technologies/1X_World_Model_Challenge_Compression"

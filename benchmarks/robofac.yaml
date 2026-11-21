@@ -1,0 +1,22 @@
+name: RoboFAC
+domain: Embodied Reasoning
+area: planning
+subtype: "failure analysis, failure correction"
+first_release_date: 2025-05-18
+venue: "arXiv 2025"
+description: "Video QA benchmark on manipulation failures. Given a failed attempt, models must describe the task, detect and locate the failure, explain it (task planning, motion planning or execution control) and propose a correction; covers ManiSkill simulation and a real SO-100 arm."
+task_count: "8 question types; 14 simulated and 6 real-world tasks"
+metric_count: "2 (multiple-choice accuracy, LLM-judged score for open-ended answers)"
+robot_config_count: "2 (simulated arm in ManiSkill, SO-100)"
+modality: [video, language]
+setting: [sim, real]
+sim_backend: "ManiSkill (SAPIEN)"
+data_source:
+  size: "9,440 failure trajectories; 78,623 QA pairs (70K simulated, 8K real)"
+  collection_method: mixed
+resources:
+  homepage: "https://mint-sjtu.github.io/RoboFAC.io/"
+  paper: "https://arxiv.org/abs/2505.12224"
+  code: "https://github.com/MINT-SJTU/RoboFAC"
+  data: "https://huggingface.co/datasets/MINT-SJTU/RoboFAC-dataset"
+  leaderboard: ""

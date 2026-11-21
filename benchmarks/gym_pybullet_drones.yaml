@@ -1,0 +1,16 @@
+name: gym-pybullet-drones
+domain: Simulation
+area: specialized
+first_release_date: 2021-03-03
+venue: "IROS 2021"
+description: "Gymnasium environments for single- and multi-agent quadcopter control on PyBullet, with realistic collisions and aerodynamic effects such as downwash, PID and RL examples, and Betaflight SITL support. A common lightweight baseline for drone reinforcement learning."
+physics_engine: "PyBullet (Bullet) with added aerodynamic effects"
+renderer: "PyBullet (OpenGL visualizer; TinyRenderer)"
+gpu_support: false
+os: [Linux, macOS]
+license: "MIT"
+resources:
+  homepage: ""
+  paper: "https://arxiv.org/abs/2103.02142"
+  code: "https://github.com/learnsyslab/gym-pybullet-drones"
+  docs: ""

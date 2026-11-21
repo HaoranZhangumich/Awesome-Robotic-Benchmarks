@@ -1,0 +1,22 @@
+name: RoboSpatial
+domain: Embodied Reasoning
+area: spatial
+subtype: "spatial relations, reference frames, pointing"
+first_release_date: 2024-11-25
+venue: "CVPR 2025"
+description: "Spatial-understanding dataset for robotics built from 3D scans and egocentric images of indoor and tabletop scenes, with ego-, object- and world-centric reference frames. Its human-annotated test set RoboSpatial-Home (350 questions) was the basis of a CVPR 2026 challenge."
+task_count: "3 question types (configuration, context, compatibility)"
+metric_count: "1 (success rate)"
+robot_config_count: "N/A"
+modality: [RGB, depth, language]
+setting: [real]
+sim_backend: ""
+data_source:
+  size: "1M images, 5k 3D scans, 3M spatial relations; RoboSpatial-Home: 350 questions"
+  collection_method: mixed
+resources:
+  homepage: "https://chanh.ee/RoboSpatial/"
+  paper: "https://arxiv.org/abs/2411.16537"
+  code: "https://github.com/NVlabs/RoboSpatial"
+  data: "https://huggingface.co/datasets/chanhee-luke/RoboSpatial-Home"
+  leaderboard: ""

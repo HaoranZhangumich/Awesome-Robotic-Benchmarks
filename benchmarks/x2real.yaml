@@ -1,0 +1,22 @@
+name: X2Real
+domain: Generalist
+area: real2sim
+subtype: "calibrated simulation proxy, multi-embodiment, long-horizon"
+first_release_date: 2026-09-23
+venue: "arXiv 2026"
+description: "Simulation benchmark from X Square Robot built on Isaac Lab-Arena and calibrated visually and physically against real hardware (0.84 sim-real correlation reported): 44 hierarchical long-horizon tasks over 10 capability dimensions, with domain randomisation and separate training and evaluation pipelines."
+task_count: "44 (10 capability dimensions)"
+metric_count: "2 (success rate, task-DAG progress score)"
+robot_config_count: "4 (ArtiXon Arm-6A, Quanta X1, ARX R5, Franka)"
+modality: [RGB, proprioceptive, language]
+setting: [sim]
+sim_backend: "Isaac Lab-Arena (Isaac Sim)"
+data_source:
+  size: "~300 h of annotated simulation trajectories"
+  collection_method: mixed
+resources:
+  homepage: "https://x2robot.com/en/pages/x2real"
+  paper: "https://arxiv.org/abs/2609.27449"
+  code: "https://github.com/X-Square-Robot/x2real"
+  data: "https://huggingface.co/datasets/x-square-robot/X2Real-Dataset"
+  leaderboard: ""

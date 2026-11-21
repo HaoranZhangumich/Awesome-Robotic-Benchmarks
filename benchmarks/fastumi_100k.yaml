@@ -1,0 +1,22 @@
+name: "FastUMI-100K"
+domain: Datasets
+area: robot-data
+subtype: "UMI-style, handheld gripper, robot-free"
+first_release_date: 2025-10-09
+venue: "arXiv 2025"
+description: "Demonstrations recorded with FastUMI handheld grippers instead of a robot: 100K+ trajectories over 54 household tasks in single- and dual-arm form, with wrist fisheye video, end-effector states and text annotations."
+task_count: "54 tasks"
+metric_count: "N/A"
+robot_config_count: "N/A (handheld FastUMI gripper, single- and dual-arm)"
+modality: [RGB, proprioceptive, language]
+setting: [real]
+sim_backend: ""
+data_source:
+  size: "100K+ trajectories"
+  collection_method: human_demonstration
+resources:
+  homepage: ""
+  paper: "https://arxiv.org/abs/2510.08022"
+  code: "https://github.com/MrKeee/FastUMI-100K"
+  data: "https://huggingface.co/datasets/IPEC-COMMUNITY/FastUMI_100k_lerobot"
+  leaderboard: ""

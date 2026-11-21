@@ -1,13 +1,17 @@
-name: Gazebo 
+name: Gazebo
 domain: Simulation
-description: "Modular, open-source robotics simulator with pluggable physics and rendering backends."
-first_release_date: ""
-physics_engine: "Plugins: DART (ref), Bullet, ODE, TPE; Chrono via plugin"
-renderer: "gz-rendering (OGRE/OGRE2; OptiX experimental)"
-gpu_support: true
-os: ["Linux", "Windows", "macOS"]
+area: physics
+first_release_date: 2002
+venue: "IROS 2004"
+widely_used: true
+description: "Modular open-source robot simulator with plugin-based physics, rendering and sensor libraries. Development began in 2002; the rewritten Gazebo (formerly Ignition) first shipped in 2019 and Gazebo Classic reached end of life in January 2025. Physics runs on CPU."
+physics_engine: "gz-physics plugins: DART (reference), Bullet, Bullet Featherstone, TPE"
+renderer: "gz-rendering: OGRE 1.x, OGRE-Next 2.x"
+gpu_support: false
+os: [Linux, macOS, Windows]
 license: "Apache-2.0"
 resources:
   homepage: "https://gazebosim.org"
+  paper: "https://ieeexplore.ieee.org/document/1389727"
   code: "https://github.com/gazebosim/gz-sim"
-  docs: "https://gazebosim.org/libs/physics"
+  docs: "https://gazebosim.org/docs"

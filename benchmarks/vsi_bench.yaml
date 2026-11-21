@@ -1,0 +1,23 @@
+name: VSI-Bench
+domain: Embodied Reasoning
+area: spatial
+subtype: "visual-spatial intelligence, video QA"
+first_release_date: 2024-12-18
+venue: "CVPR 2025"
+widely_used: true
+description: "Video QA benchmark for visual-spatial intelligence: after watching an egocentric walkthrough of a real indoor scene (ScanNet, ScanNet++, ARKitScenes), a model answers questions on configuration, measurement and spatiotemporal order. Widely reported by spatial VLMs and embodied-reasoning models."
+task_count: "8 tasks (configurational, measurement estimation, spatiotemporal)"
+metric_count: "2 (accuracy, mean relative accuracy)"
+robot_config_count: "N/A"
+modality: [video, language]
+setting: [real]
+sim_backend: ""
+data_source:
+  size: "5,000+ QA pairs from 288 egocentric videos"
+  collection_method: mixed
+resources:
+  homepage: "https://vision-x-nyu.github.io/thinking-in-space.github.io/"
+  paper: "https://arxiv.org/abs/2412.14171"
+  code: "https://github.com/vision-x-nyu/thinking-in-space"
+  data: "https://huggingface.co/datasets/nyu-visionx/VSI-Bench"
+  leaderboard: ""

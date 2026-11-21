@@ -1,0 +1,22 @@
+name: ASIMOV
+domain: Safety
+area: embodied-safety
+subtype: "semantic safety, robot constitutions"
+first_release_date: 2025-03-11
+venue: "CoRL 2025"
+description: "Google DeepMind datasets for the semantic safety of foundation models used as robot brains: undesirable situations generated from real robot images (RoboVQA), hospital injury reports (NEISS) and dilemmas, scored by agreement with human labels. ASIMOV-2.0 (September 2025) adds injury-risk reasoning, risk perception in video and embodiment constraints."
+task_count: "5 datasets; 2,273 validation questions over 310 contexts"
+metric_count: "2 (alignment rate with human labels, violation score)"
+robot_config_count: "N/A (image and text questions)"
+modality: [RGB, language]
+setting: [real]
+sim_backend: ""
+data_source:
+  size: "Validation: 310 contexts, 2,273 actions; all splits: 513,679 contexts"
+  collection_method: mixed
+resources:
+  homepage: "https://asimov-benchmark.github.io/v1/"
+  paper: "https://arxiv.org/abs/2503.08663"
+  code: "https://github.com/asimov-benchmark/code"
+  data: "https://github.com/asimov-benchmark/code/blob/main/ASIMOV_Datasets.ipynb"
+  leaderboard: ""

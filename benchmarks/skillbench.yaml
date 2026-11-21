@@ -1,0 +1,22 @@
+name: SkillBench (SkillBlender)
+domain: Locomotion
+area: humanoid
+subtype: "humanoid loco-manipulation, hierarchical RL"
+first_release_date: 2025-06-11
+venue: "arXiv 2025"
+description: "Parallel, cross-embodiment simulation benchmark released with SkillBlender: four primitive skills (walking, reaching, squatting, stepping) and eight loco-manipulation tasks such as button press, box push and package carry on three Unitree humanoids, with metrics that balance accuracy and feasibility."
+task_count: "8 loco-manipulation tasks + 4 primitive skills"
+metric_count: "2 groups (task accuracy, motion feasibility)"
+robot_config_count: "3 (Unitree H1, G1, H1-2)"
+modality: [state, RGB]
+setting: [sim]
+sim_backend: "Isaac Gym"
+data_source:
+  size: "N/A"
+  collection_method: none
+resources:
+  homepage: "https://psi-lab.ai/SkillBlender-web/"
+  paper: "https://arxiv.org/abs/2506.09366"
+  code: "https://github.com/Humanoid-SkillBlender/SkillBlender"
+  data: ""
+  leaderboard: ""

@@ -1,0 +1,22 @@
+name: "MultiDex (GenDexGrasp)"
+domain: Dexterous Manipulation
+area: dex-grasping
+subtype: "multi-hand grasp dataset, cross-embodiment"
+first_release_date: 2022-10-03
+venue: "ICRA 2023"
+description: "Multi-hand grasp dataset released with GenDexGrasp: 436,000 force-closure grasps of 58 household objects (YCB, ContactDB) for five hands with two to five fingers (EZGripper, Barrett, Robotiq-3F, Allegro, Shadow Hand). A common test bed for grasp generation that transfers across hands."
+task_count: "N/A"
+metric_count: "3 (success rate, diversity, inference speed)"
+robot_config_count: "5 (EZGripper, Barrett, Robotiq-3F, Allegro, Shadow Hand)"
+modality: [pointcloud, state]
+setting: [sim]
+sim_backend: "Isaac Gym (grasp validation)"
+data_source:
+  size: "436,000 grasps, 58 objects, 5 hands"
+  collection_method: synthetic
+resources:
+  homepage: "https://sites.google.com/view/gendexgrasp/multidex"
+  paper: "https://arxiv.org/abs/2210.00722"
+  code: "https://github.com/tengyu-liu/GenDexGrasp"
+  data: ""
+  leaderboard: ""

@@ -1,0 +1,22 @@
+name: OpenRoboCare
+domain: HRI
+area: assistive
+subtype: "caregiving dataset, expert demonstrations"
+first_release_date: 2025-11-17
+venue: "IROS 2025"
+description: "Multimodal real-world dataset of expert caregiving: 21 occupational therapists perform 15 activities-of-daily-living tasks (bathing, dressing, transfers, toileting, grooming) on two manikins, recorded with RGB-D, motion capture, eye gaze, tactile skin and annotations. Used to test pose estimation and task recognition for assistive robots."
+task_count: "15 ADL tasks; evaluations on 2D/3D human pose and task recognition"
+metric_count: "2 (mAP for 2D pose, MPJPE for 3D pose)"
+robot_config_count: "N/A (human caregivers on manikins)"
+modality: [RGB, depth, mocap, tactile, eye gaze]
+setting: [real]
+sim_backend: ""
+data_source:
+  size: "315 sessions, 19.8 hours, 31,185 samples from 21 therapists"
+  collection_method: human_demonstration
+resources:
+  homepage: "https://emprise.cs.cornell.edu/robo-care/"
+  paper: "https://arxiv.org/abs/2511.13707"
+  code: ""
+  data: "https://registry.opendata.aws/open-robo-care/"
+  leaderboard: ""

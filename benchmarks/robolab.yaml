@@ -1,0 +1,22 @@
+name: RoboLab
+domain: Generalist
+area: real2sim
+subtype: "simulation benchmark for real-world-trained policies"
+first_release_date: 2026-04-10
+venue: "RSS 2026"
+description: "NVIDIA simulation benchmark for policies trained only on real-world data. RoboLab-120 has 120 language-specified tasks along visual, procedural and relational axes at three difficulty levels, with graded subtask scores and sensitivity analysis under controlled perturbations."
+task_count: "120 (RoboLab-120)"
+metric_count: "3+ (success rate, graded subtask score, trajectory metrics)"
+robot_config_count: "1 by default (DROID Franka); tasks are robot-agnostic"
+modality: [RGB, proprioceptive, language]
+setting: [sim]
+sim_backend: "Isaac Lab (Isaac Sim)"
+data_source:
+  size: "N/A (policies train on real data such as DROID)"
+  collection_method: none
+resources:
+  homepage: "https://research.nvidia.com/labs/srl/projects/robolab/"
+  paper: "https://arxiv.org/abs/2604.09860"
+  code: "https://github.com/NVlabs/RoboLab"
+  data: ""
+  leaderboard: "https://research.nvidia.com/labs/srl/projects/robolab/leaderboard.html"

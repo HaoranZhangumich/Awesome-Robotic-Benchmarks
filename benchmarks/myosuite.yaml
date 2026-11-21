@@ -1,0 +1,22 @@
+name: MyoSuite
+domain: Dexterous Manipulation
+area: dex-manipulation
+subtype: "musculoskeletal control, MyoChallenge"
+first_release_date: 2022-05-26
+venue: "L4DC 2022"
+description: "MuJoCo suite of physiologically detailed musculoskeletal models (finger, hand, arm, elbow, leg) with contact-rich tasks such as key turning, pen twirling and Baoding balls, plus muscle fatigue and sarcopenia variants. It hosts the MyoChallenge competition tasks; version 3 adds GPU backends."
+task_count: "8 MyoChallenge tasks + pose / reach / manipulation families"
+metric_count: "1 (success rate)"
+robot_config_count: "5 model families (elbow, finger, hand, arm, leg)"
+modality: [state, proprioceptive]
+setting: [sim]
+sim_backend: "MuJoCo (CPU), mjlab and MJX (GPU)"
+data_source:
+  size: "N/A"
+  collection_method: none
+resources:
+  homepage: "https://www.myosuite.org"
+  paper: "https://arxiv.org/abs/2205.13600"
+  code: "https://github.com/MyoHub/myosuite"
+  data: ""
+  leaderboard: ""

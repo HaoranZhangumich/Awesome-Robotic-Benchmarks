@@ -1,0 +1,17 @@
+name: Habitat-Sim
+domain: Simulation
+area: embodied-platform
+first_release_date: 2019-04-02
+venue: "ICCV 2019"
+widely_used: true
+description: "Fast 3D simulator for embodied AI on scanned and CAD indoor scenes (HM3D, HSSD, Matterport3D, Gibson, ReplicaCAD) with Bullet rigid-body physics; with Habitat-Lab it underlies the PointNav, ObjectNav and rearrangement benchmarks. Meta ended official maintenance after v0.3.4 and archived the repository in 2026."
+physics_engine: "Bullet"
+renderer: "Magnum (OpenGL)"
+gpu_support: false
+os: [Linux, macOS]
+license: "MIT"
+resources:
+  homepage: "https://aihabitat.org/"
+  paper: "https://arxiv.org/abs/1904.01201"
+  code: "https://github.com/facebookresearch/habitat-sim"
+  docs: "https://aihabitat.org/docs/habitat-sim/"

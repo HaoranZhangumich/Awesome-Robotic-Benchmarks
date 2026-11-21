@@ -1,0 +1,22 @@
+name: ArtVIP
+domain: Manipulation
+area: articulated
+subtype: "articulated-object assets, digital twins"
+first_release_date: 2025-06-05
+venue: "ICLR 2026"
+description: "Open set of 992 artist-made digital-twin articulated objects (9 categories, 37 subcategories) and six scenes in USD, with tuned joint dynamics, embedded interaction behaviours such as latching and self-closing, and pixel-level affordance labels. Validated against motion capture and in imitation- and reinforcement-learning experiments in Isaac Sim."
+task_count: "N/A (asset dataset; 5 demonstration tasks in the paper)"
+metric_count: "N/A"
+robot_config_count: "N/A"
+modality: ["3D assets"]
+setting: [sim]
+sim_backend: "Isaac Sim (USD; convertible to URDF / MJCF)"
+data_source:
+  size: "992 articulated objects, 6 scenes"
+  collection_method: human_annotation
+resources:
+  homepage: "https://x-humanoid-artvip.github.io/"
+  paper: "https://arxiv.org/abs/2506.04941"
+  code: ""
+  data: "https://huggingface.co/datasets/X-Humanoid/ArtVIP"
+  leaderboard: ""

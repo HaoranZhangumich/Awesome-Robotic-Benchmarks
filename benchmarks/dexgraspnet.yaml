@@ -1,0 +1,23 @@
+name: DexGraspNet
+domain: Dexterous Manipulation
+area: dex-grasping
+subtype: "grasp dataset, Shadow Hand"
+first_release_date: 2022-10-06
+venue: "ICRA 2023"
+widely_used: true
+description: "Synthetic dataset of 1.32 million Shadow Hand grasps on 5,355 objects from more than 133 categories, generated with an accelerated differentiable force-closure estimator and validated in Isaac Gym. The usual training and comparison set for dexterous grasp synthesis."
+task_count: "N/A"
+metric_count: "N/A"
+robot_config_count: "1 (Shadow Hand; Allegro and MANO code branches)"
+modality: [state]
+setting: [sim]
+sim_backend: "Isaac Gym (grasp validation)"
+data_source:
+  size: "1.32M grasps on 5,355 objects"
+  collection_method: synthetic
+resources:
+  homepage: "https://pku-epic.github.io/DexGraspNet/"
+  paper: "https://arxiv.org/abs/2210.02697"
+  code: "https://github.com/PKU-EPIC/DexGraspNet"
+  data: ""
+  leaderboard: ""

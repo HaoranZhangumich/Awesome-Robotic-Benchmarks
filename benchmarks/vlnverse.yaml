@@ -1,0 +1,22 @@
+name: VLNVerse
+domain: Navigation
+area: vln
+subtype: "unified multi-task VLN, physics simulation"
+first_release_date: 2025-12-22
+venue: "arXiv 2025"
+description: "Large VLN benchmark on Isaac Sim with 263 hand-built interactive USD scenes and physically simulated agents instead of teleporting cameras. One framework covers fine-grained, coarse-grained, visual-reference, long-horizon and dialogue navigation; used for the ECCV 2026 EMR workshop challenge."
+task_count: "5 (fine-grained, coarse-grained, visual-reference, long-horizon, dialogue)"
+metric_count: "7 (SR, OSR, SPL, NE, TL, nDTW, CR)"
+robot_config_count: "configurable agent footprint (any morphology)"
+modality: [RGB, depth, language]
+setting: [sim]
+sim_backend: "Isaac Sim"
+data_source:
+  size: "263 scenes (177/33/53); coarse-grained task: 11,895 train / 3,975 test episodes"
+  collection_method: mixed
+resources:
+  homepage: "https://sihaoevery.github.io/vlnverse/"
+  paper: "https://arxiv.org/abs/2512.19021"
+  code: "https://github.com/sihaoevery/vlnverse_emr"
+  data: "https://huggingface.co/datasets/Eyz/VLNVerse_scene"
+  leaderboard: "https://www.codabench.org/competitions/17009/"

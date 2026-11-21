@@ -1,0 +1,23 @@
+name: legged_gym
+domain: Locomotion
+area: legged
+subtype: "quadruped / biped, rough terrain, sim-to-real"
+first_release_date: 2021-09-24
+venue: "CoRL 2021"
+widely_used: true
+description: "Isaac Gym environments from 'Learning to Walk in Minutes': rough-terrain locomotion trained with thousands of parallel robots, a terrain curriculum and the randomisation needed for sim-to-real transfer. Later codebases such as Unitree RL Gym and Humanoid-Gym build on it; the tasks have since moved to Isaac Lab."
+task_count: "5 (ANYmal C rough and flat, ANYmal B, A1, Cassie)"
+metric_count: "N/A"
+robot_config_count: "4 (ANYmal C, ANYmal B, Unitree A1, Cassie)"
+modality: [proprioceptive]
+setting: [sim]
+sim_backend: "Isaac Gym (PhysX)"
+data_source:
+  size: "N/A"
+  collection_method: none
+resources:
+  homepage: "https://leggedrobotics.github.io/legged_gym/"
+  paper: "https://arxiv.org/abs/2109.11978"
+  code: "https://github.com/leggedrobotics/legged_gym"
+  data: ""
+  leaderboard: ""

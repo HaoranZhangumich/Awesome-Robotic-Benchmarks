@@ -1,0 +1,23 @@
+name: GraspNet-1Billion
+domain: Manipulation
+area: grasping
+subtype: "6-DoF grasp detection, clutter, real RGB-D"
+first_release_date: 2020-06
+venue: "CVPR 2020"
+widely_used: true
+description: "Large real-world benchmark for 6-DoF parallel-jaw grasp detection in clutter: 97,280 RGB-D images of 190 scenes with 88 objects from RealSense and Kinect cameras, annotated with 6D poses and over 1.1 billion grasp poses. A unified evaluation scores predicted grasps analytically and reports AP across friction coefficients."
+task_count: "1 (grasp pose detection on 190 scenes)"
+metric_count: "1 (AP, averaged over friction coefficients)"
+robot_config_count: "N/A (parallel-jaw gripper model)"
+modality: [RGB, depth, pointcloud]
+setting: [real]
+sim_backend: ""
+data_source:
+  size: "97,280 RGB-D images, 190 scenes, 88 objects, 1.1B grasp poses"
+  collection_method: mixed
+resources:
+  homepage: "https://graspnet.net/"
+  paper: "https://openaccess.thecvf.com/content_CVPR_2020/html/Fang_GraspNet-1Billion_A_Large-Scale_Benchmark_for_General_Object_Grasping_CVPR_2020_paper.html"
+  code: "https://github.com/graspnet/graspnetAPI"
+  data: "https://graspnet.net/datasets.html"
+  leaderboard: ""

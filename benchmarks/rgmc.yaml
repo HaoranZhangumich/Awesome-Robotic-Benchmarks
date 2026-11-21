@@ -1,0 +1,27 @@
+name: Robotic Grasping and Manipulation Competition (RGMC)
+domain: Other
+area: competition
+subtype: "grasping and manipulation competition"
+first_release_date: 2016
+venue: "IEEE RA-L 2021"
+
+description: "Yearly manipulation competition, first held at IROS 2016 and now hosted at ICRA: the 11th edition ran at ICRA 2026 and the 12th is set for ICRA 2027 in Seoul. Tracks cover picking in clutter, human-to-robot handover, cloud robotics, mobile manipulation and simulated sorting."
+
+task_count: "5 tracks announced for the 2027 edition"
+metric_count: "Track-specific scoring rules"
+robot_config_count: "Team-provided robots; KTH CloudGripper cells in the cloud track"
+
+modality: [RGB, depth, proprioceptive]
+setting: [sim, real]
+sim_backend: "MATLAB/Simulink (simulation sorting track)"
+
+data_source:
+  size: "N/A"
+  collection_method: none
+
+resources:
+  homepage: "https://sites.google.com/view/rgmcomp"
+  paper: "https://doi.org/10.1109/LRA.2021.3129134"
+  code: ""
+  data: ""
+  leaderboard: "https://sites.google.com/view/rgmcomp/leaderboards"

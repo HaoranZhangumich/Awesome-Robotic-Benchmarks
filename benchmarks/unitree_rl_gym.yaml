@@ -1,0 +1,21 @@
+name: Unitree RL Gym
+domain: Locomotion
+area: legged
+subtype: "quadruped / humanoid, sim-to-real"
+first_release_date: 2023-10
+description: "Unitree's reinforcement-learning environments for Go2, H1, H1-2 and G1 with a train, play, sim-to-sim, sim-to-real workflow: training in Isaac Gym, a MuJoCo check, then deployment on the robot. Built on legged_gym; Unitree's newer repositories are unitree_rl_lab (Isaac Lab) and unitree_rl_mjlab (MuJoCo)."
+task_count: "4 (one locomotion task per robot)"
+metric_count: "N/A"
+robot_config_count: "4 (Unitree Go2, G1, H1, H1-2)"
+modality: [proprioceptive]
+setting: [sim, real]
+sim_backend: "Isaac Gym; MuJoCo (sim-to-sim)"
+data_source:
+  size: "N/A"
+  collection_method: none
+resources:
+  homepage: ""
+  paper: ""
+  code: "https://github.com/unitreerobotics/unitree_rl_gym"
+  data: ""
+  leaderboard: ""

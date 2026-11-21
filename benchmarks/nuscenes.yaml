@@ -1,0 +1,28 @@
+name: nuScenes
+domain: Autonomous Driving
+area: driving-data
+subtype: "3D perception, prediction"
+first_release_date: 2019-03-26
+venue: "CVPR 2020"
+widely_used: true
+
+description: "Multimodal driving dataset of 1,000 20-second scenes from Boston and Singapore with the full sensor suite (6 cameras, 1 lidar, 5 radars) and 3D boxes for 23 classes. Standard benchmark for 3D detection, tracking, prediction and lidar segmentation, and widely reused for open-loop planning."
+
+task_count: "5 leaderboards (detection, tracking, prediction, lidar segmentation, panoptic)"
+metric_count: "Task-specific (NDS and mAP, AMOTA, minADE/minFDE, mIoU)"
+robot_config_count: "1 (car with 6 cameras, 1 lidar, 5 radars, GPS and IMU)"
+
+modality: [RGB, lidar, radar, GPS_IMU]
+setting: [real]
+sim_backend: ""
+
+data_source:
+  size: "1,000 scenes of 20 s (about 15 h); 1.4M camera images and 1.4M 3D boxes on 40k keyframes"
+  collection_method: human_annotation
+
+resources:
+  homepage: "https://www.nuscenes.org/nuscenes"
+  paper: "https://arxiv.org/abs/1903.11027"
+  code: "https://github.com/nutonomy/nuscenes-devkit"
+  data: "https://www.nuscenes.org/download"
+  leaderboard: "https://www.nuscenes.org/object-detection"

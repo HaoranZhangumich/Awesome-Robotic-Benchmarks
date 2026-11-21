@@ -1,0 +1,22 @@
+name: "HiFi-UMI-2K"
+domain: Datasets
+area: robot-data
+subtype: "UMI-style, handheld bimanual, robot-free"
+first_release_date: 2026-07-28
+venue: "arXiv 2026"
+description: "2,000 hours of robot-free bimanual demonstrations captured with the HiFi-UMI handheld system: six hardware-synchronized camera views, about 3 mm end-effector accuracy and replay-validated trajectories from 480+ scenes. A curated subset of a 20,000-hour corpus, aimed at training deployable policies without robot data."
+task_count: "N/A"
+metric_count: "N/A"
+robot_config_count: "N/A (handheld HiFi-UMI grippers, bimanual)"
+modality: [RGB, proprioceptive, language]
+setting: [real]
+sim_backend: ""
+data_source:
+  size: "2,000 hours released (from a 20,000+ hour, 4.32M-episode corpus)"
+  collection_method: human_demonstration
+resources:
+  homepage: "https://cloud.simpleai.tech/simple-world-lab/hifi-umi/"
+  paper: "https://arxiv.org/abs/2607.25895"
+  code: ""
+  data: "https://huggingface.co/datasets/simple-world-lab/HiFi-UMI-2K"
+  leaderboard: ""

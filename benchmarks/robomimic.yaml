@@ -1,0 +1,23 @@
+name: robomimic
+domain: Manipulation
+area: tabletop
+subtype: "table-top, imitation learning, offline RL"
+first_release_date: 2021-08-06
+venue: "CoRL 2021"
+widely_used: true
+description: "Study and framework for learning from offline human demonstrations. Its robosuite tasks (Lift, Can, Square, Transport, Tool Hang) with proficient-human, multi-human and machine-generated datasets are a standard small-data benchmark for imitation learning; three tasks also have real-robot data."
+task_count: "5 sim + 3 real"
+metric_count: "1 (success rate)"
+robot_config_count: "1 (Franka Panda)"
+modality: [RGB, depth, proprioceptive, state]
+setting: [sim, real]
+sim_backend: "robosuite (MuJoCo)"
+data_source:
+  size: "200 proficient-human demos per task; 300 multi-human; machine-generated sets"
+  collection_method: mixed
+resources:
+  homepage: "https://robomimic.github.io/"
+  paper: "https://arxiv.org/abs/2108.03298"
+  code: "https://github.com/ARISE-Initiative/robomimic"
+  data: "https://huggingface.co/datasets/amandlek/robomimic"
+  leaderboard: ""

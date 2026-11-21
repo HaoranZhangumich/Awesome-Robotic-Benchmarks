@@ -1,0 +1,16 @@
+name: Aerial Gym Simulator
+domain: Simulation
+area: specialized
+first_release_date: 2023-05-25
+venue: "RA-L 2025"
+description: "Highly parallel simulator for multirotors built on NVIDIA Isaac Gym: under-, fully- and over-actuated platforms with GPU geometric controllers and a custom Warp ray-casting renderer for depth, segmentation and lidar. Used to train state- and vision-based flight policies with demonstrated sim-to-real transfer."
+physics_engine: "PhysX through Isaac Gym (GPU)"
+renderer: "Isaac Gym cameras; custom NVIDIA Warp ray casting"
+gpu_support: true
+os: [Linux]
+license: "BSD-3-Clause"
+resources:
+  homepage: "https://ntnu-arl.github.io/aerial_gym_simulator/"
+  paper: "https://arxiv.org/abs/2503.01471"
+  code: "https://github.com/ntnu-arl/aerial_gym_simulator"
+  docs: "https://ntnu-arl.github.io/aerial_gym_simulator/"

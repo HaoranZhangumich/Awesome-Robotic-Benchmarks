@@ -1,0 +1,22 @@
+name: NaviTrace
+domain: Navigation
+area: vln
+subtype: "VLM navigation probe, real-world images, cross-embodiment"
+first_release_date: 2025-10-30
+venue: "ICRA 2026"
+description: "VQA-style probe of navigation ability in vision-language models: given a real-world image, an instruction and an embodiment (human, legged robot, wheeled robot, bicycle), the model draws a 2D path in image space, scored against expert traces."
+task_count: "1,000 scenarios"
+metric_count: "1 (semantic-aware trace score: DTW, endpoint error, semantic penalty)"
+robot_config_count: "4 embodiments (human, legged robot, wheeled robot, bicycle)"
+modality: [RGB, language]
+setting: [real]
+sim_backend: ""
+data_source:
+  size: "1,000 scenarios, 3,000+ expert traces; validation split and hidden test split"
+  collection_method: human_annotation
+resources:
+  homepage: "https://leggedrobotics.github.io/navitrace_webpage/"
+  paper: "https://arxiv.org/abs/2510.26909"
+  code: "https://github.com/leggedrobotics/navitrace_evaluation"
+  data: "https://huggingface.co/datasets/leggedrobotics/navitrace"
+  leaderboard: "https://huggingface.co/spaces/leggedrobotics/navitrace_leaderboard"

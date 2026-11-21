@@ -1,0 +1,23 @@
+name: RxR (Room-Across-Room)
+domain: Navigation
+area: vln
+subtype: "discrete VLN, multilingual, dense grounding"
+first_release_date: 2020-10-15
+venue: "EMNLP 2020"
+widely_used: true
+description: "Multilingual VLN dataset on Matterport3D: longer and more varied paths than R2R, with instructions in English, Hindi and Telugu whose words are time-aligned to the annotator's pose trace. Its continuous port RxR-CE is a standard test of long-instruction following."
+task_count: "1 (instruction following; 16.5k paths)"
+metric_count: "6 (PL, NE, SR, SPL, NDTW, SDTW)"
+robot_config_count: "1 (panoramic-camera agent on a nav-graph)"
+modality: [RGB, language]
+setting: [sim]
+sim_backend: "Matterport3D Simulator"
+data_source:
+  size: "126k instructions over 16.5k paths, 3 languages, 90 buildings"
+  collection_method: human_annotation
+resources:
+  homepage: "https://ai.google.com/research/rxr/"
+  paper: "https://arxiv.org/abs/2010.07954"
+  code: "https://github.com/google-research-datasets/RxR"
+  data: ""
+  leaderboard: "https://ai.google.com/research/rxr/competition?active_tab=leaderboard"

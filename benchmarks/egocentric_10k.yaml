@@ -1,0 +1,21 @@
+name: "Egocentric-10K"
+domain: Datasets
+area: human-data
+subtype: "egocentric video, factory work, in-the-wild"
+first_release_date: 2025-11
+description: "10,000 hours of head-mounted video of workers in 85 real factories, released by Build AI under Apache 2.0 as raw 1080p clips with camera intrinsics; the card stresses high hand visibility and manipulation density. The follow-up Egocentric-100K adds 100,405 hours at 256p."
+task_count: "N/A"
+metric_count: "N/A"
+robot_config_count: "N/A (human)"
+modality: [video]
+setting: [real]
+sim_backend: ""
+data_source:
+  size: "10,000 hours, 192,900 clips, 1.08B frames (Egocentric-100K: 100,405 hours)"
+  collection_method: human_demonstration
+resources:
+  homepage: "https://www.build.ai/"
+  paper: ""
+  code: ""
+  data: "https://huggingface.co/datasets/builddotai/Egocentric-10K"
+  leaderboard: ""

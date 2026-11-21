@@ -1,0 +1,23 @@
+name: DexYCB
+domain: Dexterous Manipulation
+area: hand-object-data
+subtype: "hand-object pose, handover"
+first_release_date: 2021-04-09
+venue: "CVPR 2021"
+widely_used: true
+description: "Multi-camera RGB-D dataset of 10 subjects grasping YCB objects, with 3D hand pose and 6D object pose labels. Defines benchmarks for 2D detection, 6D object pose, 3D hand pose and safe human-to-robot handover, and is a standard test set for hand-object reconstruction."
+task_count: "4 (2D detection, 6D object pose, 3D hand pose, handover)"
+metric_count: "4 protocols (COCO, BOP, HPE, Grasp)"
+robot_config_count: "N/A"
+modality: [RGB, depth, hand pose]
+setting: [real]
+sim_backend: ""
+data_source:
+  size: "10 subjects, 8 RGB-D views, YCB objects (119 GB)"
+  collection_method: human_demonstration
+resources:
+  homepage: "https://dex-ycb.github.io"
+  paper: "https://arxiv.org/abs/2104.04631"
+  code: "https://github.com/NVlabs/dex-ycb-toolkit"
+  data: ""
+  leaderboard: ""

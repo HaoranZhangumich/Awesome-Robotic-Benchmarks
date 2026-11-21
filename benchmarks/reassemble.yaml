@@ -1,0 +1,22 @@
+name: REASSEMBLE
+domain: Manipulation
+area: contact-rich
+subtype: "real-world dataset, assembly and disassembly"
+first_release_date: 2025-02-07
+venue: "RSS 2025"
+description: "Multimodal dataset for contact-rich assembly and disassembly on NIST Task Board 1: 4,551 haptically teleoperated demonstrations of pick, insert, remove and place on 17 objects, recorded with multi-view RGB, an event camera, force-torque, audio and proprioception. Benchmarked on action segmentation, motion policy learning and execution monitoring."
+task_count: "4 actions on 17 objects (68 action-object pairs)"
+metric_count: "task-specific (segmentation accuracy, edit score, F1; success rate)"
+robot_config_count: "1 (Franka Research 3)"
+modality: [RGB, event camera, force-torque, audio, proprioceptive]
+setting: [real]
+sim_backend: ""
+data_source:
+  size: "4,551 demonstrations (4,035 successful), 781 minutes"
+  collection_method: human_demonstration
+resources:
+  homepage: "https://tuwien-asl.github.io/REASSEMBLE_page/"
+  paper: "https://arxiv.org/abs/2502.05086"
+  code: "https://github.com/TUWIEN-ASL/REASSEMBLE"
+  data: "https://researchdata.tuwien.ac.at/records/0ewrv-8cb44"
+  leaderboard: ""

@@ -1,0 +1,22 @@
+name: REVERIE
+domain: Navigation
+area: vln
+subtype: "discrete VLN, remote object grounding"
+first_release_date: 2019-04-23
+venue: "CVPR 2020"
+description: "Remote object grounding in Matterport3D buildings: from a short high-level instruction (for example a household request), the agent must navigate to the right place and identify the target object among distractors. The standard goal-oriented companion to R2R, with an active leaderboard."
+task_count: "1 (navigate, then ground the remote object)"
+metric_count: "5 (SR, OSR, SPL, RGS, RGSPL)"
+robot_config_count: "1 (panoramic-camera agent on a nav-graph)"
+modality: [RGB, language]
+setting: [sim]
+sim_backend: "Matterport3D Simulator"
+data_source:
+  size: "21,702 instructions, 4,140 target objects, 10,567 panoramas in 90 buildings"
+  collection_method: human_annotation
+resources:
+  homepage: "https://yuankaiqi.github.io/REVERIE_Challenge/index.html"
+  paper: "https://arxiv.org/abs/1904.10151"
+  code: "https://github.com/YuankaiQi/REVERIE"
+  data: "https://github.com/YuankaiQi/REVERIE/tree/master/tasks/REVERIE/data_v2"
+  leaderboard: "https://yuankaiqi.github.io/REVERIE_Challenge/leaderboard2026.html"

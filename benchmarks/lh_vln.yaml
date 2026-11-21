@@ -1,0 +1,22 @@
+name: LH-VLN (LHPR-VLN)
+domain: Navigation
+area: vln
+subtype: "long-horizon multi-stage VLN"
+first_release_date: 2024-12-12
+venue: "CVPR 2025"
+description: "Long-horizon VLN: each task chains several navigation subtasks in one HM3D scene (about 150 steps on average), testing long-term planning and consistency across stages. Adds per-subtask metrics (ISR, CSR, CGT) and ships the NavGen task generator."
+task_count: "3,260 multi-stage tasks in 216 scenes"
+metric_count: "7 (SR, OSR, SPL, NE, ISR, CSR, CGT)"
+robot_config_count: "2 (Spot and Stretch camera configurations)"
+modality: [RGB, depth, language]
+setting: [sim]
+sim_backend: "Habitat-Sim (HM3D scenes)"
+data_source:
+  size: "3,260 tasks, about 150 steps each"
+  collection_method: mixed
+resources:
+  homepage: "https://hcplab-sysu.github.io/LH-VLN/"
+  paper: "https://arxiv.org/abs/2412.09082"
+  code: "https://github.com/HCPLab-SYSU/LH-VLN"
+  data: "https://huggingface.co/datasets/Starry123/LHPR-VLN"
+  leaderboard: ""

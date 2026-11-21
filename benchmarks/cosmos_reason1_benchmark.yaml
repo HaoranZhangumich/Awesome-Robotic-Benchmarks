@@ -1,0 +1,22 @@
+name: Cosmos-Reason1 Benchmark
+domain: Embodied Reasoning
+area: spatial
+subtype: "physical common sense, embodied reasoning video QA"
+first_release_date: 2025-03-18
+venue: "arXiv 2025"
+description: "Video QA benchmark released with NVIDIA's Cosmos-Reason1. A physical common sense part covers space, time and fundamental physics; an embodied reasoning part asks about task completion, action affordance and the next action in robot, human and driving videos. Later became the understanding track of PAI-Bench."
+task_count: "9 sub-benchmarks (3 physical common sense, 6 embodied reasoning)"
+metric_count: "1 (accuracy on binary and multiple-choice questions)"
+robot_config_count: "4 embodiment types (humans, robot arms, humanoids, vehicles)"
+modality: [video, language]
+setting: [real]
+sim_backend: ""
+data_source:
+  size: "1,214 questions: 604 common sense (426 videos), 610 embodied reasoning"
+  collection_method: human_annotation
+resources:
+  homepage: ""
+  paper: "https://arxiv.org/abs/2503.15558"
+  code: "https://github.com/nvidia-cosmos/cosmos-reason1"
+  data: "https://huggingface.co/datasets/nvidia/Cosmos-Reason1-Benchmark"
+  leaderboard: "https://huggingface.co/spaces/shi-labs/physical-ai-bench-leaderboard"

@@ -1,0 +1,22 @@
+name: MotionMillion
+domain: Locomotion
+area: motion-data
+subtype: "web-scale human motion with text"
+first_release_date: 2025-07-09
+venue: "ICCV 2025"
+description: "Human motion dataset of over 2,000 hours and 2 million text-annotated SMPL sequences, reconstructed from web videos and merged with existing motion sets. Comes with MotionMillion-Eval, 126 prompts in 7 categories for zero-shot text-to-motion, and has been used as a source corpus for large humanoid motion trackers."
+task_count: "126 evaluation prompts in 7 categories (MotionMillion-Eval)"
+metric_count: "3 (text alignment, motion smoothness, physical plausibility; human-rated)"
+robot_config_count: "N/A (human SMPL body)"
+modality: [mocap, video, language]
+setting: [real]
+sim_backend: ""
+data_source:
+  size: "2,000+ hours, 2M motion sequences with text"
+  collection_method: mixed
+resources:
+  homepage: "https://vankouf.github.io/MotionMillion/"
+  paper: "https://arxiv.org/abs/2507.07095"
+  code: "https://github.com/VankouF/MotionMillion-Codes"
+  data: "https://huggingface.co/datasets/InternRobotics/MotionMillion"
+  leaderboard: ""

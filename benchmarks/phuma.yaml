@@ -1,0 +1,22 @@
+name: PHUMA
+domain: Locomotion
+area: motion-data
+subtype: "physically filtered humanoid locomotion data"
+first_release_date: 2025-10-30
+venue: "CoRL 2026"
+description: "Physically reliable humanoid locomotion dataset: 73 hours of motion from motion capture and internet video, cleaned by physics-aware curation and retargeted to the Unitree G1 and H1-2 with a physics-constrained method (PhySINK) that removes floating, penetration and foot skating. Supported natively in NVIDIA ProtoMotions."
+task_count: "N/A (dataset)"
+metric_count: "N/A"
+robot_config_count: "2 (Unitree G1, H1-2)"
+modality: [mocap, video]
+setting: [real]
+sim_backend: ""
+data_source:
+  size: "73 hours of retargeted humanoid motion"
+  collection_method: mixed
+resources:
+  homepage: "https://davian-robotics.github.io/PHUMA"
+  paper: "https://arxiv.org/abs/2510.26236"
+  code: "https://github.com/DAVIAN-Robotics/PHUMA"
+  data: "https://huggingface.co/datasets/DAVIAN-Robotics/PHUMA"
+  leaderboard: ""

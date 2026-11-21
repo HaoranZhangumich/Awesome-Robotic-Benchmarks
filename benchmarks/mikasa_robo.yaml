@@ -1,0 +1,22 @@
+name: MIKASA-Robo
+domain: Generalist
+area: probes
+subtype: "memory, partial observability"
+first_release_date: 2025-02-14
+venue: "ICLR 2026"
+description: "Memory-intensive tabletop manipulation tasks on ManiSkill3 in which the cue for the correct action disappears from view. The original release has 32 tasks for memory RL; the 2026 rebuild, MIKASA-Robo-VLA, has 90 language-conditioned tasks over 10 memory types."
+task_count: "32 (original); 90 in MIKASA-Robo-VLA"
+metric_count: "1 (success rate)"
+robot_config_count: "1 by default (Franka Panda)"
+modality: [RGB, proprioceptive, language, state]
+setting: [sim]
+sim_backend: "ManiSkill3 (SAPIEN)"
+data_source:
+  size: "22,500 oracle trajectories (RLDS and LeRobot formats)"
+  collection_method: mixed
+resources:
+  homepage: "https://mikasarobo.github.io/"
+  paper: "https://arxiv.org/abs/2502.10550"
+  code: "https://github.com/CognitiveAISystems/MIKASA-Robo"
+  data: "https://huggingface.co/mikasa-robo"
+  leaderboard: ""

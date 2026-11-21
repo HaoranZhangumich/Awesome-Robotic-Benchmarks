@@ -1,0 +1,21 @@
+name: BONES-SEED
+domain: Locomotion
+area: motion-data
+subtype: "large mocap set with Unitree G1 retargets"
+first_release_date: 2026-03-16
+description: "Open motion-capture dataset from Bones Studio for humanoid robotics: 142,220 annotated motions (71,132 captured plus mirrored copies, about 288 hours) from 522 actors, each with up to six text descriptions, in NVIDIA SOMA (BVH) and Unitree G1 (MuJoCo-compatible) formats. Used to train NVIDIA's SONIC tracker and Kimodo."
+task_count: "N/A (dataset)"
+metric_count: "N/A"
+robot_config_count: "1 (Unitree G1 retarget, plus the SOMA human skeleton)"
+modality: [mocap, language]
+setting: [real]
+sim_backend: ""
+data_source:
+  size: "142,220 motions, about 288 hours at 120 fps, 522 actors"
+  collection_method: human_demonstration
+resources:
+  homepage: "https://bones.studio/datasets/seed"
+  paper: ""
+  code: "https://github.com/bones-studio/seed-viewer"
+  data: "https://huggingface.co/datasets/bones-studio/seed"
+  leaderboard: ""

@@ -1,0 +1,22 @@
+name: DexGarmentLab
+domain: Dexterous Manipulation
+area: dex-bimanual
+subtype: "garments, bimanual dexterous hands"
+first_release_date: 2025-05-16
+venue: "NeurIPS 2025"
+description: "Isaac Sim environment for dexterous, mostly bimanual, garment manipulation with two UR10e arms and Shadow Hands: 15 task scenarios (fling, fold, hang, wear, store) over 2,500+ garments. Demonstrations are collected automatically using category-level garment correspondence."
+task_count: 15
+metric_count: "1 (success rate)"
+robot_config_count: "1 (two UR10e arms + Shadow Hands)"
+modality: [RGB, pointcloud, proprioceptive]
+setting: [sim]
+sim_backend: "Isaac Sim 4.5"
+data_source:
+  size: "100 automatically collected demonstrations per task"
+  collection_method: motion_planner
+resources:
+  homepage: "https://wayrise.github.io/DexGarmentLab/"
+  paper: "https://arxiv.org/abs/2505.11032"
+  code: "https://github.com/wayrise/DexGarmentLab"
+  data: "https://huggingface.co/datasets/wayrise/DexGarmentLab"
+  leaderboard: ""

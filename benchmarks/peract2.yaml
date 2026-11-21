@@ -1,0 +1,22 @@
+name: "PerAct2 (RLBench2 / TWIN)"
+domain: Manipulation
+area: bimanual
+subtype: "bimanual, language-conditioned, RLBench extension"
+first_release_date: 2024-06-29
+venue: "ICRA 2025 (as TWIN)"
+description: "Bimanual extension of RLBench: 13 language-conditioned two-arm tasks with 23 variations for two Franka Panda arms, with demonstrations generated automatically from waypoints. Often called RLBench2; published at ICRA 2025 under the name TWIN."
+task_count: "13 (23 variations)"
+metric_count: "1 (success rate)"
+robot_config_count: "1 (two Franka Panda arms)"
+modality: [RGB, depth, proprioceptive, language]
+setting: [sim]
+sim_backend: "CoppeliaSim (RLBench / PyRep)"
+data_source:
+  size: "scripted waypoint demos (100 per task in the paper); more can be generated"
+  collection_method: motion_planner
+resources:
+  homepage: "https://bimanual.github.io/"
+  paper: "https://arxiv.org/abs/2407.00278"
+  code: "https://github.com/markusgrotz/peract_bimanual"
+  data: "https://dataset.cs.washington.edu/fox/bimanual/"
+  leaderboard: ""

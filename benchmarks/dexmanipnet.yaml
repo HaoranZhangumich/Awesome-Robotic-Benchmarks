@@ -1,0 +1,22 @@
+name: "DexManipNet (ManipTrans)"
+domain: Dexterous Manipulation
+area: dex-bimanual
+subtype: "human-to-robot transfer, bimanual dataset"
+first_release_date: 2025-03-27
+venue: "CVPR 2025"
+description: "Dataset of 3.3K dexterous-hand manipulation episodes (61 tasks, about 600 bimanual sequences) executed in Isaac Gym with Inspire Hands. Produced by ManipTrans, a two-stage residual-learning method that transfers human hand-object motion from OakInk-V2 and FAVOR to robot hands."
+task_count: 61
+metric_count: "N/A"
+robot_config_count: "1 (Inspire Hand, simulated 12-DoF configuration)"
+modality: [state, hand pose]
+setting: [sim]
+sim_backend: "Isaac Gym"
+data_source:
+  size: "3.3K episodes, 1.34M frames, 1.2K objects"
+  collection_method: rl_policy
+resources:
+  homepage: "https://maniptrans.github.io"
+  paper: "https://arxiv.org/abs/2503.21860"
+  code: "https://github.com/ManipTrans/ManipTrans"
+  data: "https://huggingface.co/datasets/LiKailin/DexManipNet"
+  leaderboard: ""

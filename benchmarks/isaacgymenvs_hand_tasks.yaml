@@ -1,0 +1,22 @@
+name: "IsaacGymEnvs Hand Tasks"
+domain: Dexterous Manipulation
+area: dex-manipulation
+subtype: "in-hand reorientation, GPU-parallel RL"
+first_release_date: 2021-08-24
+venue: "arXiv 2021"
+description: "The dexterous-hand environments shipped with NVIDIA Isaac Gym: Shadow Hand and Allegro Hand object reorientation, TriFinger cube manipulation, DeXtreme, and the Allegro-Kuka arm-hand tasks from DexPBT. A common starting point for GPU-parallel in-hand RL; the repository is now archived."
+task_count: "5 families (ShadowHand, AllegroHand, Trifinger, DeXtreme, AllegroKuka)"
+metric_count: "1 (consecutive successes)"
+robot_config_count: "4 (Shadow Hand, Allegro Hand, TriFinger, Kuka + Allegro)"
+modality: [state, proprioceptive]
+setting: [sim]
+sim_backend: "Isaac Gym (PhysX)"
+data_source:
+  size: "N/A"
+  collection_method: none
+resources:
+  homepage: "https://developer.nvidia.com/isaac-gym"
+  paper: "https://arxiv.org/abs/2108.10470"
+  code: "https://github.com/isaac-sim/IsaacGymEnvs"
+  data: ""
+  leaderboard: ""

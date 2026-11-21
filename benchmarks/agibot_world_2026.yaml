@@ -1,0 +1,21 @@
+name: "AgiBot World 2026"
+domain: Datasets
+area: robot-data
+subtype: "whole-body mobile manipulation, free-form collection"
+first_release_date: 2026-04-07
+description: "Successor to AgiBot World, collected on the AgiBot G2 in real commercial and home scenes with free-form (unscripted) teleoperation and whole-body control. Released in parts for imitation learning, rich interaction, reinforcement learning and physical reasoning, with digital-twin simulation data."
+task_count: "N/A"
+metric_count: "N/A"
+robot_config_count: "1 (AgiBot G2)"
+modality: [RGB, depth, tactile, lidar, GPS_IMU, proprioceptive, language]
+setting: [real, sim]
+sim_backend: "Genie Sim (digital twins of the real scenes)"
+data_source:
+  size: "Hundreds of hours in the first (imitation-learning) part; total not stated"
+  collection_method: human_demonstration
+resources:
+  homepage: "https://agibot-world.com/"
+  paper: ""
+  code: ""
+  data: "https://huggingface.co/datasets/agibot-world/AgiBotWorld2026"
+  leaderboard: ""

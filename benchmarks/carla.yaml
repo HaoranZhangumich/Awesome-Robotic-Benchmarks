@@ -1,25 +1,28 @@
 name: CARLA
-domain: Other
-subtype: "automous-driving"
-first_release_date: 2017-11-01
+domain: Autonomous Driving
+area: driving-closed-loop
+subtype: "driving simulator, closed-loop leaderboard"
+first_release_date: 2017-11-10
+venue: "CoRL 2017"
+widely_used: true
 
-description: "Open-source urban driving simulator and benchmark; standard CoRL’17 suite of goal-directed navigation tasks."
+description: "Open-source driving simulator on Unreal Engine with configurable sensors, weather and traffic; CARLA 1.0 (November 2026) runs on UE 5.8. Its Autonomous Driving Leaderboard, long the standard closed-loop test, is now permanently closed; routes and metrics remain for local evaluation."
 
-task_count: "N/A"
-metric_count: "N/A"
-robot_config_count: "N/A"
+task_count: "2 leaderboard tracks (SENSORS, MAP)"
+metric_count: "3 (driving score, route completion, infraction penalty)"
+robot_config_count: "1 (ego vehicle with a configurable sensor suite)"
 
-modality: [RGB, depth, semantic, lidar, GPS_IMU]
+modality: [RGB, depth, segmentation, lidar, radar, GPS_IMU]
 setting: [sim]
-sim_backend: "Unreal Engine (CARLA)"
+sim_backend: "CARLA (Unreal Engine 5.8 in 1.0; Unreal Engine 4.26 in 0.9.x)"
 
 data_source:
-  size: "N/A (simulated scenarios)"
-  collection_method: "unknown"
+  size: "N/A"
+  collection_method: none
 
 resources:
   homepage: "https://carla.org/"
-  paper: "https://proceedings.mlr.press/v78/dosovitskiy17a/dosovitskiy17a.pdf"
+  paper: "https://arxiv.org/abs/1711.03938"
   code: "https://github.com/carla-simulator/carla"
   data: ""
   leaderboard: "https://leaderboard.carla.org/"

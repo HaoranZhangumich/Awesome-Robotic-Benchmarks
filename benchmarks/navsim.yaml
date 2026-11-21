@@ -1,0 +1,27 @@
+name: NAVSIM
+domain: Autonomous Driving
+area: driving-data
+subtype: "end-to-end planning, non-reactive simulation"
+first_release_date: 2024-06-21
+venue: "NeurIPS 2024 D&B"
+
+description: "Benchmark for sensor-based driving policies on real nuPlan/OpenScene logs: each planned trajectory is unrolled in a non-reactive bird's-eye-view simulation and scored with the PDM Score. NAVSIM v2 (2025) adds pseudo-simulation with 3D Gaussian Splatting views and the extended EPDMS; public leaderboards cover navtest and navhard."
+
+task_count: "2 public test splits (navtest for v1, navhard for v2)"
+metric_count: "PDMS (5 sub-scores) in v1; EPDMS (9 sub-scores) in v2"
+robot_config_count: "1 (ego vehicle with 8 cameras and a merged point cloud from 5 lidars)"
+
+modality: [RGB, lidar, state]
+setting: [sim, real]
+sim_backend: "Non-reactive BEV simulation on real logs (3DGS views in v2)"
+
+data_source:
+  size: "navtrain 103k samples, navtest 12k samples, drawn from 120 h of OpenScene (nuPlan at 2 Hz)"
+  collection_method: human_demonstration
+
+resources:
+  homepage: ""
+  paper: "https://arxiv.org/abs/2406.15349"
+  code: "https://github.com/autonomousvision/navsim"
+  data: ""
+  leaderboard: "https://huggingface.co/spaces/AGC2025/e2e-driving-navhard"

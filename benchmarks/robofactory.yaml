@@ -1,0 +1,22 @@
+name: RoboFactory
+domain: Manipulation
+area: bimanual
+subtype: "multi-arm collaboration, compositional constraints"
+first_release_date: 2025-03-20
+venue: "ICCV 2025"
+description: "Multi-arm collaboration benchmark on ManiSkill: 11 tasks in which one to four Franka Panda arms must cooperate under logical, spatial and temporal constraints. Expert data is generated automatically; the tasks were used in the MARS Challenge at NeurIPS 2025."
+task_count: 11
+metric_count: "1 (success rate)"
+robot_config_count: "1 (Franka Panda, 1-4 arms per task)"
+modality: [RGB, proprioceptive]
+setting: [sim]
+sim_backend: "ManiSkill3 (SAPIEN)"
+data_source:
+  size: "auto-generated expert demos (50-150 per task used in the paper)"
+  collection_method: motion_planner
+resources:
+  homepage: "https://iranqin.github.io/robofactory/"
+  paper: "https://arxiv.org/abs/2503.16408"
+  code: "https://github.com/MARS-EAI/RoboFactory"
+  data: "https://huggingface.co/datasets/FACEONG/RoboFactory_Dataset"
+  leaderboard: ""

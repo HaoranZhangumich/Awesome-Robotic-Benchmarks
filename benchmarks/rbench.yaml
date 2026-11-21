@@ -1,0 +1,22 @@
+name: RBench
+domain: World Models
+area: wm-embodied
+subtype: "robot video generation, task completion, visual quality"
+first_release_date: 2026-01-21
+venue: "ICML 2026"
+description: "Benchmark for robot video generation from the paper 'Rethinking Video Generation Model for the Embodied World': 650 image-text pairs over five task types and four embodiment types, scored automatically for task completion and visual quality. Released with the 4M-clip RoVid-X dataset."
+task_count: "5 task categories + 4 embodiment categories"
+metric_count: "5 (plausibility, task adherence, motion amplitude, subject stability, smoothness)"
+robot_config_count: "4 types (single-arm, dual-arm, humanoid, quadruped)"
+modality: [video, RGB, language]
+setting: [real]
+sim_backend: ""
+data_source:
+  size: "650 image-text pairs (250 task-oriented, 400 embodiment-specific)"
+  collection_method: human_annotation
+resources:
+  homepage: "https://dagroup-pku.github.io/ReVidgen.github.io/"
+  paper: "https://arxiv.org/abs/2601.15282"
+  code: "https://github.com/DAGroup-PKU/ReVidgen"
+  data: "https://huggingface.co/datasets/DAGroup-PKU/RBench"
+  leaderboard: "https://huggingface.co/spaces/DAGroup-PKU/RBench-Leaderboard"

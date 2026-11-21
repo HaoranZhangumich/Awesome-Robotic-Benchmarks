@@ -1,0 +1,22 @@
+name: "DSRL (Datasets for Offline Safe RL)"
+domain: Safety
+area: safe-rl
+subtype: "offline safe RL datasets"
+first_release_date: 2023-06-15
+venue: "DMLR 2024"
+description: "Datasets for offline safe RL with a D4RL-style API: 38 tasks from Safety-Gymnasium, Bullet-Safety-Gym and MetaDrive with reward and cost labels, filters that change data density and noise, and companion baseline implementations (OSRL)."
+task_count: "38 datasets (Safety-Gymnasium, Bullet-Safety-Gym, MetaDrive)"
+metric_count: "2 (normalized reward, normalized cost)"
+robot_config_count: "N/A (agents of the three source suites)"
+modality: [state]
+setting: [sim]
+sim_backend: "MuJoCo, PyBullet, MetaDrive"
+data_source:
+  size: "38 offline datasets with reward and cost labels"
+  collection_method: rl_policy
+resources:
+  homepage: "https://www.offline-saferl.org/"
+  paper: "https://arxiv.org/abs/2306.09303"
+  code: "https://github.com/liuzuxin/DSRL"
+  data: ""
+  leaderboard: ""

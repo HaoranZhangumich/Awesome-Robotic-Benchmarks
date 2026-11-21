@@ -1,0 +1,26 @@
+name: RoboCup
+domain: Other
+area: competition
+subtype: "robot soccer, rescue, home service, industrial"
+first_release_date: 1997
+
+description: "Annual robot competition, established in 1997 with the goal of a robot team beating the human soccer world champions by 2050. Leagues span soccer, rescue, home service (RoboCup@Home) and industrial robots; RoboCup 2026 in Incheon held the first championship of the merged Humanoid Soccer League."
+
+task_count: "5 domains (Soccer, Rescue, @Home, Industrial, Junior); 19 leagues listed"
+metric_count: "League-specific (match results or scored task runs)"
+robot_config_count: "League-specific (team-built robots and standard platforms)"
+
+modality: [RGB, depth, lidar, audio, language]
+setting: [sim, real]
+sim_backend: "League simulators (Soccer Simulation and Rescue Simulation leagues)"
+
+data_source:
+  size: "N/A"
+  collection_method: none
+
+resources:
+  homepage: "https://www.robocup.org/"
+  paper: ""
+  code: ""
+  data: ""
+  leaderboard: ""

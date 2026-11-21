@@ -1,14 +1,16 @@
 name: SAPIEN
 domain: Simulation
-description: "Physics-rich robotics simulator with Vulkan renderer and PhysX 5, optimized for large-scale data generation."
-first_release_date: "2020-06"
-physics_engine: "NVIDIA PhysX 5 (CPU/GPU)"
-renderer: "Vulkan-based (SapienRenderer), ray tracing"
+area: physics
+first_release_date: 2020-03-19
+venue: "CVPR 2020"
+description: "Physics-rich simulator for robotics and embodied AI built on PhysX, released together with the PartNet-Mobility articulated-object dataset. SAPIEN 3 added GPU-parallel PhysX 5 simulation and is the engine underneath ManiSkill."
+physics_engine: "NVIDIA PhysX 5 (CPU and GPU)"
+renderer: "SapienRenderer (Vulkan rasterisation and ray tracing)"
 gpu_support: true
-os: ["Linux"]
-license: "MIT"
+os: [Linux, Windows, macOS]
+license: "Apache-2.0"
 resources:
-  homepage: "https://sapien.ucsd.edu/"
+  homepage: "https://sapien-sim.github.io/docs/"
+  paper: "https://arxiv.org/abs/2003.08515"
   code: "https://github.com/haosulab/SAPIEN"
   docs: "https://sapien-sim.github.io/docs/"
-  paper: "https://openaccess.thecvf.com/content_CVPR_2020/papers/Xiang_SAPIEN_A_SimulAted_Part-Based_Interactive_ENvironment_CVPR_2020_paper.pdf"

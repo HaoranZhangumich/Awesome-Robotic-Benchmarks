@@ -1,0 +1,22 @@
+name: HandsOn
+domain: Dexterous Manipulation
+area: dex-manipulation
+subtype: "cross-embodiment, generalisation, bimanual platform"
+first_release_date: 2026-10-19
+venue: "arXiv 2026"
+description: "Isaac Sim benchmark for dexterous manipulation on a bimanual arm-hand platform, with support for 5 arms and 6 hands. Its 66 human-verified tasks split into Core-50, backed by 18,000 demonstrations, and Transfer-16, which tests asset transfer, skill composition and deformables without target-task demonstrations."
+task_count: "66 (Core-50 + Transfer-16)"
+metric_count: "1 (success rate, with stage diagnostics)"
+robot_config_count: "5 arms, 6 hands (default: ROKAE arms + Wuji hands)"
+modality: [RGB, proprioceptive, language]
+setting: [sim]
+sim_backend: "Isaac Sim 5.1 (PhysX)"
+data_source:
+  size: "18,000 human demonstrations (6.05M timesteps)"
+  collection_method: human_demonstration
+resources:
+  homepage: "https://llltttwww.github.io/HandsOn-website/"
+  paper: "https://arxiv.org/abs/2610.26765"
+  code: "https://github.com/TsinghuaC3I/HandsOn"
+  data: "https://huggingface.co/datasets/Cyan666/HandsOn-Datasets"
+  leaderboard: "https://llltttwww.github.io/HandsOn-website/leaderboard.html"

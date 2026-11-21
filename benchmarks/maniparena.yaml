@@ -1,0 +1,22 @@
+name: ManipArena
+domain: Generalist
+area: real-eval
+subtype: "remote real-robot evaluation, reasoning-oriented, challenge"
+first_release_date: 2026-03-30
+venue: "CVPR 2026 Embodied AI Workshop challenge"
+description: "Standardised real-robot benchmark from X Square Robot run in green-screen booths: 20 bimanual tasks for execution reasoning, semantic reasoning and mobile manipulation, with in-domain, visual-shift and semantic out-of-distribution trials and partial-credit scoring. Models are served remotely."
+task_count: "20 (15 tabletop, 5 mobile manipulation)"
+metric_count: "2 (partial-credit score, success rate)"
+robot_config_count: "2 (fixed bimanual platform, mobile bimanual platform)"
+modality: [RGB, proprioceptive, language]
+setting: [real]
+sim_backend: ""
+data_source:
+  size: "10,812 teleoperated trajectories (~188 h, 13.5M frames)"
+  collection_method: human_demonstration
+resources:
+  homepage: ""
+  paper: "https://arxiv.org/abs/2603.28545"
+  code: "https://github.com/maniparena/maniparena-repo"
+  data: "https://huggingface.co/datasets/ManipArena/maniparena-dataset"
+  leaderboard: ""

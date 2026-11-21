@@ -1,0 +1,22 @@
+name: WMBench
+domain: World Models
+area: wm-policy-eval
+subtype: "world models as policy evaluators, paired real rollouts, challenge"
+first_release_date: 2026-07-02
+venue: "arXiv 2026"
+description: "Benchmark from the GigaWorld-1 paper for world models as policy evaluators: a model rolls out a policy closed-loop from held-out real episodes and is scored on whether it reproduces the real outcome. Official benchmark of the CVPR 2026 GigaBrain Challenge world-model track."
+task_count: "8 manipulation task families"
+metric_count: "WMES (0-3 outcome and fidelity score) + automatic video diagnostics"
+robot_config_count: "N/A (platform not named)"
+modality: [video, RGB, language, proprioceptive]
+setting: [real]
+sim_backend: ""
+data_source:
+  size: "2,989 paired trajectories (teleoperation and policy rollouts, about 1:1); 7,200 s test split"
+  collection_method: mixed
+resources:
+  homepage: "https://open-gigaai.github.io/giga-world-1/"
+  paper: "https://arxiv.org/abs/2607.02642"
+  code: "https://github.com/open-gigaai/giga-world-1"
+  data: "https://huggingface.co/datasets/open-gigaai/CVPR-2026-WorldModel-Track-Dataset"
+  leaderboard: "https://huggingface.co/spaces/open-gigaai/CVPR-2026-WorldModel-Track-LeaderBoard"

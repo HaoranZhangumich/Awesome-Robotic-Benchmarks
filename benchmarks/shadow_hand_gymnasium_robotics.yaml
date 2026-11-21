@@ -1,0 +1,23 @@
+name: "Shadow Dexterous Hand (Gymnasium-Robotics)"
+domain: Dexterous Manipulation
+area: dex-manipulation
+subtype: "in-hand manipulation, goal-conditioned RL"
+first_release_date: 2018-02-26
+venue: "arXiv 2018"
+widely_used: true
+description: "OpenAI's goal-conditioned, sparse-reward tasks for a simulated 24-DoF Shadow Dexterous Hand: fingertip reaching and in-hand reorientation of a block, an egg and a pen. Now maintained in Gymnasium-Robotics, with optional readings from 92 touch sensors."
+task_count: "4 (reach, block, egg, pen) + touch-sensor variants"
+metric_count: "1 (success rate)"
+robot_config_count: "1 (Shadow Dexterous Hand)"
+modality: [state, proprioceptive, tactile]
+setting: [sim]
+sim_backend: "MuJoCo"
+data_source:
+  size: "N/A"
+  collection_method: none
+resources:
+  homepage: "https://robotics.farama.org/envs/shadow_dexterous_hand/"
+  paper: "https://arxiv.org/abs/1802.09464"
+  code: "https://github.com/Farama-Foundation/Gymnasium-Robotics"
+  data: ""
+  leaderboard: ""

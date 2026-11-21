@@ -1,0 +1,27 @@
+name: Bench2Drive
+domain: Autonomous Driving
+area: driving-closed-loop
+subtype: "closed-loop end-to-end driving"
+first_release_date: 2024-06-06
+venue: "NeurIPS 2024 D&B"
+
+description: "Closed-loop benchmark for end-to-end driving in CARLA: 220 routes covering 44 interactive scenarios, 23 weathers and 12 towns, with results split by five driving abilities. Training data come from the Think2Drive RL expert; VL, Speed and Robust variants and the v0.0.4 data followed in 2025-2026."
+
+task_count: "220 routes over 44 interactive scenarios"
+metric_count: "4 (driving score, success rate, efficiency, comfort) plus 5 ability scores"
+robot_config_count: "1 (ego vehicle with 6 cameras, 1 lidar, 5 radars, IMU/GNSS)"
+
+modality: [RGB, depth, lidar, radar, GPS_IMU]
+setting: [sim]
+sim_backend: "CARLA 0.9.15 (Leaderboard 2.0 scenarios)"
+
+data_source:
+  size: "13,638 clips (about 2M annotated frames); v0.0.4 adds 1,100 scenario-uniform routes"
+  collection_method: rl_policy
+
+resources:
+  homepage: "https://thinklab-sjtu.github.io/Bench2Drive/"
+  paper: "https://arxiv.org/abs/2406.03877"
+  code: "https://github.com/Thinklab-SJTU/Bench2Drive"
+  data: "https://huggingface.co/datasets/rethinklab/Bench2Drive"
+  leaderboard: ""

@@ -1,0 +1,22 @@
+name: BEHAVIOR-Spatial
+domain: Embodied Reasoning
+area: spatial
+subtype: "spatial QA, pointing, VLA action, BEHAVIOR-1K"
+first_release_date: 2026-10-25
+venue: "arXiv 2026"
+description: "Spatial-understanding benchmark built on BEHAVIOR-1K that tests the same scenes and relations three ways: VLM spatial question answering, pointing to the instructed target, and VLA policies acting in OmniGibson. The baseline policy reaches 41.6% on held-out layouts but 16.1% when the instruction changes within a training layout."
+task_count: "3,256 QA + 1,240 pointing + 24 action tasks"
+metric_count: "6 (QA, pointing, soft / strict success, wrong-target rate, nav success)"
+robot_config_count: "1 (robot of the BEHAVIOR-1K demonstrations)"
+modality: [RGB, language]
+setting: [sim]
+sim_backend: "OmniGibson (BEHAVIOR-1K)"
+data_source:
+  size: "3,256 questions over 49 activities; 1,240 pointing queries; 1,570 sim-eval episodes"
+  collection_method: mixed
+resources:
+  homepage: ""
+  paper: "https://arxiv.org/abs/2610.34051"
+  code: "https://github.com/arielchen07/BEHAVIOR-Spatial-benchmark"
+  data: "https://huggingface.co/datasets/behavior-spatial-benchmark/BEHAVIOR-Spatial"
+  leaderboard: ""

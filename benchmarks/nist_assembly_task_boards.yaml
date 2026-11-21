@@ -1,0 +1,23 @@
+name: NIST Assembly Task Boards
+domain: Manipulation
+area: contact-rich
+subtype: "physical task boards, industrial assembly"
+first_release_date: 2018
+venue: "IEEE RA-L 2020"
+widely_used: true
+description: "Low-cost physical task boards from NIST for measuring robotic small-part assembly: peg and connector insertion, gear meshing and nut threading (board 1), belt drives, cable routing, wire harnesses and bolt threading (boards 2-5). Public designs and test methods; used in the IROS/ICRA manipulation competitions."
+task_count: "5 task boards (assembly and disassembly modes)"
+metric_count: "2 (completion time, probability of success / degree of completion)"
+robot_config_count: "robot-agnostic"
+modality: ["N/A"]
+setting: [real]
+sim_backend: ""
+data_source:
+  size: "N/A"
+  collection_method: none
+resources:
+  homepage: "https://www.nist.gov/el/intelligent-systems-division-73500/robotic-grasping-and-manipulation-assembly/assembly"
+  paper: "https://doi.org/10.1109/LRA.2020.2965869"
+  code: ""
+  data: ""
+  leaderboard: ""

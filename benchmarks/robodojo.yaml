@@ -1,0 +1,22 @@
+name: RoboDojo
+domain: Generalist
+area: multi-domain
+subtype: "simulation plus remote real-robot evaluation, bimanual, leaderboard"
+first_release_date: 2026-07-05
+venue: "arXiv 2026"
+description: "Unified sim-and-real benchmark for generalist manipulation policies: 42 Isaac Sim tasks grouped into generalisation, memory, precision, long-horizon and open-vocabulary instruction following, plus 18 real-world tasks on three bimanual platforms run remotely through the RoboDojo-RealEval system."
+task_count: "60 (42 simulation, 18 real-world)"
+metric_count: "2 (success rate, progress score)"
+robot_config_count: "3 (ARX X5, Piper, Piper X; all bimanual)"
+modality: [RGB, depth, proprioceptive, language]
+setting: [sim, real]
+sim_backend: "Isaac Sim"
+data_source:
+  size: "3,500 sim trajectories (20.7 h) and 1,800 real teleop demos (17.9 h)"
+  collection_method: mixed
+resources:
+  homepage: "https://robodojo-benchmark.com/"
+  paper: "https://arxiv.org/abs/2607.04434"
+  code: "https://github.com/RoboDojo-Benchmark/RoboDojo"
+  data: ""
+  leaderboard: "https://robodojo-benchmark.com/leaderboard"

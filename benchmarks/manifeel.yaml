@@ -1,0 +1,22 @@
+name: ManiFeel
+domain: Manipulation
+area: tactile
+subtype: "visuotactile imitation learning"
+first_release_date: 2025-05-24
+venue: "arXiv 2025"
+description: "Simulation benchmark for supervised visuotactile policy learning on Isaac Gym with TacSL: nine tasks in three groups (insertion, screwing, exploration under occlusion or dim light), teleoperated demonstrations, and a modular pipeline over sensing modalities, tactile encoders and policy heads. One task per group is replicated on a real Franka."
+task_count: "9 in simulation (4 insertion, 2 screwing, 3 exploration); 3 real"
+metric_count: "1 (success rate)"
+robot_config_count: "1 (Franka Panda with GelSight sensor)"
+modality: [RGB, tactile, proprioceptive]
+setting: [sim, real]
+sim_backend: "Isaac Gym + TacSL"
+data_source:
+  size: "SpaceMouse-teleoperated demos, about 50-80 per task"
+  collection_method: human_demonstration
+resources:
+  homepage: "https://zhengtongxu.github.io/manifeel-website/"
+  paper: "https://arxiv.org/abs/2505.18472"
+  code: "https://github.com/purdue-mars/manifeel"
+  data: "https://huggingface.co/datasets/purdue-mars/manifeel"
+  leaderboard: ""

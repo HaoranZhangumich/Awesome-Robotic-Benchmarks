@@ -1,0 +1,22 @@
+name: GenH2R
+domain: HRI
+area: handover
+subtype: "human-to-robot handover, large-scale synthetic"
+first_release_date: 2024-01-01
+venue: "CVPR 2024"
+description: "Framework and simulator (GenH2R-Sim) for learning human-to-robot handover at scale: about one million procedurally generated handover scenes over 3,266 ShapeNet objects with synthetic hand grasps and trajectories, plus test sets built from HandoverSim and HOI4D."
+task_count: "~1M training scenes; test sets s0 (144), t0 (3,260), t1 (1,000)"
+metric_count: "3 (success rate, time, average success)"
+robot_config_count: "1 (Franka Panda)"
+modality: [pointcloud, depth]
+setting: [sim]
+sim_backend: "PyBullet (built on HandoverSim)"
+data_source:
+  size: "~1M automatically generated demonstrations"
+  collection_method: motion_planner
+resources:
+  homepage: "https://genh2r.github.io/"
+  paper: "https://arxiv.org/abs/2401.00929"
+  code: "https://github.com/chenjy2003/genh2r"
+  data: ""
+  leaderboard: ""

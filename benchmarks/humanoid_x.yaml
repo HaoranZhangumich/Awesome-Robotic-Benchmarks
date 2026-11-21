@@ -1,0 +1,22 @@
+name: Humanoid-X
+domain: Locomotion
+area: motion-data
+subtype: "video-derived humanoid motion with text"
+first_release_date: 2024-12-18
+venue: "Humanoids 2025"
+description: "Dataset of over 20 million humanoid robot poses (163,800 motion samples) mined from internet videos; each sample pairs a video clip with a text description, estimated 3D human pose, retargeted robot keypoints and RL-generated robot actions. Released with UH-1, a text-conditioned humanoid control model."
+task_count: "N/A (dataset)"
+metric_count: "N/A"
+robot_config_count: "1 (Unitree H1-2)"
+modality: [video, language, mocap, proprioceptive]
+setting: [real]
+sim_backend: ""
+data_source:
+  size: "163,800 motion samples, 20M+ robot poses"
+  collection_method: mixed
+resources:
+  homepage: "https://psi-lab.ai/UH-1/"
+  paper: "https://arxiv.org/abs/2412.14172"
+  code: "https://github.com/sihengz02/UH-1"
+  data: "https://huggingface.co/datasets/USC-PSI-Lab/Humanoid-X"
+  leaderboard: ""

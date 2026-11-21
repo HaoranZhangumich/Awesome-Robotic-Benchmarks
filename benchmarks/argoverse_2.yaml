@@ -1,0 +1,27 @@
+name: Argoverse 2
+domain: Autonomous Driving
+area: driving-data
+subtype: "3D perception, motion forecasting"
+first_release_date: 2021
+venue: "NeurIPS 2021 D&B"
+
+description: "Four datasets from six US cities, all with HD maps: 1,000 annotated multi-sensor sequences, 20,000 unlabeled lidar sequences, 250,000 motion-forecasting scenarios and 1,000 map-change scenarios. Its CVPR challenges continue, in 2026 on scenario mining and lidar scene flow."
+
+task_count: "6 (detection, scene flow, 4D occupancy, E2E/motion forecasting, scenario mining)"
+metric_count: "Task-specific"
+robot_config_count: "1 (vehicle with 7 ring cameras, 2 stereo cameras and lidar)"
+
+modality: [RGB, lidar]
+setting: [real]
+sim_backend: ""
+
+data_source:
+  size: "1,000 sensor, 20,000 lidar and 1,000 map-change sequences; 250,000 motion scenarios"
+  collection_method: human_annotation
+
+resources:
+  homepage: "https://www.argoverse.org/av2.html"
+  paper: "https://arxiv.org/abs/2301.00493"
+  code: "https://github.com/argoverse/av2-api"
+  data: ""
+  leaderboard: "https://www.argoverse.org/tasks.html"
