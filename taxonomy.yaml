@@ -5,11 +5,13 @@
 #   title  the heading shown in the README (defaults to the key)
 #   blurb  one line shown under the heading
 #   start_here_note  optional remark shown in the "Start here" table
+#   page   file name of the domain's page in domains/ (defaults to the key)
 #
 # To add a sub-area, add it here first, then use its key in benchmarks/*.yaml.
 
 domains:
   - key: Manipulation
+    page: manipulation
     blurb: "Task suites for robot arms and grippers, in simulation and on real hardware."
     areas:
       - {key: tabletop, title: "Tabletop & Language-Conditioned"}
@@ -22,6 +24,7 @@ domains:
       - {key: grasping, title: "Grasping"}
 
   - key: Dexterous Manipulation
+    page: dexterous-manipulation
     blurb: "Multi-finger hands: in-hand skills, two-handed dexterity, grasp synthesis, and the human hand-object data that robot hands learn from."
     areas:
       - {key: dex-manipulation, title: "In-Hand & Dexterous Skills"}
@@ -30,6 +33,7 @@ domains:
       - {key: hand-object-data, title: "Human Hand-Object Data"}
 
   - key: Generalist
+    page: vla-evaluation
     title: "Generalist Policies & VLA Evaluation"
     blurb: "How generalist robot policies and vision-language-action models (VLAs) are evaluated: multi-domain suites, real robots, simulated stand-ins for real setups, and stress tests."
     areas:
@@ -39,6 +43,7 @@ domains:
       - {key: probes, title: "Generalization, Robustness & Memory Probes"}
 
   - key: World Models
+    page: world-models
     title: "World Models & World-Action Models"
     blurb: "Benchmarks for learned simulators of the physical world, for world models that score robot policies, and for the physical plausibility of generated video."
     start_here_note: "No embodied world-model benchmark is a settled standard yet; these are the common physical-plausibility tests for video generators."
@@ -48,6 +53,7 @@ domains:
       - {key: wm-physics, title: "Physical Plausibility of Generated Video"}
 
   - key: Embodied Reasoning
+    page: embodied-reasoning
     blurb: "Benchmarks that test vision-language models and LLMs as the reasoning and planning layer of a robot."
     areas:
       - {key: spatial, title: "Spatial & Physical Reasoning"}
@@ -55,6 +61,7 @@ domains:
       - {key: eqa, title: "Embodied Question Answering"}
 
   - key: Navigation
+    page: navigation
     blurb: "Goal-driven, language-guided, social and outdoor navigation."
     areas:
       - {key: goal-nav, title: "Point, Object & Image-Goal Navigation"}
@@ -64,6 +71,7 @@ domains:
       - {key: outdoor, title: "Outdoor, Urban & Aerial"}
 
   - key: Locomotion
+    page: locomotion-humanoids
     title: "Locomotion & Humanoids"
     blurb: "Continuous-control suites, legged locomotion, humanoid whole-body control, and the motion data behind humanoid tracking."
     areas:
@@ -73,6 +81,7 @@ domains:
       - {key: motion-data, title: "Motion Data for Humanoids"}
 
   - key: Datasets
+    page: datasets
     title: "Robot Learning Datasets"
     blurb: "Large open datasets that policies are trained and compared on."
     areas:
@@ -80,6 +89,7 @@ domains:
       - {key: human-data, title: "Egocentric & Human Data"}
 
   - key: Simulation
+    page: simulators
     title: "Simulators"
     blurb: "The engines and frameworks the benchmarks above are built on. This section compares capabilities instead of tasks."
     areas:
@@ -89,6 +99,7 @@ domains:
       - {key: specialized, title: "Specialized Simulators"}
 
   - key: HRI
+    page: hri
     title: "Human-Robot Interaction"
     blurb: "Assistive robots, handovers, and collaboration between people and robots."
     areas:
@@ -97,18 +108,21 @@ domains:
       - {key: collaboration, title: "Human-Robot Collaboration"}
 
   - key: Safety
+    page: safety
     blurb: "Safe reinforcement learning and control, and the safety of LLM- and VLA-driven robots."
     areas:
       - {key: safe-rl, title: "Safe RL & Control"}
       - {key: embodied-safety, title: "Safety of LLM / VLA Agents"}
 
   - key: Autonomous Driving
+    page: autonomous-driving
     blurb: "The driving benchmarks that robotics work most often borrows from. Kept short on purpose."
     areas:
       - {key: driving-data, title: "Datasets & Open-Loop Benchmarks"}
       - {key: driving-closed-loop, title: "Closed-Loop Simulation"}
 
   - key: Other
+    page: other-areas
     title: "Other Areas"
     blurb: "Smaller areas that sit next to the domains above."
     areas:

@@ -5,10 +5,11 @@ Additions and corrections are both welcome. A fix to a wrong number or a dead li
 ## How the list is built
 
 - Each entry is one YAML file in [`benchmarks/`](benchmarks/).
-- The domains and sub-areas, and their order, are in [`taxonomy.yaml`](taxonomy.yaml).
-- [`scripts/build_readme.py`](scripts/build_readme.py) writes `README.md` from those files.
+- The domains and sub-areas, their order and the page of each domain are in [`taxonomy.yaml`](taxonomy.yaml).
+- [`scripts/build_readme.py`](scripts/build_readme.py) writes `README.md` (the landing page) and one page per
+  domain in [`domains/`](domains/) from those files.
 
-So edit the YAML, then rebuild. Do not edit `README.md` by hand: the next build overwrites it.
+So edit the YAML, then rebuild. Do not edit `README.md` or `domains/*.md` by hand: the next build overwrites them.
 
 ## Add or fix an entry
 
@@ -28,7 +29,7 @@ So edit the YAML, then rebuild. Do not edit `README.md` by hand: the next build 
    python scripts/build_readme.py
    ```
 
-4. Open a pull request with the YAML file and the rebuilt `README.md`.
+4. Open a pull request with the YAML file and the rebuilt `README.md` and `domains/` pages.
 
 ## What belongs here
 
