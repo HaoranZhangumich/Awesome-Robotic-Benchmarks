@@ -1,0 +1,22 @@
+name: GraspClutter6D
+domain: Manipulation
+area: grasping
+subtype: "6-DoF grasping, heavy clutter, real RGB-D"
+first_release_date: 2025-04-09
+venue: "IEEE RA-L 2025"
+description: "Real-world dataset for perception and grasping in dense clutter: 1,000 scenes averaging 14.1 objects and 62.6% occlusion, 200 objects in 75 bin, shelf and table settings, four RGB-D cameras, 736K 6D poses and 9.3 billion grasp labels. Benchmarks instance segmentation, pose estimation and 6-DoF grasp detection."
+task_count: "3 (instance segmentation, 6D pose estimation, grasp detection)"
+metric_count: "task-specific (COCO AP/AR, pose scores, grasp AP)"
+robot_config_count: "N/A (parallel-jaw gripper model; UR5 capture rig)"
+modality: [RGB, depth, pointcloud, segmentation]
+setting: [real]
+sim_backend: ""
+data_source:
+  size: "52K RGB-D images, 1,000 scenes, 736K 6D poses, 9.3B grasps"
+  collection_method: mixed
+resources:
+  homepage: "https://sites.google.com/view/graspclutter6d"
+  paper: "https://arxiv.org/abs/2504.06866"
+  code: "https://github.com/SeungBack/graspclutter6dAPI"
+  data: "https://huggingface.co/datasets/GraspClutter6D/GraspClutter6D"
+  leaderboard: ""

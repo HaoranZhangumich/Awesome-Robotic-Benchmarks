@@ -1,0 +1,23 @@
+name: Overcooked-AI
+domain: HRI
+area: collaboration
+subtype: "human-AI coordination, zero-shot coordination"
+first_release_date: 2019-10-13
+venue: "NeurIPS 2019"
+widely_used: true
+description: "Two-player cooperative cooking gridworld based on the game Overcooked, in which agents must split sub-tasks on the fly to deliver soups. The standard testbed for human-AI and zero-shot coordination, evaluated with human proxy models and real human partners."
+task_count: "5 standard layouts"
+metric_count: "1 (cumulative reward for delivered soups over 400 steps)"
+robot_config_count: "N/A (gridworld agents)"
+modality: [state]
+setting: [sim]
+sim_backend: "custom 2D gridworld"
+data_source:
+  size: "Human-human gameplay, about 16 trajectories per layout; human-AI study data"
+  collection_method: human_demonstration
+resources:
+  homepage: "https://bair.berkeley.edu/blog/2019/10/21/coordination/"
+  paper: "https://arxiv.org/abs/1910.05789"
+  code: "https://github.com/HumanCompatibleAI/overcooked_ai"
+  data: ""
+  leaderboard: ""

@@ -1,0 +1,22 @@
+name: GAPartNet
+domain: Manipulation
+area: articulated
+subtype: "part-centric perception and manipulation"
+first_release_date: 2022-11-10
+venue: "CVPR 2023 (Highlight)"
+description: "Part-centric dataset of 1,166 articulated objects in 27 categories with 8,489 instances of nine generalizable and actionable part classes (handles, lids, buttons, doors and others), built from PartNet-Mobility and AKB-48. Defines three cross-category tasks: part segmentation, part pose estimation and part-based manipulation."
+task_count: "3 (part segmentation, part pose estimation, part-based manipulation)"
+metric_count: "3 (segmentation AP50, pose accuracy, manipulation success rate)"
+robot_config_count: "2 (Franka, Kinova)"
+modality: [RGB, depth, pointcloud, segmentation]
+setting: [sim, real]
+sim_backend: "Isaac Gym (released manipulation code)"
+data_source:
+  size: "1,166 objects, 8,489 part instances, rendered point clouds"
+  collection_method: human_annotation
+resources:
+  homepage: "https://pku-epic.github.io/GAPartNet/"
+  paper: "https://arxiv.org/abs/2211.05272"
+  code: "https://github.com/PKU-EPIC/GAPartNet"
+  data: ""
+  leaderboard: ""

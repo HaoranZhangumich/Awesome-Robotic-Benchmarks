@@ -1,0 +1,22 @@
+name: WR-Arena
+domain: World Models
+area: wm-embodied
+subtype: "general world models, action simulation, simulative planning"
+first_release_date: 2026-03-26
+venue: "arXiv 2026"
+description: "World Reasoning Arena from the PAN team (MBZUAI): tests general world models such as PAN, Cosmos and V-JEPA 2 on following multi-step instructions with counterfactual rollouts, staying coherent over long horizons, and supporting a VLM planner that simulates candidate actions on household and tabletop robot tasks."
+task_count: "3 dimensions (action simulation fidelity, long-horizon forecast, simulative planning)"
+metric_count: "VLM-judged action fidelity, smoothness and consistency, planning success (human-rated)"
+robot_config_count: "2 (AgiBot household scenes, Language Table tabletop arm)"
+modality: [video, RGB, language]
+setting: [real]
+sim_backend: ""
+data_source:
+  size: "100 scenes x 10-round prompts (forecast); 15 AgiBot + 47 Language Table planning cases"
+  collection_method: mixed
+resources:
+  homepage: ""
+  paper: "https://arxiv.org/abs/2603.25887"
+  code: "https://github.com/MBZUAI-IFM/WR-Arena"
+  data: ""
+  leaderboard: ""

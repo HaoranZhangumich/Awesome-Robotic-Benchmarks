@@ -1,0 +1,22 @@
+name: "Push-T (Diffusion Policy)"
+domain: Manipulation
+area: tabletop
+subtype: "planar pushing, contact-rich, imitation learning"
+first_release_date: 2023-03-07
+venue: "RSS 2023"
+description: "Planar task popularised by Diffusion Policy (adapted from Implicit Behavioral Cloning): push a T-shaped block onto a fixed target with a circular end-effector, from state or image observations. A common first test for imitation-learning methods; packaged as gym-pusht in LeRobot."
+task_count: 1
+metric_count: "1 (target area coverage; success at 95% in gym-pusht)"
+robot_config_count: "1 (2D circular end-effector)"
+modality: [RGB, state]
+setting: [sim]
+sim_backend: "pymunk (2D physics)"
+data_source:
+  size: "206 human demonstrations (25,650 frames)"
+  collection_method: human_demonstration
+resources:
+  homepage: "https://diffusion-policy.cs.columbia.edu/"
+  paper: "https://arxiv.org/abs/2303.04137"
+  code: "https://github.com/real-stanford/diffusion_policy"
+  data: "https://huggingface.co/datasets/lerobot/pusht"
+  leaderboard: ""

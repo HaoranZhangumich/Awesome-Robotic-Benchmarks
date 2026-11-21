@@ -1,0 +1,22 @@
+name: RoboCasa365
+domain: Manipulation
+area: mobile
+subtype: "household kitchen, mobile manipulation, generalist policies"
+first_release_date: 2026-03-04
+venue: "ICLR 2026"
+description: "Second generation of RoboCasa: 365 kitchen tasks (65 atomic, 300 composite) across 2,500 kitchen scenes, with 600+ hours of human demonstrations and 1,600+ hours of MimicGen data. Benchmarks multi-task training, foundation-model training and lifelong learning; public leaderboard on a 50-task split."
+task_count: "365 (65 atomic + 300 composite); 50-task leaderboard"
+metric_count: "1 (task success rate)"
+robot_config_count: "1 in datasets (Franka Panda on Omron mobile base)"
+modality: [RGB, proprioceptive, language]
+setting: [sim]
+sim_backend: "robosuite (MuJoCo)"
+data_source:
+  size: "612 h human teleoperation (30k pretraining demos) + 1,615 h MimicGen-generated"
+  collection_method: mixed
+resources:
+  homepage: "https://robocasa.ai/"
+  paper: "https://arxiv.org/abs/2603.04356"
+  code: "https://github.com/robocasa/robocasa"
+  data: ""
+  leaderboard: "https://robocasa.ai/leaderboard.html"

@@ -1,0 +1,22 @@
+name: RoboTwin-Phys
+domain: World Models
+area: wm-policy-eval
+subtype: "WAM and VLA robustness, physical-parameter variation, bimanual"
+first_release_date: 2026-09-22
+venue: "arXiv 2026"
+description: "Extends the 50 RoboTwin 2.0 tasks with per-episode sampling of 13 physical attributes such as mass, friction, restitution, joint damping and table tilt, to test whether world action models and VLAs stay robust when physics changes. All five models evaluated drop to 32-44% success."
+task_count: "50 bimanual tasks, 13 varied physical attributes"
+metric_count: "1 (success rate: clean, official-random, physical-random protocols)"
+robot_config_count: "1 (RoboTwin 2.0 dual-arm)"
+modality: [RGB, language, proprioceptive]
+setting: [sim]
+sim_backend: "RoboTwin 2.0"
+data_source:
+  size: "5,000 expert demonstrations (50 tasks x 100) with ground-truth physical parameters"
+  collection_method: motion_planner
+resources:
+  homepage: "https://yefeng00.github.io/RoboTwinPhysTest/"
+  paper: "https://arxiv.org/abs/2609.26292"
+  code: "https://github.com/yefeng00/RoboTwin-Phys"
+  data: ""
+  leaderboard: "https://yefeng00.github.io/RoboTwinPhysTest/#leaderboard"

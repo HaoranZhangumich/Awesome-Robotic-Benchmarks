@@ -1,0 +1,22 @@
+name: GOAT-Bench
+domain: Navigation
+area: goal-nav
+subtype: "lifelong multi-modal goal navigation"
+first_release_date: 2024-04-09
+venue: "CVPR 2024"
+description: "Go-to-Anything benchmark: in one episode the agent visits 5 to 10 goals in an unseen HM3D-Semantics home, each given as a category name, a language description or an image, testing open-vocabulary goals and reuse of memory across subtasks."
+task_count: "1 (GOAT: 5-10 sequential goals in 3 goal modalities)"
+metric_count: "2 (SR, SPL)"
+robot_config_count: "1 (Stretch-like agent)"
+modality: [RGB, depth, language]
+setting: [sim]
+sim_backend: "Habitat-Sim"
+data_source:
+  size: "181 HM3D-Sem scenes, 312 object categories, about 680k episodes"
+  collection_method: synthetic
+resources:
+  homepage: "https://mukulkhanna.github.io/goat-bench/"
+  paper: "https://arxiv.org/abs/2404.06609"
+  code: "https://github.com/Ram81/goat-bench"
+  data: ""
+  leaderboard: ""

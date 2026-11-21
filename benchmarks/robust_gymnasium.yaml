@@ -1,0 +1,22 @@
+name: Robust-Gymnasium
+domain: Safety
+area: safe-rl
+subtype: "robust RL, disturbances"
+first_release_date: 2025-02-27
+venue: "ICLR 2025"
+description: "Modular benchmark for robust RL that wraps over sixty control, manipulation, dexterous-hand, humanoid, safe-RL and multi-agent tasks and injects disturbances into observations, actions, rewards or dynamics, in random, adversarial or LLM-generated form."
+task_count: "60+ task bases from 11 suites"
+metric_count: "1 (return under disturbance; plus cost on safe-RL tasks)"
+robot_config_count: "Many (MuJoCo agents, Fetch, Franka, Shadow Hand, Unitree H1, ...)"
+modality: [state, RGB]
+setting: [sim]
+sim_backend: "MuJoCo, Box2D, robosuite"
+data_source:
+  size: "N/A"
+  collection_method: none
+resources:
+  homepage: "https://robust-gym.github.io/"
+  paper: "https://arxiv.org/abs/2502.19652"
+  code: "https://github.com/SAIL-Research-Lab/Robust-Gymnasium"
+  data: ""
+  leaderboard: ""

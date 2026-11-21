@@ -1,0 +1,22 @@
+name: HM-EQA
+domain: Embodied Reasoning
+area: eqa
+subtype: "active exploration EQA"
+first_release_date: 2024-03-23
+venue: "RSS 2024"
+description: "Active embodied question answering: 500 multiple-choice questions about 267 Habitat-Matterport 3D homes, where a robot must explore until it is confident of the answer. Released with the 'Explore until Confident' method."
+task_count: "500 multiple-choice questions in 5 categories"
+metric_count: "2 (answer success rate, normalized time steps)"
+robot_config_count: "1 (simulated agent; Fetch in real-robot tests)"
+modality: [RGB, depth, language]
+setting: [sim]
+sim_backend: "Habitat-Sim (HM3D)"
+data_source:
+  size: "500 questions over 267 HM3D scenes, GPT4-V-generated and manually filtered"
+  collection_method: synthetic
+resources:
+  homepage: "https://explore-eqa.github.io/"
+  paper: "https://arxiv.org/abs/2403.15941"
+  code: "https://github.com/Stanford-ILIAD/explore-eqa"
+  data: "https://github.com/Stanford-ILIAD/explore-eqa/tree/master/data"
+  leaderboard: ""

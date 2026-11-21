@@ -1,0 +1,22 @@
+name: "Open-H-Embodiment"
+domain: Datasets
+area: robot-data
+subtype: "medical robotics, surgical, multi-embodiment"
+first_release_date: 2026-04-22
+venue: "arXiv 2026"
+description: "Community-built dataset of medical robot video with synchronized kinematics, hosted by NVIDIA: about 750 hours and 120,000 trajectories from more than 50 institutions, covering surgical manipulation, robotic ultrasound and endoscopy on platforms such as da Vinci, dVRK and CMR Versius."
+task_count: "N/A"
+metric_count: "N/A"
+robot_config_count: "Multiple (da Vinci, dVRK, Versius, MIRA, Maestro, BiTrack, custom systems)"
+modality: [RGB, proprioceptive, language]
+setting: [real]
+sim_backend: ""
+data_source:
+  size: "About 750 hours, 120,000 trajectories (v1)"
+  collection_method: mixed
+resources:
+  homepage: "https://www.open-h.org/"
+  paper: "https://arxiv.org/abs/2604.21017"
+  code: "https://github.com/open-h/open-h-embodiment"
+  data: "https://huggingface.co/datasets/nvidia/PhysicalAI-Robotics-Open-H-Embodiment"
+  leaderboard: ""

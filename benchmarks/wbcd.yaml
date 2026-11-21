@@ -1,0 +1,26 @@
+name: What Bimanuals Can Do (WBCD)
+domain: Other
+area: competition
+subtype: "bimanual manipulation competition"
+first_release_date: 2025
+
+description: "Bimanual manipulation competition at ICRA built around teleoperated data collection and learned policies on industry-style tasks. The second edition (ICRA 2026, Vienna) ran four tracks on sponsor robots: logistics picking, logistics packing, lab experiments and deformable manipulation. The 2025 edition drew 88 registered teams."
+
+task_count: "4 tracks in 2026 (logistics picking and packing, lab experiments, deformables)"
+metric_count: "Track-specific (task quality, data-collection speed, learned-policy performance)"
+robot_config_count: "4 sponsor platforms in 2026 (Unitree, Galaxea, AgileX, ARX)"
+
+modality: [RGB, proprioceptive]
+setting: [real]
+sim_backend: ""
+
+data_source:
+  size: "N/A"
+  collection_method: none
+
+resources:
+  homepage: "https://wbcdcompetition.github.io/"
+  paper: ""
+  code: ""
+  data: ""
+  leaderboard: ""

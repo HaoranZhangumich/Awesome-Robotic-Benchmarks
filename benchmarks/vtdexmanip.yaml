@@ -1,0 +1,22 @@
+name: VTDexManip
+domain: Dexterous Manipulation
+area: dex-manipulation
+subtype: "visual-tactile, pretraining, RL"
+first_release_date: 2025-02-25
+venue: "ICLR 2025"
+description: "Visual-tactile dataset of people performing 10 daily manipulation tasks on 182 objects, paired with an Isaac Gym benchmark of six dexterous tasks (bottle-cap turning, faucet screwing, lever sliding, table and in-hand reorientation, bimanual handover) on which 18 pretrained and non-pretrained visual-tactile models are compared."
+task_count: "6 benchmark tasks (dataset covers 10 human tasks)"
+metric_count: "N/A"
+robot_config_count: "N/A"
+modality: [RGB, tactile, proprioceptive]
+setting: [sim]
+sim_backend: "Isaac Gym"
+data_source:
+  size: "2,032 human visual-tactile sequences, 10 tasks, 182 objects"
+  collection_method: human_demonstration
+resources:
+  homepage: "https://lqts.github.io/VTDexManip/"
+  paper: "https://openreview.net/forum?id=jf7C7EGw21"
+  code: "https://github.com/LQTS/VTDexManip"
+  data: ""
+  leaderboard: ""

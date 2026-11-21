@@ -1,0 +1,23 @@
+name: "EPIC-KITCHENS-100"
+domain: Datasets
+area: human-data
+subtype: "egocentric video, kitchens, action annotations"
+first_release_date: 2020-06-23
+venue: "IJCV 2022"
+widely_used: true
+description: "100 hours of unscripted head-mounted video in 45 home kitchens with 90K densely annotated action segments. Runs yearly challenges on action recognition, detection, anticipation, retrieval and domain adaptation, and is a long-standing source of human manipulation video."
+task_count: "6 challenges"
+metric_count: "N/A (per-challenge metrics)"
+robot_config_count: "N/A (human)"
+modality: [video, audio, language]
+setting: [real]
+sim_backend: ""
+data_source:
+  size: "100 hours, 700 videos, 20M frames, 90K action segments"
+  collection_method: human_demonstration
+resources:
+  homepage: "https://epic-kitchens.github.io/"
+  paper: "https://arxiv.org/abs/2006.13256"
+  code: "https://github.com/epic-kitchens/epic-kitchens-100-annotations"
+  data: "https://github.com/epic-kitchens/epic-kitchens-download-scripts"
+  leaderboard: "https://epic-kitchens.github.io/2026"

@@ -1,0 +1,22 @@
+name: RoboReward
+domain: Embodied Reasoning
+area: planning
+subtype: "reward model, progress estimation"
+first_release_date: 2026-01-02
+venue: "arXiv 2026"
+description: "Tests whether VLMs can serve as reward models for real robots: given a task and an episode video, predict a 1-5 progress score. RoboRewardBench holds about 2,800 human-verified episodes from Open X-Embodiment and RoboArena, including generated failures and near-misses."
+task_count: "about 2,800 scored episodes (RoboRewardBench)"
+metric_count: "1 (mean absolute error of the 1-5 progress score)"
+robot_config_count: "14 embodiments"
+modality: [video, language]
+setting: [real]
+sim_backend: ""
+data_source:
+  size: "45,072 training and about 2,800 benchmark episode-reward pairs"
+  collection_method: mixed
+resources:
+  homepage: "https://crfm.stanford.edu/helm/robo-reward-bench"
+  paper: "https://arxiv.org/abs/2601.00675"
+  code: ""
+  data: "https://huggingface.co/datasets/teetone/RoboReward"
+  leaderboard: "https://crfm.stanford.edu/helm/robo-reward-bench/latest/#/leaderboard"

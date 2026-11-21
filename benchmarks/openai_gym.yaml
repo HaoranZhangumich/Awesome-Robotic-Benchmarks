@@ -1,17 +1,23 @@
-name: Gymnasium MuJoCo Locomotion (classic subset)
+name: Gymnasium MuJoCo (OpenAI Gym)
 domain: Locomotion
-first_release_date: 2016-06-01
-description: "Canonical MuJoCo continuous-control locomotion tasks widely used as RL baselines (e.g., Ant, HalfCheetah, Hopper, Walker2d, Humanoid)."
+area: continuous-control
+subtype: "classic control, RL baselines"
+first_release_date: 2016-06-05
+venue: "arXiv 2016"
+widely_used: true
+description: "Canonical MuJoCo continuous-control tasks widely used as RL baselines (Ant, HalfCheetah, Hopper, Walker2d, Humanoid and others). Introduced with OpenAI Gym in 2016 and now maintained by the Farama Foundation in Gymnasium."
 task_count: 11
-metric_count: 1
-robot_config_count: 6
-modality: [RGB,depth,proprioceptive]
+metric_count: "1 (episode return)"
+robot_config_count: "10 (simulated bodies)"
+modality: [state, RGB]
 setting: [sim]
 sim_backend: "MuJoCo"
 data_source:
   size: "N/A"
-  collection_method: "unknown"
+  collection_method: none
 resources:
   homepage: "https://gymnasium.farama.org/environments/mujoco/"
   paper: "https://arxiv.org/abs/1606.01540"
   code: "https://github.com/Farama-Foundation/Gymnasium"
+  data: ""
+  leaderboard: ""

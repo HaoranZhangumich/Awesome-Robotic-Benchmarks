@@ -1,0 +1,22 @@
+name: HABIT
+domain: HRI
+area: collaboration
+subtype: "human-present robot dataset, bimanual"
+first_release_date: 2026-06-30
+venue: "NeurIPS 2026 E&D (oral)"
+description: "Real-robot demonstration dataset recorded with a person in the workspace: a bimanual Franka setup acts as collaborator, coworker or supervised robot across 60 tasks. Policies trained on it are scored on manipulation, workflow compliance and human safety."
+task_count: "60 (20 each: collaborator, coworker, supervisor)"
+metric_count: "1 (success rate: manipulation, workflow compliance and human safety)"
+robot_config_count: "1 (two Franka Research 3 arms with Robotiq grippers)"
+modality: [RGB, proprioceptive]
+setting: [real]
+sim_backend: ""
+data_source:
+  size: "10,563 episodes, 164 hours"
+  collection_method: human_demonstration
+resources:
+  homepage: "https://habit-dataset.github.io"
+  paper: "https://arxiv.org/abs/2606.31682"
+  code: "https://github.com/HABIT-dataset/HABIT-policy-training"
+  data: "https://huggingface.co/datasets/configinc/HABIT"
+  leaderboard: ""

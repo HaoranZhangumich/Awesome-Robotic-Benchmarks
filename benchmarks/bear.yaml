@@ -1,0 +1,22 @@
+name: BEAR
+domain: Embodied Reasoning
+area: spatial
+subtype: "atomic embodied skills, skill-level diagnosis"
+first_release_date: 2025-10-09
+venue: "ICML 2026"
+description: "Skill-level benchmark that splits embodied tasks into 14 atomic skills in six categories (pointing, bounding box, trajectory reasoning, spatial reasoning, task planning, long-horizon), so failures of multimodal LLMs can be traced from planning back to perception."
+task_count: "14 skills in 6 categories"
+metric_count: "2 (success rate, IoU for bounding boxes)"
+robot_config_count: "N/A"
+modality: [RGB, video, language]
+setting: [sim, real]
+sim_backend: "AI2-THOR (35 long-horizon episodes)"
+data_source:
+  size: "4,469 image-video-text samples from 13 data sources"
+  collection_method: mixed
+resources:
+  homepage: "https://bear-official66.github.io/"
+  paper: "https://arxiv.org/abs/2510.08759"
+  code: "https://github.com/yqi19/BEAR-official"
+  data: "https://huggingface.co/datasets/yqi19/BEAR-benchmark"
+  leaderboard: ""

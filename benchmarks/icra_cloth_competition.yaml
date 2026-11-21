@@ -1,0 +1,22 @@
+name: ICRA 2024 Cloth Competition
+domain: Manipulation
+area: deformable
+subtype: "real-world cloth unfolding, grasp selection"
+first_release_date: 2024
+venue: "ICRA 2024 competition; IJRR 2026"
+description: "Benchmark and dataset from a head-to-head competition on choosing the grasp that best unfolds a garment hanging in the air, executed on a shared dual-arm UR5e setup from RGB-D input. Released data: 679 real unfolding attempts on 34 garments, including 176 competition trials from 11 teams."
+task_count: 1
+metric_count: "2 (cloth coverage after unfolding, grasp success)"
+robot_config_count: "1 (dual UR5e with Robotiq 2F-85 grippers)"
+modality: [RGB, depth, pointcloud]
+setting: [real]
+sim_backend: ""
+data_source:
+  size: "679 unfolding attempts on 34 garments (83 GB)"
+  collection_method: mixed
+resources:
+  homepage: "https://airo.ugent.be/cloth_competition/"
+  paper: "https://arxiv.org/abs/2508.16749"
+  code: "https://github.com/Victorlouisdg/cloth-competition"
+  data: "https://zenodo.org/records/14621179"
+  leaderboard: ""

@@ -1,0 +1,26 @@
+name: World Humanoid Robot Games
+domain: Other
+area: competition
+subtype: "humanoid sports and service events"
+first_release_date: 2025-08
+
+description: "Multi-sport event for humanoid robots, held in Beijing each August since 2025. The 2026 edition drew 666 teams and 2,056 robots from 16 countries to 51 events: 30 competitive (athletics, football, combat and more) and 21 scenario-based (such as hotel service and emergency response)."
+
+task_count: "51 events in 2026 (30 competitive, 21 scenario-based); 26 events in 2025"
+metric_count: "Event-specific (race times, match results, task scores)"
+robot_config_count: "2,056 humanoid robots from 666 teams in 2026"
+
+modality: [RGB, proprioceptive]
+setting: [real]
+sim_backend: ""
+
+data_source:
+  size: "N/A"
+  collection_method: none
+
+resources:
+  homepage: "https://en.wikipedia.org/wiki/World_Humanoid_Robot_Games"
+  paper: ""
+  code: ""
+  data: ""
+  leaderboard: ""

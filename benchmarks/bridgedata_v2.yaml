@@ -1,0 +1,23 @@
+name: "BridgeData V2"
+domain: Datasets
+area: robot-data
+subtype: "single embodiment, low-cost arm, language"
+first_release_date: 2023-08-24
+venue: "CoRL 2023"
+widely_used: true
+description: "60,096 trajectories on a low-cost WidowX 250 arm across 24 environments and 13 skills, each labelled with a natural-language instruction. Built for goal-image- and language-conditioned multi-task learning."
+task_count: "13 skills, 24 environments"
+metric_count: "N/A"
+robot_config_count: "1 (WidowX 250)"
+modality: [RGB, depth, proprioceptive, language]
+setting: [real]
+sim_backend: ""
+data_source:
+  size: "60,096 trajectories (50,365 teleoperated, 9,731 scripted)"
+  collection_method: mixed
+resources:
+  homepage: "https://rail-berkeley.github.io/bridgedata/"
+  paper: "https://arxiv.org/abs/2308.12952"
+  code: "https://github.com/rail-berkeley/bridge_data_v2"
+  data: "https://rail.eecs.berkeley.edu/datasets/bridge_release/data/"
+  leaderboard: ""

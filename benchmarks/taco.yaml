@@ -1,0 +1,22 @@
+name: TACO
+domain: Dexterous Manipulation
+area: hand-object-data
+subtype: "bimanual tool use"
+first_release_date: 2024-01-16
+venue: "CVPR 2024"
+description: "Bimanual tool-action-object dataset: about 2.5K motion sequences of two hands using a tool on a target object, with third-person and egocentric video, precise hand-object meshes and action labels. Benchmarks compositional action recognition, motion forecasting and cooperative grasp synthesis."
+task_count: "3 (action recognition, motion forecasting, grasp synthesis)"
+metric_count: "N/A"
+robot_config_count: "N/A"
+modality: [RGB, hand pose, mocap]
+setting: [real]
+sim_backend: ""
+data_source:
+  size: "2.5K sequences (v1 release: 2,317 over 151 triplets)"
+  collection_method: human_demonstration
+resources:
+  homepage: "https://taco2024.github.io"
+  paper: "https://arxiv.org/abs/2401.08399"
+  code: "https://github.com/leolyliu/TACO-Instructions"
+  data: "https://huggingface.co/datasets/leolyliu/TACO"
+  leaderboard: ""

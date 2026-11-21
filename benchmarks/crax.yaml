@@ -1,0 +1,22 @@
+name: CRAX
+domain: Safety
+area: safe-rl
+subtype: "GPU-accelerated constrained RL"
+first_release_date: 2026-06-18
+venue: "arXiv 2026"
+description: "Hardware-accelerated safe-RL benchmark on MuJoCo MJX in JAX: eight constrained tasks at three difficulty levels with vector or pixel observations, reported as up to 200x faster to train on than CPU-based safety suites."
+task_count: "8 tasks x 3 difficulty levels"
+metric_count: "2 (episodic reward, episodic cost against a threshold)"
+robot_config_count: "8 (Point, Ant, Humanoid, Spider, HalfCheetah, Walker2d, Hopper, Reacher)"
+modality: [state, lidar, RGB]
+setting: [sim]
+sim_backend: "MuJoCo MJX (JAX)"
+data_source:
+  size: "N/A"
+  collection_method: none
+resources:
+  homepage: "https://ttomilin.github.io/CRAX/"
+  paper: "https://arxiv.org/abs/2606.20376"
+  code: "https://github.com/TTomilin/CRAX"
+  data: ""
+  leaderboard: ""

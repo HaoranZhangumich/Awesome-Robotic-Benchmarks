@@ -1,0 +1,22 @@
+name: ManiSkill-ViTac Challenge
+domain: Manipulation
+area: tactile
+subtype: "challenge, visuo-tactile insertion"
+first_release_date: 2024-01-31
+venue: "ICRA ViTac Workshop 2024-2025; CVPR 2026 Embodied AI Workshop"
+description: "Annual challenge on contact-rich manipulation with vision-based tactile sensing. The 2024 and 2025 editions train in an IPC-based tactile simulator (peg insertion, lock opening; 2025 added tactile-vision fusion and sensor-design tracks) with sim-to-real evaluation; the 2026 edition moved to real-robot bimanual visuo-tactile tasks."
+task_count: "2 tasks (2024); 3 tracks (2025); 2 real bimanual tasks (2026)"
+metric_count: "1 (success-rate-based score)"
+robot_config_count: "organiser platform (GelSight Mini fingers; ViTaMIn-B rig in 2026)"
+modality: [tactile, depth, RGB, proprioceptive, language]
+setting: [sim, real]
+sim_backend: "SAPIEN with IPC-based tactile sensor simulation"
+data_source:
+  size: "none for 2024-2025 (RL in simulation); teleoperated real data in 2026"
+  collection_method: human_demonstration
+resources:
+  homepage: "https://ai-workshops.github.io/maniskill-vitac-challenge-2025/"
+  paper: "https://arxiv.org/abs/2411.12503"
+  code: "https://github.com/chuanyune/ManiSkill-ViTac2025"
+  data: ""
+  leaderboard: "https://callmeray.github.io/Mani_ViTac_Challenge_2026_page/"

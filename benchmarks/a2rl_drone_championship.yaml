@@ -1,0 +1,26 @@
+name: A2RL Drone Championship
+domain: Other
+area: aerial
+subtype: "autonomous drone racing competition"
+first_release_date: 2025-04
+
+description: "Autonomous drone racing series of the Abu Dhabi Autonomous Racing League. Teams fly a standard drone with one forward camera and an IMU through gate courses at over 130 km/h in AI speed, multi-drone and AI-versus-human races (April 2025 and January 2026, Abu Dhabi)."
+
+task_count: "3 race formats in 2026 (AI speed challenge, multi-drone race, human vs AI)"
+metric_count: "Lap time and race results"
+robot_config_count: "1 (standard racing drone with a monocular camera, IMU and onboard computer)"
+
+modality: [RGB, IMU]
+setting: [real]
+sim_backend: ""
+
+data_source:
+  size: "N/A"
+  collection_method: none
+
+resources:
+  homepage: "https://a2rl.io/autonomous-drone-race"
+  paper: ""
+  code: ""
+  data: ""
+  leaderboard: ""

@@ -1,0 +1,22 @@
+name: ManipulationNet
+domain: Generalist
+area: real-eval
+subtype: "distributed real-world benchmarking, standard object kits"
+first_release_date: 2026-03-04
+venue: "arXiv 2026"
+description: "NIST-supported infrastructure for real-world manipulation benchmarking: registered teams receive standard object kits, run tasks on their own robots through a common software client, and are judged centrally. Tasks form a Physical Skills track and an Embodied Reasoning track."
+task_count: "5 released, 2 announced (two tracks)"
+metric_count: "N/A (task-specific scores, judged centrally)"
+robot_config_count: "any (teams use their own robots)"
+modality: [RGB, language]
+setting: [real]
+sim_backend: ""
+data_source:
+  size: "N/A"
+  collection_method: none
+resources:
+  homepage: "https://manipulation-net.org/"
+  paper: "https://arxiv.org/abs/2603.04363"
+  code: "https://github.com/ManipulationNet/mnet_client"
+  data: ""
+  leaderboard: "https://manipulation-net.org/leaderboards.html"

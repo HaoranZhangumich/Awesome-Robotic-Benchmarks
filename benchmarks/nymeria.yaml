@@ -1,0 +1,22 @@
+name: "Nymeria"
+domain: Datasets
+area: human-data
+subtype: "egocentric video, full-body motion, language"
+first_release_date: 2024-06-14
+venue: "ECCV 2024"
+description: "300 hours of in-the-wild daily activity from 264 participants in 50 locations, recorded with Project Aria devices and a motion-capture suit, so egocentric video is paired with full-body ground-truth motion and 301.5K motion-language sentences. NymeriaPlus (2026) adds object boxes, 3D shapes and SMPL motion."
+task_count: "N/A"
+metric_count: "N/A"
+robot_config_count: "N/A (human)"
+modality: [video, mocap, GPS_IMU, pointcloud, language]
+setting: [real]
+sim_backend: ""
+data_source:
+  size: "300 hours, 264 participants, 50 locations"
+  collection_method: human_demonstration
+resources:
+  homepage: "https://explorer.projectaria.com/nymeria"
+  paper: "https://arxiv.org/abs/2406.09905"
+  code: "https://github.com/facebookresearch/nymeria_dataset"
+  data: "https://explorer.projectaria.com/nymeria"
+  leaderboard: ""

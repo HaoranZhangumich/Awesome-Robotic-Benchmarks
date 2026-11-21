@@ -1,0 +1,22 @@
+name: ContactBench 1.0
+domain: Manipulation
+area: contact-rich
+subtype: "everyday contact-rich skills, 3D-printable assets"
+first_release_date: 2026-10-17
+venue: "arXiv 2026"
+description: "Benchmark of 36 everyday contact-rich tasks built around eight skills (thin-object, multi-object and clutter grasping, constrained placing, in-hand repositioning, extrinsic contact, articulated mechanisms, insertion). Over 40 3D-printable assets each have a matching simulation model, so tasks can be reproduced across labs and in simulation."
+task_count: 36
+metric_count: "4 (success rate, task progress, peak-force violations, completion time)"
+robot_config_count: "2 (UR5e with WSG50 in real tests; Franka FR3 in simulation)"
+modality: [RGB, tactile, force-torque, proprioceptive]
+setting: [real, sim]
+sim_backend: "Newton (MuJoCo Warp solver)"
+data_source:
+  size: "N/A (printable assets, task definitions, scripted sim policies)"
+  collection_method: none
+resources:
+  homepage: "https://jingyi-xiang.github.io/contactbench/"
+  paper: "https://arxiv.org/abs/2610.24512"
+  code: "https://github.com/Michaelwyx/contactbench-sim"
+  data: ""
+  leaderboard: ""

@@ -1,0 +1,23 @@
+name: LAFAN1
+domain: Locomotion
+area: motion-data
+subtype: "human mocap; version retargeted to Unitree robots"
+first_release_date: 2020
+venue: "SIGGRAPH 2020"
+widely_used: true
+description: "Ubisoft La Forge motion-capture set released with 'Robust Motion In-betweening': 77 sequences from 5 subjects covering walking, running, obstacles, dancing, fighting, jumps and falls. A version retargeted to the Unitree H1, H1-2 and G1 is widely used as reference motion for humanoid tracking."
+task_count: "N/A (dataset; 77 sequences in 15 themes)"
+metric_count: "N/A"
+robot_config_count: "3 in the retargeted set (Unitree H1, H1-2, G1)"
+modality: [mocap]
+setting: [real]
+sim_backend: ""
+data_source:
+  size: "496,672 frames at 30 fps (about 4.6 h), BVH"
+  collection_method: human_demonstration
+resources:
+  homepage: ""
+  paper: "https://arxiv.org/abs/2102.04942"
+  code: "https://github.com/ubisoft/ubisoft-laforge-animation-dataset"
+  data: "https://huggingface.co/datasets/lvhaidong/LAFAN1_Retargeting_Dataset"
+  leaderboard: ""

@@ -1,0 +1,22 @@
+name: CaP-X
+domain: Embodied Reasoning
+area: planning
+subtype: "coding agents, code-as-policy"
+first_release_date: 2026-03-23
+venue: "ICML 2026"
+description: "Framework for testing LLMs and VLMs as code-writing robot controllers. In CaP-Gym the agent writes programs that call perception and control primitives; CaP-Bench varies abstraction level, feedback and visual grounding over eight tiers to show how much models depend on human-designed scaffolding."
+task_count: "187 CaP-Gym tasks (7 Robosuite, 130 LIBERO-PRO, 50 BEHAVIOR); 8 tiers"
+metric_count: "1 (task success rate)"
+robot_config_count: "sim: single-arm, bimanual, R1Pro; real: Franka Panda, AgiBot G1"
+modality: [RGB, depth, state, language]
+setting: [sim, real]
+sim_backend: "Robosuite (MuJoCo), LIBERO-PRO, BEHAVIOR (OmniGibson / Isaac Sim)"
+data_source:
+  size: "N/A"
+  collection_method: none
+resources:
+  homepage: "https://capgym.github.io"
+  paper: "https://arxiv.org/abs/2603.22435"
+  code: "https://github.com/capgym/cap-x"
+  data: ""
+  leaderboard: ""

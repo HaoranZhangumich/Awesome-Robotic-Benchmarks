@@ -1,0 +1,22 @@
+name: Genie Sim
+domain: Generalist
+area: multi-domain
+subtype: "simulation platform and benchmark, humanoid manipulation, leaderboard"
+first_release_date: 2025-04
+venue: "arXiv 2026"
+description: "AgiBot's open simulation platform and benchmark for its Genie robots. Version 3.0 (January 2026) added LLM-generated scenes and evaluation configurations with VLM-based scoring; the benchmark now backs the RoboColiseum leaderboard, with instruction, robustness, manipulation and spatial boards."
+task_count: "200+ tasks, 100,000+ generated scenarios"
+metric_count: "N/A (per-board task scores, VLM-assisted checks)"
+robot_config_count: "2 (AgiBot Genie G1, G2); other arms can be imported"
+modality: [RGB, proprioceptive, language]
+setting: [sim]
+sim_backend: "Isaac Sim (PhysX); Newton and MuJoCo for some tasks"
+data_source:
+  size: "10,000+ hours of synthetic data over 200+ tasks"
+  collection_method: mixed
+resources:
+  homepage: "https://agibot-world.com/genie-sim"
+  paper: "https://arxiv.org/abs/2601.02078"
+  code: "https://github.com/AgibotTech/genie_sim"
+  data: "https://modelscope.cn/datasets/agibot_world/GenieSim3.0-Dataset"
+  leaderboard: "https://robocoliseum.ai/"

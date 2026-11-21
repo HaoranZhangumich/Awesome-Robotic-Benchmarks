@@ -1,0 +1,22 @@
+name: HumanoidGen
+domain: Dexterous Manipulation
+area: dex-bimanual
+subtype: "humanoid bimanual dexterous manipulation, data generation"
+first_release_date: 2025-07-01
+venue: "NeurIPS 2025"
+description: "Automated task-creation and demonstration-collection framework for humanoid bimanual dexterous manipulation, in which an LLM planner writes chains of spatial constraints that a solver turns into actions. Its HGen-Bench has 20 tabletop tasks for a Unitree H1-2 with Inspire hands, with 2D and 3D diffusion-policy baselines."
+task_count: 20
+metric_count: "1 (success rate)"
+robot_config_count: "1 (Unitree H1-2 with Inspire hands)"
+modality: [RGB, pointcloud, proprioceptive]
+setting: [sim]
+sim_backend: "ManiSkill (SAPIEN)"
+data_source:
+  size: "Generated demonstrations for the 20 tasks (count not stated)"
+  collection_method: motion_planner
+resources:
+  homepage: "https://openhumanoidgen.github.io/"
+  paper: "https://arxiv.org/abs/2507.00833"
+  code: "https://github.com/TeleHuman/HumanoidGen"
+  data: "https://huggingface.co/datasets/TeleEmbodied/humanoidgen_dataset"
+  leaderboard: ""

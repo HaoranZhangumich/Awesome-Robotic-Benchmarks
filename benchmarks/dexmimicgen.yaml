@@ -1,0 +1,22 @@
+name: DexMimicGen
+domain: Dexterous Manipulation
+area: dex-bimanual
+subtype: "data generation, imitation learning, humanoid"
+first_release_date: 2024-10-31
+venue: "ICRA 2025"
+description: "Nine robosuite tasks for bimanual imitation learning across three embodiments (two Panda arms with grippers, two Panda arms with dexterous hands, a GR-1 humanoid with dexterous hands), with about 21K demonstrations generated automatically from 60 human teleoperated demos."
+task_count: 9
+metric_count: "1 (success rate)"
+robot_config_count: "3 (dual Panda + grippers, dual Panda + hands, GR-1 humanoid)"
+modality: [RGB, proprioceptive]
+setting: [sim]
+sim_backend: "robosuite (MuJoCo)"
+data_source:
+  size: "~21K generated demos from 60 human source demos"
+  collection_method: mixed
+resources:
+  homepage: "https://dexmimicgen.github.io/"
+  paper: "https://arxiv.org/abs/2410.24185"
+  code: "https://github.com/NVlabs/dexmimicgen"
+  data: "https://huggingface.co/datasets/MimicGen/dexmimicgen_datasets"
+  leaderboard: ""

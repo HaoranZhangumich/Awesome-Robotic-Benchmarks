@@ -1,0 +1,22 @@
+name: SafeAgentBench
+domain: Safety
+area: embodied-safety
+subtype: "LLM task planning, hazardous instructions"
+first_release_date: 2024-12-17
+venue: "arXiv 2024"
+description: "Benchmark for safety-aware task planning of embodied LLM agents in AI2-THOR: 750 executable tasks (450 hazardous, 300 safe) covering 10 hazard types as detailed, abstract and long-horizon instructions. Measures whether agents refuse or carry out hazardous tasks."
+task_count: "750 (450 hazardous, 300 safe); 10 hazard types"
+metric_count: "4 (rejection rate, success rate, execution rate, usage time)"
+robot_config_count: "1 (AI2-THOR household agent, 17 high-level actions)"
+modality: [RGB, language, state]
+setting: [sim]
+sim_backend: "AI2-THOR"
+data_source:
+  size: "750 task instructions with reference plans"
+  collection_method: mixed
+resources:
+  homepage: "https://safeagentbench.github.io"
+  paper: "https://arxiv.org/abs/2412.13178"
+  code: "https://github.com/shengyin1224/SafeAgentBench"
+  data: "https://huggingface.co/datasets/safeagentbench/SafeAgentBench"
+  leaderboard: ""

@@ -1,0 +1,22 @@
+name: "FineART"
+domain: Datasets
+area: robot-data
+subtype: "bimanual, dense subtask language, teleoperation"
+first_release_date: 2026-09-29
+venue: "arXiv 2026"
+description: "Bimanual manipulation dataset from Scale AI and Hugging Face LeRobot in which every episode carries human-written subtask annotations: 40,543 teleoperated episodes (1,718 hours), 533,913 subtask labels and 151 tasks on a Trossen Stationary AI robot."
+task_count: "151 tasks"
+metric_count: "N/A"
+robot_config_count: "1 (Trossen Stationary AI)"
+modality: [RGB, proprioceptive, language]
+setting: [real]
+sim_backend: ""
+data_source:
+  size: "40,543 episodes, 1,718 hours, 533,913 subtask labels"
+  collection_method: human_demonstration
+resources:
+  homepage: ""
+  paper: "https://arxiv.org/abs/2609.36416"
+  code: "https://github.com/huggingface/lerobot"
+  data: "https://huggingface.co/datasets/lerobot/FineART"
+  leaderboard: ""

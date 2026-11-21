@@ -1,0 +1,22 @@
+name: HandoverSim
+domain: HRI
+area: handover
+subtype: "human-to-robot handover"
+first_release_date: 2022-05-19
+venue: "ICRA 2022"
+description: "Simulation benchmark for human-to-robot object handover: a simulated hand replays motion-captured grasps from DexYCB and a Franka Panda must take the object without touching the hand. Standard splits test unseen subjects, handedness and objects."
+task_count: "1,000 handover scenes (10 subjects, 20 objects); 4 setups (s0-s3)"
+metric_count: "3 (success rate, time to handover, failure cause)"
+robot_config_count: "1 (Franka Panda)"
+modality: [pointcloud, state]
+setting: [sim]
+sim_backend: "PyBullet"
+data_source:
+  size: "1,000 motion-captured handover sequences from DexYCB"
+  collection_method: human_demonstration
+resources:
+  homepage: "https://handover-sim.github.io"
+  paper: "https://arxiv.org/abs/2205.09747"
+  code: "https://github.com/NVlabs/handover-sim"
+  data: ""
+  leaderboard: ""

@@ -1,0 +1,16 @@
+name: RoboVerse (MetaSim)
+domain: Simulation
+area: learning-framework
+first_release_date: 2025-04-03
+venue: "RSS 2025"
+description: "Simulation platform, synthetic dataset and unified imitation- and reinforcement-learning benchmarks built on MetaSim, a layer that exposes many simulators through one configuration system and API. Integrates tasks and data from suites such as LIBERO, ManiSkill, RLBench and Meta-World."
+physics_engine: "Multi-backend: Isaac Lab, Isaac Gym, MuJoCo, SAPIEN, Genesis, PyBullet, Newton"
+renderer: "Per backend (e.g. Isaac RTX, SAPIEN, MuJoCo); Blender"
+gpu_support: true
+os: [Linux]
+license: "Apache-2.0"
+resources:
+  homepage: "https://roboverseorg.github.io/"
+  paper: "https://arxiv.org/abs/2504.18904"
+  code: "https://github.com/RoboVerseOrg/RoboVerse"
+  docs: "https://roboverse.wiki/"

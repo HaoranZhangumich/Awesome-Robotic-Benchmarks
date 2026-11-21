@@ -1,0 +1,16 @@
+name: InternUtopia (GRUtopia)
+domain: Simulation
+area: embodied-platform
+first_release_date: 2024-07-15
+venue: "arXiv 2024"
+description: "Isaac Sim-based platform (GRUtopia until its 2025 renaming) for general robots in city-scale interactive scenes: GRScenes with 100k annotated scenes in 89 categories, LLM-driven NPCs for social interaction, and GRBench tasks for loco-navigation, social navigation and loco-manipulation."
+physics_engine: "PhysX 5 (Isaac Sim 4.5)"
+renderer: "Omniverse RTX"
+gpu_support: false
+os: [Linux]
+license: "MIT"
+resources:
+  homepage: "https://internrobotics.github.io/user_guide/internutopia/"
+  paper: "https://arxiv.org/abs/2407.10943"
+  code: "https://github.com/InternRobotics/InternUtopia"
+  docs: "https://internrobotics.github.io/user_guide/internutopia/"

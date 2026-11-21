@@ -1,0 +1,22 @@
+name: WorldModelBench
+domain: World Models
+area: wm-physics
+subtype: "physics adherence, instruction following, application domains"
+first_release_date: 2025-02-28
+venue: "CVPR 2025 Workshop"
+description: "Judges video generators as world models in seven application domains including robotics and driving. 350 text or image-plus-text conditions are scored for instruction following, physics adherence (five violation types) and commonsense by a judge model fine-tuned on 67K human labels."
+task_count: "7 domains, 56 subdomains"
+metric_count: "3 (instruction following, physics adherence, commonsense)"
+robot_config_count: "N/A"
+modality: [video, RGB, language]
+setting: [real]
+sim_backend: ""
+data_source:
+  size: "350 image and text conditions; 67K human labels on videos from 14 models"
+  collection_method: human_annotation
+resources:
+  homepage: "https://worldmodelbench-team.github.io"
+  paper: "https://arxiv.org/abs/2502.20694"
+  code: "https://github.com/WorldModelBench-Team/WorldModelBench"
+  data: "https://huggingface.co/datasets/Efficient-Large-Model/worldmodelbench"
+  leaderboard: "https://worldmodelbench-team.github.io/#leaderboard"

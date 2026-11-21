@@ -1,0 +1,22 @@
+name: ESI-Bench
+domain: Embodied Reasoning
+area: spatial
+subtype: "active spatial reasoning, perception-action loop"
+first_release_date: 2026-05-18
+venue: "arXiv 2026"
+description: "Embodied spatial intelligence benchmark where the model acts instead of only watching: in OmniGibson scenes it chooses perception, locomotion and manipulation actions to reveal occlusion, containment or dynamics before answering. Compares passive single-view, passive multi-view and active exploration."
+task_count: "10 task categories (29 subcategories); 3,081 task instances"
+metric_count: "1 (answer accuracy)"
+robot_config_count: "1 (simulated agent; robot model not stated)"
+modality: [RGB, language]
+setting: [sim]
+sim_backend: "OmniGibson (BEHAVIOR)"
+data_source:
+  size: "3,081 question instances, GPT-4o-proposed and human-verified"
+  collection_method: synthetic
+resources:
+  homepage: "https://esi-bench.github.io/"
+  paper: "https://arxiv.org/abs/2605.18746"
+  code: "https://github.com/ESI-Bench/ESI-Bench"
+  data: "https://huggingface.co/datasets/esi-bench/ESI-Bench"
+  leaderboard: ""

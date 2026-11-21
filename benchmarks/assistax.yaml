@@ -1,0 +1,22 @@
+name: Assistax
+domain: HRI
+area: assistive
+subtype: "multi-agent RL, ad-hoc teamwork"
+first_release_date: 2025-07-29
+venue: "RLC 2026"
+description: "GPU-accelerated assistive-robotics benchmark in JAX and MuJoCo MJX where a robot arm and an active simulated human are trained together with multi-agent RL. Tests ad-hoc teamwork with held-out human policies that differ in disability and preference."
+task_count: "5 in paper (scratch, tooth brushing, feeding, bed bath, arm assist); 7 in repo"
+metric_count: "3 (task return, preference return, gap to unseen partners)"
+robot_config_count: "1 (Franka Panda) plus a simulated humanoid partner"
+modality: [proprioceptive, force-torque, state]
+setting: [sim]
+sim_backend: "MuJoCo MJX (Brax, JAX)"
+data_source:
+  size: "No trajectories; zoo of pre-trained humanoid partner policies"
+  collection_method: none
+resources:
+  homepage: "https://leohinckeldey.dev/assistax-project/"
+  paper: "https://arxiv.org/abs/2507.21638"
+  code: "https://github.com/assistive-autonomy/assistax"
+  data: "https://huggingface.co/datasets/leohink/assistax-zoo"
+  leaderboard: ""

@@ -1,0 +1,22 @@
+name: BiCoord
+domain: Manipulation
+area: bimanual
+subtype: "bimanual, long-horizon, tight coordination"
+first_release_date: 2026-04-07
+venue: "arXiv 2026"
+description: "Bimanual benchmark built on RoboTwin 2.0 for long-horizon tasks in which the two arms stay tightly coupled. 18 tasks with stage-wise sub-goal annotations, and statistics that quantify temporal, spatial and spatio-temporal coordination between the arms."
+task_count: 18
+metric_count: "3 (success rate, stage-wise success rate, trajectory length)"
+robot_config_count: "1 (dual-arm robot from RoboTwin 2.0)"
+modality: [RGB, proprioceptive, language]
+setting: [sim]
+sim_backend: "SAPIEN (RoboTwin 2.0)"
+data_source:
+  size: "100 scripted trajectories per task (1,800 total), with stage annotations"
+  collection_method: motion_planner
+resources:
+  homepage: "https://buaa-colalab.github.io/BiCoord/"
+  paper: "https://arxiv.org/abs/2604.05831"
+  code: "https://github.com/buaa-colalab/BiCoord-Bench"
+  data: "https://huggingface.co/datasets/GradiusTwinbee/BiCoord"
+  leaderboard: ""

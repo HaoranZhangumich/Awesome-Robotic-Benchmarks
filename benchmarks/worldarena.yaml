@@ -1,0 +1,22 @@
+name: WorldArena
+domain: World Models
+area: wm-embodied
+subtype: "perception + functional utility, leaderboard, challenge"
+first_release_date: 2026-02-09
+venue: "arXiv 2026"
+description: "Benchmark and leaderboard for embodied world models: 16 video-quality metrics plus functional tests of the model as data engine, policy evaluator and action planner on RoboTwin 2.0. Version 2.0 adds visuotactile prediction, RL-environment use, LIBERO and a real ALOHA robot."
+task_count: "video quality + 3 functional roles, on 50 RoboTwin 2.0 tasks"
+metric_count: "16 video metrics in 6 sub-dimensions (EWMScore) + task success, correlation"
+robot_config_count: "3 (RoboTwin 2.0 dual-arm; in 2.0 also LIBERO Panda, real AgileX ALOHA)"
+modality: [video, RGB, language, proprioceptive, tactile]
+setting: [sim, real]
+sim_backend: "RoboTwin 2.0; LIBERO and UniVTAC in 2.0"
+data_source:
+  size: "RoboTwin 2.0 Clean-50: 2,500 videos (2,000 train / 500 test)"
+  collection_method: motion_planner
+resources:
+  homepage: "https://world-arena.ai"
+  paper: "https://arxiv.org/abs/2602.08971"
+  code: "https://github.com/tsinghua-fib-lab/WorldArena"
+  data: "https://huggingface.co/datasets/WorldArena/WorldArena_Robotwin2.0"
+  leaderboard: "https://huggingface.co/spaces/WorldArena/WorldArena"

@@ -1,0 +1,22 @@
+name: CLIPort
+domain: Manipulation
+area: tabletop
+subtype: "table-top, language-conditioned pick-and-place"
+first_release_date: 2021-09-24
+venue: "CoRL 2021"
+description: "Language-conditioned extension of the Ravens suite released with CLIPort: 10 simulated task families (packing, stacking, kit assembly, towers of Hanoi, pile separation) with seen and unseen colour and object splits, plus 9 real-robot tasks. A common testbed for language-grounded pick-and-place."
+task_count: "10 sim task families (seen / unseen variants) + 9 real"
+metric_count: "1 (task success with partial credit)"
+robot_config_count: "1 in sim (UR5 with suction gripper)"
+modality: [RGB, depth, language]
+setting: [sim, real]
+sim_backend: "PyBullet (Ravens)"
+data_source:
+  size: "scripted oracle demos, generated on demand (1-1,000 per task in the paper)"
+  collection_method: motion_planner
+resources:
+  homepage: "https://cliport.github.io/"
+  paper: "https://arxiv.org/abs/2109.12098"
+  code: "https://github.com/cliport/cliport"
+  data: ""
+  leaderboard: ""

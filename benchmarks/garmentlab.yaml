@@ -1,0 +1,22 @@
+name: GarmentLab
+domain: Manipulation
+area: deformable
+subtype: "garments, sim-to-real"
+first_release_date: 2024-11-02
+venue: "NeurIPS 2024"
+description: "Isaac Sim environment and benchmark for garment manipulation: 20 tasks in five groups covering garment interaction with rigid, articulated and fluid objects and human avatars, with garments from ClothesNet, PBD and FEM simulation, teleoperation tools, sim-to-real methods and a real-world benchmark protocol."
+task_count: "20 (5 groups)"
+metric_count: "1 (success rate)"
+robot_config_count: "several (parallel grippers, suction, dexterous hands, mobile robots)"
+modality: [RGB, depth, pointcloud, proprioceptive]
+setting: [sim, real]
+sim_backend: "Isaac Sim (PhysX 5; PBD and FEM)"
+data_source:
+  size: "N/A (assets only: 20 scenes, 9,000+ object models)"
+  collection_method: none
+resources:
+  homepage: "https://garmentlab.github.io/"
+  paper: "https://arxiv.org/abs/2411.01200"
+  code: "https://github.com/GarmentLab/GarmentLab"
+  data: ""
+  leaderboard: ""

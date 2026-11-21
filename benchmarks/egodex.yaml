@@ -1,0 +1,22 @@
+name: "EgoDex"
+domain: Datasets
+area: human-data
+subtype: "egocentric video, 3D hand pose, tabletop manipulation"
+first_release_date: 2025-05-16
+venue: "ICLR 2026"
+description: "829 hours of egocentric tabletop manipulation recorded with Apple Vision Pro, with 3D pose of the head, upper body and every finger joint tracked at capture time, plus language labels, across 194 tasks. Includes a train/test split and a hand-trajectory prediction benchmark."
+task_count: "194 tasks"
+metric_count: "1 family (best-of-K trajectory distance)"
+robot_config_count: "N/A (human)"
+modality: [video, hand pose, language]
+setting: [real]
+sim_backend: ""
+data_source:
+  size: "829 hours (about 725 train, 7 test, 97 additional)"
+  collection_method: human_demonstration
+resources:
+  homepage: ""
+  paper: "https://arxiv.org/abs/2505.11709"
+  code: "https://github.com/apple-aiml-research/ml-egodex"
+  data: "https://github.com/apple-aiml-research/ml-egodex"
+  leaderboard: ""

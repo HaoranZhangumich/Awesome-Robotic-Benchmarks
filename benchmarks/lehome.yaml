@@ -1,0 +1,22 @@
+name: LeHome
+domain: Manipulation
+area: deformable
+subtype: "household deformables, low-cost robots, challenge"
+first_release_date: 2026-04-24
+venue: "ICRA 2026"
+description: "Isaac Lab environment for household deformable-object manipulation (garments, food, liquids, granular and linear objects) with low-cost LeRobot-family robots. It hosted the LeHome Challenge at ICRA 2026: garment folding across four clothing categories, ranked in simulation (62 teams) and then on real SO-ARM101 robots."
+task_count: "6 evaluated tasks; the challenge folds 4 garment categories"
+metric_count: "1 (success rate)"
+robot_config_count: "3 (LeRobot SO-101, LeKiwi, XLeRobot)"
+modality: [RGB, depth, proprioceptive, language]
+setting: [sim, real]
+sim_backend: "Isaac Sim / Isaac Lab (PBD, FEM, fluid simulation)"
+data_source:
+  size: "teleoperated demos (50 per task in the paper; challenge sets on Hugging Face)"
+  collection_method: human_demonstration
+resources:
+  homepage: "https://lehome-web.github.io/"
+  paper: "https://arxiv.org/abs/2604.22363"
+  code: "https://github.com/lehome-official/lehome"
+  data: "https://huggingface.co/datasets/lehome/lehome_release"
+  leaderboard: "https://lehome-challenge.com/2026/"

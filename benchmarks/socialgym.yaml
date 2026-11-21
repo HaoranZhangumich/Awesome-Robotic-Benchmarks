@@ -1,23 +1,22 @@
 name: SocialGym 2.0
 domain: Navigation
-subtype: "social navigation"
+area: social
+subtype: "multi-agent social navigation, 2D"
 first_release_date: 2023-03-09
-
-description: "2D ROS-based multi-agent social navigation simulator/benchmark with Python API and MARL baselines."
-
-task_count: 4
-metric_count: 4
-robot_config_count: 1
-
-modality: [lidar, proprioceptive]
+venue: "arXiv 2023"
+description: "Lightweight 2D ROS-based simulator and benchmark for multi-agent social navigation in constrained layouts (doorways, hallways, intersections, roundabouts), with a Python API built on PettingZoo and Stable Baselines3 and MARL baselines."
+task_count: "4 scenario types (doorway, hallway, intersection, roundabout)"
+metric_count: "N/A"
+robot_config_count: "multi-robot, configurable kinematic constraints"
+modality: [state, lidar]
 setting: [sim]
-sim_backend: "ROS-based 2D (PettingZoo/SB3 integration)"
-
+sim_backend: "ROS-based 2D simulator (PettingZoo / Stable Baselines3 interface)"
 data_source:
-  size: "N/A (simulated training/eval)"
-  collection_method: "unknwon"
-
+  size: "N/A (simulated training and evaluation)"
+  collection_method: none
 resources:
-  homepage: "https://amrl.cs.utexas.edu/SocialGym2/"
+  homepage: "https://amrl.cs.utexas.edu/social_gym/index.html"
   paper: "https://arxiv.org/abs/2303.05584"
   code: "https://github.com/ut-amrl/SocialGym2"
+  data: ""
+  leaderboard: ""

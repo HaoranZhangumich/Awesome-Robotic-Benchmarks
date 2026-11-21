@@ -1,0 +1,22 @@
+name: Earth Rover Challenge
+domain: Navigation
+area: outdoor
+subtype: "real-world urban navigation competition, remotely driven rovers"
+first_release_date: 2024-10
+venue: "IROS 2024, ICRA 2025, IROS 2026 competition"
+description: "Real-world navigation competition in which AI policies and human gamers remotely drive the same small sidewalk rovers through GPS and image-goal missions in cities around the world. Scored by mission difficulty and time; the FrodoBots driving datasets support training."
+task_count: "4 tracks in 2026 (urban GPS, indoor image-goal, off-road image-goal, marathon)"
+metric_count: "1 (summed difficulty of completed missions; completion time as tiebreak)"
+robot_config_count: "1 (Earth Rover Mini+ 4WD rover in 2026)"
+modality: [RGB, GPS_IMU]
+setting: [real]
+sim_backend: ""
+data_source:
+  size: "FrodoBots-2K: about 2,000 h of driving; Berkeley-FrodoBots-7K: about 7,000 h"
+  collection_method: human_demonstration
+resources:
+  homepage: "https://earth-rover-challenge.github.io/"
+  paper: ""
+  code: "https://github.com/frodobots-org/earth-rovers-sdk"
+  data: "https://huggingface.co/datasets/BitRobot/FrodoBots-2K"
+  leaderboard: ""

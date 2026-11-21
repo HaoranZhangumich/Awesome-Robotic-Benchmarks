@@ -1,0 +1,26 @@
+name: AlpaSim
+domain: Autonomous Driving
+area: driving-closed-loop
+subtype: "neural-reconstruction simulator, closed-loop challenge"
+first_release_date: 2025-10
+
+description: "NVIDIA's open-source closed-loop simulator for end-to-end driving policies, replaying real drives as neural reconstructions (NuRec) with a pluggable renderer. The 2026 AlpaSim End-to-End Closed-Loop Challenge scores submitted driver containers on private scenes in two tracks, Physical AI AV and nuPlan."
+
+task_count: "2 challenge tracks (Physical AI AV, nuPlan)"
+metric_count: "2 (Policy Capability Score, incident-distance safety metric)"
+robot_config_count: "1 (ego vehicle; 6 camera views at 10 Hz on the Physical AI AV track)"
+
+modality: [RGB, state]
+setting: [sim]
+sim_backend: "AlpaSim (NuRec neural reconstructions; MTGS rendering on the nuPlan track)"
+
+data_source:
+  size: "2,523 public reconstructed 20 s clips; challenge split of 1,761 train and 441 validation scenes"
+  collection_method: unknown
+
+resources:
+  homepage: "https://opendrivelab.com/alpasim2026"
+  paper: ""
+  code: "https://github.com/NVlabs/alpasim"
+  data: "https://huggingface.co/datasets/nvidia/PhysicalAI-Autonomous-Vehicles-NuRec"
+  leaderboard: "https://huggingface.co/spaces/nvidia/AlpasimE2EClosedLoopChallenge2026"

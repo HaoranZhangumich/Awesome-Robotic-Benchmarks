@@ -1,0 +1,22 @@
+name: AutoEval
+domain: Generalist
+area: real-eval
+subtype: "autonomous real-robot evaluation, remote job queue"
+first_release_date: 2025-03-31
+venue: "CoRL 2025"
+description: "System for around-the-clock real-robot evaluation with automatic success detection and scene resets. Users submit policies to a job queue served by public WidowX cells in the BridgeData setup and receive evaluation reports; the four launch tasks were scheduled to run through 2025."
+task_count: "4 (open drawer, close drawer, eggplant to basket, eggplant to sink)"
+metric_count: "1 (success rate)"
+robot_config_count: "1 (WidowX; two public cells)"
+modality: [RGB, proprioceptive, language]
+setting: [real]
+sim_backend: ""
+data_source:
+  size: "N/A (rollout logs are public; policies train on BridgeData)"
+  collection_method: none
+resources:
+  homepage: "https://auto-eval.github.io/"
+  paper: "https://arxiv.org/abs/2503.24278"
+  code: "https://github.com/zhouzypaul/auto_eval"
+  data: "https://huggingface.co/datasets/zhouzypaul/auto_eval"
+  leaderboard: ""

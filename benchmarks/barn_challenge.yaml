@@ -1,0 +1,22 @@
+name: BARN Challenge
+domain: Navigation
+area: outdoor
+subtype: "ground-robot obstacle courses, simulation plus physical finals"
+first_release_date: 2020-08-31
+venue: "SSRR 2020; ICRA competition since 2022"
+description: "Benchmark for Autonomous Robot Navigation: 300 cluttered Gazebo obstacle courses of graded difficulty that a Clearpath Jackal with a 2D LiDAR must cross quickly and without collision. Held as an ICRA competition every year since 2022, with physical finals at the venue."
+task_count: "300 simulated environments, 50 new held-out ones for scoring, physical courses"
+metric_count: "1 (collision-free success scaled by traversal time)"
+robot_config_count: "1 (Clearpath Jackal with 2D LiDAR)"
+modality: [lidar, state]
+setting: [sim, real]
+sim_backend: "Gazebo (ROS)"
+data_source:
+  size: "300 generated navigation environments ordered by difficulty"
+  collection_method: synthetic
+resources:
+  homepage: "https://people.cs.gmu.edu/~xiao/Research/BARN_Challenge/BARN_Challenge26.html"
+  paper: "https://arxiv.org/abs/2008.13315"
+  code: "https://github.com/Daffan/the-barn-challenge"
+  data: "https://www.cs.utexas.edu/~xiao/BARN/BARN.html"
+  leaderboard: "https://people.cs.gmu.edu/~xiao/Research/BARN_Challenge/BARN_Challenge26.html"

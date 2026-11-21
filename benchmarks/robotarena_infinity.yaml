@@ -1,0 +1,22 @@
+name: "RobotArena ∞"
+domain: Generalist
+area: real2sim
+subtype: "automatic real-to-sim translation, human preference ranking"
+first_release_date: 2025-10-27
+venue: "ICLR 2026"
+description: "Converts demonstration videos from Bridge V2, DROID and RH20T into simulated environments automatically, then scores VLA policies there with VLM-based progress scoring and crowd-sourced pairwise preferences. Controlled perturbations of background, colour and object pose probe robustness."
+task_count: "hundreds of generated environments (70 in BridgeSim)"
+metric_count: "2 (VLM task-progress score, Bradley-Terry ranking from human votes)"
+robot_config_count: "3 source setups (Bridge V2, DROID and RH20T robots)"
+modality: [RGB, language]
+setting: [sim]
+sim_backend: "Genesis"
+data_source:
+  size: "N/A (8,749 human pairwise votes collected on BridgeSim)"
+  collection_method: none
+resources:
+  homepage: "https://robotarenainf.github.io/"
+  paper: "https://arxiv.org/abs/2510.23571"
+  code: "https://github.com/offjangir/RobotArena"
+  data: "https://huggingface.co/datasets/sourlreapwr/RobotArena-Benchmark"
+  leaderboard: ""

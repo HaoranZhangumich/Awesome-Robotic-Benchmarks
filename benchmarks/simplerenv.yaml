@@ -1,0 +1,23 @@
+name: SimplerEnv (SIMPLER)
+domain: Generalist
+area: real2sim
+subtype: "real-to-sim proxy, Google Robot and WidowX"
+first_release_date: 2024-05-09
+venue: "CoRL 2024"
+widely_used: true
+description: "Simulated counterparts of the Google Robot and WidowX (Bridge) setups, built so that policies trained on real data can be scored in simulation; paired sim and real evaluations show strong correlation. A standard simulation testbed for VLA policies."
+task_count: "10 prepackaged (6 Google Robot, 4 WidowX Bridge), plus variants"
+metric_count: "3 (success rate; MMRV and Pearson r for sim-real agreement)"
+robot_config_count: "2 (Google Robot, WidowX)"
+modality: [RGB, proprioceptive, language]
+setting: [sim]
+sim_backend: "SAPIEN (ManiSkill2); GPU port in ManiSkill3"
+data_source:
+  size: "N/A (policies are trained on real-robot data)"
+  collection_method: none
+resources:
+  homepage: "https://simpler-env.github.io/"
+  paper: "https://arxiv.org/abs/2405.05941"
+  code: "https://github.com/simpler-env/SimplerEnv"
+  data: ""
+  leaderboard: ""

@@ -1,0 +1,22 @@
+name: Bench2Dex
+domain: Dexterous Manipulation
+area: dex-bimanual
+subtype: "visuo-tactile, cross-hand, long-horizon"
+first_release_date: 2026-09-14
+venue: "arXiv 2026"
+description: "Isaac Lab benchmark of 26 multi-stage bimanual tasks (tool use, articulated objects) across 12 arm-hand embodiments that share one simulated fingertip visuo-tactile interface. Comes with about 1.3K teleoperated demonstrations and a robustness protocol built from seven scene perturbations."
+task_count: 26
+metric_count: "3 (stable success rate, stage progress, efficiency)"
+robot_config_count: "12 arm-hand embodiments"
+modality: [RGB, tactile, proprioceptive, state]
+setting: [sim]
+sim_backend: "Isaac Lab (Isaac Sim)"
+data_source:
+  size: "~1.3K human-teleoperated demonstrations"
+  collection_method: human_demonstration
+resources:
+  homepage: "https://bench2dex.github.io/"
+  paper: "https://arxiv.org/abs/2609.15726"
+  code: "https://github.com/Bench2Dex/Bench2Dex"
+  data: "https://huggingface.co/Bench2Dex"
+  leaderboard: "https://bench2dex.github.io/Bench2Dex-Leaderboard/"

@@ -1,19 +1,22 @@
 name: EmbodiedBench
-domain: Generalist
+domain: Embodied Reasoning
+area: planning
+subtype: "MLLM agents, high- and low-level control"
 first_release_date: 2025-02-13
-description: "A comprehensive benchmark to evaluate vision-driven embodied agents (multi-modal LLM-based) across both high-level and low-level task. EmbodiedBench spans four simulated environments – EB-ALFRED and EB-Habitat (high-level household tasks), and EB-Navigation and EB-Manipulation (low-level navigation and robotic manipulation) – comprising 1,128 diverse test instances in total. It also defines six capability-oriented evaluation subsets to assess commonsense reasoning, complex instruction understanding, spatial awareness, visual perception, long-horizon planning, etc."
-task_count: "1128 (testing tasks across 4 envs)"
-metric_count: "2 (e.g., success rate and subgoal success)"
-robot_config_count: 4
+venue: "ICML 2025"
+description: "Benchmark for multimodal LLMs as vision-driven embodied agents in four simulated environments: EB-ALFRED and EB-Habitat (high-level household tasks), EB-Navigation and EB-Manipulation (low-level navigation and manipulation). Six capability subsets probe commonsense, complex instructions, spatial awareness, visual perception and long-horizon planning."
+task_count: "1,128 test instances across 4 environments"
+metric_count: "3 (task success rate, subgoal success rate, planner / environment steps)"
+robot_config_count: "3 (AI2-THOR agent, Habitat robot, Franka Panda)"
 modality: [RGB, language]
 setting: [sim]
-sim_backend: "Multiple – AI2-THOR (Unity) for EB-ALFRED, Habitat-Sim for EB-Habitat/Navigation, and a robotics simulator for EB-Manipulation"
+sim_backend: "AI2-THOR (EB-ALFRED, EB-Navigation), Habitat 2.0, CoppeliaSim (EB-Manipulation)"
 data_source:
-  size: "1,128 evaluation scenarios (drawn from ALFRED, Habitat, etc.)"
-  collection_method: both (uses existing human-collected and synthetic tasks)
+  size: "1,128 test instances (300 / 300 / 300 / 228 per environment)"
+  collection_method: mixed
 resources:
-  homepage: "https://embodiedbench.github.io "
-  paper: "https://arxiv.org/abs/2502.09560 "
-  code: "https://github.com/embodiedbench/EmbodiedBench "
-  data: "https://huggingface.co/embodiedbench (evaluation data)"
-  leaderboard: "https://embodiedbench.github.io#leaderboard "
+  homepage: "https://embodiedbench.github.io"
+  paper: "https://arxiv.org/abs/2502.09560"
+  code: "https://github.com/EmbodiedBench/EmbodiedBench"
+  data: "https://huggingface.co/EmbodiedBench"
+  leaderboard: "https://embodiedbench.github.io/#leaderboard-findings"

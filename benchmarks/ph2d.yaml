@@ -1,0 +1,22 @@
+name: "PH2D"
+domain: Datasets
+area: human-data
+subtype: "egocentric video, hand pose, human-humanoid aligned"
+first_release_date: 2025-03-17
+venue: "CoRL 2025"
+description: "Physical Human-Humanoid Data: about 27k task-oriented egocentric human demonstrations with 3D head, hand and finger poses and language, recorded with consumer VR headsets and aligned with humanoid teleoperation data so that both can train one policy."
+task_count: "N/A"
+metric_count: "N/A"
+robot_config_count: "N/A (human; aligned humanoid demonstrations included)"
+modality: [video, hand pose, language]
+setting: [real]
+sim_backend: ""
+data_source:
+  size: "About 27k demonstrations (dozens of hours)"
+  collection_method: human_demonstration
+resources:
+  homepage: "https://human-as-robot.github.io/"
+  paper: "https://arxiv.org/abs/2503.13441"
+  code: "https://github.com/RogerQi/human-policy"
+  data: "https://huggingface.co/datasets/RogerQi/PH2D"
+  leaderboard: ""

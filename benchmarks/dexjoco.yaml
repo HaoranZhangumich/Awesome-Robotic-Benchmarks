@@ -1,0 +1,22 @@
+name: DexJoCo
+domain: Dexterous Manipulation
+area: dex-manipulation
+subtype: "task-oriented, tool use, VLA evaluation"
+first_release_date: 2026-05-15
+venue: "arXiv 2026"
+description: "MuJoCo benchmark and toolkit of 11 functional tasks for Franka arms with Allegro Hands, covering tool use, bimanual coordination, long-horizon execution and reasoning. Ships 1.1K glove-teleoperated demonstrations and visual and dynamics randomisation for testing imitation and VLA policies."
+task_count: 11
+metric_count: "1 (success rate)"
+robot_config_count: "1 (Franka Panda + Allegro Hand)"
+modality: [RGB, proprioceptive, state]
+setting: [sim]
+sim_backend: "MuJoCo"
+data_source:
+  size: "1.1K human demonstration trajectories"
+  collection_method: human_demonstration
+resources:
+  homepage: "https://dexjoco.github.io"
+  paper: "https://arxiv.org/abs/2605.16257"
+  code: "https://github.com/brave-eai/dexjoco"
+  data: "https://huggingface.co/datasets/DexJoCo/DexJoCo-Datasets-LeRobot"
+  leaderboard: ""

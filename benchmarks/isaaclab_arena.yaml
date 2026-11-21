@@ -1,0 +1,15 @@
+name: Isaac Lab-Arena
+domain: Simulation
+area: learning-framework
+first_release_date: 2025-12
+description: "NVIDIA's open-source extension of Isaac Lab, co-developed with Lightwheel, for authoring benchmarks and evaluating generalist policies: environments are composed from scene, embodiment and task parts and evaluated in parallel on GPU through a policy server. Still alpha software."
+physics_engine: "PhysX 5 or Newton (through Isaac Lab 3)"
+renderer: "Omniverse RTX (Isaac Sim)"
+gpu_support: true
+os: [Linux]
+license: "Apache-2.0"
+resources:
+  homepage: "https://developer.nvidia.com/blog/simplify-generalist-robot-policy-evaluation-in-simulation-with-nvidia-isaac-lab-arena/"
+  paper: ""
+  code: "https://github.com/isaac-sim/IsaacLab-Arena"
+  docs: "https://isaac-sim.github.io/IsaacLab-Arena/"

@@ -1,20 +1,22 @@
 name: RoboTwin
 domain: Manipulation
-subtype: dual-arm
+area: bimanual
+subtype: "dual-arm, generative digital twins"
 first_release_date: 2024-09-04
-description: "A dual-arm manipulation benchmark and data-generation framework that uses generative 3D models and LLMs to create diverse bimanual task scenarios. RoboTwin provides a real-to-sim “digital twin” pipeline to generate varied object models and expert demonstrations, and an evaluation platform aligned with a real dual-arm robot (COBOT Magic platform). It combines simulated expert data with real-world teleoperated demos for coordinated two-arm tasks."
-task_count: "50"
-metric_count: "1 (task success rate)"
-robot_config_count: 1
-modality: [RGB, depth, language]
+venue: "ECCV 2024 Workshop; CVPR 2025"
+description: "Dual-arm benchmark that builds object digital twins with 3D generative models and has LLMs write the expert programs. Version 1.0 has 17 tasks for the AgileX COBOT Magic platform in SAPIEN, with real teleoperated data for sim-to-real studies. Succeeded by RoboTwin 2.0."
+task_count: 17
+metric_count: "1 (success rate)"
+robot_config_count: "1 (AgileX COBOT Magic dual-arm)"
+modality: [RGB, depth, pointcloud, proprioceptive]
 setting: [sim, real]
-sim_backend: "sapien"
+sim_backend: "SAPIEN"
 data_source:
-  size: "Synthetic dataset (hundreds of expert demos) + limited real demos per task"
-  collection_method: both
+  size: "scripted expert demos (20-100 per task in the paper) + real teleop data"
+  collection_method: mixed
 resources:
   homepage: "https://robotwin-platform.github.io/"
-  paper: "https://arxiv.org/abs/2409.02920 "
-  code: "https://github.com/RoboTwin-Platform/RoboTwin"
-  data: "https://github.com/RoboTwin-Platform/RoboTwin/tree/main/data (simulated & real data)"
-  leaderboard: "https://robotwin-platform.github.io (CVPR 2025 Challenge)"
+  paper: "https://arxiv.org/abs/2409.02920"
+  code: "https://github.com/RoboTwin-Platform/RoboTwin/tree/RoboTwin-1.0"
+  data: ""
+  leaderboard: "https://robotwin-benchmark.github.io/cvpr-2025-challenge/"

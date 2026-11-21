@@ -1,0 +1,22 @@
+name: FMB
+domain: Manipulation
+area: contact-rich
+subtype: "real-world, multi-stage assembly"
+first_release_date: 2024-01-16
+venue: "IJRR 2024"
+description: "Functional Manipulation Benchmark: real-world multi-stage tasks combining grasping, repositioning and insertion on 66 procedurally generated, 3D-printable objects with a Franka arm, meant to test generalisation across object shapes. Ships CAD files, 22,550 demonstrations and baseline imitation policies."
+task_count: "2 task families (single- and multi-object assembly), 6 skills"
+metric_count: "1 (success rate)"
+robot_config_count: "1 (Franka Panda)"
+modality: [RGB, depth, proprioceptive, force-torque]
+setting: [real]
+sim_backend: ""
+data_source:
+  size: "22,550 demonstration trajectories (about 5 s each)"
+  collection_method: human_demonstration
+resources:
+  homepage: "https://functional-manipulation-benchmark.github.io/"
+  paper: "https://arxiv.org/abs/2401.08553"
+  code: "https://github.com/rail-berkeley/fmb"
+  data: "https://functional-manipulation-benchmark.github.io/dataset/index.html"
+  leaderboard: ""

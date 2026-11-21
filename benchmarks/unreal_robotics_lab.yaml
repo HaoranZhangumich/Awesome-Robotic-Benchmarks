@@ -1,0 +1,16 @@
+name: Unreal Robotics Lab (URLab)
+domain: Simulation
+area: physics
+first_release_date: 2025-04-19
+venue: "ICRA 2026"
+description: "Unreal Engine 5 plugin that embeds MuJoCo physics in the editor and runtime, pairing MuJoCo contact dynamics with Unreal rendering, cameras and effects such as smoke, fire and water, with Python and ROS 2 control. Paper in April 2025; code released in April 2026."
+physics_engine: "MuJoCo"
+renderer: "Unreal Engine 5"
+gpu_support: false
+os: [Windows, Linux]
+license: "Apache-2.0"
+resources:
+  homepage: "https://urlab-sim.github.io/UnrealRoboticsLab/"
+  paper: "https://arxiv.org/abs/2504.14135"
+  code: "https://github.com/URLab-Sim/UnrealRoboticsLab"
+  docs: "https://urlab-sim.github.io/UnrealRoboticsLab/"

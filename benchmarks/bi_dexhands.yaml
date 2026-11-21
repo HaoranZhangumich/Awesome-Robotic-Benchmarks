@@ -1,0 +1,23 @@
+name: Bi-DexHands
+domain: Dexterous Manipulation
+area: dex-bimanual
+subtype: "two Shadow Hands, RL and multi-agent RL"
+first_release_date: 2022-06-17
+venue: "NeurIPS 2022 D&B"
+widely_used: true
+description: "Isaac Gym benchmark of 20 bimanual tasks for two Shadow Hands (handover, catch, lift, door, bottle cap, scissors and others), graded against stages of human motor development. Covers over 2,000 objects and supports single-agent, multi-agent, multi-task, meta and offline RL."
+task_count: 20
+metric_count: "1 (average episode return)"
+robot_config_count: "1 (two Shadow Hands)"
+modality: [state, proprioceptive, pointcloud, RGB]
+setting: [sim]
+sim_backend: "Isaac Gym"
+data_source:
+  size: "Offline-RL datasets collected with PPO policies"
+  collection_method: rl_policy
+resources:
+  homepage: "https://pku-marl.github.io/DexterousHands/"
+  paper: "https://arxiv.org/abs/2206.08686"
+  code: "https://github.com/PKU-MARL/DexterousHands"
+  data: ""
+  leaderboard: ""

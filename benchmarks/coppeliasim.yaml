@@ -1,0 +1,16 @@
+name: CoppeliaSim (V-REP)
+domain: Simulation
+area: physics
+first_release_date: 2010-03
+venue: "IROS 2013"
+description: "General-purpose robot simulator (V-REP until 2019) with a distributed control architecture: each object can be driven by embedded scripts, plugins or remote API clients. Offers five interchangeable physics engines; RLBench runs on it through PyRep."
+physics_engine: "Bullet, ODE, MuJoCo, Vortex, Newton Dynamics (selectable)"
+renderer: "OpenGL; POV-Ray plugin"
+gpu_support: false
+os: [Linux, Windows, macOS]
+license: "Proprietary (free Edu licence, paid Pro); core library GPL-3.0"
+resources:
+  homepage: "https://www.coppeliarobotics.com/"
+  paper: "https://ieeexplore.ieee.org/document/6696520"
+  code: "https://github.com/CoppeliaRobotics/coppeliaSimLib"
+  docs: "https://manual.coppeliarobotics.com/"

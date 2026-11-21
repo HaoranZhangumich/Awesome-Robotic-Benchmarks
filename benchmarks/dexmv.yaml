@@ -1,0 +1,22 @@
+name: DexMV
+domain: Dexterous Manipulation
+area: dex-manipulation
+subtype: "human video to robot, imitation learning"
+first_release_date: 2021-08-12
+venue: "ECCV 2022"
+description: "Platform that pairs three MuJoCo tasks for an Adroit hand (relocate, pour, place inside) with videos of people doing the same tasks. 3D hand and object poses are estimated from the videos and retargeted into robot demonstrations, which are used to benchmark imitation learning."
+task_count: "3 (relocate, pour, place inside)"
+metric_count: "1 (success rate)"
+robot_config_count: "1 (Adroit hand)"
+modality: [video, hand pose, state]
+setting: [sim]
+sim_backend: "MuJoCo"
+data_source:
+  size: "Human videos retargeted to robot demonstrations (count N/A)"
+  collection_method: human_demonstration
+resources:
+  homepage: ""
+  paper: "https://arxiv.org/abs/2108.05877"
+  code: "https://github.com/yzqin/dexmv-sim"
+  data: ""
+  leaderboard: ""

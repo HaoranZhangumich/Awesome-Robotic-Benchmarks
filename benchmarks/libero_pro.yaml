@@ -1,0 +1,22 @@
+name: LIBERO-PRO
+domain: Generalist
+area: probes
+subtype: "VLA generalisation versus memorisation"
+first_release_date: 2025-10-04
+venue: "arXiv 2025"
+description: "Evaluation extension of LIBERO that perturbs manipulated objects, initial positions, instructions, task goals and environments on the four standard suites; models above 90% on standard LIBERO fall to near zero. LIBERO-Pro2.0 (October 2026) widens this to 1,648 shifted task instances with runtime interventions."
+task_count: "4 LIBERO suites x 5 perturbation types; 1,648 instances in Pro2.0"
+metric_count: "1 (success rate)"
+robot_config_count: "1 (Franka Panda)"
+modality: [RGB, proprioceptive, language]
+setting: [sim]
+sim_backend: "robosuite (MuJoCo)"
+data_source:
+  size: "N/A for LIBERO-PRO (evaluation only); 39,390 trajectories in Pro2.0"
+  collection_method: mixed
+resources:
+  homepage: "https://zxy-mllab.github.io/LIBERO-PRO-Webpage/"
+  paper: "https://arxiv.org/abs/2510.03827"
+  code: "https://github.com/Zxy-MLlab/LIBERO-PRO"
+  data: "https://huggingface.co/datasets/zhouxueyang/LIBERO-Pro"
+  leaderboard: "https://racingemperor.github.io/LIBERO-Pro2.0/leaderboard.html"

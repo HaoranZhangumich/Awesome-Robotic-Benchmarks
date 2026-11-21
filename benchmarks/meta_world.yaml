@@ -1,19 +1,23 @@
 name: Meta-World
 domain: Manipulation
-subtype: table-top
+area: tabletop
+subtype: "table-top, multi-task RL, meta-RL"
 first_release_date: 2019-10-24
-description: "Open-source benchmark of diverse single-arm tabletop manipulation tasks for multi-task and meta-RL."
+venue: "CoRL 2019"
+widely_used: true
+description: "50 tabletop manipulation tasks for a simulated Sawyer arm, grouped into multi-task (MT1, MT10, MT50) and meta-learning (ML1, ML10, ML45) benchmarks. The standard testbed for multi-task and meta-reinforcement learning. Meta-World+ (2025), maintained by the Farama Foundation, standardised the environment versions and added MT25 and ML25."
 task_count: 50
-metric_count: 1
-robot_config_count: 1
-modality: [proprioceptive]
+metric_count: "1 (success rate)"
+robot_config_count: "1 (Sawyer)"
+modality: [state, proprioceptive]
 setting: [sim]
 sim_backend: "MuJoCo"
 data_source:
   size: "N/A"
-  collection_method: "unknown"
+  collection_method: none
 resources:
   homepage: "https://meta-world.github.io/"
   paper: "https://arxiv.org/abs/1910.10897"
   code: "https://github.com/Farama-Foundation/Metaworld"
-
+  data: ""
+  leaderboard: ""

@@ -1,0 +1,16 @@
+name: GS-Playground
+domain: Simulation
+area: learning-framework
+first_release_date: 2026-04-28
+venue: "RSS 2026"
+description: "Simulator for vision-based robot learning that couples its own batched physics engine (MotrixSim) with batch 3D Gaussian Splatting rendering, reporting about 10^4 FPS at 640x480, plus a Real2Sim pipeline for photorealistic scenes. From the DISCOVERSE team at Tsinghua AIR with Motphys; the public repository is a preview release."
+physics_engine: "MotrixSim (CPU/GPU batched backends)"
+renderer: "Batch 3D Gaussian Splatting"
+gpu_support: true
+os: [Linux]
+license: "MIT"
+resources:
+  homepage: "https://gsplayground.github.io/"
+  paper: "https://arxiv.org/abs/2604.25459"
+  code: "https://github.com/discoverse-dev/gs_playground"
+  docs: ""

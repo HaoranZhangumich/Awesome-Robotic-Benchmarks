@@ -1,0 +1,22 @@
+name: AgiBot World Challenge
+domain: Generalist
+area: real-eval
+subtype: "competition series, simulation qualifier and real-robot final"
+first_release_date: 2025-05
+venue: "IROS 2025 and ICRA 2026 competitions"
+description: "Competition series run by AgiBot (IROS 2025 with OpenDriveLab, ICRA 2026). Teams in the manipulation track train on AgiBot World data, qualify online on 10 Genie Sim tasks, and finalists are ranked by task success on real AgiBot robots. A second track scores world models."
+task_count: "10 per edition (manipulation track)"
+metric_count: "1 (task success rate)"
+robot_config_count: "1 per edition (AgiBot humanoid; G2 in 2026)"
+modality: [RGB, depth, proprioceptive, language]
+setting: [sim, real]
+sim_backend: "Genie Sim (Isaac Sim)"
+data_source:
+  size: "simulated and real-robot trajectories for each of the 10 tasks"
+  collection_method: human_demonstration
+resources:
+  homepage: "https://agibot-world.com/challenge2026"
+  paper: ""
+  code: "https://github.com/AgibotTech/genie_sim"
+  data: "https://huggingface.co/datasets/agibot-world/AgiBotWorldChallenge-2026"
+  leaderboard: ""

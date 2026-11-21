@@ -1,0 +1,22 @@
+name: "Ravens (Transporter Networks)"
+domain: Manipulation
+area: tabletop
+subtype: "table-top, pick-and-place, rearrangement"
+first_release_date: 2020-10-27
+venue: "CoRL 2020"
+description: "PyBullet suite of 10 tabletop rearrangement tasks released with Transporter Networks (block insertion, towers of Hanoi, kit assembly, rope manipulation, pile sweeping), each with a scripted oracle and partial-credit rewards. The base of CLIPort, VIMA-Bench, LoHoRavens and GenSim."
+task_count: 10
+metric_count: "1 (task success with partial credit)"
+robot_config_count: "1 (UR5 with suction gripper or spatula)"
+modality: [RGB, depth]
+setting: [sim]
+sim_backend: "PyBullet"
+data_source:
+  size: "scripted oracle demos, generated on demand"
+  collection_method: motion_planner
+resources:
+  homepage: "https://transporternets.github.io/"
+  paper: "https://arxiv.org/abs/2010.14406"
+  code: "https://github.com/google-research/ravens"
+  data: ""
+  leaderboard: ""

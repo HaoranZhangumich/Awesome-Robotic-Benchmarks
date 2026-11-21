@@ -1,0 +1,23 @@
+name: DeepMind Control Suite
+domain: Locomotion
+area: continuous-control
+subtype: "classic control, state and pixel RL"
+first_release_date: 2018-01-02
+venue: "arXiv 2018"
+widely_used: true
+description: "Set of MuJoCo continuous-control tasks with a standardised structure and interpretable rewards, from pendulum and cartpole to walker, quadruped, dog and humanoid. A standard testbed for both state-based and pixel-based reinforcement learning."
+task_count: "28 benchmark tasks (51 tasks in 19 domains in the current suite)"
+metric_count: "1 (episode return)"
+robot_config_count: "19 (simulated bodies, one per domain)"
+modality: [state, RGB]
+setting: [sim]
+sim_backend: "MuJoCo"
+data_source:
+  size: "N/A"
+  collection_method: none
+resources:
+  homepage: ""
+  paper: "https://arxiv.org/abs/1801.00690"
+  code: "https://github.com/google-deepmind/dm_control"
+  data: ""
+  leaderboard: ""

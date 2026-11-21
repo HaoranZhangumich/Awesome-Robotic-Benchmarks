@@ -1,0 +1,22 @@
+name: RoboTwin 2.0-Plus
+domain: World Models
+area: wm-policy-eval
+subtype: "WAM vs VLA robustness, perturbation suite, bimanual"
+first_release_date: 2026-03-23
+venue: "arXiv 2026"
+description: "Perturbation suite on RoboTwin 2.0 from the study 'Do World Action Models Generalize Better than VLAs?'. It measures how the success of world action models and VLAs degrades under seven kinds of perturbation (noise, lighting, camera, robot state, background, layout, language), alongside LIBERO-Plus."
+task_count: "50 bimanual tasks x 8 configs (clean + 7 perturbation dimensions)"
+metric_count: "1 (success rate per perturbation dimension)"
+robot_config_count: "1 (Aloha-AgileX dual-arm)"
+modality: [RGB, language, proprioceptive]
+setting: [sim]
+sim_backend: "RoboTwin 2.0"
+data_source:
+  size: "50 episodes per config per task; 21 perturbation sub-dimensions"
+  collection_method: none
+resources:
+  homepage: "https://robot-robustness.github.io/RoboTwin2.0-Plus/"
+  paper: "https://arxiv.org/abs/2603.22078"
+  code: "https://github.com/Robot-Robustness/RoboTwin2.0-Plus"
+  data: ""
+  leaderboard: ""

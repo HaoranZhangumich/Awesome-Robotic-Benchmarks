@@ -1,0 +1,22 @@
+name: HM3D-OVON
+domain: Navigation
+area: goal-nav
+subtype: "open-vocabulary ObjectNav"
+first_release_date: 2024-09-22
+venue: "IROS 2024"
+description: "Open-vocabulary object-goal navigation on HM3D-Semantics scans: goals are free-form category names drawn from 379 categories instead of a fixed set of 6 to 20, with validation splits for seen categories, their synonyms, and unseen categories."
+task_count: "1 (open-vocabulary ObjectNav; val seen / seen-synonyms / unseen)"
+metric_count: "2 (SR, SPL)"
+robot_config_count: "1 (Stretch-like agent)"
+modality: [RGB, depth, language]
+setting: [sim]
+sim_backend: "Habitat-Sim"
+data_source:
+  size: "15k+ annotated object instances, 379 categories, 181 scenes (145 train / 36 val)"
+  collection_method: synthetic
+resources:
+  homepage: "https://naoki.io/portfolio/ovon.html"
+  paper: "https://arxiv.org/abs/2409.14296"
+  code: "https://github.com/naokiyokoyama/ovon"
+  data: ""
+  leaderboard: ""

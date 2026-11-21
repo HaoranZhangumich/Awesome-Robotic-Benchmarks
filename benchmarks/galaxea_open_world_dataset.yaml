@@ -1,0 +1,22 @@
+name: "Galaxea Open-World Dataset"
+domain: Datasets
+area: robot-data
+subtype: "mobile bimanual, single embodiment, subtask language"
+first_release_date: 2025-08-30
+venue: "arXiv 2025"
+description: "500 hours (about 100k trajectories) of mobile bimanual manipulation recorded with a single robot, the Galaxea R1 Lite, in 50 real scenes across homes, restaurants, shops and offices. Covers 150 task categories and 58 skills with subtask-level language annotations."
+task_count: "150 task categories, 58 skills"
+metric_count: "N/A"
+robot_config_count: "1 (Galaxea R1 Lite)"
+modality: [RGB, proprioceptive, language]
+setting: [real]
+sim_backend: ""
+data_source:
+  size: "500 hours, about 100k trajectories"
+  collection_method: human_demonstration
+resources:
+  homepage: "https://opengalaxea.github.io/GalaxeaVLA/"
+  paper: "https://arxiv.org/abs/2509.00576"
+  code: "https://github.com/OpenGalaxea/GalaxeaVLA"
+  data: "https://huggingface.co/datasets/OpenGalaxea/Galaxea-Open-World-Dataset"
+  leaderboard: ""

@@ -1,0 +1,22 @@
+name: GemBench
+domain: Manipulation
+area: tabletop
+subtype: "table-top, language-conditioned, generalization levels"
+first_release_date: 2024-10-02
+venue: "ICRA 2025"
+description: "RLBench-based generalization benchmark for language-conditioned manipulation. Policies train on 16 tasks (31 variations) and are tested on 44 tasks (92 variations) at four levels: new placements, new rigid objects, new articulated objects and new long-horizon tasks."
+task_count: "16 train (31 variations), 44 test (92 variations)"
+metric_count: "1 (success rate per level)"
+robot_config_count: "1 (Franka Panda)"
+modality: [RGB, depth, pointcloud, proprioceptive, language]
+setting: [sim]
+sim_backend: "CoppeliaSim (RLBench)"
+data_source:
+  size: "scripted RLBench demonstrations (train / val / test sets on Hugging Face)"
+  collection_method: motion_planner
+resources:
+  homepage: "https://www.di.ens.fr/willow/research/gembench/"
+  paper: "https://arxiv.org/abs/2410.01345"
+  code: "https://github.com/vlc-robot/robot-3dlotus"
+  data: "https://huggingface.co/datasets/rjgpinel/GEMBench"
+  leaderboard: ""

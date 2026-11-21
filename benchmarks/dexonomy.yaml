@@ -1,0 +1,22 @@
+name: Dexonomy
+domain: Dexterous Manipulation
+area: dex-grasping
+subtype: "grasp taxonomy, type-conditioned grasps"
+first_release_date: 2025-04-26
+venue: "RSS 2025"
+description: "Grasp dataset that covers the GRASP taxonomy: 9.5 million simulation-validated grasps of 31 grasp types on 10.7k objects, synthesised from one human-annotated template per hand and grasp type. The released pipeline supports Shadow, Allegro, LEAP, MANO and Unitree G1 hands."
+task_count: "N/A"
+metric_count: "N/A"
+robot_config_count: "5 hands (Shadow, Allegro, LEAP, MANO, Unitree G1)"
+modality: [state, pointcloud]
+setting: [sim]
+sim_backend: "MuJoCo"
+data_source:
+  size: "9.5M grasps, 10.7k objects, 31 grasp types"
+  collection_method: synthetic
+resources:
+  homepage: "https://pku-epic.github.io/Dexonomy"
+  paper: "https://arxiv.org/abs/2504.18829"
+  code: "https://github.com/JYChen18/Dexonomy"
+  data: "https://huggingface.co/datasets/JiayiChenPKU/Dexonomy"
+  leaderboard: ""

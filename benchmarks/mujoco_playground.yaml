@@ -1,0 +1,16 @@
+name: MuJoCo Playground
+domain: Simulation
+area: learning-framework
+first_release_date: 2025-01-16
+venue: "RSS 2025"
+description: "Google DeepMind's suite of robot-learning environments and sim-to-real workflows on MuJoCo: quadrupeds, humanoids, dexterous hands and arms trained in minutes on one GPU. The RSS 2025 release used JAX/MJX; version 1.0 (November 2026) moved to PyTorch on reaf-sim and MuJoCo Warp."
+physics_engine: "MuJoCo Warp (v1.0); MJX for the RSS 2025 environments"
+renderer: "MuJoCo Warp batch renderer; MuJoCo viewer"
+gpu_support: true
+os: [Linux, macOS]
+license: "Apache-2.0"
+resources:
+  homepage: "https://playground.mujoco.org/"
+  paper: "https://arxiv.org/abs/2502.08844"
+  code: "https://github.com/google-deepmind/mujoco_playground"
+  docs: "https://reaf-sim.readthedocs.io/en/latest/playground/index.html"

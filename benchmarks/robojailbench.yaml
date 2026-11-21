@@ -1,0 +1,22 @@
+name: RoboJailBench
+domain: Safety
+area: embodied-safety
+subtype: "jailbreak attacks and defenses"
+first_release_date: 2026-05-19
+venue: "arXiv 2026"
+description: "Standardized evaluation of jailbreak attacks and defenses for embodied VLMs: an 18-category security taxonomy derived from ISO standards, regulations and incidents, paired adversarial and benign goals over robot and driving scenes, and a leaderboard that tracks both security and benign-task utility."
+task_count: "990 paired instructions, 1,408 scene images, 18 security categories"
+metric_count: "4 (attack success rate, security rate, utility rate, SU harmonic mean)"
+robot_config_count: "N/A (model outputs on manipulator and driving scenes)"
+modality: [RGB, language]
+setting: [real]
+sim_backend: ""
+data_source:
+  size: "New 90-scene set plus augmented DROID, RH20T, RoboVQA, Robo2VLM, PhysicalAI-AV"
+  collection_method: mixed
+resources:
+  homepage: "https://purseclab.github.io/benchmark-for-robotics-security/"
+  paper: "https://arxiv.org/abs/2605.19328"
+  code: "https://github.com/purseclab/benchmark-for-robotics-security"
+  data: ""
+  leaderboard: "https://purseclab.github.io/benchmark-for-robotics-security/"

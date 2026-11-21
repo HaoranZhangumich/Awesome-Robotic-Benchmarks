@@ -1,0 +1,28 @@
+name: Waymo Open Dataset
+domain: Autonomous Driving
+area: driving-data
+subtype: "perception, motion forecasting, end-to-end driving"
+first_release_date: 2019-12-10
+venue: "CVPR 2020"
+widely_used: true
+
+description: "Waymo's public data in three parts: Perception (lidar and camera with 2D/3D labels), Motion (103,354 scenes with object tracks and maps) and, since 2025, End-to-End Driving (4,021 long-tail segments scored by rater feedback). Leaderboards for motion prediction, sim agents and end-to-end driving remain open."
+
+task_count: "17 challenge tasks since 2020; 4 tracks in 2025"
+metric_count: "Task-specific (e.g. sim-agent realism meta-metric, Rater Feedback Score for E2E)"
+robot_config_count: "1 (Waymo vehicle with lidars and cameras; 8 cameras in the E2E set)"
+
+modality: [RGB, lidar]
+setting: [real]
+sim_backend: ""
+
+data_source:
+  size: "Perception: 1,150 scenes of 20 s (v1 paper); Motion: 103,354 scenes; End-to-End: 4,021 segments"
+  collection_method: human_annotation
+
+resources:
+  homepage: "https://waymo.com/open/"
+  paper: "https://arxiv.org/abs/1912.04838"
+  code: "https://github.com/waymo-research/waymo-open-dataset"
+  data: "https://waymo.com/open/download/"
+  leaderboard: "https://waymo.com/open/challenges/"

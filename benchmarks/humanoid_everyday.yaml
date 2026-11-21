@@ -1,0 +1,22 @@
+name: "Humanoid Everyday"
+domain: Datasets
+area: robot-data
+subtype: "humanoid, dexterous hands, loco-manipulation"
+first_release_date: 2025-10-09
+venue: "arXiv 2025"
+description: "Teleoperated humanoid data on Unitree G1 and H1 with dexterous hands: 10.3k trajectories (3M+ frames) over 260 tasks in 7 categories, including human-humanoid interaction and loco-manipulation. Comes with a cloud platform that runs submitted policies on the real robots."
+task_count: "260 tasks in 7 categories"
+metric_count: "N/A"
+robot_config_count: "2 (Unitree G1, Unitree H1)"
+modality: [RGB, depth, lidar, tactile, GPS_IMU, proprioceptive, language]
+setting: [real]
+sim_backend: ""
+data_source:
+  size: "10.3k trajectories, 3M+ frames"
+  collection_method: human_demonstration
+resources:
+  homepage: "https://humanoideveryday.github.io/"
+  paper: "https://arxiv.org/abs/2510.08807"
+  code: "https://github.com/physical-superintelligence-lab/Humanoid-Everyday"
+  data: "https://huggingface.co/datasets/USC-PSI-Lab/humanoid-everyday"
+  leaderboard: ""

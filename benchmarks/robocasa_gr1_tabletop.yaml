@@ -1,0 +1,22 @@
+name: RoboCasa GR-1 Tabletop Tasks
+domain: Generalist
+area: multi-domain
+subtype: "humanoid dexterous tabletop, GR00T evaluation suite"
+first_release_date: 2025-03-18
+venue: "arXiv 2025"
+description: "Simulation suite released with GR00T N1: 24 language-conditioned tabletop tasks (18 rearrangement, 6 with articulated objects) for a Fourier GR-1 humanoid with dexterous hands, observed through one egocentric head camera. Later humanoid VLA papers report on it."
+task_count: 24
+metric_count: "1 (success rate)"
+robot_config_count: "1 (Fourier GR-1 with dexterous hands)"
+modality: [RGB, proprioceptive, language]
+setting: [sim]
+sim_backend: "RoboCasa / robosuite (MuJoCo)"
+data_source:
+  size: "1,000 demos per task (24,000), generated with DexMimicGen"
+  collection_method: mixed
+resources:
+  homepage: ""
+  paper: "https://arxiv.org/abs/2503.14734"
+  code: "https://github.com/robocasa/robocasa-gr1-tabletop-tasks"
+  data: "https://huggingface.co/datasets/nvidia/PhysicalAI-Robotics-GR00T-Teleop-Sim"
+  leaderboard: ""

@@ -1,0 +1,16 @@
+name: RaiSim
+domain: Simulation
+area: physics
+first_release_date: 2018
+venue: "RA-L 2018"
+description: "Closed-source rigid-body physics engine from RaiSim Tech, built around a per-contact iteration solver and used for legged-robot learning. Free for academics, paid for commercial use. The original raisimLib was retired in 2026 in favour of RaiSim2, distributed as binaries with the rayrai renderer."
+physics_engine: "RaiSim (per-contact iteration solver, multithreaded CPU)"
+renderer: "rayrai (RGB, depth, LiDAR); RaisimUnity / RaisimOgre for legacy RaiSim"
+gpu_support: false
+os: [Linux, Windows, macOS]
+license: "Proprietary (free academic licence; paid commercial)"
+resources:
+  homepage: "https://raisim.com/"
+  paper: "https://ieeexplore.ieee.org/document/8255551"
+  code: "https://github.com/raisimTech/raisim2Lib"
+  docs: "https://raisim.com/"

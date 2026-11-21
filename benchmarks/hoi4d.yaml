@@ -1,0 +1,22 @@
+name: HOI4D
+domain: Dexterous Manipulation
+area: hand-object-data
+subtype: "egocentric RGB-D, category-level"
+first_release_date: 2022-03-03
+venue: "CVPR 2022"
+description: "Egocentric RGB-D dataset for category-level human-object interaction: 2.4M frames in over 4,000 sequences covering 800 object instances from 16 categories in 610 indoor rooms, annotated with panoptic and motion segmentation, 3D hand pose, category-level object pose and hand actions."
+task_count: "3 (4D segmentation, object pose tracking, action segmentation)"
+metric_count: "N/A"
+robot_config_count: "N/A"
+modality: [RGB, depth, pointcloud, hand pose]
+setting: [real]
+sim_backend: ""
+data_source:
+  size: "2.4M RGB-D frames, 4,000+ sequences, 800 objects"
+  collection_method: human_demonstration
+resources:
+  homepage: "https://hoi4d.github.io/"
+  paper: "https://arxiv.org/abs/2203.01577"
+  code: "https://github.com/leolyliu/HOI4D-Instructions"
+  data: ""
+  leaderboard: ""

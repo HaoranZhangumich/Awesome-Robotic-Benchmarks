@@ -1,0 +1,22 @@
+name: EWMBench
+domain: World Models
+area: wm-embodied
+subtype: "embodied video generation, scene / motion / semantics"
+first_release_date: 2025-05-14
+venue: "arXiv 2025"
+description: "Scores embodied world models on robot manipulation video generated from AgiBot World scenes along three axes: scene consistency, end-effector motion against ground-truth trajectories, and semantic alignment. Its toolkit supplies the metrics of the AgiBot World Challenge world-model track."
+task_count: "10 manipulation tasks"
+metric_count: "3 groups (scene consistency; motion: HSD, nDTW, DYN; semantic alignment, diversity)"
+robot_config_count: "1 (AgiBot G1)"
+modality: [video, RGB, language]
+setting: [real]
+sim_backend: ""
+data_source:
+  size: "10 tasks from AgiBot World, 10 diverse trajectories selected per task"
+  collection_method: human_demonstration
+resources:
+  homepage: ""
+  paper: "https://arxiv.org/abs/2505.09694"
+  code: "https://github.com/AgibotTech/EWMBench"
+  data: "https://huggingface.co/datasets/agibot-world/EWMBench"
+  leaderboard: ""

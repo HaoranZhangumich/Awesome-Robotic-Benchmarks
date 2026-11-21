@@ -1,0 +1,22 @@
+name: Colosseum V2
+domain: Generalist
+area: probes
+subtype: "VLA generalisation under perturbations, ManiSkill"
+first_release_date: 2026-05-26
+venue: "RA-L 2026"
+description: "Successor to THE COLOSSEUM, rebuilt on ManiSkill for GPU-parallel evaluation of VLAs: 28 tasks in 13 categories for single-arm and bimanual Franka setups, tested under 19 visual, language and action perturbations. Simulated trends are checked on real hardware."
+task_count: "28 tasks x 19 perturbations"
+metric_count: "1 (success rate and its change under perturbation)"
+robot_config_count: "2 (single-arm Franka Panda, bimanual Franka Panda)"
+modality: [RGB, proprioceptive, language]
+setting: [sim]
+sim_backend: "ManiSkill (SAPIEN, GPU-parallel)"
+data_source:
+  size: "100 perturbation-free demos per task"
+  collection_method: motion_planner
+resources:
+  homepage: "https://colosseum-v2.github.io/"
+  paper: "https://arxiv.org/abs/2605.27759"
+  code: "https://github.com/jstmn/ColosseumV2"
+  data: ""
+  leaderboard: ""

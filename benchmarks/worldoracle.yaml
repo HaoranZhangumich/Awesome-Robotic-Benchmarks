@@ -1,0 +1,22 @@
+name: WorldOracle
+domain: World Models
+area: wm-embodied
+subtype: "action-conditioned world models, paired real executions, leaderboard"
+first_release_date: 2026-10-13
+venue: "arXiv 2026"
+description: "Compares rollouts of action-conditioned world models with paired real executions given the same first frame and low-level actions. Episodes are long and multi-segment, include failed attempts and policy rollouts, and span AgiBot G2, YAM arms and human hands; a public leaderboard is maintained."
+task_count: "4 (pick fruit, hang towel, pour water, pull drawer)"
+metric_count: "4 (physical state, spatial alignment, interaction-area fidelity, multi-view coherence)"
+robot_config_count: "3 (AgiBot G2, YAM bimanual arms, human hand)"
+modality: [video, RGB, proprioceptive]
+setting: [real]
+sim_backend: ""
+data_source:
+  size: "335 evaluation episodes (275 human-operated, 60 policy rollouts); 1,779 G2 training episodes"
+  collection_method: mixed
+resources:
+  homepage: "https://worldoracle-benchmark.github.io/"
+  paper: "https://arxiv.org/abs/2610.18826"
+  code: "https://github.com/WorldOracle-benchmark/WorldOracle"
+  data: "https://huggingface.co/datasets/WorldOracle/worldoracle-validation"
+  leaderboard: "https://worldoracle-benchmark.github.io/leaderboard.html"

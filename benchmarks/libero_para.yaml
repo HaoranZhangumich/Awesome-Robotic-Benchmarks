@@ -1,0 +1,22 @@
+name: LIBERO-Para
+domain: Generalist
+area: probes
+subtype: "paraphrase robustness, language grounding"
+first_release_date: 2026-03-30
+venue: "EMNLP 2026"
+description: "Diagnostic benchmark for instruction paraphrasing in VLAs: over 4,000 paraphrases of LIBERO-Goal instructions that vary action expressions and object references independently across 43 paraphrase types, scored with the difficulty-aware PRIDE metric. A CALVIN version is included."
+task_count: "10 LIBERO-Goal scenarios, 4,000+ paraphrased instructions"
+metric_count: "2 (success rate, PRIDE)"
+robot_config_count: "1 (Franka Panda)"
+modality: [RGB, proprioceptive, language]
+setting: [sim]
+sim_backend: "robosuite (MuJoCo)"
+data_source:
+  size: "4,000+ LLM-generated, verified paraphrases; no new trajectories"
+  collection_method: synthetic
+resources:
+  homepage: "https://cau-hai-lab.github.io/LIBERO-Para/"
+  paper: "https://arxiv.org/abs/2603.28301"
+  code: "https://github.com/cau-hai-lab/LIBERO-Para"
+  data: "https://huggingface.co/datasets/HAI-Lab/LIBERO-Para"
+  leaderboard: ""

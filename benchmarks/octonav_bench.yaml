@@ -1,0 +1,22 @@
+name: OctoNav-Bench
+domain: Navigation
+area: vln
+subtype: "generalist navigation, free-form multimodal instructions"
+first_release_date: 2025-06-11
+venue: "CVPR 2026"
+description: "Benchmark for generalist navigation agents: each free-form instruction combines several capabilities (ObjNav, PointNav, ImgNav, Ins-ImgNav, VLN) and modalities (text, image, coordinates) in continuous Habitat scenes. Includes the TBA-CoT dataset of think-before-action reasoning traces."
+task_count: "5 capabilities combined within single instructions"
+metric_count: "3 (SR, OSR, SPL)"
+robot_config_count: "1 (egocentric RGB agent, low-level actions)"
+modality: [RGB, language]
+setting: [sim]
+sim_backend: "Habitat-Sim"
+data_source:
+  size: "45k+ instruction-trajectory pairs in 400+ scenes; 10k+ TBA-CoT reasoning pairs"
+  collection_method: mixed
+resources:
+  homepage: "https://buaa-colalab.github.io/OctoNav/"
+  paper: "https://arxiv.org/abs/2506.09839"
+  code: "https://github.com/buaa-colalab/OctoNav-R1"
+  data: ""
+  leaderboard: ""

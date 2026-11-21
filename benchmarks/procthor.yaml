@@ -1,0 +1,22 @@
+name: ProcTHOR
+domain: Navigation
+area: goal-nav
+subtype: "procedurally generated houses, ObjectNav"
+first_release_date: 2022-06-14
+venue: "NeurIPS 2022"
+description: "Procedural generator of interactive AI2-THOR houses. The released ProcTHOR-10K set of 10,000 houses is a common training ground for object-goal navigation, with evaluation on the artist-designed ArchitecTHOR houses and on RoboTHOR, iTHOR and Habitat ObjectNav."
+task_count: "ObjectNav (also used for rearrangement and ArmPointNav)"
+metric_count: "2 (Success, SPL) for ObjectNav"
+robot_config_count: "1 (AI2-THOR navigation agent)"
+modality: [RGB, depth, segmentation]
+setting: [sim]
+sim_backend: "AI2-THOR (Unity)"
+data_source:
+  size: "10,000 generated houses; 1,633 interactive objects in 108 categories"
+  collection_method: synthetic
+resources:
+  homepage: "https://procthor.allenai.org/"
+  paper: "https://arxiv.org/abs/2206.06994"
+  code: "https://github.com/allenai/procthor"
+  data: "https://github.com/allenai/procthor-10k"
+  leaderboard: ""

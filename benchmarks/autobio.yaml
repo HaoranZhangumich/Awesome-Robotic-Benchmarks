@@ -1,0 +1,22 @@
+name: AutoBio
+domain: Manipulation
+area: tabletop
+subtype: "biology lab automation, language-guided"
+first_release_date: 2025-05-20
+venue: "ICLR 2026"
+description: "MuJoCo simulation and benchmark for biology-lab automation: 16 tasks at three difficulty levels on digitized instruments (centrifuge, thermal cycler, pipette, thermal mixer), with plugins for threads, detents and liquids and rendering of displays and transparent labware. Tests VLAs on precise protocol steps."
+task_count: "16 (three difficulty levels)"
+metric_count: "1 (success rate)"
+robot_config_count: "2 (UR5e, ALOHA)"
+modality: [RGB, proprioceptive, language]
+setting: [sim]
+sim_backend: "MuJoCo (optional Blender rendering)"
+data_source:
+  size: "100 synthesized demos per task, in MuJoCo and Blender renderings"
+  collection_method: motion_planner
+resources:
+  homepage: ""
+  paper: "https://arxiv.org/abs/2505.14030"
+  code: "https://github.com/autobio-bench/AutoBio"
+  data: "https://huggingface.co/autobio-bench"
+  leaderboard: ""

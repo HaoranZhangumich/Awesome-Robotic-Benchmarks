@@ -1,0 +1,21 @@
+name: "Fourier ActionNet"
+domain: Datasets
+area: robot-data
+subtype: "humanoid, dexterous hands, bimanual tabletop"
+first_release_date: 2025-03
+description: "Teleoperated bimanual tabletop manipulation on Fourier GR-1 and GR-2 humanoids with 6- and 12-DoF dexterous hands: over 30k trajectories (about 140 hours) of pick-and-place, pouring and insertion with language prompts."
+task_count: "N/A"
+metric_count: "N/A"
+robot_config_count: "3 (Fourier GR1-T1, GR1-T2, GR2)"
+modality: [RGB, depth, proprioceptive, language]
+setting: [real]
+sim_backend: ""
+data_source:
+  size: "30k+ trajectories, about 140 hours"
+  collection_method: human_demonstration
+resources:
+  homepage: "https://action-net.org/"
+  paper: ""
+  code: "https://github.com/FFTAI/fourier-lerobot"
+  data: "https://huggingface.co/datasets/FourierIntelligence/ActionNet"
+  leaderboard: ""

@@ -1,0 +1,22 @@
+name: TeleOpBench
+domain: Dexterous Manipulation
+area: dex-bimanual
+subtype: "teleoperation systems, humanoid"
+first_release_date: 2025-05-19
+venue: "arXiv 2025"
+description: "Isaac Sim benchmark for comparing bimanual dexterous teleoperation interfaces: 30 tasks on humanoids with dexterous hands and four reference modalities (motion capture, VR, exoskeleton, monocular vision). Mirrored real-robot runs on 10 tasks correlate with the simulated results."
+task_count: 30
+metric_count: "2 (success rate, completion time)"
+robot_config_count: "3 (Unitree H1-2, Fourier GR1-T2, Unitree G1)"
+modality: [RGB, hand pose, mocap]
+setting: [sim, real]
+sim_backend: "Isaac Sim"
+data_source:
+  size: "N/A"
+  collection_method: none
+resources:
+  homepage: "https://gorgeous2002.github.io/TeleOpBench/"
+  paper: "https://arxiv.org/abs/2505.12748"
+  code: "https://github.com/cyjdlhy/TeleOpBench"
+  data: ""
+  leaderboard: ""

@@ -1,0 +1,22 @@
+name: VLA-Arena
+domain: Generalist
+area: probes
+subtype: "graded difficulty, safety, language and visual perturbations"
+first_release_date: 2025-12-27
+venue: "ICML 2026"
+description: "Benchmark that grades VLA capability along task structure, language and vision: 170 tasks in 11 suites covering safety, distractors, extrapolation and long horizons at three difficulty levels, with optional language and visual perturbations. Models are fine-tuned on the easiest level only."
+task_count: "170 (11 suites, 3 difficulty levels)"
+metric_count: "2 (success rate, cumulative cost for safety)"
+robot_config_count: "1 (Franka Panda)"
+modality: [RGB, proprioceptive, language]
+setting: [sim]
+sim_backend: "robosuite (MuJoCo)"
+data_source:
+  size: "5,750 human demos (50 each for 115 L0/L1 tasks)"
+  collection_method: human_demonstration
+resources:
+  homepage: "https://vla-arena.github.io/"
+  paper: "https://arxiv.org/abs/2512.22539"
+  code: "https://github.com/PKU-Alignment/VLA-Arena"
+  data: "https://huggingface.co/vla-arena"
+  leaderboard: "https://vla-arena.github.io/#leaderboard"

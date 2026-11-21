@@ -1,0 +1,22 @@
+name: CHAIC
+domain: HRI
+area: collaboration
+subtype: "embodied social intelligence, assisting constrained humans"
+first_release_date: 2024-11-04
+venue: "NeurIPS 2024 D&B"
+description: "Constrained Human-AI Cooperation challenge in ThreeDWorld: a helper with egocentric RGB-D must infer the goals and physical limits of a human partner (child, wheelchair user, cyclist, frail person) and help with long-horizon indoor and outdoor transport tasks."
+task_count: "8 tasks, 4 constrained human agents, 12 test episodes per task"
+metric_count: "4 (transport rate, efficiency gain, goal-inference accuracy, emergency rate)"
+robot_config_count: "N/A (simulated helper avatar)"
+modality: [RGB, depth, state]
+setting: [sim]
+sim_backend: "ThreeDWorld (TDW)"
+data_source:
+  size: "N/A"
+  collection_method: none
+resources:
+  homepage: "https://umass-embodied-agi.github.io/CHAIC/"
+  paper: "https://arxiv.org/abs/2411.01796"
+  code: "https://github.com/UMass-Embodied-AGI/CHAIC"
+  data: ""
+  leaderboard: ""

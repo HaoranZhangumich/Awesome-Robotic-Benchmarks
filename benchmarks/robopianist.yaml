@@ -1,0 +1,22 @@
+name: RoboPianist
+domain: Dexterous Manipulation
+area: dex-bimanual
+subtype: "piano playing, high-dimensional control"
+first_release_date: 2023-04-09
+venue: "CoRL 2023"
+description: "MuJoCo benchmark in which two simulated Shadow Hands learn to play piano pieces from MIDI files with fingering annotations. A repertoire of 150 pieces tests spatial and temporal precision, finger coordination and planning, scored by key-press precision, recall and F1."
+task_count: "150 piano pieces"
+metric_count: "3 (precision, recall, F1)"
+robot_config_count: "1 (two Shadow Hands)"
+modality: [state, proprioceptive]
+setting: [sim]
+sim_backend: "MuJoCo"
+data_source:
+  size: "N/A (pieces come from the PIG piano-fingering dataset)"
+  collection_method: none
+resources:
+  homepage: "https://kzakka.com/robopianist/"
+  paper: "https://arxiv.org/abs/2304.04150"
+  code: "https://github.com/google-research/robopianist"
+  data: ""
+  leaderboard: ""

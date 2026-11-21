@@ -1,0 +1,22 @@
+name: EgoPlan-Bench
+domain: Embodied Reasoning
+area: planning
+subtype: "egocentric video, next-action planning"
+first_release_date: 2023-12-11
+venue: "IJCV"
+description: "Multiple-choice planning benchmark from the egocentric view: given a task goal, a video of progress so far and the current frame, pick the next action. Built from Epic-Kitchens and Ego4D; EgoPlan-Bench2 extends it to 24 everyday scenarios."
+task_count: "4,939 multiple-choice questions"
+metric_count: "1 (accuracy)"
+robot_config_count: "N/A (human egocentric video)"
+modality: [video, language]
+setting: [real]
+sim_backend: ""
+data_source:
+  size: "EgoPlan-Val 3,355 and EgoPlan-Test 1,584 questions; EgoPlan-Bench2 adds 1,321"
+  collection_method: mixed
+resources:
+  homepage: "https://chenyi99.github.io/ego_plan/"
+  paper: "https://arxiv.org/abs/2312.06722"
+  code: "https://github.com/ChenYi99/EgoPlan"
+  data: ""
+  leaderboard: "https://huggingface.co/spaces/ChenYi99/EgoPlan-Bench_Leaderboard"

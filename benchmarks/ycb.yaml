@@ -1,0 +1,23 @@
+name: YCB Object and Model Set
+domain: Manipulation
+area: grasping
+subtype: "physical object set, benchmarking protocols"
+first_release_date: 2015-02-10
+venue: "IEEE RAM 2015"
+widely_used: true
+description: "Standard physical object set for manipulation research: 77 everyday items varying in shape, size, texture, weight and rigidity, shipped to labs worldwide, with high-resolution RGB-D scans, meshes and physical properties, plus a framework of task protocols so that results can be compared across robots and labs."
+task_count: "N/A (object set with protocol templates)"
+metric_count: "protocol-specific"
+robot_config_count: "robot-agnostic"
+modality: [RGB, depth, pointcloud]
+setting: [real]
+sim_backend: ""
+data_source:
+  size: "77-object set; RGB-D scans and meshes for most objects"
+  collection_method: none
+resources:
+  homepage: "https://www.ycbbenchmarks.org/"
+  paper: "https://arxiv.org/abs/1502.03143"
+  code: ""
+  data: "http://ycb-benchmarks.s3-website-us-east-1.amazonaws.com/"
+  leaderboard: ""

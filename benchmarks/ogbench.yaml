@@ -1,0 +1,27 @@
+name: OGBench
+domain: Other
+area: offline-rl
+subtype: "offline goal-conditioned RL"
+first_release_date: 2024-10-26
+venue: "ICLR 2025"
+
+description: "Benchmark for offline goal-conditioned RL with 8 environment types (maze navigation with point, Ant and humanoid agents, Ant soccer, UR5e cube, scene and puzzle manipulation, and drawing) and 85 datasets, in state and pixel versions. Single-task variants give 410 standard offline RL tasks."
+
+task_count: "8 environment types, 85 datasets; 410 single-task variants"
+metric_count: "1 (success rate averaged over 5 evaluation goals per task)"
+robot_config_count: "4 (point mass, Ant, 21-DoF humanoid, UR5e arm with Robotiq gripper)"
+
+modality: [state, RGB]
+setting: [sim]
+sim_backend: "MuJoCo"
+
+data_source:
+  size: "85 datasets (navigate, stitch, explore, play and noisy types)"
+  collection_method: mixed
+
+resources:
+  homepage: "https://seohong.me/projects/ogbench/"
+  paper: "https://arxiv.org/abs/2410.20092"
+  code: "https://github.com/seohongpark/ogbench"
+  data: ""
+  leaderboard: ""

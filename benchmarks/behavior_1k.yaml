@@ -1,0 +1,22 @@
+name: BEHAVIOR-1K
+domain: Manipulation
+area: mobile
+subtype: "household activities, long-horizon, mobile manipulation"
+first_release_date: 2022
+venue: "CoRL 2022"
+description: "1,000 everyday household activities, chosen from a survey of what people want robots to do, defined in BDDL and instantiated in 50 interactive scenes with 9,000+ annotated objects. Runs in OmniGibson, which simulates rigid and deformable bodies and liquids. Basis of the annual BEHAVIOR Challenge and of benchmarks such as BEHAVIOR-Spatial, IS-Bench and ManiGuard."
+task_count: "1,000 activities"
+metric_count: "2 (success rate, partial-credit score Q)"
+robot_config_count: "multiple (R1Pro in the challenge; Tiago in the paper's real-world study)"
+modality: [RGB, depth, segmentation, proprioceptive]
+setting: [sim]
+sim_backend: "OmniGibson (NVIDIA Omniverse / PhysX 5)"
+data_source:
+  size: "N/A (teleoperated demos are released with the BEHAVIOR Challenge)"
+  collection_method: none
+resources:
+  homepage: "https://behavior.stanford.edu/"
+  paper: "https://arxiv.org/abs/2403.09227"
+  code: "https://github.com/StanfordVL/BEHAVIOR-1K"
+  data: ""
+  leaderboard: ""

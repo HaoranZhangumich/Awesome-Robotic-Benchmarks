@@ -1,0 +1,27 @@
+name: nuPlan
+domain: Autonomous Driving
+area: driving-closed-loop
+subtype: "closed-loop planning on real logs"
+first_release_date: 2021-06-22
+venue: "arXiv 2021"
+
+description: "Planning benchmark built on more than 1,200 hours of human driving in Boston, Pittsburgh, Las Vegas and Singapore, with a lightweight simulator, reactive agents and planning metrics. Planners are scored open-loop and in non-reactive and reactive closed-loop simulation; the challenge server closed in November 2025."
+
+task_count: "3 challenges (open-loop, closed-loop non-reactive, closed-loop reactive)"
+metric_count: "3 overall scores, one per challenge, aggregated from planning metrics"
+robot_config_count: "1 (ego vehicle; 8 cameras and 5 lidars in the sensor release)"
+
+modality: [state, RGB, lidar]
+setting: [sim, real]
+sim_backend: "nuPlan simulator (replay of real logs with optional reactive agents)"
+
+data_source:
+  size: "More than 1,200 h of driving logs with auto-labelled tracks; 120 h with raw sensor data"
+  collection_method: human_demonstration
+
+resources:
+  homepage: "https://www.nuplan.org/"
+  paper: "https://arxiv.org/abs/2106.11810"
+  code: "https://github.com/motional/nuplan-devkit"
+  data: "https://www.nuscenes.org/nuplan"
+  leaderboard: ""

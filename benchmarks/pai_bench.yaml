@@ -1,0 +1,22 @@
+name: PAI-Bench
+domain: World Models
+area: wm-physics
+subtype: "physical AI, video generation and understanding, leaderboard"
+first_release_date: 2025-12-01
+venue: "CVPR 2026 (Oral)"
+description: "Physical AI Bench: three tracks on real-world video from physical-AI domains such as driving, robotics, industry and egocentric scenes. It scores video generation for quality and physical plausibility, control-conditioned generation, and video understanding by multimodal LLMs, with a public leaderboard."
+task_count: "3 tracks (generation, conditional generation, understanding)"
+metric_count: "per track (quality score and domain score; control fidelity; QA accuracy)"
+robot_config_count: "N/A"
+modality: [video, RGB, language, depth]
+setting: [real]
+sim_backend: ""
+data_source:
+  size: "2,808 real-world cases (1,044 in the generation track)"
+  collection_method: human_annotation
+resources:
+  homepage: ""
+  paper: "https://arxiv.org/abs/2512.01989"
+  code: "https://github.com/SHI-Labs/physical-ai-bench"
+  data: "https://huggingface.co/datasets/shi-labs/physical-ai-bench-generation"
+  leaderboard: "https://huggingface.co/spaces/shi-labs/physical-ai-bench-leaderboard"

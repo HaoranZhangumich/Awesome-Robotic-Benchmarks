@@ -1,0 +1,22 @@
+name: ManiGuard
+domain: Safety
+area: embodied-safety
+subtype: "manipulation safety, temporal-logic monitors"
+first_release_date: 2026-08-18
+venue: "arXiv 2026"
+description: "Specification-grounded safety benchmark for foundation-model manipulation policies: 200 contact-rich household base tasks in six families (clutter, lid, cabinet, jar, stack, dusty), each run in-distribution and under four shifts. Every rollout is checked by LTLf automaton monitors, in simulation and on a real Franka."
+task_count: "200 base tasks in 6 families; 1,000 evaluation scenarios"
+metric_count: "4 (safe success, task success, safety violation, engaged violation rates)"
+robot_config_count: "1 (Franka Panda, simulated and real)"
+modality: [RGB, proprioceptive, language]
+setting: [sim, real]
+sim_backend: "OmniGibson / Isaac Sim (BEHAVIOR-1K)"
+data_source:
+  size: "8,000 safety-annotated demonstrations (40 per base task)"
+  collection_method: mixed
+resources:
+  homepage: "https://nu-ideas-lab.github.io/ManiGuard/"
+  paper: "https://arxiv.org/abs/2608.17386"
+  code: "https://github.com/NU-IDEAS-Lab/ManiGuard"
+  data: "https://huggingface.co/collections/IDEAS-Lab-Northwestern/maniguard-benchmark-and-datasets"
+  leaderboard: ""

@@ -1,0 +1,22 @@
+name: UniDexGrasp
+domain: Dexterous Manipulation
+area: dex-grasping
+subtype: "grasp policy learning, point clouds"
+first_release_date: 2023-03-02
+venue: "CVPR 2023"
+description: "Table-top grasp-and-lift setting for a Shadow Hand from point-cloud input in Isaac Gym, with 3,200 training objects and held-out test sets of seen-category and unseen-category objects. The follow-up UniDexGrasp++ uses the same setting."
+task_count: "1 (grasp and lift); 3,200 train / 241 test objects"
+metric_count: "1 (success rate)"
+robot_config_count: "1 (Shadow Hand)"
+modality: [pointcloud, proprioceptive]
+setting: [sim]
+sim_backend: "Isaac Gym"
+data_source:
+  size: "Synthesised grasp labels; 3,200 train + 141 + 100 test objects"
+  collection_method: synthetic
+resources:
+  homepage: "https://pku-epic.github.io/UniDexGrasp/"
+  paper: "https://arxiv.org/abs/2303.00938"
+  code: "https://github.com/PKU-EPIC/UniDexGrasp"
+  data: ""
+  leaderboard: ""

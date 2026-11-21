@@ -1,0 +1,23 @@
+name: VideoPhy-2
+domain: World Models
+area: wm-physics
+subtype: "physical commonsense, action-centric, text-to-video"
+first_release_date: 2025-03-09
+venue: "ICLR 2026"
+widely_used: true
+description: "Action-centric physical-commonsense benchmark for video generation and successor to VideoPhy (ICLR 2025): prompts built from about 200 real-world actions with a hard subset. Humans rate semantic adherence, physical commonsense and violated physical rules; VideoPhy-2-AutoEval gives automatic scores."
+task_count: "197 actions (physical activities, object interactions) + hard subset"
+metric_count: "3 (semantic adherence, physical commonsense, rule grounding); joint score"
+robot_config_count: "N/A"
+modality: [video, language]
+setting: [real]
+sim_backend: ""
+data_source:
+  size: "20 LLM-written prompts per action; human-rated test set on Hugging Face"
+  collection_method: human_annotation
+resources:
+  homepage: "https://videophy2.github.io/"
+  paper: "https://arxiv.org/abs/2503.06800"
+  code: "https://github.com/Hritikbansal/videophy"
+  data: "https://huggingface.co/datasets/videophysics/videophy2_test"
+  leaderboard: "https://videophy2.github.io/"

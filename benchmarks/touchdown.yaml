@@ -1,0 +1,22 @@
+name: Touchdown
+domain: Navigation
+area: vln
+subtype: "outdoor street-level VLN, spatial reasoning"
+first_release_date: 2018-11-29
+venue: "CVPR 2019"
+description: "Street-level language navigation in Google Street View panoramas of New York City: follow written directions through the street graph, then resolve a spatial description to locate a hidden target. The reference benchmark for outdoor ground-level VLN."
+task_count: "2 (navigation, spatial description resolution)"
+metric_count: "6 (navigation: TC, SPD, SED; SDR: accuracy, consistency, distance error)"
+robot_config_count: "1 (panoramic agent on a street graph)"
+modality: [RGB, language]
+setting: [sim]
+sim_backend: "StreetLearn (Google Street View panoramas)"
+data_source:
+  size: "9,326 instruction examples over 29,641 panoramas of New York City"
+  collection_method: human_annotation
+resources:
+  homepage: ""
+  paper: "https://arxiv.org/abs/1811.12354"
+  code: "https://github.com/lil-lab/touchdown"
+  data: ""
+  leaderboard: ""

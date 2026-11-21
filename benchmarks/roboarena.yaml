@@ -1,0 +1,22 @@
+name: RoboArena
+domain: Generalist
+area: real-eval
+subtype: "distributed real-robot evaluation, pairwise ranking"
+first_release_date: 2025-06-22
+venue: "CoRL 2025"
+description: "Crowd-sourced real-world evaluation of generalist policies on the DROID platform: evaluators at seven universities pick their own scenes and tasks and run double-blind A/B comparisons of two policies, which are aggregated into a global ranking."
+task_count: "open-ended (evaluators choose scenes and tasks)"
+metric_count: "3 (pairwise preference ranking, progress score 0-100, language feedback)"
+robot_config_count: "1 (DROID Franka setup)"
+modality: [RGB, proprioceptive, language]
+setting: [real]
+sim_backend: ""
+data_source:
+  size: "N/A (no training set; policies train on DROID)"
+  collection_method: none
+resources:
+  homepage: "https://robo-arena.github.io/"
+  paper: "https://arxiv.org/abs/2506.18123"
+  code: "https://github.com/robo-arena/roboarena"
+  data: ""
+  leaderboard: "https://robo-arena.github.io/"

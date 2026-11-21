@@ -1,0 +1,22 @@
+name: SidewalkBench
+domain: Navigation
+area: outdoor
+subtype: "urban sidewalk visual navigation, reactive pedestrians"
+first_release_date: 2026-06-15
+venue: "CoRL 2026"
+description: "Benchmark for visual navigation models on urban sidewalks, built on Isaac Sim with procedurally generated and real-world scanned (3DGS) scenes and reactive pedestrians. Nine navigation models are compared on unit-test, pedestrian-reactive and long-horizon scenarios."
+task_count: "1,235 scenarios (330 unit-test, 800 pedestrian-reactive, 105 long-horizon)"
+metric_count: "4 (route completion, success rate, failures per 100 m, average velocity)"
+robot_config_count: "4 (Coco delivery robot, Unitree Go2, Unitree G1, M20)"
+modality: [RGB]
+setting: [sim]
+sim_backend: "Isaac Sim"
+data_source:
+  size: "100 procedurally generated environments and 11 real-world scanned scenes"
+  collection_method: none
+resources:
+  homepage: "https://vail.cs.ucla.edu/SidewalkBench/"
+  paper: "https://arxiv.org/abs/2606.16953"
+  code: "https://github.com/VAIL-UCLA/SidewalkBench"
+  data: ""
+  leaderboard: ""

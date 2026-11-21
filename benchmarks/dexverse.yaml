@@ -1,0 +1,22 @@
+name: DexVerse
+domain: Dexterous Manipulation
+area: dex-manipulation
+subtype: "multi-task, multi-embodiment, visual generalisation"
+first_release_date: 2026-07-09
+venue: "arXiv 2026"
+description: "Isaac Lab benchmark of 100 dexterous tasks in eight categories (primitive, functional, articulation, non-prehensile, contact-rich, bimanual, multi-goal, long-horizon) with support for 3 arms and 6 hands, configurable visual variation, and 3,180 VR-teleoperated demonstrations."
+task_count: 100
+metric_count: "1 (success rate)"
+robot_config_count: "3 arms x 6 dexterous hands"
+modality: [RGB, depth, pointcloud, proprioceptive, state]
+setting: [sim]
+sim_backend: "Isaac Lab (Isaac Sim)"
+data_source:
+  size: "3,180 VR-teleoperated demonstrations"
+  collection_method: human_demonstration
+resources:
+  homepage: "https://ycyao216.github.io/DexVerse.site"
+  paper: "https://arxiv.org/abs/2607.08751"
+  code: "https://github.com/ycyao216/DexVerse"
+  data: "https://huggingface.co/datasets/dexverse/DexVerse_release"
+  leaderboard: ""

@@ -1,0 +1,22 @@
+name: Watch-And-Help
+domain: HRI
+area: collaboration
+subtype: "social perception, household assistance"
+first_release_date: 2020-10-19
+venue: "ICLR 2021"
+description: "Challenge for social intelligence in the VirtualHome-Social simulator: an AI agent watches one demonstration of a human-like agent doing a household task, infers the goal, then helps complete it faster in a new apartment. Evaluated with a planner-based human model and with real humans."
+task_count: "5 household activity types; 1,011 training and 2 x 100 test tasks"
+metric_count: "3 (success rate, speedup, cumulative reward)"
+robot_config_count: "N/A (humanoid avatars)"
+modality: [state, RGB, depth, segmentation]
+setting: [sim]
+sim_backend: "VirtualHome-Social"
+data_source:
+  size: "Planner-generated Watch demonstrations in 5 training apartments"
+  collection_method: motion_planner
+resources:
+  homepage: ""
+  paper: "https://arxiv.org/abs/2010.09890"
+  code: "https://github.com/xavierpuigf/watch_and_help"
+  data: ""
+  leaderboard: ""

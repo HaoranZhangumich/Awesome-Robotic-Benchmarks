@@ -1,0 +1,22 @@
+name: SQA3D
+domain: Embodied Reasoning
+area: eqa
+subtype: "situated QA in 3D scenes"
+first_release_date: 2022-10-14
+venue: "ICLR 2023"
+description: "Situated question answering in 3D scenes: the agent is told its position and orientation in a ScanNet scan and must answer questions that depend on that viewpoint. A standard evaluation for 3D vision-language models."
+task_count: "33.4k questions over 6.8k situations in 650 ScanNet scenes"
+metric_count: "1 (exact-match answer accuracy)"
+robot_config_count: "N/A"
+modality: [pointcloud, RGB, video, language]
+setting: [real]
+sim_backend: ""
+data_source:
+  size: "26,623 / 3,261 / 3,519 train / val / test questions; 20.4k descriptions"
+  collection_method: human_annotation
+resources:
+  homepage: "https://sqa3d.github.io/"
+  paper: "https://arxiv.org/abs/2210.07474"
+  code: "https://github.com/SilongYong/SQA3D"
+  data: "https://zenodo.org/record/7792397"
+  leaderboard: ""

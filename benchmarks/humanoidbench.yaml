@@ -1,18 +1,22 @@
 name: HumanoidBench
 domain: Locomotion
-subtype: humanoid, whole-body
+area: humanoid
+subtype: "whole-body RL, dexterous hands"
 first_release_date: 2024-03-15
-description: "Simulated humanoid benchmark with dexterous hands spanning whole-body manipulation and locomotion; designed for high-DoF control research."
-task_count: 27
-metric_count: 1
-robot_config_count: 4
-modality: [proprioceptive, RGB, tactile]
+venue: "RSS 2024"
+description: "Simulated humanoid benchmark with dexterous hands spanning whole-body manipulation and locomotion: 15 manipulation and 12 locomotion tasks for a Unitree H1 with two dexterous hands, designed for high-DoF reinforcement-learning research."
+task_count: "27 (15 whole-body manipulation, 12 locomotion)"
+metric_count: "1 (episode return)"
+robot_config_count: "2 (Unitree H1 with or without dexterous hands, Unitree G1)"
+modality: [state, proprioceptive, RGB, tactile]
 setting: [sim]
-sim_backend: "MuJoCo"
+sim_backend: "MuJoCo (MJX training code included)"
 data_source:
   size: "N/A"
-  collection_method: "unknown"
+  collection_method: none
 resources:
   homepage: "https://humanoid-bench.github.io/"
   paper: "https://arxiv.org/abs/2403.10506"
-  code: "https://humanoid-bench.github.io/"
+  code: "https://github.com/carlosferrazza/humanoid-bench"
+  data: ""
+  leaderboard: ""

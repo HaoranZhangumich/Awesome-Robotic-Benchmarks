@@ -1,0 +1,22 @@
+name: Embodied First Exam
+domain: Embodied Reasoning
+area: planning
+subtype: "coding agents, agentic robot control"
+first_release_date: 2026-11-09
+venue: "arXiv 2026"
+description: "Agentic-robotics exam for coding agents: on each task the agent may command the robot directly, write control code or train a policy. Covers 1,156 simulated tasks in 35 suites on 47 robots, including nine new suites beyond pick-and-place."
+task_count: "1,156 tasks in 35 suites (9 new, 26 wrapped existing benchmarks)"
+metric_count: "1 (task success rate; Standard, Realtime and Privileged settings)"
+robot_config_count: "47 robots"
+modality: [RGB, state, language]
+setting: [sim]
+sim_backend: "MuJoCo, Isaac Sim, OmniGibson, SAPIEN, Genesis"
+data_source:
+  size: "N/A"
+  collection_method: none
+resources:
+  homepage: "https://www.embodied-first-exam.ai"
+  paper: "https://arxiv.org/abs/2611.12177"
+  code: "https://github.com/mll-lab-nu/embodied-first-exam"
+  data: "https://huggingface.co/datasets/MLL-Lab/embodied-exam-data"
+  leaderboard: "https://www.embodied-first-exam.ai/leaderboard/"

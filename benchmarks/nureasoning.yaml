@@ -1,0 +1,27 @@
+name: nuReasoning
+domain: Autonomous Driving
+area: driving-data
+subtype: "long-tail reasoning, planning"
+first_release_date: 2026-05-29
+venue: "NeurIPS 2026 E&D"
+
+description: "Motional and UCLA's reasoning-centric driving dataset in the nuScenes/nuPlan lineage: 20,000 long-tail 20-second clips (105 h) with 8 cameras, lidar, HD maps and human-verified spatial, decision and counterfactual reasoning annotations. Its 2026 challenge scores planning and multiple-choice reasoning on a private test set."
+
+task_count: "2 (trajectory planning, multiple-choice reasoning QA)"
+metric_count: "2 (nuReasoning planning score, QA accuracy); final score weights them 75/25"
+robot_config_count: "1 (vehicle with 8 cameras and lidar)"
+
+modality: [RGB, lidar, language, state]
+setting: [real]
+sim_backend: ""
+
+data_source:
+  size: "20,000 clips of 20 s at 10 Hz (105 h): 17K train, 2K validation, 1K private test"
+  collection_method: mixed
+
+resources:
+  homepage: "https://nureasoning.github.io/"
+  paper: "https://arxiv.org/abs/2605.31572"
+  code: "https://github.com/nureasoning/nureasoning-devkit"
+  data: "https://huggingface.co/datasets/nureasoning/nuReasoning"
+  leaderboard: "https://huggingface.co/spaces/nureasoning/nureasoning-challenge-2026"

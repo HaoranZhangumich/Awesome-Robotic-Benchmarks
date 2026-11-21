@@ -1,27 +1,23 @@
 name: LIBERO
 domain: Manipulation
-subtype: table-top
-first_release_date: 2023-10-01
-
-description: "A benchmark for lifelong robot learning featuring multitask manipulation with language conditioning. Focuses on knowledge transfer and generalization across diverse manipulation tasks."
-
+area: tabletop
+subtype: "table-top, lifelong learning, language-conditioned"
+first_release_date: 2023-06-05
+venue: "NeurIPS 2023 D&B"
+widely_used: true
+description: "Lifelong-learning benchmark of 130 language-conditioned tabletop tasks in four suites (Spatial, Object, Goal, LIBERO-100), with 50 human demonstrations per task. Its 10-task suites are now the most common simulation testbed for VLA policies."
 task_count: 130
-metric_count: 4
-robot_config_count: 3
-
-
-modality: [RGB, depth, proprioceptive, language]
-
-setting: [sim, real]
-sim_backend: "RoboSuite (MuJoCo)"  
-
+metric_count: "3 (FWT, NBT, AUC)"
+robot_config_count: "1 (Franka Panda)"
+modality: [RGB, proprioceptive, language]
+setting: [sim]
+sim_backend: "robosuite (MuJoCo)"
 data_source:
-  size: "130+ tasks, 2500+ demonstrations"
-  collection_method: "human_demonstration"
-
+  size: "50 human demos per task (6,500 total)"
+  collection_method: human_demonstration
 resources:
   homepage: "https://libero-project.github.io/"
-  paper: "https://arxiv.org/abs/2310.08531"
+  paper: "https://arxiv.org/abs/2306.03310"
   code: "https://github.com/Lifelong-Robot-Learning/LIBERO"
-  data: "https://libero-project.github.io/"
+  data: "https://libero-project.github.io/datasets"
   leaderboard: ""

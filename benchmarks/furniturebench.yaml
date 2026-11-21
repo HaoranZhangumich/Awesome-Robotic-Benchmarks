@@ -1,26 +1,22 @@
 name: FurnitureBench
 domain: Manipulation
-subtype: table-top
+area: contact-rich
+subtype: "furniture assembly, long-horizon"
 first_release_date: 2023-05-22
-
-description: "Reproducible real-world furniture assembly benchmark with standardized hardware/setup, 3D-printed parts, large teleoperation dataset, and a matching simulator (FurnitureSim)."
-
-task_count: 8
-metric_count: 2
-robot_config_count: 1
-
+venue: "RSS 2023"
+description: "Reproducible real-world furniture assembly benchmark with a standardized Franka setup, 3D-printable furniture parts, a large teleoperation dataset and a matching simulator (FurnitureSim); tests long-horizon, contact-rich skills such as inserting and screwing."
+task_count: "8 furniture models (plus a one-leg sub-task)"
+metric_count: "2 (success rate, completed assembly phases)"
+robot_config_count: "1 (Franka Panda)"
 modality: [RGB, proprioceptive]
-
 setting: [real, sim]
-sim_backend: "NVIDIA Isaac Gym / PhysX (Factory) via FurnitureSim"
-
+sim_backend: "FurnitureSim (Isaac Gym, built on Factory)"
 data_source:
-  size: "≈219.6 hours, 5100 successful demonstrations"
-  collection_method: "human_demonstration"
-
+  size: "219.6 hours, 5,100 teleoperated demonstrations"
+  collection_method: human_demonstration
 resources:
   homepage: "https://clvrai.github.io/furniture-bench/"
   paper: "https://arxiv.org/abs/2305.12821"
   code: "https://github.com/clvrai/furniture-bench"
   data: "https://clvrai.github.io/furniture-bench/docs/tutorials/dataset.html"
-
+  leaderboard: ""

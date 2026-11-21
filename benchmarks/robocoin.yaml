@@ -1,0 +1,22 @@
+name: "RoboCOIN"
+domain: Datasets
+area: robot-data
+subtype: "bimanual, multi-embodiment, hierarchical annotation"
+first_release_date: 2025-11-21
+venue: "arXiv 2025"
+description: "Bimanual manipulation data from 15 robot platforms: over 180,000 demonstrations of 421 tasks in 16 residential, commercial and industrial environments, annotated from trajectory-level concepts down to subtasks and frame-level kinematics."
+task_count: "421 tasks"
+metric_count: "N/A"
+robot_config_count: 15
+modality: [RGB, proprioceptive, language]
+setting: [real]
+sim_backend: ""
+data_source:
+  size: "180,000+ demonstrations"
+  collection_method: human_demonstration
+resources:
+  homepage: "https://flagopen.github.io/RoboCOIN/"
+  paper: "https://arxiv.org/abs/2511.17441"
+  code: "https://github.com/FlagOpen/RoboCOIN"
+  data: "https://huggingface.co/RoboCOIN"
+  leaderboard: ""

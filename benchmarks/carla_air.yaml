@@ -1,0 +1,16 @@
+name: CARLA-Air
+domain: Simulation
+area: specialized
+first_release_date: 2026-03-30
+venue: "arXiv 2026"
+description: "Runs CARLA urban driving and AirSim multirotor flight in a single Unreal Engine process, keeping both native Python APIs and ROS 2 interfaces, so cars, pedestrians and drones share one world, physics tick and sensor suite (up to 18 modalities). Aimed at air-ground cooperation research."
+physics_engine: "Unreal Engine 4.26 (CARLA 0.9.16 vehicles, AirSim multirotor dynamics)"
+renderer: "Unreal Engine 4.26"
+gpu_support: false
+os: [Linux, Windows]
+license: "Custom non-commercial licence (README states MIT for CARLA-Air code)"
+resources:
+  homepage: "https://carla-air.com/"
+  paper: "https://arxiv.org/abs/2603.28032"
+  code: "https://github.com/louiszengCN/CarlaAir"
+  docs: ""

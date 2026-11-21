@@ -1,0 +1,23 @@
+name: PartNet-Mobility (SAPIEN)
+domain: Manipulation
+area: articulated
+subtype: "articulated-object assets"
+first_release_date: 2020-03-19
+venue: "CVPR 2020"
+widely_used: true
+description: "Set of 2,346 articulated 3D objects in 46 household categories with part-level motion annotations, released with the SAPIEN simulator. It remains the most used asset source for articulated-object benchmarks; GAPartNet, UniDoorManip and GarmentLab all draw on it."
+task_count: "N/A (asset dataset)"
+metric_count: "N/A"
+robot_config_count: "N/A"
+modality: ["3D assets"]
+setting: [sim]
+sim_backend: "SAPIEN (URDF assets, also used in other simulators)"
+data_source:
+  size: "2,346 articulated objects, 46 categories"
+  collection_method: human_annotation
+resources:
+  homepage: ""
+  paper: "https://arxiv.org/abs/2003.08515"
+  code: "https://github.com/haosulab/SAPIEN"
+  data: ""
+  leaderboard: ""

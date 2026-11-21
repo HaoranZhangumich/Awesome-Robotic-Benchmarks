@@ -1,0 +1,22 @@
+name: "ALOHA Sim (ACT)"
+domain: Manipulation
+area: bimanual
+subtype: "bimanual, fine manipulation, imitation learning"
+first_release_date: 2023-04-23
+venue: "RSS 2023"
+description: "The two simulated bimanual tasks released with ACT and the ALOHA system: Transfer Cube and Bimanual Insertion, in MuJoCo with scripted and human demonstrations. Small, but reported in many imitation-learning papers; packaged as gym-aloha in LeRobot."
+task_count: "2 (Transfer Cube, Bimanual Insertion)"
+metric_count: "1 (success rate)"
+robot_config_count: "1 (ALOHA: two 6-DoF arms with grippers)"
+modality: [RGB, proprioceptive]
+setting: [sim]
+sim_backend: "MuJoCo (dm_control)"
+data_source:
+  size: "50 demos per task, in scripted and human-teleoperated variants"
+  collection_method: mixed
+resources:
+  homepage: "https://tonyzhaozh.github.io/aloha/"
+  paper: "https://arxiv.org/abs/2304.13705"
+  code: "https://github.com/tonyzhaozh/act"
+  data: ""
+  leaderboard: ""

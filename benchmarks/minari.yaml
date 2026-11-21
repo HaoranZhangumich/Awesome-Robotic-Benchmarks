@@ -1,0 +1,26 @@
+name: Minari
+domain: Other
+area: offline-rl
+subtype: "offline RL dataset standard"
+first_release_date: 2022-11-04
+
+description: "Farama Foundation's standard format, API and hosting for offline RL datasets, and the maintained successor to D4RL. Its reference collections re-create the D4RL robot tasks (AntMaze, PointMaze, Adroit hand, Franka Kitchen) on current Gymnasium environments and add MuJoCo, Atari and MiniGrid sets."
+
+task_count: "6 hosted collections with about 340 datasets"
+metric_count: "1 (episode return; reference scores for D4RL-derived datasets)"
+robot_config_count: "Several (Ant, point mass, Adroit hand, Franka arm, MuJoCo locomotion agents)"
+
+modality: [state, RGB]
+setting: [sim]
+sim_backend: "MuJoCo via Gymnasium and Gymnasium-Robotics; Atari and MiniGrid"
+
+data_source:
+  size: "About 340 datasets (D4RL 31, MuJoCo 28, Atari 57, MiniGrid 170, community 52, web agents 1)"
+  collection_method: mixed
+
+resources:
+  homepage: "https://minari.farama.org/"
+  paper: ""
+  code: "https://github.com/Farama-Foundation/Minari"
+  data: "https://huggingface.co/farama-minari"
+  leaderboard: ""

@@ -1,0 +1,22 @@
+name: POMDAR
+domain: Dexterous Manipulation
+area: dex-manipulation
+subtype: "hand hardware evaluation, taxonomy-based"
+first_release_date: 2026-04-10
+venue: "arXiv 2026"
+description: "Performance-based dexterity benchmark for anthropomorphic robot hands: 18 tasks derived from human motor-control taxonomies (12 in-hand manipulation patterns, 6 grasps) on 3D-printable, mechanically scaffolded fixtures. Scores combine correctness and speed against a human baseline; real hardware plus MuJoCo models."
+task_count: "18 (12 manipulation patterns, 6 grasps)"
+metric_count: "1 (throughput: 0.8 correctness + 0.2 speed)"
+robot_config_count: "Any anthropomorphic hand"
+modality: [state]
+setting: [sim, real]
+sim_backend: "MuJoCo"
+data_source:
+  size: "N/A"
+  collection_method: none
+resources:
+  homepage: "https://srl-ethz.github.io/POMDAR/"
+  paper: "https://arxiv.org/abs/2604.09294"
+  code: "https://github.com/srl-ethz/pomdar_benchmark"
+  data: ""
+  leaderboard: ""

@@ -1,0 +1,22 @@
+name: Barkour
+domain: Locomotion
+area: legged
+subtype: "quadruped agility, obstacle course"
+first_release_date: 2023-05-24
+venue: "arXiv 2023"
+description: "Obstacle course for measuring quadruped agility, modelled on dog agility competitions: weave poles, an A-frame, a broad jump and a pause table in a 5 m x 5 m area, scored from 0 to 1 against the roughly 10 s a small dog needs."
+task_count: "1 course (4 obstacles)"
+metric_count: "1 (agility score 0-1, time-based with penalties)"
+robot_config_count: "1 (custom-built Barkour quadruped)"
+modality: [proprioceptive]
+setting: [real]
+sim_backend: ""
+data_source:
+  size: "N/A"
+  collection_method: none
+resources:
+  homepage: "https://research.google/blog/barkour-benchmarking-animal-level-agility-with-quadruped-robots/"
+  paper: "https://arxiv.org/abs/2305.14654"
+  code: "https://github.com/google-deepmind/barkour_robot"
+  data: ""
+  leaderboard: ""

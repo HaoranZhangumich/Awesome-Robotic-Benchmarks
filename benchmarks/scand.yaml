@@ -1,0 +1,22 @@
+name: SCAND
+domain: Navigation
+area: social
+subtype: "social navigation demonstrations, real robots"
+first_release_date: 2022-03-28
+venue: "RA-L 2022"
+description: "Socially Compliant Navigation Dataset: human-teleoperated demonstrations of polite robot driving through indoor and outdoor crowds at UT Austin, recorded on a Spot and a Jackal. A common real-world source for learning and evaluating social navigation."
+task_count: "N/A (dataset of 138 trajectories)"
+metric_count: "N/A"
+robot_config_count: "2 (Boston Dynamics Spot, Clearpath Jackal)"
+modality: [RGB, lidar, GPS_IMU, proprioceptive]
+setting: [real]
+sim_backend: ""
+data_source:
+  size: "8.7 hours, 138 trajectories, 25 miles"
+  collection_method: human_demonstration
+resources:
+  homepage: "https://www.cs.utexas.edu/~xiao/SCAND/SCAND.html"
+  paper: "https://arxiv.org/abs/2203.15041"
+  code: ""
+  data: "https://dataverse.tdl.org/dataset.xhtml?persistentId=doi:10.18738/T8/0PRYRH"
+  leaderboard: ""

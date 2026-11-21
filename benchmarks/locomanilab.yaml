@@ -1,0 +1,22 @@
+name: LocoManiLab
+domain: Locomotion
+area: humanoid
+subtype: "humanoid loco-manipulation, household"
+first_release_date: 2026-10-22
+venue: "arXiv 2026"
+description: "Testbed for humanoid loco-manipulation spanning data collection, policy training, evaluation and deployment: 234 atomic and compositional household tasks for a Unitree G1 with Dex3-1 hands. Twelve policies are compared with a shared controller, two across five whole-body controllers, on unseen-task, unseen-scene and visual-perturbation splits."
+task_count: "234 (102 atomic, 132 compositional) in 5 scene categories"
+metric_count: "1 (success rate over task, scene and perturbation splits)"
+robot_config_count: "1 (Unitree G1 with Dex3-1 hands)"
+modality: [RGB, proprioceptive, language]
+setting: [sim, real]
+sim_backend: "MuJoCo (RoboCasa-based)"
+data_source:
+  size: "51.5 h of simulated teleoperation (about 14k episodes)"
+  collection_method: human_demonstration
+resources:
+  homepage: "https://locomanilab.github.io/"
+  paper: "https://arxiv.org/abs/2610.30876"
+  code: "https://github.com/Gamma-Robot/LocoManiLab"
+  data: "https://huggingface.co/datasets/GammaRobotics/LocoManiLab"
+  leaderboard: "https://locomanilab.github.io/leaderboard.html"

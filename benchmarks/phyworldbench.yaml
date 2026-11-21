@@ -1,0 +1,22 @@
+name: PhyWorldBench
+domain: World Models
+area: wm-physics
+subtype: "physical realism, text-to-video, anti-physics prompts"
+first_release_date: 2025-07-17
+venue: "ICLR 2026"
+description: "1,050 text-to-video prompts organised as 10 physics categories, 5 subcategories each, 7 scenarios and 3 prompt styles, from basic motion to rigid-body and human or animal motion, plus an anti-physics set that asks models to break physical laws. Judged by humans and a zero-shot MLLM protocol."
+task_count: "10 physics categories, 50 subcategories"
+metric_count: "1 (yes/no success rate on semantic and physics standards)"
+robot_config_count: "N/A"
+modality: [video, language]
+setting: [real]
+sim_backend: ""
+data_source:
+  size: "1,050 prompts"
+  collection_method: human_annotation
+resources:
+  homepage: "https://research.nvidia.com/labs/cosmos-lab/phyworldbench/"
+  paper: "https://arxiv.org/abs/2507.13428"
+  code: "https://github.com/ashwin-333/phy-world-bench"
+  data: ""
+  leaderboard: ""

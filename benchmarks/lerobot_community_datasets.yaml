@@ -1,0 +1,22 @@
+name: "LeRobot Community Datasets"
+domain: Datasets
+area: robot-data
+subtype: "crowdsourced, low-cost arms, cross-embodiment"
+first_release_date: 2025-06-02
+venue: "arXiv 2025"
+description: "Curated bundles of datasets that community contributors recorded with LeRobot, mostly on SO-100 and SO-101 arms. Versions 1 and 2 build on the data used to pretrain SmolVLA; version 3 (Dec 2025) holds 791 datasets from 235 contributors across 46 robot types."
+task_count: "N/A (791 contributed datasets in v3)"
+metric_count: "N/A"
+robot_config_count: "46 robot types in v3 (SO-100 only in v1 and v2)"
+modality: [RGB, proprioceptive, language]
+setting: [real]
+sim_backend: ""
+data_source:
+  size: "v3: 50,622 episodes, 251.5 hours; v1 + v2: 17,457 episodes, 93.5 hours"
+  collection_method: human_demonstration
+resources:
+  homepage: "https://huggingface.co/blog/smolvla"
+  paper: "https://arxiv.org/abs/2506.01844"
+  code: "https://github.com/huggingface/lerobot"
+  data: "https://huggingface.co/datasets/HuggingFaceVLA/community_dataset_v3"
+  leaderboard: ""

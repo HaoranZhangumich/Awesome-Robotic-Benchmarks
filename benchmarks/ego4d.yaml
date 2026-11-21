@@ -1,0 +1,23 @@
+name: "Ego4D"
+domain: Datasets
+area: human-data
+subtype: "egocentric video, daily activities, benchmark suite"
+first_release_date: 2021-10-13
+venue: "CVPR 2022"
+widely_used: true
+description: "3,670 hours of unscripted daily-life egocentric video from 931 camera wearers in 74 locations and 9 countries, with narrations and five benchmark families: episodic memory, hands and objects, audio-visual diarization, social interaction and forecasting. A common source of human video for robot pretraining."
+task_count: "5 benchmark families"
+metric_count: "N/A (per-benchmark challenge metrics)"
+robot_config_count: "N/A (human)"
+modality: [video, audio, language]
+setting: [real]
+sim_backend: ""
+data_source:
+  size: "3,670 hours of video, 931 camera wearers"
+  collection_method: human_demonstration
+resources:
+  homepage: "https://ego4d-data.org/"
+  paper: "https://arxiv.org/abs/2110.07058"
+  code: "https://github.com/facebookresearch/Ego4d"
+  data: "https://ego4d-data.org/docs/start-here/"
+  leaderboard: "https://ego4d-data.org/docs/challenge/"

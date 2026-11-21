@@ -1,0 +1,27 @@
+name: JaxRobotarium
+domain: Other
+area: multi-robot
+subtype: "multi-robot RL, sim-to-real"
+first_release_date: 2025-05-10
+venue: "CoRL 2025"
+
+description: "JAX-based multi-robot RL platform and benchmark for the Robotarium, Georgia Tech's remotely accessible multi-robot testbed. Eight coordination scenarios train in parallel on accelerators, and policies can be deployed on the physical robots through the Robotarium's open remote access; it succeeds MARBLER."
+
+task_count: "8 coordination scenarios"
+metric_count: "Scenario-specific (return and task metrics, in simulation and on hardware)"
+robot_config_count: "1 (Robotarium ground robots)"
+
+modality: [state]
+setting: [sim, real]
+sim_backend: "JaxRobotarium (JAX version of the Robotarium simulator)"
+
+data_source:
+  size: "N/A"
+  collection_method: none
+
+resources:
+  homepage: "https://star-lab.cc.gatech.edu/papers/jain-jaxrobotarium/"
+  paper: "https://arxiv.org/abs/2505.06771"
+  code: "https://github.com/GT-STAR-Lab/JaxRobotarium"
+  data: ""
+  leaderboard: ""

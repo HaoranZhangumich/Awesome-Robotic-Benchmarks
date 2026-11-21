@@ -1,0 +1,22 @@
+name: VIMA-Bench
+domain: Manipulation
+area: tabletop
+subtype: "table-top, multimodal prompts, generalization levels"
+first_release_date: 2022-10-06
+venue: "ICML 2023"
+description: "Ravens-based suite of 17 tabletop task templates specified by multimodal prompts that interleave text and images (goal images, one-shot video, novel concepts). A four-level protocol tests placement, combinatorial, novel-object and novel-task generalization; ships 650K scripted trajectories."
+task_count: "17 task templates (thousands of procedural instances)"
+metric_count: "1 (success rate at 4 generalization levels)"
+robot_config_count: "1 (UR5 with suction cup or spatula)"
+modality: [RGB, segmentation, language]
+setting: [sim]
+sim_backend: "PyBullet (Ravens)"
+data_source:
+  size: "650K expert trajectories from scripted oracles"
+  collection_method: motion_planner
+resources:
+  homepage: "https://vimalabs.github.io/"
+  paper: "https://arxiv.org/abs/2210.03094"
+  code: "https://github.com/vimalabs/VIMABench"
+  data: "https://huggingface.co/datasets/VIMA/VIMA-Data"
+  leaderboard: ""

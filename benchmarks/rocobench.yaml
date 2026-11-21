@@ -1,0 +1,27 @@
+name: RoCoBench
+domain: Other
+area: multi-robot
+subtype: "multi-arm collaboration, LLM planning"
+first_release_date: 2023-07-10
+venue: "arXiv 2023"
+
+description: "Six tabletop tasks in MuJoCo where two or three robots with different embodiments and reach (UR5e, Franka Panda, a humanoid) must coordinate: sweeping, sorting cubes, packing groceries, making a sandwich, moving a rope, arranging a cabinet. Introduced with RoCo to test LLM-based multi-robot planning."
+
+task_count: 6
+metric_count: "3 (task success rate, environment steps, re-plan attempts)"
+robot_config_count: "3 (UR5e, Franka Panda, humanoid), 2 or 3 robots per task"
+
+modality: [state, language]
+setting: [sim]
+sim_backend: "MuJoCo (dm_control)"
+
+data_source:
+  size: "RoCoBench-Text: a text-only question set on agent representation and reasoning"
+  collection_method: unknown
+
+resources:
+  homepage: "https://project-roco.github.io"
+  paper: "https://arxiv.org/abs/2307.04738"
+  code: "https://github.com/MandiZhao/robot-collab"
+  data: ""
+  leaderboard: ""

@@ -1,0 +1,22 @@
+name: LocoMuJoCo
+domain: Locomotion
+area: humanoid
+subtype: "imitation learning, whole-body control"
+first_release_date: 2023-11-04
+venue: "NeurIPS 2023 Robot Learning Workshop"
+description: "Imitation-learning benchmark for whole-body control with 9 humanoid robots, 3 (musculo-)skeletal human models and 4 quadrupeds on MuJoCo, MJX and MjWarp. Ships motion-capture data retargeted to each humanoid, trajectory-comparison metrics and JAX baselines; a November 2026 paper describes the current release."
+task_count: "16 embodiments (9 humanoid, 3 skeletal, 4 quadruped)"
+metric_count: "2+ (dynamic time warping, discrete Frechet distance on trajectories)"
+robot_config_count: "16 (e.g. Unitree G1, AgiBot X2 Ultra; skeletal humans; quadrupeds)"
+modality: [state, proprioceptive, mocap]
+setting: [sim]
+sim_backend: "MuJoCo (CPU); MJX and MjWarp (GPU)"
+data_source:
+  size: "Native mocap set per humanoid; AMASS and LAFAN1 can be retargeted"
+  collection_method: human_demonstration
+resources:
+  homepage: "https://loco-mujoco.readthedocs.io/"
+  paper: "https://arxiv.org/abs/2311.02496"
+  code: "https://github.com/robfiras/loco-mujoco"
+  data: ""
+  leaderboard: ""

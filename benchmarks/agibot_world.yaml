@@ -1,0 +1,23 @@
+name: "AgiBot World"
+domain: Datasets
+area: robot-data
+subtype: "bimanual, large-scale, long-horizon"
+first_release_date: 2024-12-30
+venue: "IROS 2025"
+widely_used: true
+description: "Real-world bimanual manipulation data from about 100 AgiBot G1 robots in home, retail, industrial, restaurant and office scenes: over 1M trajectories (2,976 hours), 217 tasks and 87 atomic skills, including dexterous-hand and visuo-tactile episodes. Released as an Alpha subset and the full Beta set."
+task_count: "217 tasks, 87 atomic skills"
+metric_count: "N/A"
+robot_config_count: "1 (AgiBot G1)"
+modality: [RGB, depth, proprioceptive, tactile, language]
+setting: [real]
+sim_backend: ""
+data_source:
+  size: "1,003,672 trajectories, 2,976 hours (Beta); 92,214 trajectories (Alpha)"
+  collection_method: human_demonstration
+resources:
+  homepage: "https://agibot-world.com/"
+  paper: "https://arxiv.org/abs/2503.06669"
+  code: "https://github.com/OpenDriveLab/AgiBot-World"
+  data: "https://huggingface.co/datasets/agibot-world/AgiBotWorld-Beta"
+  leaderboard: ""

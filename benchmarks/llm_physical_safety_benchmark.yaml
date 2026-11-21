@@ -1,0 +1,22 @@
+name: LLM Physical Safety Benchmark
+domain: Safety
+area: embodied-safety
+subtype: "LLM drone control, physical harm"
+first_release_date: 2024-11-04
+venue: "Communications of the ACM 2026"
+description: "Benchmark for the physical safety of LLMs that write drone-control code: about 400 instructions covering deliberate attacks, unintentional attacks, regulation violations and benign utility tasks. Responses are scored by two LLM judges and generated code is run in AirSim to detect collisions."
+task_count: "408 instructions (280 deliberate, 64 unintentional, 32 violation, 32 utility)"
+metric_count: "6 (self-assurance, avoid-collision, regulatory compliance, code fidelity, ...)"
+robot_config_count: "1 (simulated drone)"
+modality: [language]
+setting: [sim]
+sim_backend: "AirSim (Unreal Engine)"
+data_source:
+  size: "408 text instructions"
+  collection_method: mixed
+resources:
+  homepage: "https://huggingface.co/spaces/TrustSafeAI/LLM-physical-safety"
+  paper: "https://arxiv.org/abs/2411.02317"
+  code: ""
+  data: "https://huggingface.co/datasets/TrustSafeAI/llm_physical_safety_benchmark"
+  leaderboard: ""

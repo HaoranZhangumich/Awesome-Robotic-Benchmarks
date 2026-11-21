@@ -1,18 +1,23 @@
 name: ManiSkill
 domain: Generalist
+area: multi-domain
+subtype: "GPU-parallel simulation benchmark, many embodiments"
 first_release_date: 2021-07-30
-description: "SAPIEN-based benchmark targeting generalizable skills with four articulated-object and mobile manipulation tasks and a large LfD dataset."
-task_count: 50
-metric_count: 1
-robot_config_count: 39
-modality: [RGB, depth, pointcloud, proprioceptive]
+venue: "NeurIPS 2021 D&B (ManiSkill3: RSS 2025)"
+widely_used: true
+description: "SAPIEN-based benchmark family for generalisable manipulation skills. ManiSkill (2021) tested generalisation over object geometry, ManiSkill2 (2023) grew to 20 task families, and ManiSkill3 (2024), the current version, is a GPU-parallelised simulator and benchmark with 12 task categories and 20+ robots."
+task_count: "12 task categories (table-top, mobile, humanoid, dexterous, drawing, ...)"
+metric_count: "1 (task success rate)"
+robot_config_count: "20+ (arms, mobile manipulators, humanoids, quadrupeds, dexterous hands)"
+modality: [RGB, depth, pointcloud, segmentation, proprioceptive, state]
 setting: [sim]
-sim_backend: "SAPIEN (PhysX)"
+sim_backend: "SAPIEN (PhysX, GPU-parallel)"
 data_source:
-  size: "~36,000 successful trajectories (~1.5M frames)"
-  collection_method: "motion_planner"
+  size: "demonstrations for many tasks (motion planning, RL and teleoperation)"
+  collection_method: mixed
 resources:
   homepage: "https://maniskill.ai/"
-  paper: "https://arxiv.org/abs/2107.14483"
-  code: "https://github.com/haosulab/ManiSkill"
-  data: "https://github.com/haosulab/ManiSkill#datasets"
+  paper: "https://arxiv.org/abs/2410.00425"
+  code: "https://github.com/mani-skill/ManiSkill"
+  data: "https://huggingface.co/datasets/haosulab/ManiSkill_Demonstrations"
+  leaderboard: ""

@@ -1,0 +1,16 @@
+name: UnrealZoo
+domain: Simulation
+area: embodied-platform
+first_release_date: 2024-12-30
+venue: "ICCV 2025"
+description: "Collection of 100+ photo-realistic Unreal Engine worlds with playable humans, animals, robots, vehicles and drones, exposed through UnrealCV and a Gym interface for navigation, tracking and multi-agent tasks. Version 3.1 adds MuJoCo-driven robots, LiDAR and 3DGS scenes."
+physics_engine: "Unreal Engine Chaos; MuJoCo for robot physics (v3.1)"
+renderer: "Unreal Engine 5"
+gpu_support: false
+os: [Linux, Windows, macOS]
+license: "Apache-2.0"
+resources:
+  homepage: "https://unrealzoo.site/"
+  paper: "https://arxiv.org/abs/2412.20977"
+  code: "https://github.com/UnrealZoo/unrealzoo-gym"
+  docs: "https://docs.unrealcv.org/en/latest/"

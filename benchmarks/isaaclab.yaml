@@ -1,13 +1,17 @@
 name: Isaac Lab
 domain: Simulation
-description: "Open-source robot learning framework built on NVIDIA Isaac Sim (PhysX + RTX)."
-first_release_date: ""
-physics_engine: "NVIDIA PhysX 5 (via Isaac Sim)"
-renderer: "NVIDIA Omniverse RTX / path tracing"
+area: learning-framework
+first_release_date: 2023-01-10
+venue: "arXiv 2025"
+widely_used: true
+description: "NVIDIA's open-source GPU-accelerated framework for robot learning (reinforcement and imitation learning), grown out of Orbit, with 30+ ready-to-train environments and 16+ robot models. Version 3.0 (October 2026) is multi-backend: PhysX through Isaac Sim, or Newton without Isaac Sim."
+physics_engine: "PhysX 5 (Isaac Sim) or Newton (MuJoCo Warp, Kamino, XPBD, VBD)"
+renderer: "Omniverse RTX (Isaac Sim), OVRTX, Newton Warp renderer"
 gpu_support: true
-os: ["Linux", "Windows"]
-license: "BSD-3-Clause (Isaac Lab); Isaac Sim: Apache-2.0 repo + NVIDIA Omniverse EULA"
+os: [Linux, Windows]
+license: "BSD-3-Clause (isaaclab_mimic: Apache-2.0); Isaac Sim licensed separately"
 resources:
   homepage: "https://developer.nvidia.com/isaac/lab"
+  paper: "https://arxiv.org/abs/2511.04831"
   code: "https://github.com/isaac-sim/IsaacLab"
   docs: "https://isaac-sim.github.io/IsaacLab/"

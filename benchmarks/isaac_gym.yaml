@@ -1,0 +1,17 @@
+name: Isaac Gym
+domain: Simulation
+area: physics
+first_release_date: 2021-08-24
+venue: "NeurIPS 2021 D&B"
+widely_used: true
+description: "NVIDIA's standalone GPU physics simulator: simulation and policy training stay on one GPU with direct tensor access, enabling massively parallel RL for legged and dexterous robots. Deprecated in favour of Isaac Lab (last release Preview 4) but still the backend of many published benchmarks."
+physics_engine: "NVIDIA PhysX (GPU)"
+renderer: "Built-in Vulkan renderer; camera images as GPU tensors"
+gpu_support: true
+os: [Linux]
+license: "Free binary under NVIDIA licence; IsaacGymEnvs is BSD-3-Clause"
+resources:
+  homepage: "https://developer.nvidia.com/isaac-gym"
+  paper: "https://arxiv.org/abs/2108.10470"
+  code: "https://github.com/isaac-sim/IsaacGymEnvs"
+  docs: ""

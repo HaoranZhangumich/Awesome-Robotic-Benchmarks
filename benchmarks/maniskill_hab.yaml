@@ -1,0 +1,22 @@
+name: ManiSkill-HAB
+domain: Manipulation
+area: mobile
+subtype: "home rearrangement, low-level control, GPU-parallel"
+first_release_date: 2024-12-09
+venue: "ICLR 2025"
+description: "GPU-accelerated ManiSkill3 version of the Home Assistant Benchmark with realistic low-level grasping in place of magical grasps. Three long-horizon home rearrangement tasks, RL and imitation baselines, and a demonstration dataset generated from RL policies with rule-based trajectory filtering."
+task_count: "3 long-horizon tasks (Pick, Place, Open, Close subtasks)"
+metric_count: "1 (success rate, per subtask and progressive)"
+robot_config_count: "1 (Fetch)"
+modality: [RGB, depth, proprioceptive, state]
+setting: [sim]
+sim_backend: "ManiSkill3 (SAPIEN)"
+data_source:
+  size: "44K RGB-D episodes, 8.8M transitions (TidyHouse, PrepareGroceries, SetTable)"
+  collection_method: rl_policy
+resources:
+  homepage: "https://arth-shukla.github.io/mshab/"
+  paper: "https://arxiv.org/abs/2412.13211"
+  code: "https://github.com/arth-shukla/mshab"
+  data: "https://arth-shukla.github.io/mshab/#dataset-section"
+  leaderboard: ""

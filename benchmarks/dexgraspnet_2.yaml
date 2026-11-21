@@ -1,0 +1,22 @@
+name: "DexGraspNet 2.0"
+domain: Dexterous Manipulation
+area: dex-grasping
+subtype: "cluttered scenes, grasp benchmark"
+first_release_date: 2024-10-30
+venue: "CoRL 2024"
+description: "Synthetic benchmark for dexterous grasping in clutter: 427 million LEAP Hand grasp labels over 8,270 scenes built from 1,319 objects. Models receive a single-view depth point cloud and are scored by grasp success in Isaac Gym; the paper also reports zero-shot real-world transfer."
+task_count: "N/A"
+metric_count: "1 (grasp success rate in simulation)"
+robot_config_count: "1 (LEAP Hand)"
+modality: [depth, pointcloud]
+setting: [sim]
+sim_backend: "Isaac Gym"
+data_source:
+  size: "427M grasps, 8,270 scenes, 1,319 objects"
+  collection_method: synthetic
+resources:
+  homepage: "https://pku-epic.github.io/DexGraspNet2.0/"
+  paper: "https://arxiv.org/abs/2410.23004"
+  code: "https://github.com/PKU-EPIC/DexGraspNet2"
+  data: "https://huggingface.co/datasets/lhrlhr/DexGraspNet2.0"
+  leaderboard: ""

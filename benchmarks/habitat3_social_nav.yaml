@@ -1,0 +1,21 @@
+name: Habitat 3.0 Social Navigation
+domain: Navigation
+area: social
+subtype: "find and follow a humanoid, home scenes"
+first_release_date: 2023-10-19
+description: "Social Navigation task of Habitat 3.0: a Spot robot must find a simulated humanoid walking through an unseen HSSD home, then follow it at 1-2 m without colliding. Policies can also be evaluated with real people controlling the avatar."
+task_count: "1 (find and follow; Social Rearrangement is the sister task)"
+metric_count: "4 (finding success S, SPS, following rate F, collision rate CR)"
+robot_config_count: "1 (Boston Dynamics Spot)"
+modality: [RGB, depth, state]
+setting: [sim]
+sim_backend: "Habitat-Sim (Habitat 3.0)"
+data_source:
+  size: "HSSD scenes: 37 train / 12 val / 10 test"
+  collection_method: none
+resources:
+  homepage: "https://aihabitat.org/habitat3/"
+  paper: "https://arxiv.org/abs/2310.13724"
+  code: "https://github.com/facebookresearch/habitat-lab"
+  data: ""
+  leaderboard: ""

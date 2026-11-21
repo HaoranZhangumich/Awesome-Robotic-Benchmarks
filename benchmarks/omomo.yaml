@@ -1,0 +1,22 @@
+name: OMOMO
+domain: Locomotion
+area: motion-data
+subtype: "full-body human-object interaction mocap"
+first_release_date: 2023-09-28
+venue: "SIGGRAPH Asia 2023"
+description: "Human-object interaction dataset released with Object MOtion guided human MOtion synthesis: about 10 hours of full-body humans manipulating 15 large objects, with 3D object geometry and object motion. A common source of carrying references for humanoid loco-manipulation, for example in the OmniRetarget set."
+task_count: "N/A (dataset)"
+metric_count: "N/A"
+robot_config_count: "N/A (human body)"
+modality: [mocap]
+setting: [real]
+sim_backend: ""
+data_source:
+  size: "About 10 hours, 15 objects"
+  collection_method: human_demonstration
+resources:
+  homepage: "https://lijiaman.github.io/projects/omomo/"
+  paper: "https://arxiv.org/abs/2309.16237"
+  code: "https://github.com/lijiaman/omomo_release"
+  data: ""
+  leaderboard: ""

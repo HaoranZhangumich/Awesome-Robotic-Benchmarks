@@ -1,0 +1,22 @@
+name: "Habitat 2.0 HAB (Home Assistant Benchmark)"
+domain: Manipulation
+area: mobile
+subtype: "home rearrangement, mobile manipulation"
+first_release_date: 2021-06-28
+venue: "NeurIPS 2021"
+description: "Home Assistant Benchmark of Habitat 2.0: a Fetch mobile manipulator rearranges objects in ReplicaCAD apartments in three long-horizon tasks (Tidy House, Prepare Groceries, Set Table). Used to compare end-to-end RL, hierarchical skill chaining and sense-plan-act pipelines."
+task_count: "3 long-horizon tasks"
+metric_count: "1 (success rate, also per stage)"
+robot_config_count: "1 (Fetch)"
+modality: [RGB, depth, proprioceptive]
+setting: [sim]
+sim_backend: "Habitat-Sim (Bullet physics)"
+data_source:
+  size: "N/A (ReplicaCAD: 111 layouts of one apartment, 92 objects; no demos)"
+  collection_method: none
+resources:
+  homepage: "https://aihabitat.org/docs/habitat2/"
+  paper: "https://arxiv.org/abs/2106.14405"
+  code: "https://github.com/facebookresearch/habitat-lab"
+  data: ""
+  leaderboard: ""

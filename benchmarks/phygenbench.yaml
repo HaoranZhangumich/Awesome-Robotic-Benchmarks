@@ -1,0 +1,23 @@
+name: PhyGenBench
+domain: World Models
+area: wm-physics
+subtype: "physical commonsense, text-to-video, physical laws"
+first_release_date: 2024-10-07
+venue: "ICML 2025"
+widely_used: true
+description: "160 hand-written text-to-video prompts covering 27 physical laws in mechanics, optics, thermal phenomena and material properties. The PhyGenEval pipeline scores generated videos with VLMs and an LLM in a three-tier hierarchy designed to agree with human judgement."
+task_count: "27 physical laws in 4 domains"
+metric_count: "1 (PhyGenEval physical-commonsense score)"
+robot_config_count: "N/A"
+modality: [video, language]
+setting: [real]
+sim_backend: ""
+data_source:
+  size: "160 prompts"
+  collection_method: human_annotation
+resources:
+  homepage: "https://phygenbench123.github.io/"
+  paper: "https://arxiv.org/abs/2410.05363"
+  code: "https://github.com/OpenGVLab/PhyGenBench"
+  data: ""
+  leaderboard: ""

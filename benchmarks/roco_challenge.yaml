@@ -1,0 +1,22 @@
+name: RoCo Challenge
+domain: Manipulation
+area: contact-rich
+subtype: "challenge, gearbox assembly, dual-arm"
+first_release_date: 2025-11-11
+venue: "AAAI 2026 workshop challenge"
+description: "Challenge on long-horizon planetary gearbox assembly with Galaxea dual-arm robots, scored step by step in three scenarios (from scratch, resuming a partial assembly, error recovery), first in Isaac Sim and then on real hardware. The first edition drew 60+ teams; a second was organised for IROS 2026."
+task_count: 3
+metric_count: "1 (normalized step-wise assembly score)"
+robot_config_count: "2 (Galaxea R1, R1 Lite)"
+modality: [RGB, depth, proprioceptive]
+setting: [sim, real]
+sim_backend: "Isaac Sim / Isaac Lab"
+data_source:
+  size: "300+ scripted simulation demos and 300+ teleoperated real demos"
+  collection_method: mixed
+resources:
+  homepage: "https://rocochallenge.github.io/RoCo-AAAI2026/"
+  paper: "https://arxiv.org/abs/2603.15469"
+  code: "https://github.com/rocochallenge/gearboxAssembly"
+  data: ""
+  leaderboard: "https://rocochallenge.github.io/RoCo-AAAI2026/leaderboard.html"

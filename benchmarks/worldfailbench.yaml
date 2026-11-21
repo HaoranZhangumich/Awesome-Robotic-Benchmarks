@@ -1,0 +1,22 @@
+name: WorldFailBench
+domain: World Models
+area: wm-policy-eval
+subtype: "world models as policy evaluators, failure fidelity"
+first_release_date: 2026-10-24
+venue: "arXiv 2026"
+description: "Tests whether world models used as policy evaluators reproduce how policies fail: the error type, the stage where it occurs, and the scene change at which success turns into failure. Reference rollouts come from LIBERO, RoboTwin and a real G1 humanoid."
+task_count: "3 (failure reason, stage, boundary) over 32 manipulation tasks"
+metric_count: "failure-frequency error, cross-policy correlation, boundary agreement"
+robot_config_count: "3 (LIBERO single arm, RoboTwin dual arm, G1 humanoid)"
+modality: [video, RGB, language, proprioceptive]
+setting: [sim, real]
+sim_backend: "LIBERO, RoboTwin"
+data_source:
+  size: "6,900 reference rollouts (1,500 LIBERO, 5,000 RoboTwin, 400 real G1); 120 boundary pairs"
+  collection_method: human_annotation
+resources:
+  homepage: ""
+  paper: "https://arxiv.org/abs/2610.33565"
+  code: "https://github.com/DAXIAORobotics/WorldFailBench"
+  data: "https://huggingface.co/datasets/ACERobotics/WorldFailBench"
+  leaderboard: ""

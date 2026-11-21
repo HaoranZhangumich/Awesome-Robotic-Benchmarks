@@ -1,0 +1,22 @@
+name: RoboBenchMart
+domain: Manipulation
+area: mobile
+subtype: "retail dark store, mobile manipulation"
+first_release_date: 2025-11-13
+venue: "arXiv 2025"
+description: "Retail dark-store benchmark: a Fetch mobile manipulator picks grocery items into a basket, moves them between shelves and opens or closes fridges and showcases in procedurally generated stores. Tests whether generalist VLAs fine-tuned on motion-planned data cope with dense shelf clutter."
+task_count: "10 (7 atomic + 3 composite)"
+metric_count: "1 (success rate)"
+robot_config_count: "1 (Fetch)"
+modality: [RGB, proprioceptive, language]
+setting: [sim]
+sim_backend: "ManiSkill3 (SAPIEN)"
+data_source:
+  size: "2,976 motion-planned demonstrations (248 per task-item-fixture triplet)"
+  collection_method: motion_planner
+resources:
+  homepage: "https://emb-ai.github.io/RoboBenchMart/"
+  paper: "https://arxiv.org/abs/2511.10276"
+  code: "https://github.com/emb-ai/RoboBenchMart"
+  data: "https://huggingface.co/datasets/emb-ai/RoboBenchMart_demo_envs"
+  leaderboard: ""

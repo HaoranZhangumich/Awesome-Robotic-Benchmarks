@@ -1,0 +1,22 @@
+name: Humanoid-Gym
+domain: Locomotion
+area: humanoid
+subtype: "humanoid locomotion, sim-to-real"
+first_release_date: 2024-04-08
+venue: "arXiv 2024"
+description: "Isaac Gym framework for training humanoid locomotion policies with zero-shot sim-to-real transfer, with a MuJoCo sim-to-sim step to check policies before deployment. Verified on RobotEra's XBot-S and XBot-L and reused as a base by later humanoid RL code."
+task_count: "1 (humanoid locomotion)"
+metric_count: "N/A"
+robot_config_count: "2 (RobotEra XBot-S, XBot-L)"
+modality: [proprioceptive]
+setting: [sim, real]
+sim_backend: "Isaac Gym; MuJoCo (sim-to-sim)"
+data_source:
+  size: "N/A"
+  collection_method: none
+resources:
+  homepage: "https://sites.google.com/view/humanoid-gym/"
+  paper: "https://arxiv.org/abs/2404.05695"
+  code: "https://github.com/roboterax/humanoid-gym"
+  data: ""
+  leaderboard: ""

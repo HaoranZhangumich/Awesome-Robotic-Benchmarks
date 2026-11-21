@@ -1,0 +1,22 @@
+name: DuoBench
+domain: Manipulation
+area: bimanual
+subtype: "bimanual, sim and real, stage-based evaluation"
+first_release_date: 2026-06-10
+venue: "arXiv 2026"
+description: "Reproducible bimanual benchmark on the Franka FR3 Duo: 11 MuJoCo tasks in four coordination categories, four of them replicated on real hardware with 3D-printable assets. Stage-based evaluation shows where a policy fails, not only whether it succeeds."
+task_count: "11 in simulation (4 also on the real robot)"
+metric_count: "3 (success rate with CIs, task progress, stage-conditional pass rates)"
+robot_config_count: "1 (Franka FR3 Duo with Robotiq 2F-85 grippers)"
+modality: [RGB, proprioceptive, language]
+setting: [sim, real]
+sim_backend: "MuJoCo (Robot Control Stack)"
+data_source:
+  size: "750 teleoperated episodes (50 per task: 11 sim + 4 real)"
+  collection_method: human_demonstration
+resources:
+  homepage: "https://duobench.github.io/"
+  paper: "https://arxiv.org/abs/2606.11901"
+  code: "https://github.com/RobotControlStack/duobench"
+  data: "https://huggingface.co/datasets/RobotControlStack/duobench"
+  leaderboard: ""

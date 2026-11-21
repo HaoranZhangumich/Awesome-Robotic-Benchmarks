@@ -1,18 +1,21 @@
 name: Brax
 domain: Locomotion
+area: continuous-control
+subtype: "GPU-parallel, differentiable physics"
 first_release_date: 2021-06-24
-description: "JAX-based differentiable physics engine reproducing classic MuJoCo-style tasks for massively parallel training."
-task_count: 5
-metric_count: 1
-robot_config_count: 5
-modality: [proprioceptive]
+venue: "NeurIPS 2021 D&B"
+description: "JAX-based differentiable physics engine reproducing classic MuJoCo-style tasks for massively parallel training on accelerators. Since version 0.13 only its training code is maintained: the environments are superseded by MuJoCo Playground and the physics by MJX."
+task_count: 12
+metric_count: "1 (episode return)"
+robot_config_count: "11 (simulated bodies)"
+modality: [state]
 setting: [sim]
-sim_backend: "Brax (JAX)"
+sim_backend: "Brax (JAX); pipelines: MJX, generalized, positional, spring"
 data_source:
   size: "N/A"
-  collection_method: "unknown"
+  collection_method: none
 resources:
-  homepage: "https://github.com/google/brax"
+  homepage: ""
   paper: "https://arxiv.org/abs/2106.13281"
   code: "https://github.com/google/brax"
   data: ""

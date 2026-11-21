@@ -1,0 +1,22 @@
+name: "TriFinger Real Robot Challenge"
+domain: Dexterous Manipulation
+area: dex-manipulation
+subtype: "real robot, remote evaluation, offline RL"
+first_release_date: 2020-08-08
+venue: "NeurIPS 2022 Competition Track"
+description: "Open-source three-finger robot and a series of challenges (2020-2022) in which submitted policies were run remotely on a cluster of real TriFinger platforms. The 2022 edition and the follow-up ICLR 2023 benchmark provide real and simulated offline-RL datasets for cube pushing and lifting."
+task_count: "2 in the 2022 edition (cube push, cube lift)"
+metric_count: "1 (episode return on the real robots)"
+robot_config_count: "1 (TriFinger)"
+modality: [RGB, proprioceptive, state]
+setting: [sim, real]
+sim_backend: "PyBullet (trifinger_simulation)"
+data_source:
+  size: "Dozens of hours of real and simulated robot data (push, lift)"
+  collection_method: rl_policy
+resources:
+  homepage: "https://real-robot-challenge.com/"
+  paper: "https://arxiv.org/abs/2008.03596"
+  code: "https://github.com/open-dynamic-robot-initiative/trifinger_simulation"
+  data: "https://github.com/rr-learning/trifinger_rl_datasets"
+  leaderboard: "https://real-robot-challenge.com/leaderboard"

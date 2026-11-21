@@ -1,0 +1,22 @@
+name: HumanTracker
+domain: Locomotion
+area: humanoid
+subtype: "humanoid motion-tracking evaluation"
+first_release_date: 2026-08-13
+venue: "ECCV 2026"
+description: "Benchmark for humanoid motion trackers: about 153 hours of newly captured optical mocap from 24 performers in four families (daily, highly dynamic, interaction, ground), retargeted to the Unitree G1, plus HumanScore, a metric trained on 12K human preference pairs. Trackers are evaluated zero-shot in MuJoCo."
+task_count: "25K motion clips in 4 families (9:1 train / test split)"
+metric_count: "4 (success rate, MPJPE, HumanScore, joint jerk)"
+robot_config_count: "1 (Unitree G1)"
+modality: [mocap, proprioceptive, language]
+setting: [sim]
+sim_backend: "MuJoCo"
+data_source:
+  size: "153 h optical mocap, 25K clips with text labels"
+  collection_method: human_demonstration
+resources:
+  homepage: "https://dairuliu.github.io/humantracker"
+  paper: "https://arxiv.org/abs/2608.13555"
+  code: "https://github.com/GalaxyGeneralRobotics/HumanTracker"
+  data: "https://huggingface.co/datasets/GalaxyGeneralRobotics/HumanTracker"
+  leaderboard: ""

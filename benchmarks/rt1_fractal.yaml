@@ -1,0 +1,23 @@
+name: "RT-1 Robot Action (Fractal)"
+domain: Datasets
+area: robot-data
+subtype: "single embodiment, mobile manipulator, language"
+first_release_date: 2022-12-13
+venue: "RSS 2023"
+widely_used: true
+description: "Training data of Google's RT-1, listed as fractal20220817_data in Open X-Embodiment: over 130k teleoperated episodes covering 700+ language instructions, collected with a fleet of 13 mobile manipulators over 17 months."
+task_count: "700+ language instructions"
+metric_count: "N/A"
+robot_config_count: "1 (Google Robot mobile manipulator)"
+modality: [RGB, proprioceptive, language]
+setting: [real]
+sim_backend: ""
+data_source:
+  size: "130k+ episodes (73,499 in the Open X-Embodiment copy)"
+  collection_method: human_demonstration
+resources:
+  homepage: "https://robotics-transformer1.github.io/"
+  paper: "https://arxiv.org/abs/2212.06817"
+  code: "https://github.com/google-research/robotics_transformer"
+  data: "https://console.cloud.google.com/storage/browser/gresearch/rt-1-data-release"
+  leaderboard: ""

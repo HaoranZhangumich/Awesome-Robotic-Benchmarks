@@ -1,0 +1,23 @@
+name: HO-3D
+domain: Dexterous Manipulation
+area: hand-object-data
+subtype: "hand-object pose, markerless"
+first_release_date: 2019-07-02
+venue: "CVPR 2020"
+widely_used: true
+description: "Markerless RGB-D dataset of a hand manipulating YCB objects, with 3D hand and object pose annotations produced by the HOnnotate optimisation method. Version 3 holds 103,462 annotated images; CodaLab servers score hand pose on the held-out test set."
+task_count: "1 (3D hand pose estimation under object occlusion)"
+metric_count: "N/A"
+robot_config_count: "N/A"
+modality: [RGB, depth, hand pose]
+setting: [real]
+sim_backend: ""
+data_source:
+  size: "v2: 77,558 frames, 68 sequences, 10 objects; v3: 103,462 images"
+  collection_method: human_demonstration
+resources:
+  homepage: "https://www.tugraz.at/index.php?id=40231"
+  paper: "https://arxiv.org/abs/1907.01481"
+  code: "https://github.com/shreyashampali/ho3d"
+  data: ""
+  leaderboard: "https://codalab.lisn.upsaclay.fr/competitions/4318"

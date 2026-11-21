@@ -1,0 +1,22 @@
+name: OmniNavBench
+domain: Navigation
+area: goal-nav
+subtype: "unified multi-skill navigation, cross-embodiment"
+first_release_date: 2026-05-10
+venue: "RSS 2026"
+description: "Benchmark for general-purpose navigation: each composite instruction interleaves at least two of six skills (PointNav, VLN, ObjectNav, SocialNav, human following, EQA) and runs on humanoid, quadruped and wheeled robots in Isaac Sim. Reference trajectories are human-teleoperated; test scoring goes through a public leaderboard."
+task_count: "6 skill families combined in 1,779 composite episodes"
+metric_count: "9 (SR, CSR, SGC, OSR, SPL, HFS, HFR, EQA-ACC, SII)"
+robot_config_count: "3 (Unitree H1, Unitree Aliengo, NVIDIA Carter)"
+modality: [RGB, depth, lidar, language]
+setting: [sim]
+sim_backend: "Isaac Sim"
+data_source:
+  size: "1,779 teleoperated trajectories (1,187 train / 592 test) in 170 scenes"
+  collection_method: human_demonstration
+resources:
+  homepage: "https://omninavbench.cloud-ip.cc/"
+  paper: "https://arxiv.org/abs/2605.09441"
+  code: "https://github.com/AutoLab-SAI-SJTU/OmniNavBench"
+  data: "https://huggingface.co/datasets/AutoLab-SJTU/OmniNavBench"
+  leaderboard: "https://omninavbench.cloud-ip.cc/"

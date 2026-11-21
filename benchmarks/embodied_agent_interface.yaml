@@ -1,0 +1,22 @@
+name: Embodied Agent Interface
+domain: Embodied Reasoning
+area: planning
+subtype: "LLM decision making, household planning"
+first_release_date: 2024-10-09
+venue: "NeurIPS 2024 D&B"
+description: "Standard interface for testing LLMs on embodied decision making. Splits the problem into four modules (goal interpretation, subgoal decomposition, action sequencing, transition modeling) on BEHAVIOR and VirtualHome tasks and reports fine-grained error types such as hallucination, affordance and planning errors."
+task_count: "4 modules on 438 task instructions (338 VirtualHome, 100 BEHAVIOR)"
+metric_count: "3 (goal success rate, execution success rate, F1) plus error-type rates"
+robot_config_count: "N/A (symbolic agent)"
+modality: [language, state]
+setting: [sim]
+sim_backend: "BEHAVIOR, VirtualHome"
+data_source:
+  size: "438 annotated task plans with goals, trajectories and transition models"
+  collection_method: human_annotation
+resources:
+  homepage: "https://embodied-agent-interface.github.io/"
+  paper: "https://arxiv.org/abs/2410.07166"
+  code: "https://github.com/embodied-agent-interface/embodied-agent-interface"
+  data: "https://huggingface.co/datasets/Inevitablevalor/EmbodiedAgentInterface"
+  leaderboard: "https://eai-challenge-cvpr2026.github.io"

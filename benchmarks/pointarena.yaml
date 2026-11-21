@@ -1,0 +1,22 @@
+name: PointArena
+domain: Embodied Reasoning
+area: spatial
+subtype: "pointing, grounding, human-preference arena"
+first_release_date: 2025-05-15
+venue: "arXiv 2025"
+description: "Evaluation platform for language-guided pointing in three stages: Point-Bench (982 image-question pairs with masks), Point-Battle (a blind pairwise arena with human votes) and Point-Act (pointing used to command a real robot arm)."
+task_count: "982 Point-Bench tasks in 5 categories"
+metric_count: "3 (point-in-mask success, human preference votes, real-robot success)"
+robot_config_count: "1 (robot arm, Point-Act stage only)"
+modality: [RGB, language]
+setting: [real]
+sim_backend: ""
+data_source:
+  size: "982 image-question pairs with masks; 4,500+ arena votes"
+  collection_method: human_annotation
+resources:
+  homepage: "https://pointarena.github.io/"
+  paper: "https://arxiv.org/abs/2505.09990"
+  code: "https://github.com/pointarena/pointarena"
+  data: "https://huggingface.co/datasets/PointArena/pointarena-data"
+  leaderboard: ""

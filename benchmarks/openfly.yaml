@@ -1,0 +1,22 @@
+name: OpenFly
+domain: Navigation
+area: vln
+subtype: "aerial VLN, multi-engine, automatic data generation"
+first_release_date: 2025-02-25
+venue: "ICLR 2026"
+description: "Aerial VLN platform that renders 18 outdoor scenes through four engines (Unreal Engine, GTA V, Google Earth, 3D Gaussian Splatting) and generates trajectories and instructions automatically, yielding a 100k-trajectory dataset with seen and unseen test splits."
+task_count: "1 (aerial instruction following)"
+metric_count: "4 (NE, SR, OSR, SPL)"
+robot_config_count: "1 (simulated UAV)"
+modality: [RGB, language]
+setting: [sim]
+sim_backend: "Unreal Engine / AirSim, GTA V, Google Earth, 3D Gaussian Splatting"
+data_source:
+  size: "100k trajectories in 18 scenes; test sets of 1,800 seen and 1,200 unseen"
+  collection_method: mixed
+resources:
+  homepage: "https://shailab-ipec.github.io/openfly/"
+  paper: "https://arxiv.org/abs/2502.18041"
+  code: "https://github.com/SHAILAB-IPEC/OpenFly-Platform"
+  data: "https://huggingface.co/datasets/IPEC-COMMUNITY/OpenFly"
+  leaderboard: ""

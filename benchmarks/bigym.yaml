@@ -1,0 +1,22 @@
+name: BiGym
+domain: Manipulation
+area: bimanual
+subtype: "mobile bimanual, humanoid, demo-driven"
+first_release_date: 2024-07-10
+venue: "CoRL 2024"
+description: "Mobile bimanual benchmark with a Unitree H1 humanoid: 40 household tasks, from target reaching to dishwasher loading, each with sparse rewards and 50 VR-teleoperated human demonstrations. Built for imitation learning and demo-driven reinforcement learning."
+task_count: 40
+metric_count: "1 (success rate)"
+robot_config_count: "1 (Unitree H1)"
+modality: [RGB, depth, proprioceptive]
+setting: [sim]
+sim_backend: "MuJoCo"
+data_source:
+  size: "50 human demos per task (VR teleoperation)"
+  collection_method: human_demonstration
+resources:
+  homepage: "https://chernyadev.github.io/bigym/"
+  paper: "https://arxiv.org/abs/2407.07788"
+  code: "https://github.com/NeuracoreAI/bigym"
+  data: ""
+  leaderboard: ""

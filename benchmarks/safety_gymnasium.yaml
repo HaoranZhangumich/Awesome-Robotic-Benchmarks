@@ -1,0 +1,23 @@
+name: Safety-Gymnasium
+domain: Safety
+area: safe-rl
+subtype: "constrained RL, single- and multi-agent"
+first_release_date: 2023-10-19
+venue: "NeurIPS 2023 D&B"
+widely_used: true
+description: "Unified safe-RL environment suite on MuJoCo with the Gymnasium API: Safety Gym-style navigation, velocity-constrained locomotion, multi-agent and vision tasks, plus Isaac Gym manipulation. Ships with the SafePO library of 16 constrained-RL algorithms and is the maintained successor to Safety Gym."
+task_count: "54 environments benchmarked in the paper (navigation, velocity, multi-agent)"
+metric_count: "2 (episodic return, episodic cost)"
+robot_config_count: "10+ (Point, Car, Racecar, Doggo, Ant, HalfCheetah, Hopper, Humanoid, ...)"
+modality: [state, lidar, RGB, depth]
+setting: [sim]
+sim_backend: "MuJoCo; Isaac Gym for the manipulation tasks"
+data_source:
+  size: "N/A"
+  collection_method: none
+resources:
+  homepage: "https://safety-gymnasium.readthedocs.io/en/latest/"
+  paper: "https://arxiv.org/abs/2310.12567"
+  code: "https://github.com/PKU-Alignment/safety-gymnasium"
+  data: ""
+  leaderboard: ""

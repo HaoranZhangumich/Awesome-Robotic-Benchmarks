@@ -1,0 +1,22 @@
+name: WorldSimBench
+domain: World Models
+area: wm-embodied
+subtype: "video generation as world simulator, human preference, closed-loop"
+first_release_date: 2024-10-23
+venue: "ICML 2025"
+description: "Evaluates video generation models as world simulators in two ways: a human-preference evaluator trained on 35,701 annotated videos scores visual and embodied quality, and closed-loop tests convert generated video into actions in Minecraft, driving (CARLA) and robot manipulation (CALVIN)."
+task_count: "3 scenarios (open-ended Minecraft, autonomous driving, robot manipulation)"
+metric_count: "20 perceptual dimensions + closed-loop task metrics per scenario"
+robot_config_count: "3 (Minecraft agent, driving agent, 7-DoF arm)"
+modality: [video, RGB, language]
+setting: [sim, real]
+sim_backend: "MineRL, CARLA, CALVIN"
+data_source:
+  size: "HF-Embodied dataset: 35,701 scored video-instruction tuples"
+  collection_method: human_annotation
+resources:
+  homepage: "https://iranqin.github.io/WorldSimBench.github.io"
+  paper: "https://arxiv.org/abs/2410.18072"
+  code: ""
+  data: ""
+  leaderboard: ""

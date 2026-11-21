@@ -1,0 +1,23 @@
+name: SoftGym
+domain: Manipulation
+area: deformable
+subtype: "rope, cloth and fluid; RL"
+first_release_date: 2020-11-14
+venue: "CoRL 2020"
+widely_used: true
+description: "Gym-style simulated benchmark for manipulating rope, cloth and fluids: ten tasks (six in SoftGym-Medium, four in SoftGym-Hard) with an abstract picker action space, plus variants with a Sawyer or Franka arm. Widely reused as the simulation base for later cloth-manipulation work."
+task_count: "10 (6 Medium + 4 Hard), plus robot variants"
+metric_count: "1 (normalized task performance)"
+robot_config_count: "abstract pickers; Sawyer or Franka in SoftGym-Robot"
+modality: [RGB, state]
+setting: [sim]
+sim_backend: "NVIDIA FleX"
+data_source:
+  size: "N/A"
+  collection_method: none
+resources:
+  homepage: "https://sites.google.com/view/softgym"
+  paper: "https://arxiv.org/abs/2011.07215"
+  code: "https://github.com/Xingyu-Lin/softgym"
+  data: ""
+  leaderboard: ""

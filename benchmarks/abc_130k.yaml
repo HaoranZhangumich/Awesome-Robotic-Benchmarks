@@ -1,0 +1,22 @@
+name: "ABC-130K"
+domain: Datasets
+area: robot-data
+subtype: "bimanual, teleoperation, low-cost arms"
+first_release_date: 2026-06-25
+venue: "arXiv 2026"
+description: "Teleoperation dataset at the core of the open ABC behaviour-cloning stack: 3,500+ hours and 130k episodes over 195 tasks on one low-cost bimanual YAM station, part of it with subtask labels. Released with the hardware design, training code and 400 hours of simulated teleoperation."
+task_count: "195 tasks"
+metric_count: "N/A"
+robot_config_count: "1 (bimanual YAM station)"
+modality: [RGB, proprioceptive, language]
+setting: [real]
+sim_backend: ""
+data_source:
+  size: "130,703 episodes, 3,590.7 hours (42,980 episodes with subtask labels)"
+  collection_method: human_demonstration
+resources:
+  homepage: "https://abc.bot/"
+  paper: "https://arxiv.org/abs/2606.27375"
+  code: "https://github.com/amazon-far/abc"
+  data: "https://huggingface.co/datasets/XDOF/ABC-130k"
+  leaderboard: ""

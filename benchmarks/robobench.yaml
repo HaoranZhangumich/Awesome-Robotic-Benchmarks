@@ -1,0 +1,22 @@
+name: RoboBench
+domain: Embodied Reasoning
+area: spatial
+subtype: "embodied brain: perception, planning, affordance, failure"
+first_release_date: 2025-10-20
+venue: "ECCV 2026"
+description: "Evaluates multimodal LLMs as the 'embodied brain' of a manipulation robot along five dimensions: instruction comprehension, perception reasoning, generalized planning, affordance prediction and failure analysis. Long-horizon plans are judged by an MLLM acting as a world simulator instead of by text matching."
+task_count: "25 tasks in 5 dimensions (14 capabilities)"
+metric_count: "5 evaluators (multiple-choice, planning, point, IoU, trajectory)"
+robot_config_count: "N/A (QA over multi-embodiment robot data)"
+modality: [RGB, video, language]
+setting: [real]
+sim_backend: ""
+data_source:
+  size: "6,092 QA pairs from open-source and in-house robot data"
+  collection_method: mixed
+resources:
+  homepage: "https://robo-bench.github.io/"
+  paper: "https://arxiv.org/abs/2510.17801"
+  code: "https://github.com/yulin-luo/RoboBench"
+  data: "https://huggingface.co/datasets/LeoFan01/RoboBench"
+  leaderboard: ""

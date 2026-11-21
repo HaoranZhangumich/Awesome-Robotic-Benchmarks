@@ -1,0 +1,21 @@
+name: Robothon Grand Challenge Task Board
+domain: Manipulation
+area: contact-rich
+subtype: "electronic task board, remote competition"
+first_release_date: 2021
+description: "Internet-connected electronic task board (the 'Digital Robot Judge') whose microcontroller times and verifies manipulation sub-tasks such as localisation, insertion and disassembly and publishes each trial to a web dashboard. It is the shared test object of the Robothon Grand Challenge (four editions by 2025) and the euROBIN manipulation challenge."
+task_count: "5 tasks per board (2025 edition)"
+metric_count: "2 (tasks completed, execution time), plus jury scoring"
+robot_config_count: "robot-agnostic"
+modality: ["N/A"]
+setting: [real]
+sim_backend: ""
+data_source:
+  size: "N/A"
+  collection_method: none
+resources:
+  homepage: "https://automatica-munich.com/en/munich-i/robothon/"
+  paper: "https://arxiv.org/abs/2201.09565"
+  code: "https://github.com/peterso/robotlearningblock"
+  data: ""
+  leaderboard: "https://github.com/peterso/robothon-grand-challenge"

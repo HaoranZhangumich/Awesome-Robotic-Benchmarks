@@ -1,0 +1,22 @@
+name: EBench
+domain: Manipulation
+area: mobile
+subtype: "mobile bimanual, diagnostic capability profile"
+first_release_date: 2026-06-16
+venue: "arXiv 2026"
+description: "Diagnostic benchmark for generalist policies on a dual-arm mobile robot in Isaac Sim. 26 tasks across mobile pick-and-place, long-horizon and precise manipulation are tagged on 5 capability and 4 generalization axes, so one score becomes a capability profile. Held-out test split with an online leaderboard."
+task_count: "26 (10 mobile pick-and-place, 9 long-horizon, 7 dexterous-and-precise)"
+metric_count: "2 (success rate, score), split by 5 capability and 4 generalization axes"
+robot_config_count: "1 (ARX Lift 2 dual-arm mobile robot)"
+modality: [RGB, proprioceptive, language]
+setting: [sim]
+sim_backend: "NVIDIA Isaac Sim (GenManip)"
+data_source:
+  size: "6,600 episodes, 91.4 h (teleoperation + cuRobo motion planning)"
+  collection_method: mixed
+resources:
+  homepage: "https://internrobotics.github.io/EBench-home/"
+  paper: "https://arxiv.org/abs/2606.18239"
+  code: "https://github.com/InternRobotics/EBench"
+  data: "https://huggingface.co/datasets/InternRobotics/EBench-Dataset"
+  leaderboard: "https://internrobotics.shlab.org.cn/eval/evaluation-list"

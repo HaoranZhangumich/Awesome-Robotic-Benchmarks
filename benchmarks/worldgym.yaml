@@ -1,0 +1,22 @@
+name: WorldGym
+domain: World Models
+area: wm-policy-eval
+subtype: "world model as policy evaluation environment, VLM reward"
+first_release_date: 2025-05-31
+venue: "arXiv 2025"
+description: "Policy evaluation environment built on an autoregressive action-conditioned video model: policies are rolled out from real first frames and a VLM judges success. Success rates of RT-1-X, Octo and OpenVLA inside the model track real-robot results on the OpenVLA Bridge tasks (r = 0.78)."
+task_count: "17 Bridge tasks from the OpenVLA evaluation, plus Google Robot and OOD tasks"
+metric_count: "2 (VLM-judged success rate; Pearson correlation with real-world success)"
+robot_config_count: "2 evaluated (Bridge robot, Google Robot)"
+modality: [RGB, video, language]
+setting: [real]
+sim_backend: ""
+data_source:
+  size: "real first frames of the evaluated tasks; no new dataset"
+  collection_method: none
+resources:
+  homepage: "https://world-model-eval.github.io/abstract.html"
+  paper: "https://arxiv.org/abs/2506.00613"
+  code: "https://github.com/world-model-eval/world-model-eval"
+  data: ""
+  leaderboard: ""

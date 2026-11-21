@@ -1,0 +1,22 @@
+name: VLN-PE
+domain: Navigation
+area: vln
+subtype: "physically realistic VLN, cross-embodiment"
+first_release_date: 2025-07-17
+venue: "ICCV 2025"
+description: "Physically realistic VLN on GRUtopia / Isaac Sim: instruction following is re-run with humanoid, quadruped and wheeled robots under real locomotion controllers, exposing failures from falls, collisions, low viewpoints and lighting that idealised VLN-CE agents never encounter."
+task_count: "3 datasets (R2R without stairs, GRU-VLN10, 3DGS-Lab-VLN)"
+metric_count: "7 (TL, NE, FR, StR, OS, SR, SPL)"
+robot_config_count: "4 (Unitree H1, Unitree G1, Unitree Aliengo, Jetbot)"
+modality: [RGB, depth, language]
+setting: [sim]
+sim_backend: "GRUtopia (Isaac Sim)"
+data_source:
+  size: "R2R 8,679/658/1,347 episodes; GRU-VLN10 441/111/1,287; 3DGS-Lab-VLN 160/640"
+  collection_method: human_annotation
+resources:
+  homepage: "https://crystalsixone.github.io/vln_pe.github.io/"
+  paper: "https://arxiv.org/abs/2507.13019"
+  code: "https://github.com/InternRobotics/InternNav"
+  data: ""
+  leaderboard: ""

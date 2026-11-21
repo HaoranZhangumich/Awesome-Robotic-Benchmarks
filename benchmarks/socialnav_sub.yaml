@@ -1,0 +1,22 @@
+name: SocialNav-SUB
+domain: Navigation
+area: social
+subtype: "VLM scene understanding for social navigation, VQA"
+first_release_date: 2025-09-10
+venue: "CoRL 2025"
+description: "Visual question answering benchmark testing whether VLMs understand real social-navigation scenes drawn from SCAND, with spatial, spatiotemporal and social-reasoning questions scored against human answers. Current VLMs fall below a human oracle and a rule-based baseline."
+task_count: "about 5k questions in 3 categories (spatial, spatiotemporal, social)"
+metric_count: "2 (probability of agreement PA, consensus-weighted PA)"
+robot_config_count: "N/A (scenes come from SCAND robot recordings)"
+modality: [RGB, language]
+setting: [real]
+sim_backend: ""
+data_source:
+  size: "4,968 unique questions with human responses"
+  collection_method: human_annotation
+resources:
+  homepage: "https://larg.github.io/socialnav-sub"
+  paper: "https://arxiv.org/abs/2509.08757"
+  code: "https://github.com/LARG/SocialNavSUB"
+  data: "https://huggingface.co/datasets/michaelmunje/SocialNav-SUB"
+  leaderboard: ""

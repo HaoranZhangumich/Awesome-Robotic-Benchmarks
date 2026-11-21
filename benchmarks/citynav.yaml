@@ -1,0 +1,22 @@
+name: CityNav
+domain: Navigation
+area: vln
+subtype: "aerial VLN, real-city scans, language goals"
+first_release_date: 2024-06-20
+venue: "ICCV 2025"
+description: "Language-goal aerial navigation over 3D scans of two real cities (Cambridge and Birmingham): a drone must reach an object described relative to real landmarks. Ships human-flown demonstration trajectories and a geographic landmark map as an extra input."
+task_count: "1 (language-goal aerial navigation)"
+metric_count: "4 (NE, SR, OSR, SPL)"
+robot_config_count: "1 (simulated UAV)"
+modality: [RGB, depth, language]
+setting: [sim]
+sim_backend: "CityFlight (SensatUrban point clouds)"
+data_source:
+  size: "32,637 human trajectories with descriptions (22,002/2,498/2,826/5,311), 4.65 km2"
+  collection_method: human_demonstration
+resources:
+  homepage: "https://water-cookie.github.io/city-nav-proj/"
+  paper: "https://arxiv.org/abs/2406.14240"
+  code: "https://github.com/water-cookie/citynav"
+  data: ""
+  leaderboard: ""

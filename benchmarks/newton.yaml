@@ -1,0 +1,15 @@
+name: Newton
+domain: Simulation
+area: physics
+first_release_date: 2025-04
+description: "Open-source GPU physics engine built on NVIDIA Warp and OpenUSD, started by Disney Research, Google DeepMind and NVIDIA and hosted by the Linux Foundation. MuJoCo Warp is its main rigid-body backend, next to Kamino, VBD, XPBD and MPM solvers; 1.0 shipped in March 2026."
+physics_engine: "Newton solvers: MuJoCo Warp, Kamino, Featherstone, XPBD, VBD, implicit MPM"
+renderer: "Warp ray-traced tiled camera sensor; OpenGL, USD, Rerun, Viser viewers"
+gpu_support: true
+os: [Linux, Windows, macOS]
+license: "Apache-2.0"
+resources:
+  homepage: "https://newton-physics.github.io/newton/stable/"
+  paper: ""
+  code: "https://github.com/newton-physics/newton"
+  docs: "https://newton-physics.github.io/newton/stable/"

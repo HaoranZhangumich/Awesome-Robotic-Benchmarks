@@ -1,0 +1,22 @@
+name: World-in-World
+domain: World Models
+area: wm-embodied
+subtype: "closed-loop, world model for planning, leaderboard"
+first_release_date: 2025-10-20
+venue: "ICLR 2026 (Oral)"
+description: "Closed-loop platform that plugs video world models into an online planner through a unified action API and ranks them by task success instead of visual quality, across active recognition, image-goal navigation, embodied question answering and RLBench manipulation."
+task_count: "4 (active recognition, image-goal navigation, active EQA, manipulation)"
+metric_count: "task success as primary (success rate, SPL, answer score)"
+robot_config_count: "2 (Habitat navigation agent, RLBench arm)"
+modality: [RGB, video, language]
+setting: [sim]
+sim_backend: "Habitat-Sim, CoppeliaSim (RLBench)"
+data_source:
+  size: "551 AR + 144 ImageNav episodes, 184 A-EQA questions, 4 RLBench tasks x 50 episodes"
+  collection_method: mixed
+resources:
+  homepage: "https://world-in-world.github.io/"
+  paper: "https://arxiv.org/abs/2510.18135"
+  code: "https://github.com/World-In-World/world-in-world"
+  data: "https://huggingface.co/datasets/zonszer/WIW_datasets"
+  leaderboard: "https://world-in-world.github.io/subpages/leaderboard.html"

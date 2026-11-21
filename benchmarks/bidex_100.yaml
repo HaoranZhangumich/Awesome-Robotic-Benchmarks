@@ -1,0 +1,22 @@
+name: BiDex-100
+domain: Dexterous Manipulation
+area: dex-bimanual
+subtype: "VLA evaluation, high-DoF hands"
+first_release_date: 2026-10-18
+venue: "arXiv 2026"
+description: "MuJoCo benchmark of 106 bimanual dexterous tasks organised along five capability axes (generalisation, instruction following, limited demonstrations, long horizon, memory), each paired with an out-of-domain variant. Provides 8,080 teleoperated demonstrations on two platforms with 22-DoF hands."
+task_count: 106
+metric_count: "2 (progress score, strict success; in- and out-of-domain)"
+robot_config_count: "2 (dual Franka, Astribot S1; 22-DoF hands)"
+modality: [RGB, depth, proprioceptive, language]
+setting: [sim]
+sim_backend: "MuJoCo"
+data_source:
+  size: "8,080 teleoperated demonstrations (6.25M frames)"
+  collection_method: human_demonstration
+resources:
+  homepage: "https://robbyant-research.github.io/BiDex-100/"
+  paper: "https://arxiv.org/abs/2610.25459"
+  code: "https://github.com/robbyant-research/BiDex-100"
+  data: "https://huggingface.co/datasets/Robbyant-Research/BiDex-100"
+  leaderboard: "https://robbyant-research.github.io/BiDex-100/leaderboard.html"

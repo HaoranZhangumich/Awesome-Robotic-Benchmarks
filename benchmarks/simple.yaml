@@ -1,0 +1,22 @@
+name: SIMPLE
+domain: Locomotion
+area: humanoid
+subtype: "humanoid loco-manipulation, policy evaluation"
+first_release_date: 2026-06-06
+venue: "CoRL 2026"
+description: "Simulation testbed for training and evaluating humanoid loco-manipulation policies that couples MuJoCo contact dynamics with Isaac Sim rendering: whole-body Unitree G1 tasks in 50 indoor scenes with over 1,000 objects. Benchmarks imitation, VLA and world-action models and reports agreement with real-robot results."
+task_count: "60 whole-body tasks on the project page (16 in the arXiv paper)"
+metric_count: "1 (success rate at 3 domain-randomisation levels)"
+robot_config_count: "1 for the benchmark (Unitree G1)"
+modality: [RGB, proprioceptive, language]
+setting: [sim]
+sim_backend: "MuJoCo physics with Isaac Sim rendering"
+data_source:
+  size: "Motion-planned and VR-teleoperated demos on Hugging Face (size not stated)"
+  collection_method: mixed
+resources:
+  homepage: "https://psi-lab.ai/SIMPLE/"
+  paper: "https://arxiv.org/abs/2606.08278"
+  code: "https://github.com/physical-superintelligence-lab/SIMPLE"
+  data: "https://huggingface.co/collections/USC-PSI-Lab/simple"
+  leaderboard: "https://psi-lab.ai/SIMPLE/leaderboard.html"

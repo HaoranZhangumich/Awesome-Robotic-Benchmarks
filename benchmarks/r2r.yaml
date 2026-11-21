@@ -1,0 +1,23 @@
+name: R2R (Room-to-Room)
+domain: Navigation
+area: vln
+subtype: "discrete VLN, indoor, panorama graph"
+first_release_date: 2017-11-20
+venue: "CVPR 2018"
+widely_used: true
+description: "The original vision-and-language navigation benchmark: an agent follows crowd-sourced English instructions through Matterport3D buildings by hopping between panoramic viewpoints on a navigation graph. Still reported by nearly every VLN paper, and the starting point for RxR, REVERIE and VLN-CE."
+task_count: "1 (instruction following; about 7k paths)"
+metric_count: "5 (TL, NE, OSR, SR, SPL)"
+robot_config_count: "1 (panoramic-camera agent on a nav-graph)"
+modality: [RGB, language]
+setting: [sim]
+sim_backend: "Matterport3D Simulator"
+data_source:
+  size: "about 22k instructions (3 per path, 29 words on average) in 90 buildings"
+  collection_method: human_annotation
+resources:
+  homepage: "https://bringmeaspoon.org/"
+  paper: "https://arxiv.org/abs/1711.07280"
+  code: "https://github.com/peteanderson80/Matterport3DSimulator"
+  data: ""
+  leaderboard: "https://eval.ai/web/challenges/challenge-page/97/overview"

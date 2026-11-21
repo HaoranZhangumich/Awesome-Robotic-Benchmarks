@@ -1,0 +1,22 @@
+name: MimicGen
+domain: Manipulation
+area: tabletop
+subtype: "table-top, data generation, imitation learning"
+first_release_date: 2023-10-26
+venue: "CoRL 2023"
+description: "Data-generation system that adapts about 200 human demonstrations into 50K+ demonstrations across 18 tasks, including long-horizon and high-precision ones such as multi-part assembly and coffee preparation. The released robosuite task variants and datasets are often used as an imitation-learning benchmark."
+task_count: "18 in the paper (12 in the released datasets)"
+metric_count: "1 (success rate)"
+robot_config_count: "4 (Panda, Sawyer, IIWA, UR5e)"
+modality: [RGB, proprioceptive, state]
+setting: [sim, real]
+sim_backend: "robosuite (MuJoCo); Isaac Gym Factory for some tasks"
+data_source:
+  size: "50K+ generated demos from ~200 human demos (48K+ released)"
+  collection_method: mixed
+resources:
+  homepage: "https://mimicgen.github.io/"
+  paper: "https://arxiv.org/abs/2310.17596"
+  code: "https://github.com/NVlabs/mimicgen"
+  data: "https://huggingface.co/datasets/amandlek/mimicgen_datasets"
+  leaderboard: ""

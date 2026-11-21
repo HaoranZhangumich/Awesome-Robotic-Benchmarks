@@ -1,0 +1,22 @@
+name: "RoboMIND"
+domain: Datasets
+area: robot-data
+subtype: "multi-embodiment, standardized collection, failure data"
+first_release_date: 2024-12-18
+venue: "RSS 2025"
+description: "Teleoperated manipulation data collected under one protocol: 107k trajectories over 479 tasks on four embodiments (Franka, UR5e, AgileX dual-arm, a humanoid with dexterous hands), plus 5k annotated failures. RoboMIND 2.0 (Dec 2025) extends it to 310k+ dual-arm trajectories on six embodiments."
+task_count: "479 (v1); 739 (v2.0)"
+metric_count: "N/A"
+robot_config_count: "4 (v1); 6 (v2.0)"
+modality: [RGB, proprioceptive, tactile, language]
+setting: [real]
+sim_backend: ""
+data_source:
+  size: "107k trajectories (v1); 310k+ real and 20k simulated (v2.0)"
+  collection_method: human_demonstration
+resources:
+  homepage: "https://x-humanoid-robomind.github.io/"
+  paper: "https://arxiv.org/abs/2412.13877"
+  code: "https://github.com/x-humanoid-robomind/x-humanoid-robomind.github.io"
+  data: "https://huggingface.co/datasets/x-humanoid-robomind/RoboMIND"
+  leaderboard: ""

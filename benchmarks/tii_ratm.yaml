@@ -1,0 +1,27 @@
+name: TII-RATM (Race Against the Machine)
+domain: Other
+area: aerial
+subtype: "drone racing dataset"
+first_release_date: 2023-11-05
+venue: "IEEE RA-L 2024"
+
+description: "Open-design drone racing dataset from the Technology Innovation Institute with fast (over 21 m/s) autonomous and human-piloted flights. It provides high-rate camera, IMU and motion-capture data, control inputs and corner-level labels of racing gates; a 2025 update adds flights by a world-class FPV pilot."
+
+task_count: "N/A"
+metric_count: "N/A"
+robot_config_count: "1 (open-design racing quadrotor running Betaflight)"
+
+modality: [RGB, IMU, mocap]
+setting: [real]
+sim_backend: ""
+
+data_source:
+  size: "18 autonomous and 18 piloted flights on 3 track shapes; 6 more piloted flights in v3.0.0"
+  collection_method: mixed
+
+resources:
+  homepage: ""
+  paper: "https://arxiv.org/abs/2311.02667"
+  code: "https://github.com/tii-racing/drone-racing-dataset"
+  data: ""
+  leaderboard: ""

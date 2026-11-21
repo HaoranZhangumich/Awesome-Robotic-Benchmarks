@@ -1,0 +1,22 @@
+name: Ctrl-World
+domain: World Models
+area: wm-policy-eval
+subtype: "controllable multi-view world model, policy-in-the-loop evaluation"
+first_release_date: 2025-10-11
+venue: "ICLR 2026"
+description: "Open multi-view world model trained on DROID and built for policy-in-the-loop rollouts with generalist policies. Its imagined rollouts reproduce the real-world ranking of pi0, pi0-FAST and pi0.5, and later benchmarks such as WorldArena and WorldFailBench use it as a learned evaluator baseline."
+task_count: "7 task types (pick-and-place, towel, drawer, wiping, laptop, tissue, stacking)"
+metric_count: "correlation of imagined and real instruction-following and success rates"
+robot_config_count: "1 (DROID platform: Franka Panda with Robotiq gripper)"
+modality: [RGB, video, language, proprioceptive]
+setting: [real]
+sim_backend: ""
+data_source:
+  size: "trained on DROID (95,599 trajectories, 564 scenes); no separate evaluation set"
+  collection_method: human_demonstration
+resources:
+  homepage: "https://ctrl-world.github.io"
+  paper: "https://arxiv.org/abs/2510.10125"
+  code: "https://github.com/Robert-gyj/Ctrl-World"
+  data: ""
+  leaderboard: ""

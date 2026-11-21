@@ -1,0 +1,22 @@
+name: Mimicking-Bench
+domain: Locomotion
+area: humanoid
+subtype: "humanoid-scene interaction, human mimicking"
+first_release_date: 2024-12-23
+venue: "CVPR 2025 Workshop on Humanoid Agents"
+description: "Benchmark for learning humanoid-scene interaction from human references: six household tasks (sitting on a chair or sofa, lying on a bed or sofa, touching points, lifting a box) over 11K object shapes. Compares pipelines of motion retargeting, motion tracking and imitation learning."
+task_count: 6
+metric_count: "1 (success rate from kinematic and physical criteria)"
+robot_config_count: "1 (Unitree H1)"
+modality: [RGB, depth, segmentation, proprioceptive]
+setting: [sim]
+sim_backend: "Isaac Gym"
+data_source:
+  size: "23K human skill references (20K synthetic, 3K real); 11K object shapes"
+  collection_method: mixed
+resources:
+  homepage: "https://mimicking-bench.github.io/"
+  paper: "https://arxiv.org/abs/2412.17730"
+  code: ""
+  data: ""
+  leaderboard: ""

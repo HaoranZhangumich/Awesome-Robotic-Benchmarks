@@ -1,0 +1,22 @@
+name: Factory
+domain: Manipulation
+area: contact-rich
+subtype: "simulated assembly, RL"
+first_release_date: 2022-05-07
+venue: "RSS 2022"
+description: "GPU-accelerated contact simulation and RL environments for robotic assembly: 60 part models from NIST Task Board 1 and three Franka scenes (nut-and-bolt, peg and connector insertion, gears). Its peg-insert, gear-mesh and nut-thread tasks now ship with Isaac Lab; IndustReal and AutoMate (100 assemblies) followed from the same group."
+task_count: "3 assembly scenes (nut-bolt, insertion, gears)"
+metric_count: "1 (success rate)"
+robot_config_count: "1 (Franka Panda)"
+modality: [state, proprioceptive]
+setting: [sim]
+sim_backend: "Isaac Gym (PhysX); tasks ported to Isaac Lab"
+data_source:
+  size: "N/A"
+  collection_method: none
+resources:
+  homepage: "https://research.nvidia.com/publication/2022-05_factory-fast-contact-robotic-assembly"
+  paper: "https://arxiv.org/abs/2205.03532"
+  code: "https://github.com/isaac-sim/IsaacGymEnvs"
+  data: ""
+  leaderboard: ""

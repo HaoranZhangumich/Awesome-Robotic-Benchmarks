@@ -1,0 +1,21 @@
+name: "10Kh RealOmni"
+domain: Datasets
+area: robot-data
+subtype: "UMI-style, handheld gripper, household bimanual"
+first_release_date: 2025-12
+description: "GenRobot's open household dataset recorded with handheld Gen DAS grippers instead of robots: long bimanual chores from 3,000+ homes with fisheye video, IMU, tactile arrays and reconstructed trajectories. Uploaded in stages; the dataset card reports 13,000+ hours and 5M+ clips."
+task_count: "30 core skills in 10 household scenarios"
+metric_count: "N/A"
+robot_config_count: "N/A (handheld Gen DAS Gripper, bimanual)"
+modality: [RGB, tactile, GPS_IMU, proprioceptive]
+setting: [real]
+sim_backend: ""
+data_source:
+  size: "13,000+ hours, 5M+ clips, 95 TB"
+  collection_method: human_demonstration
+resources:
+  homepage: "https://www.genrobot.ai/"
+  paper: ""
+  code: "https://github.com/genrobot-ai/das-datakit"
+  data: "https://huggingface.co/datasets/genrobot2025/10Kh-RealOmin-OpenData"
+  leaderboard: ""

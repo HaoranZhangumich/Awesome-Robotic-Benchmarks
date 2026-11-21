@@ -1,0 +1,23 @@
+name: ARCTIC
+domain: Dexterous Manipulation
+area: hand-object-data
+subtype: "bimanual, articulated objects"
+first_release_date: 2022-04-28
+venue: "CVPR 2023"
+widely_used: true
+description: "Dataset of two hands dexterously manipulating articulated objects such as scissors and laptops: 2.1M video frames from eight static views and one egocentric view, with motion-capture ground truth for SMPL-X bodies, MANO hands, articulated objects and contact. A main human source for bimanual dexterous retargeting."
+task_count: "2 (consistent motion reconstruction, interaction field)"
+metric_count: "N/A"
+robot_config_count: "N/A"
+modality: [RGB, hand pose, mocap]
+setting: [real]
+sim_backend: ""
+data_source:
+  size: "2.1M frames from 9 views (8 static + 1 egocentric)"
+  collection_method: human_demonstration
+resources:
+  homepage: "https://arctic.is.tue.mpg.de"
+  paper: "https://arxiv.org/abs/2204.13662"
+  code: "https://github.com/zc-alexfan/arctic"
+  data: ""
+  leaderboard: "https://arctic-leaderboard.is.tuebingen.mpg.de/"

@@ -1,0 +1,22 @@
+name: DexH2R
+domain: Dexterous Manipulation
+area: dex-grasping
+subtype: "human-to-robot handover, dynamic grasping"
+first_release_date: 2025-06-29
+venue: "ICCV 2025"
+description: "Real-world dataset and benchmark for dynamic dexterous grasping in human-to-robot handover: 4,282 teleoperated handover trials (456K frames) from 39 participants and 56 objects with a Shadow Hand on a UR10e, recorded with multi-view RGB-D. Baselines cover autoregressive and diffusion-policy motion generation."
+task_count: "1 (grasp an object handed over by a person)"
+metric_count: "3 (success rate, safety rate, penetration)"
+robot_config_count: "1 (UR10e + Shadow Hand)"
+modality: [RGB, depth, pointcloud, proprioceptive]
+setting: [real]
+sim_backend: ""
+data_source:
+  size: "4,282 handover trials, 456K frames, 56 objects, 39 people"
+  collection_method: human_demonstration
+resources:
+  homepage: "https://dexh2r.github.io/"
+  paper: "https://arxiv.org/abs/2506.23152"
+  code: "https://github.com/4DVLab/DexH2R"
+  data: ""
+  leaderboard: ""

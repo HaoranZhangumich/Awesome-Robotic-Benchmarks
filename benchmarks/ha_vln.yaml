@@ -1,0 +1,22 @@
+name: HA-VLN 2.0
+domain: Navigation
+area: vln
+subtype: "human-aware VLN, discrete and continuous"
+first_release_date: 2024-06-27
+venue: "NeurIPS 2024 D&B; v2.0 at IROS 2026"
+description: "Human-aware VLN: Matterport3D scenes populated with moving, interacting people (HAPS 2.0 motions), in both discrete and continuous settings. Scores goal reaching together with human collisions, and offers a public leaderboard plus real-robot validation on a Unitree Go2."
+task_count: "2 (HA-VLN-DE discrete, HA-VLN-CE continuous)"
+metric_count: "4 (NE, SR, TCR, CR)"
+robot_config_count: "1 simulated agent (real-world tests on Unitree Go2-EDU)"
+modality: [RGB, depth, language]
+setting: [sim]
+sim_backend: "HA-VLN Simulator (HA-VLN-DE and HA-VLN-CE; the CE side runs on Habitat)"
+data_source:
+  size: "16,844 instructions; HAPS 2.0: 486 motion sequences, 172 activities, 90 scans"
+  collection_method: mixed
+resources:
+  homepage: "https://uwmilab.github.io/HA-VLN-webpage/"
+  paper: "https://arxiv.org/abs/2503.14229"
+  code: "https://github.com/UWMILab/HA-VLN"
+  data: "https://huggingface.co/datasets/fly1113/HA-VLN"
+  leaderboard: "https://www.codabench.org/competitions/18135/"

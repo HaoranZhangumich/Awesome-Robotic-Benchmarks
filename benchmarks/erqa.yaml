@@ -1,0 +1,23 @@
+name: "ERQA (Gemini Robotics)"
+domain: Embodied Reasoning
+area: spatial
+subtype: "embodied reasoning VQA, multiple-choice"
+first_release_date: 2025-03-25
+venue: "arXiv 2025"
+widely_used: true
+description: "Embodied Reasoning Question Answering benchmark released with Gemini Robotics: 400 multiple-choice visual questions on spatial, trajectory, action, state, pointing, multi-view and task reasoning, 28% of them over several images. Now a standard yardstick in embodied-reasoning model reports."
+task_count: "400 multiple-choice questions (7 named reasoning categories)"
+metric_count: "1 (multiple-choice accuracy)"
+robot_config_count: "N/A"
+modality: [RGB, language]
+setting: [real]
+sim_backend: ""
+data_source:
+  size: "400 manually labeled questions over robot and egocentric images"
+  collection_method: human_annotation
+resources:
+  homepage: ""
+  paper: "https://arxiv.org/abs/2503.20020"
+  code: "https://github.com/embodiedreasoning/ERQA"
+  data: ""
+  leaderboard: ""

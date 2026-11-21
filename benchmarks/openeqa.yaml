@@ -1,0 +1,23 @@
+name: OpenEQA
+domain: Embodied Reasoning
+area: eqa
+subtype: "open-vocabulary EQA, episodic memory, active exploration"
+first_release_date: 2024-04-11
+venue: "CVPR 2024"
+widely_used: true
+description: "Open-vocabulary embodied question answering on real environments: 1,636 human-written questions about ScanNet and HM3D scenes, answered from an episodic memory of a tour (EM-EQA) or by actively exploring (A-EQA), and scored by an LLM judge."
+task_count: "1,636 questions in 7 categories; 2 settings (EM-EQA, A-EQA)"
+metric_count: "1 (LLM-Match, an LLM-judged answer score)"
+robot_config_count: "N/A"
+modality: [RGB, depth, video, language]
+setting: [sim, real]
+sim_backend: "Habitat (HM3D scenes)"
+data_source:
+  size: "1,636 question-answer pairs over 180+ environments"
+  collection_method: human_annotation
+resources:
+  homepage: "https://open-eqa.github.io"
+  paper: "https://openaccess.thecvf.com/content/CVPR2024/html/Majumdar_OpenEQA_Embodied_Question_Answering_in_the_Era_of_Foundation_Models_CVPR_2024_paper.html"
+  code: "https://github.com/facebookresearch/open-eqa"
+  data: "https://github.com/facebookresearch/open-eqa/tree/main/data"
+  leaderboard: ""
